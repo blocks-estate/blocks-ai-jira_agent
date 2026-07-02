@@ -18,8 +18,8 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
         <span className="stat-label">{metric.name}</span>
         <StatusBadge status={metric.status} />
       </div>
-      <div className="stat-value">{typeof metric.current === 'number' ? metric.current.toLocaleString() : metric.current}{metric.unit !== 'accounts' && metric.unit !== 'developers' && metric.unit !== 'signups' && metric.unit !== 'assets' && metric.unit !== 'offerings' && metric.unit !== 'backlinks' && metric.unit !== 'mentions' && metric.unit !== 'interviews' && metric.unit !== 'invitations' && metric.unit !== 'inquiries' && metric.unit !== 'leads' && metric.unit !== 'keywords' && metric.unit !== 'downloads' && metric.unit !== 'registrations' && metric.unit !== 'starts' && metric.unit !== 'complaints' && metric.unit !== 'overdue' && metric.unit !== 'checks completed' && metric.unit !== 'subscriptions' && metric.unit !== 'visitors' && metric.unit !== 'hours' && metric.unit !== 'views' ? metric.unit : ''}</div>
-      <div className="stat-target">{metric.unit === '%' ? '' : 'Target: '}{metric.targetRange}</div>
+      <div className="stat-value">{typeof metric.current === 'number' ? metric.current.toLocaleString() : metric.current}</div>
+      <div className="stat-target">Target: {metric.targetRange}</div>
       <div className="progress"><div className="progress-fill" style={{ width: `${Math.min(pct, 100)}%`, background: fillColor }} /></div>
     </div>
   )
@@ -464,42 +464,63 @@ function ShareOfVoice() {
 
 function DocumentTracking() {
   const [data, setData] = useState<any>(null)
+  const [collapsedCats, setCollapsedCats] = useState<Record<string, boolean>>({})
   useEffect(() => { fetchJSON<any>('/api/document-tracking').then(setData) }, [])
 
   if (!data) return <div className="loading">Loading document tracking...</div>
+
+  const toggleCat = (name: string) => {
+    setCollapsedCats(prev => ({ ...prev, [name]: !prev[name] }))
+  }
 
   return (
     <div>
       <div className="page-header"><h1>Document Download Tracking</h1><p>{data.description}</p></div>
 
-      {data.categories.map((cat: any) => (
-        <div key={cat.name} className="card">
-          <div className="card-header"><h3>{cat.name} ({cat.documents.length} documents)</h3></div>
-          <div className="card-body">
-            <div className="doc-grid">
-              {cat.documents.map((d: any) => {
-                const viewGrowth = d.views - d.lastWeekViews
-                const dlGrowth = d.downloads - d.lastWeekDownloads
-                return (
-                  <div key={d.name} className="doc-card">
-                    <div className="doc-name">{d.name}</div>
-                    <div className="doc-stats">
-                      <span>Views: {d.views} {viewGrowth > 0 ? `(+${viewGrowth})` : ''}</span>
-                      <span>Downloads: {d.downloads} {dlGrowth > 0 ? `(+${dlGrowth})` : ''}</span>
-                    </div>
-                    <div className="progress" style={{ marginTop: 8 }}>
-                      <div className="progress-fill" style={{ width: `${Math.min((d.downloads / Math.max(d.views, 1)) * 100, 100)}%`, background: 'var(--primary)' }} />
-                    </div>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text2)', marginTop: 4 }}>
-                      {((d.downloads / Math.max(d.views, 1)) * 100).toFixed(1)}% download rate
-                    </div>
-                  </div>
-                )
-              })}
+      {data.categories.map((cat: any) => {
+        const collapsed = collapsedCats[cat.name] || false
+        return (
+          <div key={cat.name} className="card">
+            <div
+              className="card-header"
+              style={{ cursor: 'pointer' }}
+              onClick={() => toggleCat(cat.name)}
+            >
+              <h3>
+                <span style={{ marginRight: 6, fontSize: '0.8rem', color: 'var(--text2)' }}>
+                  {collapsed ? '▶' : '▼'}
+                </span>
+                {cat.name} ({cat.documents.length} documents)
+              </h3>
             </div>
+            {!collapsed && (
+              <div className="card-body">
+                <div className="doc-grid">
+                  {cat.documents.map((d: any) => {
+                    const viewGrowth = d.views - d.lastWeekViews
+                    const dlGrowth = d.downloads - d.lastWeekDownloads
+                    return (
+                      <div key={d.name} className="doc-card">
+                        <div className="doc-name">{d.name}</div>
+                        <div className="doc-stats">
+                          <span>Views: {d.views} {viewGrowth > 0 ? `(+${viewGrowth})` : ''}</span>
+                          <span>Downloads: {d.downloads} {dlGrowth > 0 ? `(+${dlGrowth})` : ''}</span>
+                        </div>
+                        <div className="progress" style={{ marginTop: 8 }}>
+                          <div className="progress-fill" style={{ width: `${Math.min((d.downloads / Math.max(d.views, 1)) * 100, 100)}%`, background: 'var(--primary)' }} />
+                        </div>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--text2)', marginTop: 4 }}>
+                          {((d.downloads / Math.max(d.views, 1)) * 100).toFixed(1)}% download rate
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
           </div>
-        </div>
-      ))}
+        )
+      })}
     </div>
   )
 }
@@ -585,9 +606,27 @@ function SubscriptionTracking() {
 
 function WeeklyReview() {
   const [data, setData] = useState<any>(null)
-  useEffect(() => { fetchJSON<any>('/api/weekly-review').then(setData) }, [])
+  const [actionStatuses, setActionStatuses] = useState<Record<string, string>>({})
+  useEffect(() => {
+    fetchJSON<any>('/api/weekly-review').then(d => {
+      setData(d)
+      const st: Record<string, string> = {}
+      d.actionItems?.forEach((a: ActionItem) => { st[a.id] = a.status })
+      setActionStatuses(st)
+    })
+  }, [])
 
   if (!data) return <div className="loading">Loading weekly review...</div>
+
+  const cycleActionStatus = (id: string) => {
+    setActionStatuses(prev => {
+      const current = prev[id] || ''
+      const next = current === 'open' ? 'in-progress' : current === 'in-progress' ? 'done' : current === 'done' ? 'open' : 'open'
+      return { ...prev, [id]: next }
+    })
+  }
+
+  const openCount = Object.values(actionStatuses).filter(s => s !== 'done').length
 
   return (
     <div>
@@ -597,7 +636,7 @@ function WeeklyReview() {
         <div className="meta-bar">
           <span><strong>Week:</strong> {data.currentWeek}</span>
           <span><strong>Sections:</strong> {data.sections.length}</span>
-          <span><strong>Open Actions:</strong> {data.actionItems.filter((a: ActionItem) => a.status !== 'done').length}</span>
+          <span><strong>Open Actions:</strong> {openCount}</span>
         </div>
       </div>
 
@@ -644,21 +683,33 @@ function WeeklyReview() {
       ))}
 
       <div className="card">
-        <div className="card-header"><h3>Action Items ({data.actionItems.filter((a: ActionItem) => a.status !== 'done').length} open)</h3></div>
+        <div className="card-header"><h3>Action Items ({openCount} open)</h3></div>
         <div className="card-body no-pad">
-          {data.actionItems.map((a: ActionItem) => (
-            <div key={a.id} className="action-row">
-              <span className="action-id">{a.id}</span>
-              <span className="action-desc">{a.description}</span>
-              <span className="action-owner">{a.owner}</span>
-              <span className="action-due">{a.dueDate}</span>
-              <span className="action-status">
-                <span className={`badge ${a.status === 'open' ? 'badge-amber' : a.status === 'in-progress' ? 'badge-blue' : a.status === 'done' ? 'badge-green' : 'badge-red'}`}>
-                  {a.status}
+          {data.actionItems.map((a: ActionItem) => {
+            const status = actionStatuses[a.id] || a.status
+            return (
+              <div key={a.id} className="action-row" style={{ cursor: 'pointer' }} onClick={() => cycleActionStatus(a.id)}>
+                <span style={{
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                  width: 18, height: 18, borderRadius: 3, marginRight: 8,
+                  border: status === 'done' ? 'none' : '2px solid var(--border)',
+                  background: status === 'done' ? 'var(--green)' : 'transparent',
+                  color: '#fff', fontSize: '0.72rem', fontWeight: 700, flexShrink: 0,
+                }}>
+                  {status === 'done' ? '✓' : ''}
                 </span>
-              </span>
-            </div>
-          ))}
+                <span className="action-id">{a.id}</span>
+                <span className="action-desc">{a.description}</span>
+                <span className="action-owner">{a.owner}</span>
+                <span className="action-due">{a.dueDate}</span>
+                <span className="action-status">
+                  <span className={`badge ${status === 'open' ? 'badge-amber' : status === 'in-progress' ? 'badge-blue' : status === 'done' ? 'badge-green' : 'badge-red'}`}>
+                    {status}
+                  </span>
+                </span>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>

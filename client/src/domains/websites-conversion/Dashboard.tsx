@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, websitesConversion } from '../../api'
 import type { KpiMetric } from '../../api'
+import { InlineStatusSelect } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -23,12 +24,21 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+const handoffStatusOptions = [
+  { label: 'Completed', value: 'completed', color: 'var(--green)' },
+  { label: 'In Progress', value: 'in-progress', color: 'var(--blue)' },
+  { label: 'Failed', value: 'failed', color: 'var(--red)' },
+  { label: 'Pending', value: 'pending', color: 'var(--amber)' },
+]
+
 export default function WebsitesConversionDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [kycHandoff, setKycHandoff] = useState<any>(null)
   const [funnelMetrics, setFunnelMetrics] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [expandedKyc, setExpandedKyc] = useState<Record<string, boolean>>({})
+  const [kycStatuses, setKycStatuses] = useState<Record<string, string>>({})
 
   useEffect(() => {
     Promise.all([
@@ -39,9 +49,20 @@ export default function WebsitesConversionDashboard() {
       setKpis(k)
       setKycHandoff(kh)
       setFunnelMetrics(fm)
+      const st: Record<string, string> = {}
+      kh?.items?.forEach((h: any) => { st[h.id] = h.handoffStatus })
+      setKycStatuses(st)
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  const toggleExpand = (id: string) => {
+    setExpandedKyc(prev => ({ ...prev, [id]: !prev[id] }))
+  }
+
+  const handleStatusChange = (id: string, newStatus: string) => {
+    setKycStatuses(prev => ({ ...prev, [id]: newStatus }))
+  }
 
   if (loading) return <div className="loading">Loading Websites & Conversion Dashboard...</div>
 
@@ -150,14 +171,52 @@ export default function WebsitesConversionDashboard() {
         <div className="card">
           <div className="card-header"><h3>KYC Handoff Records ({kycHandoff.totalItems})</h3></div>
           <div className="card-body no-pad">
-            {kycHandoff.items.slice(0, 10).map((h: any) => (
-              <div key={h.id} className="kpi-row">
-                <span className="kpi-name" style={{ fontSize: '0.78rem' }}>User {h.userId?.slice(0, 8)}</span>
-                <span className="kpi-val" style={{ fontSize: '0.72rem', fontWeight: 400, minWidth: 50 }}>{h.userType}</span>
-                <span className={`badge ${h.handoffStatus === 'completed' ? 'badge-green' : h.handoffStatus === 'in-progress' ? 'badge-blue' : h.handoffStatus === 'failed' ? 'badge-red' : 'badge-amber'}`}>{h.handoffStatus}</span>
-                <span className="kpi-target" style={{ fontSize: '0.72rem' }}>{h.provider}</span>
-              </div>
-            ))}
+            {kycHandoff.items.slice(0, 10).map((h: any) => {
+              const expanded = expandedKyc[h.id] || false
+              return (
+                <div key={h.id}>
+                  <div
+                    className="kpi-row"
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => toggleExpand(h.id)}
+                  >
+                    <span className="kpi-name" style={{ fontSize: '0.78rem' }}>
+                      <span style={{ marginRight: 6, fontSize: '0.7rem', color: 'var(--text2)' }}>
+                        {expanded ? '▼' : '▶'}
+                      </span>
+                      User {h.userId?.slice(0, 8)}
+                    </span>
+                    <span className="kpi-val" style={{ fontSize: '0.72rem', fontWeight: 400, minWidth: 50 }}>{h.userType}</span>
+                    <InlineStatusSelect
+                      value={kycStatuses[h.id] || h.handoffStatus}
+                      options={handoffStatusOptions}
+                      onChange={(newStatus) => handleStatusChange(h.id, newStatus)}
+                      entityId={h.id}
+                      domainLabel="kyc"
+                    />
+                    <span className="kpi-target" style={{ fontSize: '0.72rem' }}>{h.provider}</span>
+                  </div>
+                  {expanded && (
+                    <div style={{
+                      padding: '8px 16px 10px 28px',
+                      background: 'var(--surface2)',
+                      borderBottom: '1px solid var(--border)',
+                      fontSize: '0.78rem',
+                      color: 'var(--text2)',
+                    }}>
+                      <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
+                        {h.fullName && <span><strong>Name:</strong> {h.fullName}</span>}
+                        {h.email && <span><strong>Email:</strong> {h.email}</span>}
+                        {h.submittedAt && <span><strong>Submitted:</strong> {h.submittedAt}</span>}
+                        {h.completedAt && <span><strong>Completed:</strong> {h.completedAt}</span>}
+                        {h.reason && <span><strong>Reason:</strong> {h.reason}</span>}
+                        {h.notes && <span><strong>Notes:</strong> {h.notes}</span>}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
           </div>
         </div>
       )}

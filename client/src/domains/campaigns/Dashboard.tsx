@@ -1,6 +1,32 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { fetchJSON, campaigns } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
+
+const campaignStatusOptions = [
+  { label: 'Drafting', value: 'drafting', color: 'var(--blue)' },
+  { label: 'Ready for Launch', value: 'ready-for-launch', color: 'var(--primary)' },
+  { label: 'Live', value: 'live', color: 'var(--green)' },
+  { label: 'Paused', value: 'paused', color: 'var(--amber)' },
+  { label: 'Completed', value: 'completed', color: 'var(--blue)' },
+]
+
+const campaignFields = [
+  { key: 'name', label: 'Campaign Name', required: true },
+  { key: 'status', label: 'Status', type: 'select' as const, options: campaignStatusOptions.map(s => ({ label: s.label, value: s.value })) },
+  { key: 'audience', label: 'Audience' },
+  { key: 'owner', label: 'Owner' },
+]
+
+const referralTestFields = [
+  { key: 'name', label: 'Test Name', required: true },
+  { key: 'status', label: 'Status', type: 'select' as const, options: [
+    { label: 'Active', value: 'active' },
+    { label: 'Analysing', value: 'analysing' },
+    { label: 'Paused', value: 'paused' },
+    { label: 'Completed', value: 'completed' },
+  ]},
+]
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -31,10 +57,15 @@ export default function CampaignsDashboard() {
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
+  const [showAddCampaign, setShowAddCampaign] = useState(false)
+  const [showAddReferralTest, setShowAddReferralTest] = useState(false)
+  const [saving, setSaving] = useState(false)
+
+  const fetchData = useCallback(() => {
+    setLoading(true)
     Promise.all([
       campaigns.kpis(),
-      campaigns.campaigns(),
+      fetchJSON<any>('/api/campaigns/'),
       campaigns.referralTests(),
       campaigns.launchChecklists(),
     ]).then(([k, c, rt, ch]) => {
@@ -45,6 +76,41 @@ export default function CampaignsDashboard() {
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
+
+  const handleAddCampaign = async (data: Record<string, any>) => {
+    setSaving(true)
+    await fetch('/api/campaigns/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setSaving(false)
+    fetchData()
+  }
+
+  const handleAddReferralTest = async (data: Record<string, any>) => {
+    setSaving(true)
+    await fetch('/api/campaigns/referral-tests', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setSaving(false)
+    fetchData()
+  }
+
+  const handleStatusChange = async (id: string, newStatus: string) => {
+    await fetch(`/api/campaigns/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status: newStatus }),
+    })
+    fetchData()
+  }
 
   if (loading) return <div className="loading">Loading Campaigns Dashboard...</div>
 
@@ -74,12 +140,21 @@ export default function CampaignsDashboard() {
       <div className="dash-grid">
         {campaignList?.items && campaignList.items.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Campaigns ({campaignList.totalItems})</h3></div>
+            <div className="card-header">
+              <h3>Campaigns ({campaignList.totalItems})</h3>
+              <ActionBar onAdd={() => setShowAddCampaign(true)} addLabel="Campaign" />
+            </div>
             <div className="card-body no-pad">
               {campaignList.items.map((c: any) => (
                 <div key={c.id} className="kpi-row">
                   <span className="kpi-name" style={{ fontSize: '0.82rem' }}>{c.name}</span>
-                  <span className={`badge ${c.status === 'live' ? 'badge-green' : c.status === 'ready-for-launch' ? 'badge-blue' : c.status === 'paused' || c.status === 'drafting' ? 'badge-amber' : c.status === 'completed' ? 'badge-blue' : 'badge-red'}`}>{c.status}</span>
+                  <InlineStatusSelect
+                    value={c.status}
+                    options={campaignStatusOptions}
+                    onChange={(v) => handleStatusChange(c.id, v)}
+                    entityId={c.id}
+                    domainLabel="campaign"
+                  />
                   <span className="kpi-val" style={{ fontSize: '0.75rem', fontWeight: 400, minWidth: 80 }}>{c.audience || '-'}</span>
                   <span className="kpi-target">{c.owner}</span>
                 </div>
@@ -90,7 +165,10 @@ export default function CampaignsDashboard() {
 
         {referralTests && referralTests.length > 0 && (
           <div className="chart-container">
-            <div className="chart-title">Referral Tests ({referralTests.length})</div>
+            <div className="chart-title">
+              <span>Referral Tests ({referralTests.length})</span>
+              <ActionBar onAdd={() => setShowAddReferralTest(true)} addLabel="Test" />
+            </div>
             {referralTests.map((t: any) => (
               <div key={t.id} style={{ background: 'var(--surface2)', borderRadius: 'var(--radius)', padding: '10px 14px', marginBottom: 6 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -117,6 +195,26 @@ export default function CampaignsDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddCampaign && (
+        <AddModal
+          title="Add Campaign"
+          fields={campaignFields}
+          onSave={handleAddCampaign}
+          onClose={() => setShowAddCampaign(false)}
+          saving={saving}
+        />
+      )}
+
+      {showAddReferralTest && (
+        <AddModal
+          title="Add Referral Test"
+          fields={referralTestFields}
+          onSave={handleAddReferralTest}
+          onClose={() => setShowAddReferralTest(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

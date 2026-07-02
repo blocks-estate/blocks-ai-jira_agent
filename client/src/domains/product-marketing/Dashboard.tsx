@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, productMarketing } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -23,6 +24,14 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+const launchStatusOptions = [
+  { label: 'In Progress', value: 'in-progress', color: 'var(--blue)' },
+  { label: 'In Review', value: 'in-review', color: 'var(--amber)' },
+  { label: 'Approved', value: 'approved', color: 'var(--green)' },
+  { label: 'Blocked', value: 'blocked', color: 'var(--red)' },
+  { label: 'Cancelled', value: 'cancelled', color: 'var(--text2)' },
+]
+
 export default function ProductMarketingDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [launchTracker, setLaunchTracker] = useState<any>(null)
@@ -30,8 +39,11 @@ export default function ProductMarketingDashboard() {
   const [feeStructure, setFeeStructure] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddLaunchItem, setShowAddLaunchItem] = useState(false)
+  const [savingLaunchItem, setSavingLaunchItem] = useState(false)
 
-  useEffect(() => {
+  const fetchAll = () => {
+    setLoading(true)
     Promise.all([
       productMarketing.kpis(),
       productMarketing.launchTracker(),
@@ -44,7 +56,26 @@ export default function ProductMarketingDashboard() {
       setFeeStructure(fs)
       setLoading(false)
     }).catch(() => setLoading(false))
-  }, [])
+  }
+
+  useEffect(() => { fetchAll() }, [])
+
+  const handleAddLaunchItem = async (data: Record<string, any>) => {
+    setSavingLaunchItem(true)
+    try {
+      const res = await productMarketing.launchTrackerCreate(data)
+      if (!res.ok) throw new Error('Failed to create launch item')
+      await fetchAll()
+    } finally {
+      setSavingLaunchItem(false)
+    }
+  }
+
+  const handleUpdateLaunchStatus = async (id: string, newStatus: string) => {
+    const res = await productMarketing.launchTrackerUpdate(id, { status: newStatus })
+    if (!res.ok) throw new Error('Failed to update status')
+    await fetchAll()
+  }
 
   if (loading) return <div className="loading">Loading Product Marketing Dashboard...</div>
 
@@ -74,12 +105,21 @@ export default function ProductMarketingDashboard() {
       <div className="dash-grid">
         {launchTracker && launchTracker.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Launch Tracker ({launchTracker.length})</h3></div>
+            <div className="card-header">
+              <h3>Launch Tracker ({launchTracker.length})</h3>
+              <ActionBar onAdd={() => setShowAddLaunchItem(true)} addLabel="Add Launch Item" />
+            </div>
             <div className="card-body no-pad">
               {launchTracker.map((item: any) => (
                 <div key={item.id} className="kpi-row">
                   <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{item.name}</span>
-                  <span className={`badge ${item.status === 'approved' ? 'badge-green' : item.status === 'in-progress' ? 'badge-blue' : item.status === 'in-review' ? 'badge-amber' : item.status === 'blocked' ? 'badge-red' : 'badge-blue'}`}>{item.status}</span>
+                  <InlineStatusSelect
+                    value={item.status}
+                    options={launchStatusOptions}
+                    onChange={(newStatus) => handleUpdateLaunchStatus(item.id, newStatus)}
+                    entityId={item.id}
+                    domainLabel="launch-item"
+                  />
                   <span className="kpi-val" style={{ fontSize: '0.72rem', fontWeight: 400, minWidth: 60 }}>{item.owner}</span>
                   <span className="kpi-target">{item.targetDate || '-'}</span>
                 </div>
@@ -126,6 +166,27 @@ export default function ProductMarketingDashboard() {
             </div>
           </div>
         </div>
+      )}
+
+      {showAddLaunchItem && (
+        <AddModal
+          title="Add Launch Item"
+          fields={[
+            { key: 'name', label: 'Launch Name', required: true, placeholder: 'e.g. Q3 Cross-Border Payments' },
+            { key: 'owner', label: 'Owner', required: true, placeholder: 'e.g. Jane Doe' },
+            { key: 'status', label: 'Status', type: 'select', required: true, options: [
+              { label: 'In Progress', value: 'in-progress' },
+              { label: 'In Review', value: 'in-review' },
+              { label: 'Approved', value: 'approved' },
+              { label: 'Blocked', value: 'blocked' },
+            ]},
+            { key: 'targetDate', label: 'Target Date', placeholder: 'e.g. 2026-09-30' },
+            { key: 'description', label: 'Description', type: 'textarea', placeholder: 'Describe the launch initiative...' },
+          ]}
+          onSave={handleAddLaunchItem}
+          onClose={() => setShowAddLaunchItem(false)}
+          saving={savingLaunchItem}
+        />
       )}
     </div>
   )

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, developerAcquisition } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, DeleteConfirm, ActionBar, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -66,6 +67,14 @@ function PipelineSummaryCard({ summary }: { summary: any }) {
   )
 }
 
+const opportunityStageOptions = [
+  { label: 'Target Identified', value: 'target-identified', color: 'var(--blue)' },
+  { label: 'Outreach In Progress', value: 'outreach-in-progress', color: 'var(--amber)' },
+  { label: 'LOI Signed', value: 'loi-signed', color: 'var(--green)' },
+  { label: 'Onboarding', value: 'onboarding', color: 'var(--green)' },
+  { label: 'Off Track', value: 'off-track', color: 'var(--red)' },
+]
+
 export default function DeveloperAcquisitionDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [funnel, setFunnel] = useState<any>(null)
@@ -76,8 +85,13 @@ export default function DeveloperAcquisitionDashboard() {
   const [areas, setAreas] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [deleteTarget, setDeleteTarget] = useState<any>(null)
+  const [deleting, setDeleting] = useState(false)
 
-  useEffect(() => {
+  const loadAll = () => {
+    setLoading(true)
     Promise.all([
       developerAcquisition.kpis(),
       developerAcquisition.funnel(),
@@ -96,7 +110,41 @@ export default function DeveloperAcquisitionDashboard() {
       setAreas(ar)
       setLoading(false)
     }).catch(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    loadAll()
   }, [])
+
+  const handleAddOpportunity = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      const res = await developerAcquisition.opportunitiesCreate(data)
+      if (!res.ok) throw new Error('Failed to create opportunity')
+      await loadAll()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleStatusChange = async (id: string, newStatus: string) => {
+    const res = await developerAcquisition.opportunitiesUpdate(id, { stage: newStatus })
+    if (!res.ok) throw new Error('Failed to update status')
+    await loadAll()
+  }
+
+  const handleDelete = async () => {
+    if (!deleteTarget) return
+    setDeleting(true)
+    try {
+      const res = await developerAcquisition.opportunitiesDelete(deleteTarget.id)
+      if (!res.ok) throw new Error('Failed to delete opportunity')
+      setDeleteTarget(null)
+      await loadAll()
+    } finally {
+      setDeleting(false)
+    }
+  }
 
   if (loading) return <div className="loading">Loading Developer Acquisition Dashboard...</div>
 
@@ -145,14 +193,34 @@ export default function DeveloperAcquisitionDashboard() {
 
       {opportunities?.items && opportunities.items.length > 0 && (
         <div className="card">
-          <div className="card-header"><h3>Developer Opportunities ({opportunities.totalItems})</h3></div>
+          <div className="card-header">
+            <h3>Developer Opportunities ({opportunities.totalItems})</h3>
+            <ActionBar onAdd={() => setShowAddModal(true)} addLabel="Add Opportunity" />
+          </div>
           <div className="card-body no-pad">
             {opportunities.items.map((o: any) => (
               <div key={o.id} className="kpi-row">
                 <StatusBadge status={o.stage === 'loi-signed' || o.stage === 'onboarding' ? 'on-track' : o.stage === 'target-identified' || o.stage === 'outreach-in-progress' ? 'at-risk' : 'off-track'} />
                 <span className="kpi-name">{o.developerName}</span>
-                <span className="kpi-val" style={{ fontSize: '0.78rem', minWidth: 100, fontWeight: 400 }}>{o.stage.replace(/-/g, ' ')}</span>
+                <span className="kpi-val" style={{ fontSize: '0.78rem', minWidth: 100, fontWeight: 400 }}>
+                  <InlineStatusSelect
+                    value={o.stage}
+                    options={opportunityStageOptions}
+                    onChange={(v) => handleStatusChange(o.id, v)}
+                    entityId={o.id}
+                    domainLabel="opportunity"
+                  />
+                </span>
                 <span className="kpi-target">{o.priorityScore ? `${o.priorityScore}/100` : '-'}</span>
+                <button
+                  onClick={() => setDeleteTarget(o)}
+                  style={{
+                    background: 'none', border: 'none', color: 'var(--red)',
+                    cursor: 'pointer', fontSize: '0.72rem', opacity: 0.7,
+                    padding: '2px 6px',
+                  }}
+                  title="Delete opportunity"
+                >✕</button>
               </div>
             ))}
           </div>
@@ -194,6 +262,43 @@ export default function DeveloperAcquisitionDashboard() {
             </div>
           </div>
         </div>
+      )}
+
+      {showAddModal && (
+        <AddModal
+          title="Add Opportunity"
+          fields={[
+            { key: 'developerName', label: 'Developer Name', required: true, placeholder: 'e.g. Acme Developers' },
+            { key: 'stage', label: 'Stage', type: 'select', required: true, options: [
+              { label: 'Target Identified', value: 'target-identified' },
+              { label: 'Outreach In Progress', value: 'outreach-in-progress' },
+              { label: 'LOI Signed', value: 'loi-signed' },
+              { label: 'Onboarding', value: 'onboarding' },
+              { label: 'Off Track', value: 'off-track' },
+            ]},
+            { key: 'owner', label: 'Owner', placeholder: 'e.g. John Doe' },
+            { key: 'developerType', label: 'Developer Type', type: 'select', options: [
+              { label: 'Residential', value: 'residential' },
+              { label: 'Commercial', value: 'commercial' },
+              { label: 'Mixed-Use', value: 'mixed-use' },
+              { label: 'Industrial', value: 'industrial' },
+            ]},
+            { key: 'estimatedValue', label: 'Estimated Value (AED)', type: 'number', placeholder: 'e.g. 50000000' },
+          ]}
+          onSave={handleAddOpportunity}
+          onClose={() => setShowAddModal(false)}
+          saving={saving}
+        />
+      )}
+
+      {deleteTarget && (
+        <DeleteConfirm
+          title="Delete Opportunity"
+          message={`Are you sure you want to delete the opportunity for "${deleteTarget.developerName}"? This action cannot be undone.`}
+          onConfirm={handleDelete}
+          onClose={() => setDeleteTarget(null)}
+          deleting={deleting}
+        />
       )}
     </div>
   )

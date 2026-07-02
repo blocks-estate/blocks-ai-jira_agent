@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, regionalExpansion } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar } from '../common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -30,8 +31,11 @@ export default function RegionalExpansionDashboard() {
   const [claimReference, setClaimReference] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddEntryMemo, setShowAddEntryMemo] = useState(false)
+  const [savingEntryMemo, setSavingEntryMemo] = useState(false)
 
-  useEffect(() => {
+  const fetchAll = () => {
+    setLoading(true)
     Promise.all([
       regionalExpansion.kpis(),
       regionalExpansion.jurisdictions(),
@@ -44,7 +48,20 @@ export default function RegionalExpansionDashboard() {
       setClaimReference(cr)
       setLoading(false)
     }).catch(() => setLoading(false))
-  }, [])
+  }
+
+  useEffect(() => { fetchAll() }, [])
+
+  const handleAddEntryMemo = async (data: Record<string, any>) => {
+    setSavingEntryMemo(true)
+    try {
+      const res = await regionalExpansion.entryMemosCreate(data)
+      if (!res.ok) throw new Error('Failed to create entry memo')
+      await fetchAll()
+    } finally {
+      setSavingEntryMemo(false)
+    }
+  }
 
   if (loading) return <div className="loading">Loading Regional Expansion Dashboard...</div>
 
@@ -100,7 +117,12 @@ export default function RegionalExpansionDashboard() {
 
         {entryMemos && entryMemos.length > 0 && (
           <div className="chart-container">
-            <div className="chart-title">Market Entry Memos ({entryMemos.length})</div>
+            <div className="chart-title">
+              Market Entry Memos ({entryMemos.length})
+              <div style={{ float: 'right' }}>
+                <ActionBar onAdd={() => setShowAddEntryMemo(true)} addLabel="Add Entry Memo" />
+              </div>
+            </div>
             {entryMemos.map((m: any) => (
               <div key={m.id} style={{ background: 'var(--surface2)', borderRadius: 'var(--radius)', padding: '10px 14px', marginBottom: 6 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -127,6 +149,25 @@ export default function RegionalExpansionDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddEntryMemo && (
+        <AddModal
+          title="Add Entry Memo"
+          fields={[
+            { key: 'title', label: 'Title', required: true, placeholder: 'e.g. UAE Market Entry Assessment' },
+            { key: 'jurisdiction', label: 'Jurisdiction', placeholder: 'e.g. UAE, Saudi Arabia' },
+            { key: 'recommendation', label: 'Recommendation', type: 'textarea', required: true, placeholder: 'Market entry recommendation...' },
+            { key: 'status', label: 'Status', type: 'select', options: [
+              { label: 'Draft', value: 'draft' },
+              { label: 'Reviewed', value: 'reviewed' },
+              { label: 'Approved', value: 'approved' },
+            ]},
+          ]}
+          onSave={handleAddEntryMemo}
+          onClose={() => setShowAddEntryMemo(false)}
+          saving={savingEntryMemo}
+        />
       )}
     </div>
   )

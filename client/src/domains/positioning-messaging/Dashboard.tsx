@@ -31,6 +31,7 @@ export default function PositioningMessagingDashboard() {
   const [guardrails, setGuardrails] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [themeActive, setThemeActive] = useState<Record<string, boolean>>({})
 
   useEffect(() => {
     Promise.all([
@@ -45,6 +46,10 @@ export default function PositioningMessagingDashboard() {
       setThemes(t)
       setMessagingGuide(mg)
       setGuardrails(g)
+      // Initialize local active state from fetched data
+      const active: Record<string, boolean> = {}
+      if (t) t.forEach((th: any) => { active[th.id] = th.active !== false })
+      setThemeActive(active)
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
@@ -94,15 +99,44 @@ export default function PositioningMessagingDashboard() {
         {themes && themes.length > 0 && (
           <div className="chart-container">
             <div className="chart-title">Positioning Themes ({themes.length})</div>
-            {themes.map((t: any) => (
-              <div key={t.id} style={{ background: 'var(--surface2)', borderRadius: 'var(--radius)', padding: '10px 14px', marginBottom: 6 }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontWeight: 600, fontSize: '0.85rem' }}>{t.name}</span>
-                  <span className={`badge ${t.active ? 'badge-green' : 'badge-blue'}`}>{t.active ? 'Active' : 'Inactive'}</span>
+            {themes.map((t: any) => {
+              const isActive = themeActive[t.id] !== false
+              return (
+                <div key={t.id} style={{
+                  background: 'var(--surface2)',
+                  borderRadius: 'var(--radius)',
+                  padding: '10px 14px',
+                  marginBottom: 6,
+                  opacity: isActive ? 1 : 0.5,
+                  transition: 'opacity 0.2s',
+                }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ fontWeight: 600, fontSize: '0.85rem' }}>{t.name}</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span className={`badge ${isActive ? 'badge-green' : 'badge-blue'}`}>
+                        {isActive ? 'Active' : 'Inactive'}
+                      </span>
+                      <button
+                        onClick={() => setThemeActive(prev => ({ ...prev, [t.id]: !prev[t.id] }))}
+                        style={{
+                          padding: '3px 10px',
+                          borderRadius: 'var(--radius)',
+                          border: '1px solid var(--border)',
+                          background: isActive ? 'rgba(244,67,54,0.1)' : 'rgba(0,200,83,0.1)',
+                          color: isActive ? 'var(--red)' : 'var(--green)',
+                          cursor: 'pointer',
+                          fontSize: '0.72rem',
+                          fontWeight: 600,
+                        }}
+                      >
+                        {isActive ? 'Deactivate' : 'Activate'}
+                      </button>
+                    </div>
+                  </div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--text2)', marginTop: 2 }}>"{t.approvedPhrase}"</div>
                 </div>
-                <div style={{ fontSize: '0.78rem', color: 'var(--text2)', marginTop: 2 }}>"{t.approvedPhrase}"</div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         )}
       </div>

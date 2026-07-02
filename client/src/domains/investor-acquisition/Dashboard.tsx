@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, investorAcquisition } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -59,8 +60,11 @@ export default function InvestorAcquisitionDashboard() {
   const [complianceMatrix, setComplianceMatrix] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [saving, setSaving] = useState(false)
 
-  useEffect(() => {
+  const loadAll = () => {
+    setLoading(true)
     Promise.all([
       investorAcquisition.kpis(),
       investorAcquisition.funnel(),
@@ -77,7 +81,22 @@ export default function InvestorAcquisitionDashboard() {
       setComplianceMatrix(cm)
       setLoading(false)
     }).catch(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    loadAll()
   }, [])
+
+  const handleAddWaitlistEntry = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      const res = await investorAcquisition.waitlistCreate(data)
+      if (!res.ok) throw new Error('Failed to create waitlist entry')
+      await loadAll()
+    } finally {
+      setSaving(false)
+    }
+  }
 
   if (loading) return <div className="loading">Loading Investor Acquisition Dashboard...</div>
 
@@ -138,7 +157,10 @@ export default function InvestorAcquisitionDashboard() {
 
       {waitlist?.items && waitlist.items.length > 0 && (
         <div className="card">
-          <div className="card-header"><h3>Recent Waitlist Signups</h3></div>
+          <div className="card-header">
+            <h3>Recent Waitlist Signups</h3>
+            <ActionBar onAdd={() => setShowAddModal(true)} addLabel="Add Entry" />
+          </div>
           <div className="card-body no-pad">
             {waitlist.items.slice(0, 10).map((w: any) => (
               <div key={w.id} className="kpi-row">
@@ -165,6 +187,30 @@ export default function InvestorAcquisitionDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddModal && (
+        <AddModal
+          title="Add Waitlist Entry"
+          fields={[
+            { key: 'email', label: 'Email', type: 'text', required: true, placeholder: 'e.g. investor@example.com' },
+            { key: 'segment', label: 'Segment', type: 'select', options: [
+              { label: 'HNI', value: 'hni' },
+              { label: 'Family Office', value: 'family-office' },
+              { label: 'Institutional', value: 'institutional' },
+              { label: 'Retail', value: 'retail' },
+            ]},
+            { key: 'sourceChannel', label: 'Source Channel', placeholder: 'e.g. website, referral, event' },
+            { key: 'kycStatus', label: 'KYC Status', type: 'select', options: [
+              { label: 'Pending', value: 'pending' },
+              { label: 'Active', value: 'active' },
+              { label: 'Completed', value: 'completed' },
+            ]},
+          ]}
+          onSave={handleAddWaitlistEntry}
+          onClose={() => setShowAddModal(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

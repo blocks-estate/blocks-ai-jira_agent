@@ -1,6 +1,31 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { fetchJSON, prEvents } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar } from '../../domains/common/InteractiveComponents'
+
+const mentionFields = [
+  { key: 'title', label: 'Title', required: true, placeholder: 'Article or mention title' },
+  { key: 'outlet', label: 'Outlet', required: true, placeholder: 'e.g. Bloomberg, TechCrunch' },
+  { key: 'sentiment', label: 'Sentiment', type: 'select' as const, options: [
+    { label: 'Positive', value: 'positive' },
+    { label: 'Neutral', value: 'neutral' },
+    { label: 'Negative', value: 'negative' },
+  ]},
+  { key: 'source', label: 'Source', placeholder: 'URL or publication name' },
+]
+
+const eventFields = [
+  { key: 'name', label: 'Event Name', required: true },
+  { key: 'eventType', label: 'Event Type', type: 'select' as const, options: [
+    { label: 'Conference', value: 'conference' },
+    { label: 'Roundtable', value: 'roundtable' },
+    { label: 'Webinar', value: 'webinar' },
+    { label: 'Breakfast Session', value: 'breakfast-session' },
+    { label: 'Other', value: 'other' },
+  ]},
+  { key: 'date', label: 'Date', type: 'text' as const, placeholder: 'e.g. 2026-07-15' },
+  { key: 'location', label: 'Location', placeholder: 'City or venue' },
+]
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -31,7 +56,12 @@ export default function PrEventsDashboard() {
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
+  const [showAddMention, setShowAddMention] = useState(false)
+  const [showAddEvent, setShowAddEvent] = useState(false)
+  const [saving, setSaving] = useState(false)
+
+  const fetchData = useCallback(() => {
+    setLoading(true)
     Promise.all([
       prEvents.kpis(),
       prEvents.mentions(),
@@ -45,6 +75,32 @@ export default function PrEventsDashboard() {
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
+
+  const handleAddMention = async (data: Record<string, any>) => {
+    setSaving(true)
+    await fetch('/api/pr-events/mentions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setSaving(false)
+    fetchData()
+  }
+
+  const handleAddEvent = async (data: Record<string, any>) => {
+    setSaving(true)
+    await fetch('/api/pr-events/events', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setSaving(false)
+    fetchData()
+  }
 
   if (loading) return <div className="loading">Loading PR & Events Dashboard...</div>
 
@@ -74,7 +130,10 @@ export default function PrEventsDashboard() {
       <div className="dash-grid">
         {mentions?.items && mentions.items.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Media Mentions ({mentions.totalItems})</h3></div>
+            <div className="card-header">
+              <h3>Media Mentions ({mentions.totalItems})</h3>
+              <ActionBar onAdd={() => setShowAddMention(true)} addLabel="Mention" />
+            </div>
             <div className="card-body no-pad">
               {mentions.items.map((m: any) => (
                 <div key={m.id} className="kpi-row">
@@ -90,7 +149,10 @@ export default function PrEventsDashboard() {
 
         {events && events.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Events ({events.length})</h3></div>
+            <div className="card-header">
+              <h3>Events ({events.length})</h3>
+              <ActionBar onAdd={() => setShowAddEvent(true)} addLabel="Event" />
+            </div>
             <div className="card-body no-pad">
               {events.map((e: any) => (
                 <div key={e.id} className="kpi-row">
@@ -118,6 +180,26 @@ export default function PrEventsDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddMention && (
+        <AddModal
+          title="Add Media Mention"
+          fields={mentionFields}
+          onSave={handleAddMention}
+          onClose={() => setShowAddMention(false)}
+          saving={saving}
+        />
+      )}
+
+      {showAddEvent && (
+        <AddModal
+          title="Add Event"
+          fields={eventFields}
+          onSave={handleAddEvent}
+          onClose={() => setShowAddEvent(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

@@ -23,6 +23,30 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+function GovernanceRuleRow({ rule }: { rule: any }) {
+  const [expanded, setExpanded] = useState(false)
+
+  return (
+    <div>
+      <div className="kpi-row" style={{ cursor: 'pointer' }} onClick={() => setExpanded(!expanded)}>
+        <span style={{ fontSize: '0.8rem', color: 'var(--text2)', width: 20, userSelect: 'none' }}>
+          {expanded ? '▼' : '▶'}
+        </span>
+        <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{rule.topic}</span>
+        <span className={`badge ${rule.dataClassification === 'public' ? 'badge-green' : rule.dataClassification === 'internal' ? 'badge-blue' : rule.dataClassification === 'confidential' ? 'badge-amber' : 'badge-red'}`}>{rule.dataClassification}</span>
+        <span className="kpi-target">{rule.owner}</span>
+      </div>
+      {expanded && (
+        <div style={{ background: 'var(--surface2)', padding: '10px 14px 10px 40px', margin: '0 0 2px', fontSize: '0.78rem', color: 'var(--text2)' }}>
+          <div style={{ marginBottom: 4 }}><strong>Rule:</strong> {rule.rule || rule.description || '-'}</div>
+          {rule.effectiveDate && <div style={{ marginBottom: 4 }}><strong>Effective:</strong> {rule.effectiveDate}</div>}
+          {rule.reviewDate && <div><strong>Next Review:</strong> {rule.reviewDate}</div>}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function ProductPlatformDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [apiUsage, setApiUsage] = useState<any>(null)
@@ -137,11 +161,7 @@ export default function ProductPlatformDashboard() {
           <div className="card-header"><h3>Governance Rules ({governanceMatrix.length})</h3></div>
           <div className="card-body no-pad">
             {governanceMatrix.map((rule: any) => (
-              <div key={rule.id} className="kpi-row">
-                <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{rule.topic}</span>
-                <span className={`badge ${rule.dataClassification === 'public' ? 'badge-green' : rule.dataClassification === 'internal' ? 'badge-blue' : rule.dataClassification === 'confidential' ? 'badge-amber' : 'badge-red'}`}>{rule.dataClassification}</span>
-                <span className="kpi-target">{rule.owner}</span>
-              </div>
+              <GovernanceRuleRow key={rule.id} rule={rule} />
             ))}
           </div>
         </div>

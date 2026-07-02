@@ -1,6 +1,20 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { fetchJSON, paidMedia } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, DeleteConfirm } from '../../domains/common/InteractiveComponents'
+
+const avoidListFields = [
+  { key: 'phrase', label: 'Phrase', required: true, placeholder: 'e.g. misleading term or brand name' },
+  { key: 'platform', label: 'Platform', type: 'select' as const, options: [
+    { label: 'Google Ads', value: 'google-ads' },
+    { label: 'Meta', value: 'meta' },
+    { label: 'LinkedIn', value: 'linkedin' },
+    { label: 'TikTok', value: 'tiktok' },
+    { label: 'Snapchat', value: 'snapchat' },
+    { label: 'All', value: 'all' },
+  ]},
+  { key: 'riskRationale', label: 'Risk Rationale', type: 'textarea' as const, placeholder: 'Why this phrase should be avoided' },
+]
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -31,7 +45,12 @@ export default function PaidMediaDashboard() {
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
+  const [showAddAvoid, setShowAddAvoid] = useState(false)
+  const [deleteTarget, setDeleteTarget] = useState<any>(null)
+  const [saving, setSaving] = useState(false)
+
+  const fetchData = useCallback(() => {
+    setLoading(true)
     Promise.all([
       paidMedia.kpis(),
       paidMedia.creativeLibrary(),
@@ -45,6 +64,28 @@ export default function PaidMediaDashboard() {
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
+
+  const handleAddAvoid = async (data: Record<string, any>) => {
+    setSaving(true)
+    await fetch('/api/paid-media/avoid-list', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setSaving(false)
+    fetchData()
+  }
+
+  const handleDelete = async () => {
+    if (!deleteTarget) return
+    await fetch(`/api/paid-media/avoid-list/${deleteTarget.id}`, { method: 'DELETE' })
+    setDeleteTarget(null)
+    fetchData()
+  }
 
   if (loading) return <div className="loading">Loading Paid Media Dashboard...</div>
 
@@ -90,13 +131,25 @@ export default function PaidMediaDashboard() {
 
         {avoidList && avoidList.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Paid Media Avoid List ({avoidList.length})</h3></div>
+            <div className="card-header">
+              <h3>Paid Media Avoid List ({avoidList.length})</h3>
+              <ActionBar onAdd={() => setShowAddAvoid(true)} addLabel="Entry" />
+            </div>
             <div className="card-body no-pad">
               {avoidList.map((a: any) => (
                 <div key={a.id} className="kpi-row">
                   <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{a.phrase}</span>
                   <span className="kpi-val" style={{ fontSize: '0.72rem', fontWeight: 400, minWidth: 60 }}>{a.platform}</span>
                   <span className="kpi-target" style={{ fontSize: '0.72rem' }}>{a.riskRationale}</span>
+                  <button
+                    onClick={() => setDeleteTarget(a)}
+                    style={{
+                      background: 'none', border: 'none', color: 'var(--red)',
+                      cursor: 'pointer', fontSize: '0.72rem', padding: '2px 6px',
+                      marginLeft: 6, opacity: 0.7,
+                    }}
+                    title="Remove avoid list entry"
+                  >✕</button>
                 </div>
               ))}
             </div>
@@ -118,6 +171,25 @@ export default function PaidMediaDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddAvoid && (
+        <AddModal
+          title="Add Avoid List Entry"
+          fields={avoidListFields}
+          onSave={handleAddAvoid}
+          onClose={() => setShowAddAvoid(false)}
+          saving={saving}
+        />
+      )}
+
+      {deleteTarget && (
+        <DeleteConfirm
+          title="Remove Avoid List Entry"
+          message={`Are you sure you want to remove "${deleteTarget.phrase}" from the avoid list? This action cannot be undone.`}
+          onConfirm={handleDelete}
+          onClose={() => setDeleteTarget(null)}
+        />
       )}
     </div>
   )

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, riskManagement } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -28,6 +29,13 @@ function SeverityBadge({ severity }: { severity: string }) {
   return <span className={`badge ${cls}`}>{severity}</span>
 }
 
+const mitigationStatusOptions = [
+  { label: 'Active', value: 'active', color: 'var(--amber)' },
+  { label: 'In Progress', value: 'in-progress', color: 'var(--blue)' },
+  { label: 'Completed', value: 'completed', color: 'var(--green)' },
+  { label: 'Deferred', value: 'deferred', color: 'var(--text2)' },
+]
+
 export default function RiskManagementDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [mitigationRegister, setMitigationRegister] = useState<any>(null)
@@ -38,8 +46,14 @@ export default function RiskManagementDashboard() {
   const [faq, setFaq] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddMitigation, setShowAddMitigation] = useState(false)
+  const [savingMitigation, setSavingMitigation] = useState(false)
+  const [showAddFaq, setShowAddFaq] = useState(false)
+  const [savingFaq, setSavingFaq] = useState(false)
+  const [mitigationStatusSaving, setMitigationStatusSaving] = useState<string | null>(null)
 
-  useEffect(() => {
+  const fetchAll = () => {
+    setLoading(true)
     Promise.all([
       riskManagement.kpis(),
       riskManagement.mitigationRegister(),
@@ -58,7 +72,42 @@ export default function RiskManagementDashboard() {
       setFaq(f)
       setLoading(false)
     }).catch(() => setLoading(false))
-  }, [])
+  }
+
+  useEffect(() => { fetchAll() }, [])
+
+  const handleAddMitigation = async (data: Record<string, any>) => {
+    setSavingMitigation(true)
+    try {
+      const res = await riskManagement.mitigationRegisterCreate(data)
+      if (!res.ok) throw new Error('Failed to create mitigation entry')
+      await fetchAll()
+    } finally {
+      setSavingMitigation(false)
+    }
+  }
+
+  const handleUpdateMitigationStatus = async (id: string, newStatus: string) => {
+    setMitigationStatusSaving(id)
+    try {
+      const res = await riskManagement.mitigationRegisterUpdate(id, { status: newStatus })
+      if (!res.ok) throw new Error('Failed to update status')
+      await fetchAll()
+    } finally {
+      setMitigationStatusSaving(null)
+    }
+  }
+
+  const handleAddFaq = async (data: Record<string, any>) => {
+    setSavingFaq(true)
+    try {
+      const res = await riskManagement.faqCreate(data)
+      if (!res.ok) throw new Error('Failed to create FAQ entry')
+      await fetchAll()
+    } finally {
+      setSavingFaq(false)
+    }
+  }
 
   if (loading) return <div className="loading">Loading Risk Management Dashboard...</div>
 
@@ -110,14 +159,23 @@ export default function RiskManagementDashboard() {
       <div className="dash-grid">
         {mitigationRegister && mitigationRegister.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Risk Mitigation Register ({mitigationRegister.length})</h3></div>
+            <div className="card-header">
+              <h3>Risk Mitigation Register ({mitigationRegister.length})</h3>
+              <ActionBar onAdd={() => setShowAddMitigation(true)} addLabel="Add Mitigation" />
+            </div>
             <div className="card-body no-pad">
               {mitigationRegister.map((r: any) => (
                 <div key={r.id} className="kpi-row" style={{ flexWrap: 'wrap' }}>
                   <span className="kpi-name" style={{ fontSize: '0.78rem' }}>{r.riskName}</span>
                   <SeverityBadge severity={r.severity} />
                   <span style={{ fontSize: '0.72rem', color: 'var(--text2)', minWidth: 60 }}>{r.likelihood}</span>
-                  <span className={`badge ${r.status === 'active' ? 'badge-amber' : r.status === 'completed' ? 'badge-green' : 'badge-blue'}`}>{r.status}</span>
+                  <InlineStatusSelect
+                    value={r.status}
+                    options={mitigationStatusOptions}
+                    onChange={(newStatus) => handleUpdateMitigationStatus(r.id, newStatus)}
+                    entityId={r.id}
+                    domainLabel="mitigation"
+                  />
                 </div>
               ))}
             </div>
@@ -172,19 +230,66 @@ export default function RiskManagementDashboard() {
         )}
       </div>
 
-      {faq && faq.length > 0 && (
-        <div className="card">
-          <div className="card-header"><h3>Risk FAQ ({faq.length})</h3></div>
-          <div className="card-body no-pad">
-            {faq.map((f: any) => (
-              <div key={f.id} className="kpi-row" style={{ flexWrap: 'wrap' }}>
-                <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{f.question}</span>
-                <span style={{ fontSize: '0.72rem', color: 'var(--text2)', minWidth: 70 }}>{f.audience}</span>
-                <span className={`badge ${f.status === 'approved' ? 'badge-green' : f.status === 'draft' ? 'badge-amber' : 'badge-blue'}`}>{f.status}</span>
-              </div>
-            ))}
-          </div>
+      <div className="card">
+        <div className="card-header">
+          <h3>Risk FAQ ({faq?.length || 0})</h3>
+          <ActionBar onAdd={() => setShowAddFaq(true)} addLabel="Add FAQ" />
         </div>
+        <div className="card-body no-pad">
+          {faq && faq.length > 0 ? faq.map((f: any) => (
+            <div key={f.id} className="kpi-row" style={{ flexWrap: 'wrap' }}>
+              <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{f.question}</span>
+              <span style={{ fontSize: '0.72rem', color: 'var(--text2)', minWidth: 70 }}>{f.audience}</span>
+              <span className={`badge ${f.status === 'approved' ? 'badge-green' : f.status === 'draft' ? 'badge-amber' : 'badge-blue'}`}>{f.status}</span>
+            </div>
+          )) : (
+            <div style={{ padding: '16px', textAlign: 'center', color: 'var(--text2)', fontSize: '0.82rem' }}>No FAQ entries yet. Click "+ Add FAQ" to create one.</div>
+          )}
+        </div>
+      </div>
+
+      {showAddMitigation && (
+        <AddModal
+          title="Add Mitigation Entry"
+          fields={[
+            { key: 'riskName', label: 'Risk Name', required: true, placeholder: 'e.g. Currency fluctuation risk' },
+            { key: 'status', label: 'Status', type: 'select', required: true, options: [
+              { label: 'Active', value: 'active' },
+              { label: 'In Progress', value: 'in-progress' },
+              { label: 'Completed', value: 'completed' },
+              { label: 'Deferred', value: 'deferred' },
+            ]},
+            { key: 'owner', label: 'Owner', required: true, placeholder: 'e.g. John Smith' },
+            { key: 'severity', label: 'Severity', type: 'select', required: true, options: [
+              { label: 'Critical', value: 'critical' },
+              { label: 'High', value: 'high' },
+              { label: 'Medium', value: 'medium' },
+              { label: 'Low', value: 'low' },
+            ]},
+            { key: 'mitigation', label: 'Mitigation Plan', type: 'textarea', required: true, placeholder: 'Describe the mitigation approach...' },
+          ]}
+          onSave={handleAddMitigation}
+          onClose={() => setShowAddMitigation(false)}
+          saving={savingMitigation}
+        />
+      )}
+
+      {showAddFaq && (
+        <AddModal
+          title="Add FAQ Entry"
+          fields={[
+            { key: 'question', label: 'Question', required: true, placeholder: 'e.g. What happens if a trigger is breached?' },
+            { key: 'answer', label: 'Answer', type: 'textarea', required: true, placeholder: 'Provide the answer...' },
+            { key: 'audience', label: 'Audience', placeholder: 'e.g. All teams' },
+            { key: 'status', label: 'Status', type: 'select', options: [
+              { label: 'Draft', value: 'draft' },
+              { label: 'Approved', value: 'approved' },
+            ]},
+          ]}
+          onSave={handleAddFaq}
+          onClose={() => setShowAddFaq(false)}
+          saving={savingFaq}
+        />
       )}
     </div>
   )

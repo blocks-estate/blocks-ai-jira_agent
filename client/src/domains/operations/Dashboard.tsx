@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, operations } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -23,6 +24,12 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+const vendorStatusOptions = [
+  { label: 'Active', value: 'active', color: 'var(--green)' },
+  { label: 'Pending', value: 'pending', color: 'var(--amber)' },
+  { label: 'Inactive', value: 'inactive', color: 'var(--blue)' },
+]
+
 export default function OperationsDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [vendorRegistry, setVendorRegistry] = useState<any>(null)
@@ -31,6 +38,10 @@ export default function OperationsDashboard() {
   const [budgetModel, setBudgetModel] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showVendorModal, setShowVendorModal] = useState(false)
+  const [showEscalationModal, setShowEscalationModal] = useState(false)
+  const [saving, setSaving] = useState(false)
+  const [vendorStatuses, setVendorStatuses] = useState<Record<string, string>>({})
 
   useEffect(() => {
     Promise.all([
@@ -45,9 +56,49 @@ export default function OperationsDashboard() {
       setOnboardingWorkflow(ow)
       setEscalationRules(er)
       setBudgetModel(bm)
+      const vs: Record<string, string> = {}
+      vr?.forEach((v: any) => { vs[v.id] = v.status })
+      setVendorStatuses(vs)
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  const refetchVendors = () => {
+    operations.vendorRegistry().then(vr => {
+      setVendorRegistry(vr)
+      const vs: Record<string, string> = {}
+      vr?.forEach((v: any) => { vs[v.id] = v.status })
+      setVendorStatuses(vs)
+    })
+  }
+
+  const refetchEscalationRules = () => {
+    operations.escalationRules().then(setEscalationRules)
+  }
+
+  const handleAddVendor = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      await operations.vendorRegistryCreate(data)
+      refetchVendors()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleAddEscalationRule = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      await operations.escalationRulesCreate(data)
+      refetchEscalationRules()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleVendorStatusChange = async (vendorId: string, newStatus: string) => {
+    setVendorStatuses(prev => ({ ...prev, [vendorId]: newStatus }))
+  }
 
   if (loading) return <div className="loading">Loading Operations Dashboard...</div>
 
@@ -117,13 +168,22 @@ export default function OperationsDashboard() {
       <div className="dash-grid">
         {vendorRegistry && vendorRegistry.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Vendor Registry ({vendorRegistry.length})</h3></div>
+            <div className="card-header">
+              <h3>Vendor Registry ({vendorRegistry.length})</h3>
+              <ActionBar onAdd={() => setShowVendorModal(true)} addLabel="Add Vendor" />
+            </div>
             <div className="card-body no-pad">
               {vendorRegistry.map((v: any) => (
                 <div key={v.id} className="kpi-row">
                   <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{v.legalName}</span>
                   <span className="kpi-val" style={{ fontSize: '0.72rem', fontWeight: 400, minWidth: 60 }}>{v.vendorType}</span>
-                  <span className={`badge ${v.status === 'active' ? 'badge-green' : v.status === 'pending' ? 'badge-amber' : 'badge-blue'}`}>{v.status}</span>
+                  <InlineStatusSelect
+                    value={vendorStatuses[v.id] || v.status}
+                    options={vendorStatusOptions}
+                    onChange={(newStatus) => handleVendorStatusChange(v.id, newStatus)}
+                    entityId={v.id}
+                    domainLabel="vendor"
+                  />
                   <span className="kpi-target">{v.owner}</span>
                 </div>
               ))}
@@ -133,7 +193,10 @@ export default function OperationsDashboard() {
 
         {escalationRules && escalationRules.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Escalation Rules ({escalationRules.length})</h3></div>
+            <div className="card-header">
+              <h3>Escalation Rules ({escalationRules.length})</h3>
+              <ActionBar onAdd={() => setShowEscalationModal(true)} addLabel="Add Rule" />
+            </div>
             <div className="card-body no-pad">
               {escalationRules.map((rule: any) => (
                 <div key={rule.id} className="kpi-row">
@@ -175,6 +238,51 @@ export default function OperationsDashboard() {
             </ul>
           </div>
         </div>
+      )}
+
+      {showVendorModal && (
+        <AddModal
+          title="Register Vendor"
+          fields={[
+            { key: 'legalName', label: 'Legal Name', type: 'text', required: true },
+            { key: 'vendorType', label: 'Vendor Type', type: 'select', required: true, options: [
+              { label: 'Technology', value: 'technology' },
+              { label: 'Marketing', value: 'marketing' },
+              { label: 'Consulting', value: 'consulting' },
+              { label: 'Legal', value: 'legal' },
+              { label: 'Compliance', value: 'compliance' },
+              { label: 'Other', value: 'other' },
+            ]},
+            { key: 'owner', label: 'Owner', type: 'text', required: true, placeholder: 'e.g. john@example.com' },
+            { key: 'status', label: 'Status', type: 'select', options: [
+              { label: 'Pending', value: 'pending' },
+              { label: 'Active', value: 'active' },
+              { label: 'Inactive', value: 'inactive' },
+            ]},
+          ]}
+          onSave={handleAddVendor}
+          onClose={() => setShowVendorModal(false)}
+          saving={saving}
+        />
+      )}
+
+      {showEscalationModal && (
+        <AddModal
+          title="Add Escalation Rule"
+          fields={[
+            { key: 'category', label: 'Category', type: 'text', required: true, placeholder: 'e.g. Compliance, Technical' },
+            { key: 'condition', label: 'Condition', type: 'text', required: true, placeholder: 'e.g. SLA breach > 4h' },
+            { key: 'decisionOwner', label: 'Decision Owner', type: 'text', required: true, placeholder: 'e.g. alice@example.com' },
+            { key: 'escalationLevel', label: 'Escalation Level', type: 'select', options: [
+              { label: 'Level 1', value: 'level-1' },
+              { label: 'Level 2', value: 'level-2' },
+              { label: 'Level 3', value: 'level-3' },
+            ]},
+          ]}
+          onSave={handleAddEscalationRule}
+          onClose={() => setShowEscalationModal(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

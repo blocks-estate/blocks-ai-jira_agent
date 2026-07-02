@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, complianceTrust } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -23,6 +24,12 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+const claimCategoryOptions = [
+  { label: 'Approved', value: 'approved', color: 'var(--green)' },
+  { label: 'Conditional', value: 'conditional', color: 'var(--amber)' },
+  { label: 'Prohibited', value: 'prohibited', color: 'var(--red)' },
+]
+
 export default function ComplianceTrustDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [avoidList, setAvoidList] = useState<any>(null)
@@ -31,8 +38,11 @@ export default function ComplianceTrustDashboard() {
   const [riskLanguage, setRiskLanguage] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [saving, setSaving] = useState(false)
 
-  useEffect(() => {
+  const loadAll = () => {
+    setLoading(true)
     Promise.all([
       complianceTrust.kpis(),
       complianceTrust.avoidList(),
@@ -47,7 +57,28 @@ export default function ComplianceTrustDashboard() {
       setRiskLanguage(rl)
       setLoading(false)
     }).catch(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    loadAll()
   }, [])
+
+  const handleAddClaimEntry = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      const res = await complianceTrust.claimMatrixCreate(data)
+      if (!res.ok) throw new Error('Failed to create claim matrix entry')
+      await loadAll()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleStatusChange = async (id: string, newStatus: string) => {
+    const res = await complianceTrust.claimMatrixUpdate(id, { category: newStatus })
+    if (!res.ok) throw new Error('Failed to update claim matrix entry')
+    await loadAll()
+  }
 
   if (loading) return <div className="loading">Loading Compliance & Trust Dashboard...</div>
 
@@ -102,13 +133,24 @@ export default function ComplianceTrustDashboard() {
 
         {claimMatrix && claimMatrix.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Claim Matrix ({claimMatrix.length})</h3></div>
+            <div className="card-header">
+              <h3>Claim Matrix ({claimMatrix.length})</h3>
+              <ActionBar onAdd={() => setShowAddModal(true)} addLabel="Add Entry" />
+            </div>
             <div className="card-body no-pad">
               {claimMatrix.map((c: any) => (
                 <div key={c.id} className="kpi-row" style={{ flexWrap: 'wrap' }}>
                   <span className="kpi-name" style={{ fontSize: '0.78rem' }}>{c.claim}</span>
-                  <span className={`badge ${c.category === 'approved' ? 'badge-green' : c.category === 'conditional' ? 'badge-amber' : c.category === 'prohibited' ? 'badge-red' : 'badge-blue'}`}>{c.category}</span>
-                  <span className="kpi-target" style={{ fontSize: '0.72rem' }}>{c.approvalStatus}</span>
+                  <span className="kpi-target" style={{ fontSize: '0.72rem' }}>
+                    <InlineStatusSelect
+                      value={c.category}
+                      options={claimCategoryOptions}
+                      onChange={(v) => handleStatusChange(c.id, v)}
+                      entityId={c.id}
+                      domainLabel="claim"
+                    />
+                  </span>
+                  <span className="kpi-target" style={{ fontSize: '0.72rem', marginLeft: 8 }}>{c.approvalStatus}</span>
                 </div>
               ))}
             </div>
@@ -149,6 +191,33 @@ export default function ComplianceTrustDashboard() {
             </div>
           </div>
         </div>
+      )}
+
+      {showAddModal && (
+        <AddModal
+          title="Add Claim Matrix Entry"
+          fields={[
+            { key: 'claim', label: 'Claim', required: true, placeholder: 'e.g. "Top 10 real estate platform in UAE"' },
+            { key: 'category', label: 'Category', type: 'select', required: true, options: [
+              { label: 'Approved', value: 'approved' },
+              { label: 'Conditional', value: 'conditional' },
+              { label: 'Prohibited', value: 'prohibited' },
+            ]},
+            { key: 'riskLevel', label: 'Risk Level', type: 'select', options: [
+              { label: 'Low', value: 'low' },
+              { label: 'Medium', value: 'medium' },
+              { label: 'High', value: 'high' },
+            ]},
+            { key: 'approvalStatus', label: 'Approval Status', type: 'select', options: [
+              { label: 'Pending', value: 'pending' },
+              { label: 'Approved', value: 'approved' },
+              { label: 'Rejected', value: 'rejected' },
+            ]},
+          ]}
+          onSave={handleAddClaimEntry}
+          onClose={() => setShowAddModal(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

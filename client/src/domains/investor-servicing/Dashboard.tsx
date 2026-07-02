@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, investorServicing } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -23,6 +24,13 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+const ticketStatusOptions = [
+  { label: 'Open', value: 'open', color: 'var(--blue)' },
+  { label: 'In Progress', value: 'in-progress', color: 'var(--amber)' },
+  { label: 'Resolved', value: 'resolved', color: 'var(--green)' },
+  { label: 'Closed', value: 'closed', color: 'var(--text2)' },
+]
+
 export default function InvestorServicingDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [dashData, setDashData] = useState<any>(null)
@@ -31,8 +39,11 @@ export default function InvestorServicingDashboard() {
   const [gateReview, setGateReview] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [saving, setSaving] = useState(false)
 
-  useEffect(() => {
+  const loadAll = () => {
+    setLoading(true)
     Promise.all([
       investorServicing.kpis(),
       investorServicing.dashboard(),
@@ -47,7 +58,28 @@ export default function InvestorServicingDashboard() {
       setGateReview(g)
       setLoading(false)
     }).catch(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    loadAll()
   }, [])
+
+  const handleAddTicket = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      const res = await investorServicing.supportTicketsCreate(data)
+      if (!res.ok) throw new Error('Failed to create ticket')
+      await loadAll()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleStatusChange = async (id: string, newStatus: string) => {
+    const res = await investorServicing.supportTicketsUpdate(id, { status: newStatus })
+    if (!res.ok) throw new Error('Failed to update ticket status')
+    await loadAll()
+  }
 
   if (loading) return <div className="loading">Loading Investor Servicing Dashboard...</div>
 
@@ -102,14 +134,25 @@ export default function InvestorServicingDashboard() {
       <div className="dash-grid">
         {tickets?.items && tickets.items.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>Support Tickets ({tickets.totalItems})</h3></div>
+            <div className="card-header">
+              <h3>Support Tickets ({tickets.totalItems})</h3>
+              <ActionBar onAdd={() => setShowAddModal(true)} addLabel="Add Ticket" />
+            </div>
             <div className="card-body no-pad">
               {tickets.items.slice(0, 8).map((t: any) => (
                 <div key={t.id} className="kpi-row" style={{ cursor: 'pointer' }}>
                   <span className={`badge ${t.priority === 'critical' ? 'badge-red' : t.priority === 'high' ? 'badge-amber' : 'badge-blue'}`}>{t.priority}</span>
                   <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{t.subject}</span>
                   <span className="kpi-val" style={{ fontSize: '0.75rem', fontWeight: 400, minWidth: 80 }}>{t.category}</span>
-                  <span className="kpi-target">{t.status}</span>
+                  <span className="kpi-target">
+                    <InlineStatusSelect
+                      value={t.status}
+                      options={ticketStatusOptions}
+                      onChange={(v) => handleStatusChange(t.id, v)}
+                      entityId={t.id}
+                      domainLabel="ticket"
+                    />
+                  </span>
                 </div>
               ))}
             </div>
@@ -156,6 +199,32 @@ export default function InvestorServicingDashboard() {
             )}
           </div>
         </div>
+      )}
+
+      {showAddModal && (
+        <AddModal
+          title="Add Support Ticket"
+          fields={[
+            { key: 'subject', label: 'Subject', required: true, placeholder: 'e.g. KYC document upload failed' },
+            { key: 'priority', label: 'Priority', type: 'select', required: true, options: [
+              { label: 'Low', value: 'low' },
+              { label: 'Medium', value: 'medium' },
+              { label: 'High', value: 'high' },
+              { label: 'Critical', value: 'critical' },
+            ]},
+            { key: 'category', label: 'Category', type: 'select', options: [
+              { label: 'KYC', value: 'kyc' },
+              { label: 'Onboarding', value: 'onboarding' },
+              { label: 'Technical', value: 'technical' },
+              { label: 'Billing', value: 'billing' },
+              { label: 'General', value: 'general' },
+            ]},
+            { key: 'description', label: 'Description', type: 'textarea', placeholder: 'Describe the issue...' },
+          ]}
+          onSave={handleAddTicket}
+          onClose={() => setShowAddModal(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

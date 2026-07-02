@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { fetchJSON, contentSeo } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -23,6 +24,14 @@ function KpiCard({ metric }: { metric: KpiMetric }) {
   )
 }
 
+const contentAssetStatusOptions = [
+  { label: 'Draft', value: 'draft', color: 'var(--blue)' },
+  { label: 'In Review', value: 'in-review', color: 'var(--amber)' },
+  { label: 'Approved', value: 'approved', color: 'var(--green)' },
+  { label: 'Published', value: 'published', color: 'var(--text2)' },
+  { label: 'Archived', value: 'archived', color: 'var(--red)' },
+]
+
 export default function ContentSeoDashboard() {
   const [kpis, setKpis] = useState<any>(null)
   const [performance, setPerformance] = useState<any>(null)
@@ -33,8 +42,11 @@ export default function ContentSeoDashboard() {
   const [localizationQueue, setLocalizationQueue] = useState<any>(null)
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [saving, setSaving] = useState(false)
 
-  useEffect(() => {
+  const loadAll = () => {
+    setLoading(true)
     Promise.all([
       contentSeo.kpis(),
       contentSeo.performance(),
@@ -53,7 +65,28 @@ export default function ContentSeoDashboard() {
       setLocalizationQueue(lq)
       setLoading(false)
     }).catch(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    loadAll()
   }, [])
+
+  const handleAddAsset = async (data: Record<string, any>) => {
+    setSaving(true)
+    try {
+      const res = await contentSeo.assetsCreate(data)
+      if (!res.ok) throw new Error('Failed to create asset')
+      await loadAll()
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const handleStatusChange = async (id: string, newStatus: string) => {
+    const res = await contentSeo.assetsUpdate(id, { status: newStatus })
+    if (!res.ok) throw new Error('Failed to update asset status')
+    await loadAll()
+  }
 
   if (loading) return <div className="loading">Loading Content & SEO Dashboard...</div>
 
@@ -139,6 +172,32 @@ export default function ContentSeoDashboard() {
         )}
       </div>
 
+      {assets && assets.totalItems > 0 && (
+        <div className="card">
+          <div className="card-header">
+            <h3>Content Assets ({assets.totalItems})</h3>
+            <ActionBar onAdd={() => setShowAddModal(true)} addLabel="Add Asset" />
+          </div>
+          <div className="card-body no-pad">
+            {assets.items?.map((a: any) => (
+              <div key={a.id} className="kpi-row" style={{ flexWrap: 'wrap' }}>
+                <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{a.title || a.name}</span>
+                <span className="kpi-val" style={{ fontSize: '0.75rem', fontWeight: 400, minWidth: 80 }}>{a.type || a.assetType}</span>
+                <span className="kpi-target">
+                  <InlineStatusSelect
+                    value={a.status}
+                    options={contentAssetStatusOptions}
+                    onChange={(v) => handleStatusChange(a.id, v)}
+                    entityId={a.id}
+                    domainLabel="asset"
+                  />
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {glossary && glossary.length > 0 && (
         <div className="card">
           <div className="card-header"><h3>Bilingual Glossary ({glossary.length} entries)</h3></div>
@@ -167,6 +226,37 @@ export default function ContentSeoDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddModal && (
+        <AddModal
+          title="Add Content Asset"
+          fields={[
+            { key: 'title', label: 'Title', required: true, placeholder: 'e.g. How to Invest in Dubai Real Estate' },
+            { key: 'type', label: 'Type', type: 'select', required: true, options: [
+              { label: 'Blog Post', value: 'blog-post' },
+              { label: 'Whitepaper', value: 'whitepaper' },
+              { label: 'Case Study', value: 'case-study' },
+              { label: 'Infographic', value: 'infographic' },
+              { label: 'Video', value: 'video' },
+              { label: 'Landing Page', value: 'landing-page' },
+            ]},
+            { key: 'status', label: 'Status', type: 'select', options: [
+              { label: 'Draft', value: 'draft' },
+              { label: 'In Review', value: 'in-review' },
+              { label: 'Approved', value: 'approved' },
+              { label: 'Published', value: 'published' },
+            ]},
+            { key: 'language', label: 'Language', type: 'select', options: [
+              { label: 'English', value: 'en' },
+              { label: 'Arabic', value: 'ar' },
+              { label: 'Bilingual', value: 'bilingual' },
+            ]},
+          ]}
+          onSave={handleAddAsset}
+          onClose={() => setShowAddModal(false)}
+          saving={saving}
+        />
       )}
     </div>
   )

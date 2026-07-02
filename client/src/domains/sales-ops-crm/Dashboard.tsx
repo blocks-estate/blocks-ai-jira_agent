@@ -1,6 +1,27 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { fetchJSON, salesOpsCrm } from '../../api'
 import type { KpiMetric } from '../../api'
+import { AddModal, ActionBar, DeleteConfirm, InlineStatusSelect } from '../../domains/common/InteractiveComponents'
+
+const loiStageOptions = [
+  { label: 'Draft', value: 'draft', color: 'var(--blue)' },
+  { label: 'Negotiation', value: 'negotiation', color: 'var(--amber)' },
+  { label: 'Signed', value: 'signed', color: 'var(--green)' },
+  { label: 'Expired', value: 'expired', color: 'var(--red)' },
+  { label: 'Not Proceeding', value: 'not-proceeding', color: 'var(--red)' },
+]
+
+const loiFields = [
+  { key: 'counterpartyName', label: 'Counterparty Name', required: true },
+  { key: 'counterpartyType', label: 'Counterparty Type', type: 'select' as const, options: [
+    { label: 'Investor', value: 'investor' },
+    { label: 'Partner', value: 'partner' },
+    { label: 'Vendor', value: 'vendor' },
+    { label: 'Other', value: 'other' },
+  ]},
+  { key: 'stage', label: 'Stage', type: 'select' as const, options: loiStageOptions.map(s => ({ label: s.label, value: s.value })) },
+  { key: 'estimatedValue', label: 'Estimated Value (AED)', type: 'number' as const },
+]
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -31,7 +52,12 @@ export default function SalesOpsCrmDashboard() {
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
+  const [showAddLoi, setShowAddLoi] = useState(false)
+  const [deleteTarget, setDeleteTarget] = useState<any>(null)
+  const [saving, setSaving] = useState(false)
+
+  const fetchData = useCallback(() => {
+    setLoading(true)
     Promise.all([
       salesOpsCrm.kpis(),
       salesOpsCrm.loiTracking(),
@@ -45,6 +71,37 @@ export default function SalesOpsCrmDashboard() {
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
+
+  const handleAddLoi = async (data: Record<string, any>) => {
+    setSaving(true)
+    await fetch('/api/loi/tracking', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setSaving(false)
+    fetchData()
+  }
+
+  const handleStageChange = async (id: string, newStage: string) => {
+    await fetch(`/api/loi/tracking/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ stage: newStage }),
+    })
+    fetchData()
+  }
+
+  const handleDelete = async () => {
+    if (!deleteTarget) return
+    await fetch(`/api/loi/tracking/${deleteTarget.id}`, { method: 'DELETE' })
+    setDeleteTarget(null)
+    fetchData()
+  }
 
   if (loading) return <div className="loading">Loading Sales Ops & CRM Dashboard...</div>
 
@@ -120,14 +177,32 @@ export default function SalesOpsCrmDashboard() {
 
         {loiTracking?.items && loiTracking.items.length > 0 && (
           <div className="card">
-            <div className="card-header"><h3>LOI Records ({loiTracking.totalItems})</h3></div>
+            <div className="card-header">
+              <h3>LOI Records ({loiTracking.totalItems})</h3>
+              <ActionBar onAdd={() => setShowAddLoi(true)} addLabel="LOI Record" />
+            </div>
             <div className="card-body no-pad">
               {loiTracking.items.map((loi: any) => (
                 <div key={loi.id} className="kpi-row">
                   <span className="kpi-name" style={{ fontSize: '0.8rem' }}>{loi.counterpartyName}</span>
-                  <span className={`badge ${loi.stage === 'signed' ? 'badge-green' : loi.stage === 'expired' || loi.stage === 'not-proceeding' ? 'badge-red' : loi.stage === 'negotiation' ? 'badge-amber' : 'badge-blue'}`}>{loi.stage}</span>
+                  <InlineStatusSelect
+                    value={loi.stage}
+                    options={loiStageOptions}
+                    onChange={(v) => handleStageChange(loi.id, v)}
+                    entityId={loi.id}
+                    domainLabel="LOI"
+                  />
                   <span className="kpi-val" style={{ fontSize: '0.75rem', fontWeight: 400, minWidth: 70 }}>{loi.counterpartyType}</span>
                   <span className="kpi-target">{loi.estimatedValue ? `AED ${(loi.estimatedValue / 1000000).toFixed(0)}M` : '-'}</span>
+                  <button
+                    onClick={() => setDeleteTarget(loi)}
+                    style={{
+                      background: 'none', border: 'none', color: 'var(--red)',
+                      cursor: 'pointer', fontSize: '0.72rem', padding: '2px 6px',
+                      marginLeft: 6, opacity: 0.7,
+                    }}
+                    title="Delete LOI record"
+                  >✕</button>
                 </div>
               ))}
             </div>
@@ -148,6 +223,25 @@ export default function SalesOpsCrmDashboard() {
             ))}
           </div>
         </div>
+      )}
+
+      {showAddLoi && (
+        <AddModal
+          title="Add LOI Record"
+          fields={loiFields}
+          onSave={handleAddLoi}
+          onClose={() => setShowAddLoi(false)}
+          saving={saving}
+        />
+      )}
+
+      {deleteTarget && (
+        <DeleteConfirm
+          title="Delete LOI Record"
+          message={`Are you sure you want to delete the LOI record for "${deleteTarget.counterpartyName}"? This action cannot be undone.`}
+          onConfirm={handleDelete}
+          onClose={() => setDeleteTarget(null)}
+        />
       )}
     </div>
   )

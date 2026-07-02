@@ -1,6 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { fetchJSON, partnerships } from '../../api'
 import type { KpiMetric } from '../../api'
+import { InlineStatusSelect } from '../../domains/common/InteractiveComponents'
+
+const pipelineStageOptions = [
+  { label: 'In Discussion', value: 'in-discussion', color: 'var(--amber)' },
+  { label: 'Due Diligence', value: 'due-diligence', color: 'var(--blue)' },
+  { label: 'Negotiating', value: 'negotiating', color: 'var(--primary)' },
+  { label: 'Onboarded', value: 'onboarded', color: 'var(--green)' },
+  { label: 'Not Proceeding', value: 'not-proceeding', color: 'var(--red)' },
+]
 
 function StatusBadge({ status }: { status: string }) {
   const cls = status === 'on-track' ? 'badge-green' : status === 'at-risk' ? 'badge-amber' : status === 'off-track' ? 'badge-red' : 'badge-blue'
@@ -31,7 +40,8 @@ export default function PartnershipsDashboard() {
   const [period, setPeriod] = useState<'90days' | '12months'>('90days')
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
+  const fetchData = useCallback(() => {
+    setLoading(true)
     Promise.all([
       partnerships.kpis(),
       partnerships.pipeline(),
@@ -45,6 +55,19 @@ export default function PartnershipsDashboard() {
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
+
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
+
+  const handleStageChange = async (id: string, newStage: string) => {
+    await fetch(`/api/partnerships/pipeline/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ stage: newStage }),
+    })
+    fetchData()
+  }
 
   if (loading) return <div className="loading">Loading Partnerships Dashboard...</div>
 
@@ -79,7 +102,13 @@ export default function PartnershipsDashboard() {
               {pipeline.items.map((p: any) => (
                 <div key={p.id} className="kpi-row">
                   <span className="kpi-name" style={{ fontSize: '0.82rem' }}>{p.partnerName}</span>
-                  <span className={`badge ${p.stage === 'onboarded' ? 'badge-green' : p.stage === 'negotiating' || p.stage === 'due-diligence' ? 'badge-blue' : p.stage === 'in-discussion' ? 'badge-amber' : p.stage === 'not-proceeding' ? 'badge-red' : 'badge-blue'}`}>{p.stage}</span>
+                  <InlineStatusSelect
+                    value={p.stage}
+                    options={pipelineStageOptions}
+                    onChange={(v) => handleStageChange(p.id, v)}
+                    entityId={p.id}
+                    domainLabel="partner pipeline"
+                  />
                   <span className="kpi-val" style={{ fontSize: '0.72rem', fontWeight: 400, minWidth: 70 }}>{p.partnerType}</span>
                   <span className="kpi-target">{p.owner}</span>
                 </div>
