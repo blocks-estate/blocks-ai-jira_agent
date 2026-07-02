@@ -1,0 +1,1426 @@
+openapi: 3.1.0
+info:
+  title: GTM Analytics & Reporting API
+  description: |
+    Centralized REST API for the Go-To-Market (GTM) Analytics & Reporting Dashboard.
+    Provides KPI metrics, conversion funnels, competitive intelligence, content analytics,
+    subscription tracking, weekly reviews, KPI dictionary, and funnel instrumentation
+    specifications across five core business domains:
+
+    - **Developer Pipeline** — Account coverage, meetings, assessments, signed developers,
+      asset submissions/approvals, offerings launched
+    - **Investor Growth** — Website visitors, waitlist signups, KYC rates, funded subscriptions,
+      repeat investment
+    - **PR & Media** — Tier-1 mentions, backlinks, founder interviews, event invitations,
+      share of voice, partner inquiries
+    - **SEO & Content** — Organic traffic, keyword rankings, backlinks, resource downloads,
+      webinar registrations, content-assisted conversions
+    - **Trust & Compliance** — Compliance turnaround, KYC rejection, risk acknowledgement,
+      complaints, support response, failed payments, due diligence, regulatory checks
+
+    Built with a lightweight analytics architecture: source systems → staging →
+    KPI calculation → dashboard/reporting view → weekly review/action log.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Dashboard Overview ───────────────────────────────────────────────
+  /overview:
+    get:
+      tags:
+        - Dashboard
+      summary: Retrieve aggregated dashboard overview
+      description: >
+        Returns a high-level summary of the entire GTM analytics suite including
+        KPI status rollups across all domains, funnel conversion rates, weekly
+        review section statuses, and open action item counts. Designed as the
+        primary data source for the homepage/dashboard landing view.
+      operationId: getDashboardOverview
+      responses:
+        '200':
+          description: Dashboard overview data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OverviewDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Raw KPIs (Full Payload) ──────────────────────────────────────────
+  /kpis:
+    get:
+      tags:
+        - KPIs
+      summary: Retrieve the complete KPI data payload
+      description: |
+        Returns the entire KPI data set as a single JSON payload, including
+        metrics across all domains across all time periods. Intended for
+        client-side caching or data-export use cases. Most consumers should
+        prefer the domain-specific endpoints below.
+      operationId: getAllKpis
+      responses:
+        '200':
+          description: Complete KPI payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KpiRootDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Developer KPIs ───────────────────────────────────────────────────
+  /kpis/developer:
+    get:
+      tags:
+        - KPIs
+        - Developer Pipeline
+      summary: Retrieve developer pipeline KPIs
+      description: >
+        Returns developer KPI metrics across two time windows: a 90-day sprint
+        view (weekly cadence) and a 12-month strategic view (monthly cadence).
+        Metrics cover target accounts, meetings, assessments, signed developers,
+        asset pipeline, approvals, and offerings launched.
+      operationId: getDeveloperKpis
+      parameters:
+        - $ref: '#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Developer KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperKpiSetDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Investor KPIs ────────────────────────────────────────────────────
+  /kpis/investor:
+    get:
+      tags:
+        - KPIs
+        - Investor Growth
+      summary: Retrieve investor growth KPIs
+      description: >
+        Returns investor KPI metrics across 90-day and 12-month time windows.
+        Metrics include website visitors, waitlist signups, KYC start/completion
+        rates, offering page views, funded subscriptions, and repeat investment rate.
+      operationId: getInvestorKpis
+      parameters:
+        - $ref: '#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Investor KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorKpiSetDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── PR KPIs ──────────────────────────────────────────────────────────
+  /kpis/pr:
+    get:
+      tags:
+        - KPIs
+        - PR & Media
+      summary: Retrieve PR and media relations KPIs
+      description: >
+        Returns PR KPI metrics tracking media coverage, authority-building,
+        inbound demand generation, and competitive visibility including
+        tier-1 mentions, backlinks, founder interviews, event invitations,
+        share of voice, partner inquiries, and developer inbound leads.
+      operationId: getPrKpis
+      responses:
+        '200':
+          description: PR KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PrKpiSetDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── SEO/Content KPIs ────────────────────────────────────────────────
+  /kpis/seo-content:
+    get:
+      tags:
+        - KPIs
+        - SEO & Content
+      summary: Retrieve SEO and content marketing KPIs
+      description: >
+        Returns SEO and content KPI metrics connecting content inventory,
+        traffic, engagement, assisted conversion, and funnel contribution.
+        Includes organic traffic, keyword rankings, backlinks, resource downloads,
+        webinar registrations, content-assisted leads/KYC starts, engagement
+        metrics, and risk page completion rate.
+      operationId: getSeoContentKpis
+      responses:
+        '200':
+          description: SEO and content KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeoContentKpiSetDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Trust/Compliance KPIs ────────────────────────────────────────────
+  /kpis/trust-compliance:
+    get:
+      tags:
+        - KPIs
+        - Trust & Compliance
+      summary: Retrieve trust and compliance KPIs
+      description: >
+        Returns trust and compliance KPI metrics with threshold-based alerts,
+        exception logging, owner assignment, and audit-friendly calculation notes.
+        Includes compliance review turnaround, rejected KYC rate, risk
+        acknowledgement completion, complaints, support response time,
+        disclosure completion, failed payment rate, partner due diligence,
+        claims approval turnaround, and regulatory status verification.
+      operationId: getTrustComplianceKpis
+      responses:
+        '200':
+          description: Trust and compliance KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TrustComplianceKpiSetDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Conversion Funnels ───────────────────────────────────────────────
+  /funnels:
+    get:
+      tags:
+        - Funnels
+      summary: Retrieve all conversion funnels
+      description: >
+        Returns both investor and developer conversion funnels in a single
+        response. Each funnel tracks progression from initial awareness through
+        activation and repeat engagement, with per-stage counts, previous-period
+        comparisons, and source attribution.
+      operationId: getAllFunnels
+      responses:
+        '200':
+          description: All conversion funnels
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FunnelCollectionDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /funnels/investor:
+    get:
+      tags:
+        - Funnels
+        - Investor Growth
+      summary: Retrieve the investor conversion funnel
+      description: >
+        Returns the investor conversion funnel with 11 stages from awareness
+        through repeat investment. Each stage includes the current and previous
+        counts for period-over-period comparison.
+      operationId: getInvestorFunnelStages
+      responses:
+        '200':
+          description: Investor funnel stages
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorFunnelDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /funnels/developer:
+    get:
+      tags:
+        - Funnels
+        - Developer Pipeline
+      summary: Retrieve the developer pipeline funnel
+      description: >
+        Returns the developer pipeline funnel with 7 stages from target-account
+        identification through asset approval. Each stage includes the current
+        and previous counts for period-over-period comparison.
+      operationId: getDeveloperFunnelStages
+      responses:
+        '200':
+          description: Developer funnel stages
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperFunnelDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Share of Voice ───────────────────────────────────────────────────
+  /share-of-voice:
+    get:
+      tags:
+        - Competitive Intelligence
+      summary: Retrieve share of voice data
+      description: >
+        Returns competitive visibility tracking data comparing Blocks against
+        PRYPCO, Stake, SmartCrowd, and Deed across PR, search, social, content,
+        and paid/earned channels. Includes per-competitor channel breakdown,
+        overall share percentages, and channel taxonomy definitions.
+      operationId: getShareOfVoice
+      responses:
+        '200':
+          description: Share of voice competitive intelligence
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShareOfVoiceDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Document Tracking ────────────────────────────────────────────────
+  /document-tracking:
+    get:
+      tags:
+        - Content Analytics
+      summary: Retrieve document engagement analytics
+      description: >
+        Returns document download and view analytics categorized by document
+        type (Offering Documents, Educational Content) with per-document views,
+        downloads, and week-over-week comparatives.
+      operationId: getDocumentTracking
+      responses:
+        '200':
+          description: Document engagement metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DocumentTrackingDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Subscription Tracking ────────────────────────────────────────────
+  /subscription-tracking:
+    get:
+      tags:
+        - Subscriptions
+      summary: Retrieve subscription and funding analytics
+      description: >
+        Returns funded-subscription tracking that reconciles subscription starts
+        through completed funding and failed-payment outcomes. Includes summary
+        metrics, multi-series weekly trends for subscription starts, funding
+        completions, and failed payments.
+      operationId: getSubscriptionTracking
+      responses:
+        '200':
+          description: Subscription and funding metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionTrackingDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Weekly Review ────────────────────────────────────────────────────
+  /weekly-review:
+    get:
+      tags:
+        - Operations
+      summary: Retrieve the current weekly KPI review
+      description: >
+        Returns the standardized weekly KPI review template with RAG-status
+        sections across all KPI categories, highlights, blockers, decisions
+        made, and actionable owner-tracked action items.
+      operationId: getWeeklyReview
+      responses:
+        '200':
+          description: Weekly review data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WeeklyReviewDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── KPI Dictionary ───────────────────────────────────────────────────
+  /kpi-dictionary:
+    get:
+      tags:
+        - Operations
+      summary: Retrieve the KPI dictionary
+      description: >
+        Returns the operational KPI dictionary documenting the business question,
+        formula, numerator/denominator, grain, event trigger, source of truth,
+        owner, refresh cadence, target range, threshold status, exclusions, and
+        reporting caveats for every metric across all domains.
+      operationId: getKpiDictionary
+      responses:
+        '200':
+          description: KPI dictionary entries by category
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KpiDictionaryDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ─── Funnel Instrumentation ───────────────────────────────────────────
+  /funnel-instrumentation:
+    get:
+      tags:
+        - Operations
+      summary: Retrieve funnel instrumentation specifications
+      description: >
+        Returns event specifications for both investor and developer funnels,
+        defining event names, trigger rules, required properties, and validation
+        steps for each measurable event in the funnel.
+      operationId: getFunnelInstrumentation
+      responses:
+        '200':
+          description: Funnel instrumentation specs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FunnelInstrumentationDto'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+components:
+  parameters:
+    PeriodFilter:
+      name: period
+      in: query
+      description: >
+        Filter KPI metrics by time window. When omitted, both periods are
+        returned. Use `90days` for the sprint view or `12months` for the
+        strategic view.
+      schema:
+        type: string
+        enum:
+          - 90days
+          - 12months
+      example: 90days
+      required: false
+
+  responses:
+    BadRequest:
+      description: The request was malformed or contains invalid parameters
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetailDto'
+    NotFound:
+      description: The requested resource was not found
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetailDto'
+    InternalServerError:
+      description: An unexpected error occurred on the server
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetailDto'
+
+  schemas:
+    # ─── Enumerations ───────────────────────────────────────────────────
+    KpiStatusEnum:
+      type: string
+      description: >
+        Standardized KPI health status used across all metric domains.
+        - `on-track`: Metric is meeting or exceeding target
+        - `at-risk`: Metric is below target but within recovery range
+        - `off-track`: Metric is significantly below target and requires escalation
+      enum:
+        - on-track
+        - at-risk
+        - off-track
+      example: on-track
+
+    ReviewStatusEnum:
+      type: string
+      description: >
+        RAG (Red-Amber-Green) status used in weekly reviews.
+        - `green`: All metrics on track, no blockers
+        - `amber`: Some metrics at risk, manageable blockers
+        - `red`: Critical issues requiring immediate escalation
+      enum:
+        - green
+        - amber
+        - red
+      example: green
+
+    ActionItemStatusEnum:
+      type: string
+      description: Status of an action item in the weekly review
+      enum:
+        - open
+        - in-progress
+        - done
+        - pending-approval
+      example: open
+
+    # ─── Meta & Root ────────────────────────────────────────────────────
+    MetaDto:
+      type: object
+      description: Application metadata and source system registry
+      properties:
+        appName:
+          type: string
+          description: Display name of the application
+          example: GTM Analytics & Reporting Dashboard
+        version:
+          type: string
+          description: Semantic version of the data payload
+          example: 1.0.0
+        lastUpdated:
+          type: string
+          format: date
+          description: ISO 8601 date of last data refresh
+          example: '2026-07-02'
+        competitors:
+          type: array
+          description: List of tracked competitor names for share-of-voice analysis
+          items:
+            type: string
+          example:
+            - PRYPCO
+            - Stake
+            - SmartCrowd
+            - Deed
+        sourceSystems:
+          type: object
+          description: Registry of integrated source systems
+          additionalProperties:
+            type: string
+          example:
+            analytics: Web Analytics (GA4)
+            crm: CRM / HubSpot
+            kyc: KYC Provider
+            searchConsole: Google Search Console
+            paymentProcessor: Payment Processor
+
+    KpiRootDto:
+      type: object
+      description: Complete GTM analytics data payload containing all domains
+      properties:
+        meta:
+          $ref: '#/components/schemas/MetaDto'
+        developerKPIs:
+          $ref: '#/components/schemas/DeveloperKpiSetDto'
+        investorKPIs:
+          $ref: '#/components/schemas/InvestorKpiSetDto'
+        prKPIs:
+          $ref: '#/components/schemas/PrKpiSetDto'
+        seoContentKPIs:
+          $ref: '#/components/schemas/SeoContentKpiSetDto'
+        trustComplianceKPIs:
+          $ref: '#/components/schemas/TrustComplianceKpiSetDto'
+        investorFunnel:
+          $ref: '#/components/schemas/InvestorFunnelDto'
+        developerFunnel:
+          $ref: '#/components/schemas/DeveloperFunnelDto'
+        shareOfVoice:
+          $ref: '#/components/schemas/ShareOfVoiceDto'
+        documentTracking:
+          $ref: '#/components/schemas/DocumentTrackingDto'
+        subscriptionTracking:
+          $ref: '#/components/schemas/SubscriptionTrackingDto'
+        weeklyReview:
+          $ref: '#/components/schemas/WeeklyReviewDto'
+        kpiDictionary:
+          $ref: '#/components/schemas/KpiDictionaryDto'
+        funnelInstrumentation:
+          $ref: '#/components/schemas/FunnelInstrumentationDto'
+      required:
+        - meta
+        - developerKPIs
+        - investorKPIs
+        - prKPIs
+        - seoContentKPIs
+        - trustComplianceKPIs
+        - investorFunnel
+        - developerFunnel
+
+    # ─── KPI Metrics ────────────────────────────────────────────────────
+    KpiMetricDto:
+      type: object
+      description: >
+        A single KPI metric with current value, target, status, trend data,
+        and ownership metadata. Used uniformly across all domain dashboards.
+      properties:
+        id:
+          type: string
+          description: Unique metric identifier using domain-period-sequence pattern
+          example: dev-90-accounts
+        name:
+          type: string
+          description: Human-readable display name
+          example: Target Accounts
+        targetRange:
+          type: string
+          description: Human-readable target range or threshold description
+          example: '150'
+        current:
+          type: number
+          description: Current measured value
+          example: 128
+        target:
+          type: number
+          description: Numeric target value for progress calculation
+          example: 150
+        unit:
+          type: string
+          description: Unit of measurement (accounts, %, hours, visitors, etc.)
+          example: accounts
+        status:
+          $ref: '#/components/schemas/KpiStatusEnum'
+        sourceSystem:
+          type: string
+          description: Name of the source system providing this metric
+          example: CRM / Target Account List
+        owner:
+          type: string
+          description: Responsible team or individual
+          example: GTM Team
+        refreshCadence:
+          type: string
+          description: Data refresh frequency
+          example: Weekly
+        trend:
+          type: array
+          description: Historical time-series data points for sparkline rendering
+          items:
+            type: number
+          example:
+            - 85
+            - 92
+            - 101
+            - 110
+            - 118
+            - 122
+            - 128
+        trendLabels:
+          type: array
+          description: Labels corresponding to each trend data point
+          items:
+            type: string
+          example:
+            - Week 1
+            - Week 2
+            - Week 3
+            - Week 4
+            - Week 5
+            - Week 6
+            - Week 7
+      required:
+        - id
+        - name
+        - targetRange
+        - current
+        - target
+        - unit
+        - status
+        - sourceSystem
+        - owner
+        - refreshCadence
+
+    KpiPeriodDto:
+      type: object
+      description: A collection of KPI metrics for a specific time window
+      properties:
+        description:
+          type: string
+          description: Semantic description of this time window's dashboard focus
+          example: 90-day developer pipeline dashboard with account coverage, meeting conversion, assessment velocity
+        metrics:
+          type: array
+          description: KPI metrics for this period
+          items:
+            $ref: '#/components/schemas/KpiMetricDto'
+      required:
+        - description
+        - metrics
+
+    DeveloperKpiSetDto:
+      type: object
+      description: Developer pipeline KPIs across 90-day and 12-month windows
+      properties:
+        '90days':
+          $ref: '#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: '#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'
+
+    InvestorKpiSetDto:
+      type: object
+      description: Investor growth KPIs across 90-day and 12-month windows
+      properties:
+        '90days':
+          $ref: '#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: '#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'
+
+    PrKpiSetDto:
+      type: object
+      description: PR and media relations KPIs
+      properties:
+        description:
+          type: string
+          description: Dashboard description and focus
+          example: PR dashboard with media coverage, authority-building, inbound-demand, and competitive visibility views
+        metrics:
+          type: array
+          description: PR KPI metrics
+          items:
+            $ref: '#/components/schemas/KpiMetricDto'
+      required:
+        - description
+        - metrics
+
+    SeoContentKpiSetDto:
+      type: object
+      description: SEO and content marketing KPIs
+      properties:
+        description:
+          type: string
+          example: SEO/content dashboard connecting content inventory, traffic, engagement, assisted conversion, and funnel contribution
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiMetricDto'
+      required:
+        - description
+        - metrics
+
+    TrustComplianceKpiSetDto:
+      type: object
+      description: Trust and compliance KPIs
+      properties:
+        description:
+          type: string
+          example: Trust/compliance dashboard with threshold-based alerts, exception logging, owner assignment
+        metrics:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiMetricDto'
+      required:
+        - description
+        - metrics
+
+    # ─── Conversion Funnels ─────────────────────────────────────────────
+    FunnelStageDto:
+      type: object
+      description: A single stage within a conversion funnel
+      properties:
+        id:
+          type: string
+          description: Unique stage identifier
+          example: awareness
+        name:
+          type: string
+          description: Human-readable stage name
+          example: Awareness
+        count:
+          type: integer
+          description: Current count of entities at this stage
+          example: 45200
+        previousCount:
+          type: integer
+          description: Count at the previous measurement period
+          example: 34500
+        source:
+          type: string
+          description: Source system providing this stage's data
+          example: Web Analytics
+      required:
+        - id
+        - name
+        - count
+        - previousCount
+        - source
+
+    InvestorFunnelDto:
+      type: object
+      description: Investor conversion funnel with 11 stages from awareness to repeat investment
+      properties:
+        description:
+          type: string
+          example: Full investor conversion funnel tracking from awareness to repeat investment
+        stages:
+          type: array
+          description: Funnel stages ordered from top-of-funnel to bottom
+          items:
+            $ref: '#/components/schemas/FunnelStageDto'
+          minItems: 1
+      required:
+        - description
+        - stages
+
+    DeveloperFunnelDto:
+      type: object
+      description: Developer pipeline funnel with 7 stages from target accounts to asset approval
+      properties:
+        description:
+          type: string
+          example: Full developer conversion funnel tracking from target-account engagement through repeat offering
+        stages:
+          type: array
+          items:
+            $ref: '#/components/schemas/FunnelStageDto'
+          minItems: 1
+      required:
+        - description
+        - stages
+
+    FunnelCollectionDto:
+      type: object
+      description: Aggregated view of both conversion funnels
+      properties:
+        investor:
+          $ref: '#/components/schemas/InvestorFunnelDto'
+        developer:
+          $ref: '#/components/schemas/DeveloperFunnelDto'
+      required:
+        - investor
+        - developer
+
+    # ─── Share of Voice ─────────────────────────────────────────────────
+    SoVCompetitorDto:
+      type: object
+      description: A single competitor's share-of-voice breakdown
+      properties:
+        name:
+          type: string
+          description: Competitor name
+          example: Blocks
+        color:
+          type: string
+          description: Hex color code for UI rendering
+          pattern: '^#[0-9a-fA-F]{6}$'
+          example: '#6366f1'
+        channels:
+          type: object
+          description: Share percentage per channel
+          properties:
+            pr:
+              type: number
+              description: PR/earned media share percentage
+              example: 32
+            search:
+              type: number
+              description: Organic search visibility share percentage
+              example: 28
+            social:
+              type: number
+              description: Social media share percentage
+              example: 24
+            content:
+              type: number
+              description: Content marketing share percentage
+              example: 16
+            paid:
+              type: number
+              description: Paid advertising share percentage
+              example: 0
+        overall:
+          type: number
+          description: Overall blended share-of-voice percentage across all channels
+          example: 28
+      required:
+        - name
+        - color
+        - channels
+        - overall
+
+    ChannelTaxonomyEntryDto:
+      type: object
+      description: Definition and sources for a visibility channel
+      properties:
+        description:
+          type: string
+          example: Media coverage, press releases, earned media
+        sources:
+          type: array
+          items:
+            type: string
+          example:
+            - Media Monitoring
+            - Press Coverage Tracker
+      required:
+        - description
+        - sources
+
+    ShareOfVoiceDto:
+      type: object
+      description: Competitive visibility tracker with channel/scenario taxonomy
+      properties:
+        description:
+          type: string
+        competitors:
+          type: array
+          items:
+            $ref: '#/components/schemas/SoVCompetitorDto'
+        channelTaxonomy:
+          type: object
+          description: Map of channel names to their definitions and source systems
+          additionalProperties:
+            $ref: '#/components/schemas/ChannelTaxonomyEntryDto'
+      required:
+        - description
+        - competitors
+        - channelTaxonomy
+
+    # ─── Document Tracking ──────────────────────────────────────────────
+    DocItemDto:
+      type: object
+      description: A single document with view and download metrics
+      properties:
+        name:
+          type: string
+          description: Document title
+          example: Q1 2026 Offering Memorandum
+        views:
+          type: integer
+          description: Total view count
+          example: 245
+        downloads:
+          type: integer
+          description: Total download count
+          example: 89
+        lastWeekViews:
+          type: integer
+          description: View count from the previous week
+          example: 210
+        lastWeekDownloads:
+          type: integer
+          description: Download count from the previous week
+          example: 72
+      required:
+        - name
+        - views
+        - downloads
+        - lastWeekViews
+        - lastWeekDownloads
+
+    DocCategoryDto:
+      type: object
+      description: A category grouping related documents
+      properties:
+        name:
+          type: string
+          description: Category name
+          example: Offering Documents
+        documents:
+          type: array
+          items:
+            $ref: '#/components/schemas/DocItemDto'
+        totals:
+          type: object
+          description: Aggregated totals for this category (optional)
+          properties:
+            views:
+              type: integer
+            downloads:
+              type: integer
+            lastWeekViews:
+              type: integer
+            lastWeekDownloads:
+              type: integer
+      required:
+        - name
+        - documents
+
+    DocumentTrackingDto:
+      type: object
+      description: Document engagement tracking categorized by document type
+      properties:
+        description:
+          type: string
+        categories:
+          type: array
+          items:
+            $ref: '#/components/schemas/DocCategoryDto'
+      required:
+        - description
+        - categories
+
+    # ─── Subscription Tracking ──────────────────────────────────────────
+    SubscriptionSummaryDto:
+      type: object
+      description: Aggregate subscription funnel metrics
+      properties:
+        totalSubscriptionsStarted:
+          type: integer
+          example: 249
+        totalSubscriptionsCompleted:
+          type: integer
+          example: 175
+        totalFundingInitiated:
+          type: integer
+          example: 140
+        totalFundingCompleted:
+          type: integer
+          example: 112
+        failedPayments:
+          type: integer
+          example: 28
+        failedPaymentRate:
+          type: number
+          format: float
+          description: Ratio of failed payments to total attempts
+          example: 0.16
+        conversionRateOfferToSub:
+          type: number
+          format: float
+          description: Conversion rate from offering engagement to subscription start
+          example: 0.17
+        conversionRateSubToFunded:
+          type: number
+          format: float
+          description: Conversion rate from subscription start to funding completion
+          example: 0.64
+      required:
+        - totalSubscriptionsStarted
+        - totalSubscriptionsCompleted
+        - totalFundingInitiated
+        - totalFundingCompleted
+        - failedPayments
+        - failedPaymentRate
+        - conversionRateOfferToSub
+        - conversionRateSubToFunded
+
+    SubscriptionTrendsDto:
+      type: object
+      description: Multi-series weekly trend data for subscription tracking
+      properties:
+        subscriptionStarts:
+          type: array
+          items:
+            type: integer
+          example:
+            - 12
+            - 18
+            - 22
+        fundingCompleted:
+          type: array
+          items:
+            type: integer
+          example:
+            - 5
+            - 8
+            - 12
+        failedPayments:
+          type: array
+          items:
+            type: integer
+          example:
+            - 2
+            - 3
+            - 4
+      required:
+        - subscriptionStarts
+        - fundingCompleted
+        - failedPayments
+
+    SubscriptionTrackingDto:
+      type: object
+      description: Funded-subscription tracking reconciling starts through completed funding
+      properties:
+        description:
+          type: string
+        summary:
+          $ref: '#/components/schemas/SubscriptionSummaryDto'
+        trends:
+          $ref: '#/components/schemas/SubscriptionTrendsDto'
+        trendLabels:
+          type: array
+          description: Labels corresponding to trend data points
+          items:
+            type: string
+          example:
+            - Week 1
+            - Week 2
+            - Week 3
+      required:
+        - description
+        - summary
+        - trends
+        - trendLabels
+
+    # ─── Weekly Review ──────────────────────────────────────────────────
+    WeeklyReviewSectionDto:
+      type: object
+      description: A single section within the weekly KPI review
+      properties:
+        name:
+          type: string
+          description: Section name identifying the KPI domain
+          example: Developer KPIs - 90 Day
+        status:
+          $ref: '#/components/schemas/ReviewStatusEnum'
+        highlights:
+          type: array
+          description: Positive items and achievements
+          items:
+            type: string
+        blockers:
+          type: array
+          description: Issues blocking progress
+          items:
+            type: string
+        decisions:
+          type: array
+          description: Decisions made during the review
+          items:
+            type: string
+      required:
+        - name
+        - status
+        - highlights
+        - blockers
+        - decisions
+
+    ActionItemDto:
+      type: object
+      description: A tracked action item from the weekly review
+      properties:
+        id:
+          type: string
+          description: Unique action item identifier
+          example: AI-001
+        description:
+          type: string
+          description: Description of the action required
+          example: Approve 2 new target account segments
+        owner:
+          type: string
+          description: Responsible team or individual
+          example: GTM Lead
+        dueDate:
+          type: string
+          description: Due date or milestone reference
+          example: W28 Wed
+        status:
+          $ref: '#/components/schemas/ActionItemStatusEnum'
+      required:
+        - id
+        - description
+        - owner
+        - dueDate
+        - status
+
+    WeeklyReviewDto:
+      type: object
+      description: Standardized weekly KPI review template
+      properties:
+        description:
+          type: string
+        currentWeek:
+          type: string
+          description: ISO week identifier
+          example: '2026-W27'
+        sections:
+          type: array
+          description: RAG-status sections across all KPI categories
+          items:
+            $ref: '#/components/schemas/WeeklyReviewSectionDto'
+        actionItems:
+          type: array
+          description: Action items with owner tracking
+          items:
+            $ref: '#/components/schemas/ActionItemDto'
+      required:
+        - description
+        - currentWeek
+        - sections
+        - actionItems
+
+    # ─── Overview ───────────────────────────────────────────────────────
+    KpiStatusSummaryDto:
+      type: object
+      description: Simplified KPI status entry for overview rollups
+      properties:
+        name:
+          type: string
+        status:
+          $ref: '#/components/schemas/KpiStatusEnum'
+        current:
+          type: number
+        target:
+          type: number
+        unit:
+          type: string
+      required:
+        - name
+        - status
+        - current
+        - target
+        - unit
+
+    WeeklyReviewSummaryDto:
+      type: object
+      description: Weekly review status summary for the overview
+      properties:
+        status:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              status:
+                $ref: '#/components/schemas/ReviewStatusEnum'
+        openActions:
+          type: integer
+          description: Number of action items not yet marked as done
+      required:
+        - status
+        - openActions
+
+    FunnelConversionDto:
+      type: object
+      description: Funnel conversion rate summary
+      properties:
+        investorConversionRate:
+          type: number
+          format: float
+          description: Overall conversion rate from first to last stage
+        developerConversionRate:
+          type: number
+          format: float
+        investorStages:
+          type: array
+          items:
+            $ref: '#/components/schemas/FunnelStageDto'
+        developerStages:
+          type: array
+          items:
+            $ref: '#/components/schemas/FunnelStageDto'
+      required:
+        - investorConversionRate
+        - developerConversionRate
+        - investorStages
+        - developerStages
+
+    OverviewDto:
+      type: object
+      description: Aggregated dashboard overview with KPI status rollups and funnel metrics
+      properties:
+        meta:
+          $ref: '#/components/schemas/MetaDto'
+        dev90Status:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        dev12Status:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        inv90Status:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        inv12Status:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        prStatus:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        seoStatus:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        tcStatus:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiStatusSummaryDto'
+        weeklyReview:
+          $ref: '#/components/schemas/WeeklyReviewSummaryDto'
+        funnelTotals:
+          $ref: '#/components/schemas/FunnelConversionDto'
+      required:
+        - meta
+        - weeklyReview
+        - funnelTotals
+
+    # ─── KPI Dictionary ─────────────────────────────────────────────────
+    KpiDictionaryEntryDto:
+      type: object
+      description: Operational definition of a single KPI metric
+      properties:
+        metric:
+          type: string
+          description: Metric name
+          example: Target Accounts
+        formula:
+          type: string
+          description: SQL-like definition of the metric calculation
+          example: COUNT(DISTINCT account_id) WHERE account_segment = 'target'
+        grain:
+          type: string
+          description: Data granularity (Account, Meeting, Rate, etc.)
+          example: Account
+        eventTrigger:
+          type: string
+          description: Event that fires the measurement
+          example: Account added to target list
+        owner:
+          type: string
+          description: Responsible team
+          example: GTM Team
+        source:
+          type: string
+          description: Source system of truth
+          example: CRM
+        cadence:
+          type: string
+          description: Refresh frequency
+          example: Weekly
+        notes:
+          type: string
+          description: Additional caveats, exclusions, or reporting notes
+          example: Only accounts in approved target segments
+      required:
+        - metric
+        - formula
+        - grain
+        - eventTrigger
+        - owner
+        - source
+        - cadence
+
+    KpiDictionaryCategoryDto:
+      type: object
+      description: A category grouping related KPI definitions
+      properties:
+        name:
+          type: string
+          description: Category name (domain name)
+          example: Developer KPIs
+        entries:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiDictionaryEntryDto'
+      required:
+        - name
+        - entries
+
+    KpiDictionaryDto:
+      type: object
+      description: Complete KPI dictionary grouped by domain category
+      properties:
+        description:
+          type: string
+        categories:
+          type: array
+          items:
+            $ref: '#/components/schemas/KpiDictionaryCategoryDto'
+      required:
+        - description
+        - categories
+
+    # ─── Funnel Instrumentation ─────────────────────────────────────────
+    InstrumentationEventDto:
+      type: object
+      description: Specification for a single funnel instrumentation event
+      properties:
+        eventName:
+          type: string
+          description: Analytics event name in snake_case
+          example: page_viewed
+        trigger:
+          type: string
+          description: Description of what triggers the event
+          example: Page load fires event
+        requiredProperties:
+          type: array
+          description: List of required event properties
+          items:
+            type: string
+          example:
+            - page_url
+            - page_type
+            - visitor_id
+            - timestamp
+        validation:
+          type: string
+          description: Validation rules for the event
+          example: All UTM fields required; page_type must match taxonomy
+      required:
+        - eventName
+        - trigger
+        - requiredProperties
+        - validation
+
+    FunnelInstrumentationSetDto:
+      type: object
+      description: Instrumentation event set for a single funnel type
+      properties:
+        description:
+          type: string
+        events:
+          type: array
+          items:
+            $ref: '#/components/schemas/InstrumentationEventDto'
+      required:
+        - description
+        - events
+
+    FunnelInstrumentationDto:
+      type: object
+      description: Complete funnel instrumentation specifications for both funnels
+      properties:
+        investor:
+          $ref: '#/components/schemas/FunnelInstrumentationSetDto'
+        developer:
+          $ref: '#/components/schemas/FunnelInstrumentationSetDto'
+      required:
+        - investor
+        - developer
+
+    # ─── Error Response ─────────────────────────────────────────────────
+    ProblemDetailDto:
+      type: object
+      description: >
+        RFC 9457 Problem Details for HTTP APIs.
+        Standard error response format used across all error scenarios.
+      properties:
+        type:
+          type: string
+          format: uri
+          description: URI identifying the problem type
+          example: about:blank
+        title:
+          type: string
+          description: Short human-readable summary of the problem
+          example: Resource Not Found
+        status:
+          type: integer
+          description: HTTP status code
+          example: 404
+        detail:
+          type: string
+          description: Human-readable explanation specific to this occurrence
+          example: The requested KPI data was not found.
+        instance:
+          type: string
+          format: uri
+          description: URI identifying the specific occurrence
+      required:
+        - type
+        - title
+        - status
