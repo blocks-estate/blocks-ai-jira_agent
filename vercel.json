@@ -1,0 +1,23 @@
+{
+  "installCommand": "npm install",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "client/dist",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "functions": {
+    "api/index.ts": {
+      "memory": 256,
+      "maxDuration": 10,
+      "runtime": "@vercel/node@3"
+    }
+  }
+}
