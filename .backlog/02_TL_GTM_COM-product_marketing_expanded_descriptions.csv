@@ -1,0 +1,2133 @@
+﻿Issue Type,Issue key,Issue id,Summary,Components,Priority,Status,Resolution,Created,Updated,Due date,Description,Parent,Parent key,Parent summary
+Task,TGTM-520,16543,Define approved GTM messaging on secondary market liquidity,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-520 (Task) - Define approved GTM messaging on secondary market liquidity
+- Direct parent: TGTM-66 (Story) - Document why trading fees are not launch revenue driver
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-520 (Task): Define approved GTM messaging on secondary market liquidity -> TGTM-66 (Story): Document why trading fees are not launch revenue driver -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Create clear guidance for product marketing and sales on how to describe marketplace liquidity without over-promising launch readiness, depth of trading, or fee-based revenue expectations.
+
+Execution context:
+This task supports the parent workstream: TGTM-66 - Document why trading fees are not launch revenue driver. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Use conservative language that distinguishes potential future liquidity from guaranteed liquidity and separates launch-phase value from later marketplace monetization.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a stakeholder review pack under ""Document why trading fees are not launch revenue driver"" with draft language, decisions required, compliance risks, open questions, agreed changes, and final approved version.
+
+Expected deliverable:
+A completed artifact for ""Define approved GTM messaging on secondary market liquidity"" that can be inserted into the parent workstream output: ""Document why trading fees are not launch revenue driver"".
+
+Implementation notes:
+- Workstream goal: prevent GTM materials from over-positioning secondary-market trading fees before marketplace liquidity, trading volume, and revenue behavior are mature enough to support the claim.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Trading fee launch-revenue positioning workstream outputs
+- Marketplace maturity assumptions
+- Secondary-market product roadmap
+- Compliance-approved liquidity language
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10210,TGTM-66,Document why trading fees are not launch revenue driver
+Task,TGTM-519,16538,Draft rationale for excluding trading fees from launch revenue messaging,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-519 (Task) - Draft rationale for excluding trading fees from launch revenue messaging
+- Direct parent: TGTM-66 (Story) - Document why trading fees are not launch revenue driver
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-519 (Task): Draft rationale for excluding trading fees from launch revenue messaging -> TGTM-66 (Story): Document why trading fees are not launch revenue driver -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document why trading fees should not be positioned as a launch revenue driver, including expected trading volume assumptions, marketplace maturity constraints, and the difference between launch-phase value and steady-state monetization.
+
+Execution context:
+This task supports the parent workstream: TGTM-66 - Document why trading fees are not launch revenue driver. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Use conservative language that distinguishes potential future liquidity from guaranteed liquidity and separates launch-phase value from later marketplace monetization.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Document why trading fees are not launch revenue driver"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Draft rationale for excluding trading fees from launch revenue messaging"" that can be inserted into the parent workstream output: ""Document why trading fees are not launch revenue driver"".
+
+Implementation notes:
+- Workstream goal: prevent GTM materials from over-positioning secondary-market trading fees before marketplace liquidity, trading volume, and revenue behavior are mature enough to support the claim.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Trading fee launch-revenue positioning workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Marketplace maturity assumptions
+- Secondary-market product roadmap
+- Compliance-approved liquidity language
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10210,TGTM-66,Document why trading fees are not launch revenue driver
+Sub-task,TGTM-518,16539,Review launch positioning against market and adoption assumptions,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-518 (Sub-task) - Review launch positioning against market and adoption assumptions
+- Direct parent: TGTM-66 (Story) - Document why trading fees are not launch revenue driver
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-518 (Sub-task): Review launch positioning against market and adoption assumptions -> TGTM-66 (Story): Document why trading fees are not launch revenue driver -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Validate the launch narrative against likely trading activity, onboarding timelines, asset supply constraints, and liquidity formation so the marketing story stays credible and defensible.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-66 - Document why trading fees are not launch revenue driver. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document why trading fees are not a launch revenue driver, define approved language for liquidity and secondary trading, separate launch-phase value from steady-state monetization, and prepare FAQ/objection-handling answers for sales, investors, and internal stakeholders.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a stakeholder review pack under ""Document why trading fees are not launch revenue driver"" with draft language, decisions required, compliance risks, open questions, agreed changes, and final approved version.
+
+Expected deliverable:
+A completed artifact for ""Review launch positioning against market and adoption assumptions"" that can be inserted into the parent workstream output: ""Document why trading fees are not launch revenue driver"".
+
+Implementation notes:
+- Workstream goal: prevent GTM materials from over-positioning secondary-market trading fees before marketplace liquidity, trading volume, and revenue behavior are mature enough to support the claim.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Trading fee launch-revenue positioning workstream outputs
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10210,TGTM-66,Document why trading fees are not launch revenue driver
+Task,TGTM-517,16537,Prepare supporting FAQs and objection-handling notes for GTM,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-517 (Task) - Prepare supporting FAQs and objection-handling notes for GTM
+- Direct parent: TGTM-66 (Story) - Document why trading fees are not launch revenue driver
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-517 (Task): Prepare supporting FAQs and objection-handling notes for GTM -> TGTM-66 (Story): Document why trading fees are not launch revenue driver -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Provide concise answers for common questions from prospects and internal teams about trading fees, liquidity, and when marketplace revenue may become material after launch.
+
+Execution context:
+This task supports the parent workstream: TGTM-66 - Document why trading fees are not launch revenue driver. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define the ongoing support model, service requests, SLAs, ownership, escalation path, and boundaries between product support, investor servicing, and operations.
+- Write concise Q&A responses for sales and investor/developer conversations, with approved claims, restricted claims, and escalation guidance.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce an internal FAQ and objection-handling note under ""Document why trading fees are not launch revenue driver"" with approved answers, short sales scripts, restricted claims, escalation triggers, and supporting rationale.
+
+Expected deliverable:
+A completed artifact for ""Prepare supporting FAQs and objection-handling notes for GTM"" that can be inserted into the parent workstream output: ""Document why trading fees are not launch revenue driver"".
+
+Implementation notes:
+- Workstream goal: prevent GTM materials from over-positioning secondary-market trading fees before marketplace liquidity, trading volume, and revenue behavior are mature enough to support the claim.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Trading fee launch-revenue positioning workstream outputs
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10210,TGTM-66,Document why trading fees are not launch revenue driver
+Task,TGTM-516,16535,Define invoicing and subscription workflow for the recurring fee,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-516 (Task) - Define invoicing and subscription workflow for the recurring fee
+- Direct parent: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-516 (Task): Define invoicing and subscription workflow for the recurring fee -> TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify how the annual fee will be billed, renewed, and administered in the operational workflow for marketplace customers.
+
+Execution context:
+This task supports the parent workstream: TGTM-65 - Create annual servicing/admin fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define investor subscription flow, allocation logic, registry update responsibilities, records to maintain, and post-close confirmation outputs.
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create annual servicing/admin fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Define invoicing and subscription workflow for the recurring fee"" that can be inserted into the parent workstream output: ""Create annual servicing/admin fee packaging"".
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10209,TGTM-65,Create annual servicing/admin fee packaging
+Task,TGTM-515,16529,Align the fee package with finance and revenue reporting requirements,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-515 (Task) - Align the fee package with finance and revenue reporting requirements
+- Direct parent: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-515 (Task): Align the fee package with finance and revenue reporting requirements -> TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Confirm how the recurring fee will be booked, tracked, and reported for internal finance, investor reporting, and launch KPI reporting.
+
+Execution context:
+This task supports the parent workstream: TGTM-65 - Create annual servicing/admin fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Specify reporting cadence, distribution workflow, data inputs, reviewer, approver, and investor/developer communication outputs.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Confirm finance treatment, revenue recognition assumptions, internal KPI mapping, reporting cadence, and data owner before finalizing commercial materials.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create annual servicing/admin fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Align the fee package with finance and revenue reporting requirements"" that can be inserted into the parent workstream output: ""Create annual servicing/admin fee packaging"".
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10209,TGTM-65,Create annual servicing/admin fee packaging
+Task,TGTM-514,16530,"Map fee coverage to reporting, investor servicing, and admin activities",Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-514 (Task) - Map fee coverage to reporting, investor servicing, and admin activities
+- Direct parent: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-514 (Task): Map fee coverage to reporting, investor servicing, and admin activities -> TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document which operational deliverables are included in the annual fee, including reporting, investor communications, servicing, and administrative workflows.
+
+Execution context:
+This task supports the parent workstream: TGTM-65 - Create annual servicing/admin fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Specify reporting cadence, distribution workflow, data inputs, reviewer, approver, and investor/developer communication outputs.
+- Define the ongoing support model, service requests, SLAs, ownership, escalation path, and boundaries between product support, investor servicing, and operations.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create annual servicing/admin fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Map fee coverage to reporting, investor servicing, and admin activities"" that can be inserted into the parent workstream output: ""Create annual servicing/admin fee packaging"".
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10209,TGTM-65,Create annual servicing/admin fee packaging
+Task,TGTM-513,16527,Review the fee package with legal and compliance stakeholders,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-513 (Task) - Review the fee package with legal and compliance stakeholders
+- Direct parent: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-513 (Task): Review the fee package with legal and compliance stakeholders -> TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Validate that the proposed fee structure and disclosures are consistent with marketplace, investor servicing, and administrative obligations.
+
+Execution context:
+This task supports the parent workstream: TGTM-65 - Create annual servicing/admin fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Clarify legal-entity/SPV workflow boundaries, document ownership, review checkpoints, approval dependencies, and what must not be promised in marketing copy.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Route the draft through legal/compliance review and capture approved language, restricted language, open questions, and required disclaimers.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create annual servicing/admin fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Review the fee package with legal and compliance stakeholders"" that can be inserted into the parent workstream output: ""Create annual servicing/admin fee packaging"".
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Compliance requirements
+- Legal/SPV workflow inputs
+- Operations approval process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10209,TGTM-65,Create annual servicing/admin fee packaging
+Task,TGTM-512,16526,Create pricing and packaging language for customer-facing materials,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-512 (Task) - Create pricing and packaging language for customer-facing materials
+- Direct parent: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-512 (Task): Create pricing and packaging language for customer-facing materials -> TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Draft clear product copy that explains the annual servicing/admin fee, what it covers, and how it is presented in launch and sales materials.
+
+Execution context:
+This task supports the parent workstream: TGTM-65 - Create annual servicing/admin fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create annual servicing/admin fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Create pricing and packaging language for customer-facing materials"" that can be inserted into the parent workstream output: ""Create annual servicing/admin fee packaging"".
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10209,TGTM-65,Create annual servicing/admin fee packaging
+Task,TGTM-511,16525,Define the annual servicing and admin fee structure,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-511 (Task) - Define the annual servicing and admin fee structure
+- Direct parent: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-511 (Task): Define the annual servicing and admin fee structure -> TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify the recurring fee amount, billing cadence, and any tiering or usage-based components for the managed tokenization marketplace offering.
+
+Execution context:
+This task supports the parent workstream: TGTM-65 - Create annual servicing/admin fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define the ongoing support model, service requests, SLAs, ownership, escalation path, and boundaries between product support, investor servicing, and operations.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create annual servicing/admin fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Define the annual servicing and admin fee structure"" that can be inserted into the parent workstream output: ""Create annual servicing/admin fee packaging"".
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10209,TGTM-65,Create annual servicing/admin fee packaging
+Task,TGTM-510,16519,Define the listing fee structure,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-510 (Task) - Define the listing fee structure
+- Direct parent: TGTM-64 (Story) - Create listing fee and success fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-510 (Task): Define the listing fee structure -> TGTM-64 (Story): Create listing fee and success fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify how the listing fee will be charged, including pricing basis, fee amount or tiers, timing of payment, and any conditions or exceptions.
+
+Execution context:
+This task supports the parent workstream: TGTM-64 - Create listing fee and success fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define offering setup steps, listing prerequisites, content requirements, approval gates, and the minimum information needed before an asset can be marketed.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create listing fee and success fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Define the listing fee structure"" that can be inserted into the parent workstream output: ""Create listing fee and success fee packaging"".
+
+Implementation notes:
+- Workstream goal: define the commercial terms for listing and fundraising success fees in a way that is transparent, defensible, and easy for sales to explain.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Listing fee and capital-raised success fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10208,TGTM-64,Create listing fee and success fee packaging
+Task,TGTM-509,16520,Document pricing packaging and commercial terms,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-509 (Task) - Document pricing packaging and commercial terms
+- Direct parent: TGTM-64 (Story) - Create listing fee and success fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-509 (Task): Document pricing packaging and commercial terms -> TGTM-64 (Story): Create listing fee and success fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Create a clear packaging summary that explains the combined listing fee and success fee offering, including commercial assumptions, scope, and any customer-facing wording needed for launch.
+
+Execution context:
+This task supports the parent workstream: TGTM-64 - Create listing fee and success fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create listing fee and success fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Document pricing packaging and commercial terms"" that can be inserted into the parent workstream output: ""Create listing fee and success fee packaging"".
+
+Implementation notes:
+- Workstream goal: define the commercial terms for listing and fundraising success fees in a way that is transparent, defensible, and easy for sales to explain.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Listing fee and capital-raised success fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10208,TGTM-64,Create listing fee and success fee packaging
+Task,TGTM-508,16518,Define the capital-raised success fee structure,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-508 (Task) - Define the capital-raised success fee structure
+- Direct parent: TGTM-64 (Story) - Create listing fee and success fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-508 (Task): Define the capital-raised success fee structure -> TGTM-64 (Story): Create listing fee and success fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify how the success fee will be calculated on capital raised, including fee percentage or tiers, trigger events, payment timing, and any caps or exclusions.
+
+Execution context:
+This task supports the parent workstream: TGTM-64 - Create listing fee and success fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create listing fee and success fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Define the capital-raised success fee structure"" that can be inserted into the parent workstream output: ""Create listing fee and success fee packaging"".
+
+Implementation notes:
+- Workstream goal: define the commercial terms for listing and fundraising success fees in a way that is transparent, defensible, and easy for sales to explain.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Listing fee and capital-raised success fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10208,TGTM-64,Create listing fee and success fee packaging
+Task,TGTM-507,16517,Research marketplace pricing benchmarks for listing and fundraising fees,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-507 (Task) - Research marketplace pricing benchmarks for listing and fundraising fees
+- Direct parent: TGTM-64 (Story) - Create listing fee and success fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-507 (Task): Research marketplace pricing benchmarks for listing and fundraising fees -> TGTM-64 (Story): Create listing fee and success fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Collect comparable pricing models from adjacent tokenization, fundraising, and marketplace products to inform the proposed listing fee and capital-raised success fee structure.
+
+Execution context:
+This task supports the parent workstream: TGTM-64 - Create listing fee and success fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define offering setup steps, listing prerequisites, content requirements, approval gates, and the minimum information needed before an asset can be marketed.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Capture comparable pricing or marketplace references, normalize them into a benchmark table, and convert findings into a recommendation rather than raw research notes.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create listing fee and success fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Research marketplace pricing benchmarks for listing and fundraising fees"" that can be inserted into the parent workstream output: ""Create listing fee and success fee packaging"".
+
+Implementation notes:
+- Workstream goal: define the commercial terms for listing and fundraising success fees in a way that is transparent, defensible, and easy for sales to explain.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Listing fee and capital-raised success fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10208,TGTM-64,Create listing fee and success fee packaging
+Sub-task,TGTM-506,16514,Prepare launch-ready pricing copy for marketplace materials,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-506 (Sub-task) - Prepare launch-ready pricing copy for marketplace materials
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-506 (Sub-task): Prepare launch-ready pricing copy for marketplace materials -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Translate the fee logic into clear external-facing language for product marketing, sales enablement, or launch documentation.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Prepare launch-ready pricing copy for marketplace materials"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-505,16513,Validate fee model with legal and operations stakeholders,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-505 (Sub-task) - Validate fee model with legal and operations stakeholders
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-505 (Sub-task): Validate fee model with legal and operations stakeholders -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Review the proposed fee packaging with relevant stakeholders to ensure the structure is operationally feasible and consistent with legal and marketplace requirements.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Clarify legal-entity/SPV workflow boundaries, document ownership, review checkpoints, approval dependencies, and what must not be promised in marketing copy.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Route the draft through legal/compliance review and capture approved language, restricted language, open questions, and required disclaimers.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Validate fee model with legal and operations stakeholders"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Compliance requirements
+- Legal/SPV workflow inputs
+- Operations approval process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-504,16507,Define tokenization setup fee pricing tiers,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-504 (Sub-task) - Define tokenization setup fee pricing tiers
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-504 (Sub-task): Define tokenization setup fee pricing tiers -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Create the pricing structure for tokenization setup fees, including what is covered at each tier and how fees vary by asset complexity.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Define tokenization setup fee pricing tiers"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-503,16505,Document fee triggers and charge logic,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-503 (Sub-task) - Document fee triggers and charge logic
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-503 (Sub-task): Document fee triggers and charge logic -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify the business rules for when each fee is applied, including asset readiness criteria, onboarding milestones, diligence steps, and complexity thresholds.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Document fee triggers and charge logic"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-502,16503,Map fees to onboarding and workflow stages,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-502 (Sub-task) - Map fees to onboarding and workflow stages
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-502 (Sub-task): Map fees to onboarding and workflow stages -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Align developer and tokenization setup fees to the end-to-end onboarding workflow so each charge corresponds to a clear service phase.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Map fees to onboarding and workflow stages"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-500,16502,Define developer setup fee pricing tiers,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-500 (Sub-task) - Define developer setup fee pricing tiers
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-500 (Sub-task): Define developer setup fee pricing tiers -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Create the pricing structure for developer setup fees based on asset readiness, onboarding complexity, and required operational support.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Define developer setup fee pricing tiers"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-499,16501,Confirm fee inclusions and exclusions,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:34 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-499 (Sub-task) - Confirm fee inclusions and exclusions
+- Direct parent: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-499 (Sub-task): Confirm fee inclusions and exclusions -> TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Define what services, deliverables, and support are included or excluded from each setup fee to avoid overlap with other marketplace charges.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-63 - Create developer setup fee and tokenization setup fee packaging. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Create developer setup fee and tokenization setup fee packaging"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Confirm fee inclusions and exclusions"" that can be inserted into the parent workstream output: ""Create developer setup fee and tokenization setup fee packaging"".
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10207,TGTM-63,Create developer setup fee and tokenization setup fee packaging
+Sub-task,TGTM-491,16485,Revise and finalize the workflow diagram for launch use,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-491 (Sub-task) - Revise and finalize the workflow diagram for launch use
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-491 (Sub-task): Revise and finalize the workflow diagram for launch use -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Incorporate feedback, clean up the visual, and prepare the final version of the lifecycle workflow diagram for inclusion in launch marketing or enablement materials.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Revise and finalize the workflow diagram for launch use"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-490,16483,Review workflow with subject matter experts,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-490 (Sub-task) - Review workflow with subject matter experts
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-490 (Sub-task): Review workflow with subject matter experts -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Validate the diagram and process sequence with product, legal, compliance, and operations stakeholders to ensure accuracy and completeness.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Review workflow with subject matter experts"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-489,16481,"Detail post-issuance registry, reporting, and distribution flow",Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-489 (Sub-task) - Detail post-issuance registry, reporting, and distribution flow
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-489 (Sub-task): Detail post-issuance registry, reporting, and distribution flow -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document how registry updates, investor reporting, distribution processing, and related servicing activities occur after issuance.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define investor subscription flow, allocation logic, registry update responsibilities, records to maintain, and post-close confirmation outputs.
+- Specify reporting cadence, distribution workflow, data inputs, reviewer, approver, and investor/developer communication outputs.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Detail post-issuance registry, reporting, and distribution flow"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-488,16475,Map roles and handoffs across the lifecycle,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-488 (Sub-task) - Map roles and handoffs across the lifecycle
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-488 (Sub-task): Map roles and handoffs across the lifecycle -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document the key stakeholders involved at each stage and the handoffs between teams, such as originator, diligence, legal, compliance, operations, marketplace, registry, and servicing.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Map roles and handoffs across the lifecycle"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-487,16474,Detail subscription and allocation workflow,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-487 (Sub-task) - Detail subscription and allocation workflow
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-487 (Sub-task): Detail subscription and allocation workflow -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Map the steps for investor subscription, allocation, confirmation, and any downstream registry or issuance updates required after close.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define investor subscription flow, allocation logic, registry update responsibilities, records to maintain, and post-close confirmation outputs.
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Detail subscription and allocation workflow"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-486,16472,Document compliance and approval checkpoints,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-486 (Sub-task) - Document compliance and approval checkpoints
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-486 (Sub-task): Document compliance and approval checkpoints -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Capture required reviews, approvals, and gating items within the workflow, including diligence sign-off, legal review, KYC/KYB completion, and offering readiness approval.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Route the draft through legal/compliance review and capture approved language, restricted language, open questions, and required disclaimers.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a stakeholder review pack under ""Create offering lifecycle workflow diagram"" with draft language, decisions required, compliance risks, open questions, agreed changes, and final approved version.
+
+Expected deliverable:
+A completed artifact for ""Document compliance and approval checkpoints"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Compliance requirements
+- Legal/SPV workflow inputs
+- Operations approval process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-485,16473,Create a swimlane workflow diagram draft,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-485 (Sub-task) - Create a swimlane workflow diagram draft
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-485 (Sub-task): Create a swimlane workflow diagram draft -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Produce the first visual diagram showing the offering lifecycle flow and ownership by function or stakeholder, with clear step-by-step progression and decision points where applicable.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Create a swimlane workflow diagram draft"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-484,16471,Define the end-to-end offering lifecycle stages,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-484 (Sub-task) - Define the end-to-end offering lifecycle stages
+- Direct parent: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-484 (Sub-task): Define the end-to-end offering lifecycle stages -> TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Identify and sequence the full lifecycle from asset intake through post-issuance servicing, including intake, screening, diligence, legal/SPV setup, KYC/KYB, offering configuration, marketplace listing, subscriptions, registry, reporting, distributions, support, and ongoing servicing.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-61 - Create offering lifecycle workflow diagram. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Create offering lifecycle workflow diagram"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Define the end-to-end offering lifecycle stages"" that can be inserted into the parent workstream output: ""Create offering lifecycle workflow diagram"".
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10205,TGTM-61,Create offering lifecycle workflow diagram
+Sub-task,TGTM-483,16469,Define end-to-end workflow boundaries and exclusions,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-483 (Sub-task) - Define end-to-end workflow boundaries and exclusions
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-483 (Sub-task): Define end-to-end workflow boundaries and exclusions -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document the complete managed marketplace workflow scope from onboarding through servicing, including what is explicitly in scope, out of scope, and any dependencies between steps.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Define Managed Marketplace package scope"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Define end-to-end workflow boundaries and exclusions"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-482,16465,Define support and servicing scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-482 (Sub-task) - Define support and servicing scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-482 (Sub-task): Define support and servicing scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Capture the support model and servicing responsibilities for the launch product, including operational handoffs, customer support coverage, and ongoing servicing workflows.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define the ongoing support model, service requests, SLAs, ownership, escalation path, and boundaries between product support, investor servicing, and operations.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a scope-definition module under ""Define Managed Marketplace package scope"" with included activities, excluded activities, handoffs, owner, dependencies, launch readiness rules, and customer-facing explanation.
+
+Expected deliverable:
+A completed artifact for ""Define support and servicing scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-481,16463,Finalize and approve the launch product name,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-481 (Sub-task) - Finalize and approve the launch product name
+- Direct parent: TGTM-60 (Story) - Choose launch product name
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-481 (Sub-task): Finalize and approve the launch product name -> TGTM-60 (Story): Choose launch product name -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Confirm the selected product name and record the final decision so downstream marketing and launch assets can use a single approved name.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-60 - Choose launch product name. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Use the naming scorecard and assess clarity, differentiation, compliance safety, UAE/GCC market fit, searchability, and sales usability before making a recommendation.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a naming decision artifact under ""Choose launch product name"" with shortlist, evaluation scorecard, stakeholder feedback, risk/availability notes, recommended name, rejected alternatives, and final usage guidelines.
+
+Expected deliverable:
+A completed artifact for ""Finalize and approve the launch product name"" that can be inserted into the parent workstream output: ""Choose launch product name"".
+
+Implementation notes:
+- Workstream goal: select a credible launch product name that communicates a managed tokenization marketplace without creating regulatory, liquidity, or investment-return overpromising risk.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Launch product naming workstream outputs
+- Brand positioning criteria
+- Stakeholder feedback
+- Basic naming risk/availability check
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10204,TGTM-60,Choose launch product name
+Sub-task,TGTM-480,16462,Check naming risks and availability for shortlisted product names,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-480 (Sub-task) - Check naming risks and availability for shortlisted product names
+- Direct parent: TGTM-60 (Story) - Choose launch product name
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-480 (Sub-task): Check naming risks and availability for shortlisted product names -> TGTM-60 (Story): Choose launch product name -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Validate the shortlisted names for trademark, domain, and general brand-conflict risks before final selection.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-60 - Choose launch product name. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Use the naming scorecard and assess clarity, differentiation, compliance safety, UAE/GCC market fit, searchability, and sales usability before making a recommendation.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a naming decision artifact under ""Choose launch product name"" with shortlist, evaluation scorecard, stakeholder feedback, risk/availability notes, recommended name, rejected alternatives, and final usage guidelines.
+
+Expected deliverable:
+A completed artifact for ""Check naming risks and availability for shortlisted product names"" that can be inserted into the parent workstream output: ""Choose launch product name"".
+
+Implementation notes:
+- Workstream goal: select a credible launch product name that communicates a managed tokenization marketplace without creating regulatory, liquidity, or investment-return overpromising risk.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Launch product naming workstream outputs
+- Brand positioning criteria
+- Stakeholder feedback
+- Basic naming risk/availability check
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10204,TGTM-60,Choose launch product name
+Sub-task,TGTM-479,16460,Gather stakeholder feedback on preferred product name,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-479 (Sub-task) - Gather stakeholder feedback on preferred product name
+- Direct parent: TGTM-60 (Story) - Choose launch product name
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-479 (Sub-task): Gather stakeholder feedback on preferred product name -> TGTM-60 (Story): Choose launch product name -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Share the shortlisted launch product names with key internal stakeholders and collect feedback on clarity, appeal, and market fit.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-60 - Choose launch product name. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Use the naming scorecard and assess clarity, differentiation, compliance safety, UAE/GCC market fit, searchability, and sales usability before making a recommendation.
+- Document fee logic in a pricing table showing fee type, trigger, payer, timing, calculation basis, inclusions, exclusions, billing owner, and disclosure language.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a fee-packaging worksheet for this item under ""Choose launch product name"" with columns for fee purpose, payer, trigger, amount/tier, timing, included services, excluded services, operational owner, finance treatment, legal/compliance notes, and approved customer-facing copy.
+
+Expected deliverable:
+A completed artifact for ""Gather stakeholder feedback on preferred product name"" that can be inserted into the parent workstream output: ""Choose launch product name"".
+
+Implementation notes:
+- Workstream goal: select a credible launch product name that communicates a managed tokenization marketplace without creating regulatory, liquidity, or investment-return overpromising risk.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Launch product naming workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Brand positioning criteria
+- Stakeholder feedback
+- Basic naming risk/availability check
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10204,TGTM-60,Choose launch product name
+Sub-task,TGTM-478,16459,Evaluate launch product name options against positioning criteria,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-478 (Sub-task) - Evaluate launch product name options against positioning criteria
+- Direct parent: TGTM-60 (Story) - Choose launch product name
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-478 (Sub-task): Evaluate launch product name options against positioning criteria -> TGTM-60 (Story): Choose launch product name -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Assess Blocks Estate LaunchPad, Managed Marketplace, Issuance Desk, Capital Formation Suite, and Real Estate Access Program against the product positioning, target audience, and launch messaging for the managed tokenization marketplace.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-60 - Choose launch product name. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Use the naming scorecard and assess clarity, differentiation, compliance safety, UAE/GCC market fit, searchability, and sales usability before making a recommendation.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a naming decision artifact under ""Choose launch product name"" with shortlist, evaluation scorecard, stakeholder feedback, risk/availability notes, recommended name, rejected alternatives, and final usage guidelines.
+
+Expected deliverable:
+A completed artifact for ""Evaluate launch product name options against positioning criteria"" that can be inserted into the parent workstream output: ""Choose launch product name"".
+
+Implementation notes:
+- Workstream goal: select a credible launch product name that communicates a managed tokenization marketplace without creating regulatory, liquidity, or investment-return overpromising risk.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Launch product naming workstream outputs
+- Brand positioning criteria
+- Stakeholder feedback
+- Basic naming risk/availability check
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10204,TGTM-60,Choose launch product name
+Sub-task,TGTM-477,16457,Define reporting and distribution scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-477 (Sub-task) - Define reporting and distribution scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-477 (Sub-task): Define reporting and distribution scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Outline the reporting outputs and distribution workflow included in the launch scope, including visibility, cadence, and recipients.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Specify reporting cadence, distribution workflow, data inputs, reviewer, approver, and investor/developer communication outputs.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a scope-definition module under ""Define Managed Marketplace package scope"" with included activities, excluded activities, handoffs, owner, dependencies, launch readiness rules, and customer-facing explanation.
+
+Expected deliverable:
+A completed artifact for ""Define reporting and distribution scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-476,16455,Define subscription and registry scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-476 (Sub-task) - Define subscription and registry scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-476 (Sub-task): Define subscription and registry scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify how subscriptions are created and managed, and how registry records are maintained as part of the launch product package.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define investor subscription flow, allocation logic, registry update responsibilities, records to maintain, and post-close confirmation outputs.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a scope-definition module under ""Define Managed Marketplace package scope"" with included activities, excluded activities, handoffs, owner, dependencies, launch readiness rules, and customer-facing explanation.
+
+Expected deliverable:
+A completed artifact for ""Define subscription and registry scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-475,16449,Define developer onboarding scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-475 (Sub-task) - Define developer onboarding scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-475 (Sub-task): Define developer onboarding scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Outline the end-to-end onboarding flow for developers, including account setup, access requirements, approvals, and readiness criteria for the managed marketplace launch package.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Map developer intake, required information, commercial qualification, onboarding milestones, and transition from prospect to active marketplace customer.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a scope-definition module under ""Define Managed Marketplace package scope"" with included activities, excluded activities, handoffs, owner, dependencies, launch readiness rules, and customer-facing explanation.
+
+Expected deliverable:
+A completed artifact for ""Define developer onboarding scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-474,16448,Define offering setup and marketplace listing scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-474 (Sub-task) - Define offering setup and marketplace listing scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-474 (Sub-task): Define offering setup and marketplace listing scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document the workflow for creating offerings, preparing listings, publishing marketplace content, and any launch controls or approval gates.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define offering setup steps, listing prerequisites, content requirements, approval gates, and the minimum information needed before an asset can be marketed.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a scope-definition module under ""Define Managed Marketplace package scope"" with included activities, excluded activities, handoffs, owner, dependencies, launch readiness rules, and customer-facing explanation.
+
+Expected deliverable:
+A completed artifact for ""Define offering setup and marketplace listing scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-473,16447,Define asset screening and diligence coordination scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-473 (Sub-task) - Define asset screening and diligence coordination scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-473 (Sub-task): Define asset screening and diligence coordination scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Document how assets will be screened and how diligence intake, coordination, and review steps are handled within the launch product scope.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Identify screening criteria, diligence inputs, decision gates, excluded assets, and escalation path for assets that do not meet launch readiness standards.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a scope-definition module under ""Define Managed Marketplace package scope"" with included activities, excluded activities, handoffs, owner, dependencies, launch readiness rules, and customer-facing explanation.
+
+Expected deliverable:
+A completed artifact for ""Define asset screening and diligence coordination scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+- Compliance requirements
+- Legal/SPV workflow inputs
+- Operations approval process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-472,16445,Define legal and SPV workflow scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-472 (Sub-task) - Define legal and SPV workflow scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-472 (Sub-task): Define legal and SPV workflow scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Specify the legal process coverage for the launch package, including SPV formation/management touchpoints, document handling, and approvals required for launch.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Clarify legal-entity/SPV workflow boundaries, document ownership, review checkpoints, approval dependencies, and what must not be promised in marketing copy.
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Route the draft through legal/compliance review and capture approved language, restricted language, open questions, and required disclaimers.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Define Managed Marketplace package scope"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Define legal and SPV workflow scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+- Compliance requirements
+- Legal/SPV workflow inputs
+- Operations approval process
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Sub-task,TGTM-471,16446,Define KYC/KYB workflow scope,Product Marketing,Medium,To Do,,01/Jul/26 8:31 AM,01/Jul/26 4:35 PM,,"Hierarchy / linkage:
+- Current issue: TGTM-471 (Sub-task) - Define KYC/KYB workflow scope
+- Direct parent: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-471 (Sub-task): Define KYC/KYB workflow scope -> TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Capture the KYC/KYB steps, required data, verification checkpoints, exceptions, and ownership for the managed marketplace offering.
+
+Execution context:
+This sub-task supports the parent workstream: TGTM-59 - Define Managed Marketplace package scope. It should be completed in a way that feeds directly into the Product Marketing launch pack, rather than standing alone as an isolated research or copywriting task.
+
+How we are doing this:
+- Define required verification steps, responsible owner, required documents/data, approval criteria, exceptions, and handoff into subscription or onboarding workflows.
+- Represent the process as a swimlane or lifecycle diagram with owners, handoffs, approvals, dependencies, and outputs at each stage.
+- Convert the output into language that can be reused in launch materials, sales conversations, internal enablement, and stakeholder review packs.
+
+Preliminary solution:
+Produce a workflow module for this item under ""Define Managed Marketplace package scope"" showing stage, owner, required input, action, decision gate, output, dependency, and customer-facing explanation. Feed the module into the master lifecycle swimlane diagram.
+
+Expected deliverable:
+A completed artifact for ""Define KYC/KYB workflow scope"" that can be inserted into the parent workstream output: ""Define Managed Marketplace package scope"".
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+- Compliance requirements
+- Legal/SPV workflow inputs
+- Operations approval process
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The output directly answers the task summary and preserves the parent Story context.
+- The work includes a clear recommendation or final artifact, not only raw notes.
+- Internal stakeholders can understand owner, inputs, handoffs, dependencies, and next steps.
+- Customer-facing or sales-facing wording is safe, specific, and aligned with approved product positioning.
+- Any open assumptions, compliance questions, or finance/legal dependencies are explicitly documented.",10203,TGTM-59,Define Managed Marketplace package scope
+Story,TGTM-66,10210,Document why trading fees are not launch revenue driver,Product Marketing,High,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,30/Jul/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-66 (Story) - Document why trading fees are not launch revenue driver
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-66 (Story): Document why trading fees are not launch revenue driver -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Prevent GTM from over-promising secondary market liquidity.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Trading fee launch-revenue positioning and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Trading fee launch-revenue positioning workstream for the launch product.
+- Document why trading fees are not a launch revenue driver, define approved language for liquidity and secondary trading, separate launch-phase value from steady-state monetization, and prepare FAQ/objection-handling answers for sales, investors, and internal stakeholders.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Document why trading fees are not a launch revenue driver, define approved language for liquidity and secondary trading, separate launch-phase value from steady-state monetization, and prepare FAQ/objection-handling answers for sales, investors, and internal stakeholders.
+
+Expected deliverable:
+Approved messaging memo, FAQ, objection-handling notes, and customer-facing language guardrails for secondary-market liquidity and trading-fee discussion.
+
+Implementation notes:
+- Workstream goal: prevent GTM materials from over-positioning secondary-market trading fees before marketplace liquidity, trading volume, and revenue behavior are mature enough to support the claim.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Trading fee launch-revenue positioning workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+- Marketplace maturity assumptions
+- Secondary-market product roadmap
+- Compliance-approved liquidity language
+
+Acceptance criteria:
+- The Trading fee launch-revenue positioning output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Story,TGTM-65,10209,Create annual servicing/admin fee packaging,Product Marketing,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-65 (Story) - Create annual servicing/admin fee packaging
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-65 (Story): Create annual servicing/admin fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Define recurring revenue for reporting, investor servicing, and admin workflows.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Annual servicing/admin fee packaging and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Annual servicing/admin fee packaging workstream for the launch product.
+- Define the recurring fee structure, covered activities, billing/renewal workflow, finance reporting treatment, operating ownership, and disclosure language. The package should make clear what the annual fee covers and how it differs from setup, listing, and success fees.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Define the recurring fee structure, covered activities, billing/renewal workflow, finance reporting treatment, operating ownership, and disclosure language. The package should make clear what the annual fee covers and how it differs from setup, listing, and success fees.
+
+Expected deliverable:
+Annual fee package with pricing structure, coverage map, billing workflow, finance/reporting requirements, and approved customer-facing wording.
+
+Implementation notes:
+- Workstream goal: package recurring servicing and administration into a clear annual fee tied to ongoing investor, reporting, registry, communication, and admin workflows.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Annual servicing/admin fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The Annual servicing/admin fee packaging output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Story,TGTM-64,10208,Create listing fee and success fee packaging,Product Marketing,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-64 (Story) - Create listing fee and success fee packaging
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-64 (Story): Create listing fee and success fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Define listing fee and capital-raised success fee structure.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Listing fee and capital-raised success fee packaging and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Listing fee and capital-raised success fee packaging workstream for the launch product.
+- Benchmark marketplace and fundraising fee structures, define listing-fee logic, define success-fee calculation logic, document when fees apply, what is excluded, and how the fee language should appear in proposals, term sheets, and GTM materials.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Benchmark marketplace and fundraising fee structures, define listing-fee logic, define success-fee calculation logic, document when fees apply, what is excluded, and how the fee language should appear in proposals, term sheets, and GTM materials.
+
+Expected deliverable:
+Listing and success-fee commercial package with benchmark rationale, fee formulas, customer-facing copy, internal guidance, and finance/legal validation notes.
+
+Implementation notes:
+- Workstream goal: define the commercial terms for listing and fundraising success fees in a way that is transparent, defensible, and easy for sales to explain.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Listing fee and capital-raised success fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The Listing fee and capital-raised success fee packaging output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Story,TGTM-63,10207,Create developer setup fee and tokenization setup fee packaging,Product Marketing,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-63 (Story) - Create developer setup fee and tokenization setup fee packaging
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-63 (Story): Create developer setup fee and tokenization setup fee packaging -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Define charge logic for asset readiness, onboarding, and complexity.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Developer setup fee and tokenization setup fee packaging and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Developer setup fee and tokenization setup fee packaging workstream for the launch product.
+- Create a pricing matrix that separates developer onboarding/setup fees from tokenization setup fees, defines fee triggers, inclusions, exclusions, payment timing, tier logic, and operational ownership. Validate the package with legal, compliance, finance, and operations before converting it into launch copy.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Create a pricing matrix that separates developer onboarding/setup fees from tokenization setup fees, defines fee triggers, inclusions, exclusions, payment timing, tier logic, and operational ownership. Validate the package with legal, compliance, finance, and operations before converting it into launch copy.
+
+Expected deliverable:
+Fee-packaging matrix, billing trigger logic, internal FAQ, compliance/legal review notes, and launch-ready copy for customer-facing materials.
+
+Implementation notes:
+- Workstream goal: turn setup and tokenization work into a clear fee package that developers understand and internal teams can administer.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Developer setup fee and tokenization setup fee packaging workstream outputs
+- Finance/revenue model assumptions
+- Legal and compliance review
+- Operations billing and servicing workflow
+
+Acceptance criteria:
+- The Developer setup fee and tokenization setup fee packaging output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Story,TGTM-61,10205,Create offering lifecycle workflow diagram,Product Marketing,High,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,29/Aug/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-61 (Story) - Create offering lifecycle workflow diagram
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-61 (Story): Create offering lifecycle workflow diagram -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Map asset intake through post-issuance servicing.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Offering lifecycle workflow diagram and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Offering lifecycle workflow diagram workstream for the launch product.
+- Create a swimlane workflow covering developer intake, asset screening, KYC/KYB, legal/SPV setup, offering preparation, listing, investor subscription, allocation, registry updates, reporting, distributions, and ongoing servicing. Each step should show owner, input, output, approval checkpoint, dependency, and risk control.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Create a swimlane workflow covering developer intake, asset screening, KYC/KYB, legal/SPV setup, offering preparation, listing, investor subscription, allocation, registry updates, reporting, distributions, and ongoing servicing. Each step should show owner, input, output, approval checkpoint, dependency, and risk control.
+
+Expected deliverable:
+Launch-ready workflow diagram plus a supporting step-by-step workflow narrative for internal training, sales enablement, and investor/developer explanation.
+
+Implementation notes:
+- Workstream goal: show how a real estate asset moves through the managed marketplace lifecycle from intake to post-issuance servicing.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Offering lifecycle workflow diagram workstream outputs
+- Product operations workflow
+- Investor servicing process
+- Developer onboarding process
+
+Acceptance criteria:
+- The Offering lifecycle workflow diagram output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Story,TGTM-60,10204,Choose launch product name,Product Marketing,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,30/Jul/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-60 (Story) - Choose launch product name
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-60 (Story): Choose launch product name -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Select from Blocks Estate LaunchPad, Managed Marketplace, Issuance Desk, Capital Formation Suite, or Real Estate Access Program.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Launch product naming and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Launch product naming workstream for the launch product.
+- Use a naming scorecard with criteria for clarity, premium positioning, compliance safety, regional fit, SEO/search usefulness, memorability, and sales usability. Shortlist names, collect stakeholder feedback, check basic availability/risk, and document the final recommendation with approved usage rules.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Use a naming scorecard with criteria for clarity, premium positioning, compliance safety, regional fit, SEO/search usefulness, memorability, and sales usability. Shortlist names, collect stakeholder feedback, check basic availability/risk, and document the final recommendation with approved usage rules.
+
+Expected deliverable:
+Approved launch product name, naming rationale, rejected-name notes, usage guidance, and copy examples for sales and website materials.
+
+Implementation notes:
+- Workstream goal: select a credible launch product name that communicates a managed tokenization marketplace without creating regulatory, liquidity, or investment-return overpromising risk.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Launch product naming workstream outputs
+- Brand positioning criteria
+- Stakeholder feedback
+- Basic naming risk/availability check
+
+Acceptance criteria:
+- The Launch product naming output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Story,TGTM-59,10203,Define Managed Marketplace package scope,Product Marketing,Highest,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:59 PM,30/Jul/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-59 (Story) - Define Managed Marketplace package scope
+- Direct parent: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Grandparent / upstream context: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+- Hierarchy path: TGTM-59 (Story): Define Managed Marketplace package scope -> TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing
+
+Original intent:
+Package LaunchPad/Managed Marketplace as the launch product with complete workflow scope.
+
+Story context:
+This Story is part of the Product Marketing Epic: TGTM-5 - Launch Managed Tokenization Marketplace product marketing. It focuses on Managed Marketplace package scope and should produce a finished workstream deliverable that connects all related child issues into one coherent launch-ready output.
+
+How we are doing this:
+- Use this Story to deliver the Managed Marketplace package scope workstream for the launch product.
+- Build a launch package scope matrix that breaks the offering into modules: asset screening, KYC/KYB, legal/SPV workflow, developer onboarding, marketplace listing, subscription/registry, reporting/distribution, and support/servicing. Each module should specify included work, excluded work, owner, handoff, required input, output artifact, launch phase, and customer-facing wording.
+- Coordinate all child Tasks/Sub-tasks so they produce one integrated deliverable rather than disconnected notes.
+
+Preliminary solution:
+Build a launch package scope matrix that breaks the offering into modules: asset screening, KYC/KYB, legal/SPV workflow, developer onboarding, marketplace listing, subscription/registry, reporting/distribution, and support/servicing. Each module should specify included work, excluded work, owner, handoff, required input, output artifact, launch phase, and customer-facing wording.
+
+Expected deliverable:
+A Product Marketing scope pack containing the module matrix, customer-facing product description, internal scope notes, exclusions, and handoff guidance.
+
+Implementation notes:
+- Workstream goal: define the boundaries of the launch product so sales, product, operations, compliance, and investor-facing teams describe the same managed marketplace offer consistently.
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+- Managed Marketplace package scope workstream outputs
+
+Acceptance criteria:
+- The Managed Marketplace package scope output is complete and aligned with the Epic launch narrative.
+- All child issues have been completed or their open questions are documented with owners.
+- The final deliverable includes internal guidance and customer-facing wording where relevant.
+- Dependencies, risks, and approval requirements are documented clearly enough for GTM execution.",10149,TGTM-5,Launch Managed Tokenization Marketplace product marketing
+Epic,TGTM-5,10149,Launch Managed Tokenization Marketplace product marketing,Product Marketing,Highest,To Do,,30/Jun/26 9:24 AM,01/Jul/26 1:56 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+- Current issue: TGTM-5 (Epic) - Launch Managed Tokenization Marketplace product marketing
+- Direct parent: None; this is the top-level Product Marketing Epic in this extract
+- Hierarchy path: TGTM-5 (Epic): Launch Managed Tokenization Marketplace product marketing -> Top-level Epic in this extract
+
+Original intent:
+Package the launch product around developer onboarding, asset screening, diligence coordination, legal/SPV workflow, KYC/KYB, offering setup, marketplace listing, subscriptions, registry, reporting, distributions, support, and servicing.
+
+Strategic context:
+This Epic owns the Product Marketing layer of the GTM program for Blocks Estate's Managed Tokenization Marketplace. Its job is to convert product, pricing, lifecycle, servicing, and revenue assumptions into precise launch messaging that can be used safely across website copy, sales materials, investor conversations, developer conversations, partnership discussions, and internal enablement.
+
+How we are doing this:
+- Coordinate the full product marketing workstream for the Managed Tokenization Marketplace so naming, package scope, lifecycle workflow, fee packaging, and revenue messaging all tell one consistent launch story.
+- Use the child Stories as workstreams, consolidate their outputs into a master product marketing pack, and verify every external claim against legal, compliance, finance, product, and operations inputs.
+- Convert the final outputs into launch-ready website copy, sales enablement language, pricing/package notes, FAQs, and internal guidance for developer and investor conversations.
+
+Preliminary solution:
+Create a master Product Marketing Launch Pack for the Managed Tokenization Marketplace containing product definition, naming, lifecycle workflow, scope boundaries, pricing/fee packaging, messaging guardrails, FAQs, and approval log. This pack becomes the single source of truth for GTM, sales, partnerships, investor acquisition, developer acquisition, compliance, and operations teams.
+
+Expected deliverable:
+Master Product Marketing Launch Pack for the Managed Tokenization Marketplace, including product scope, naming, lifecycle workflow, pricing/fee package, messaging guardrails, FAQs, and approval log.
+
+Implementation notes:
+- Keep the language specific, operational, and launch-ready; avoid vague claims or investor-return promises.
+- Separate internal operating assumptions from customer-facing copy so teams know what can and cannot be said externally.
+- Flag decisions that require legal, compliance, finance, product, or operations approval before external publication.
+
+Dependencies / inputs:
+- Parent Story requirements and original Jira description
+- Managed Marketplace product strategy and GTM launch assumptions
+
+Acceptance criteria:
+- All child Stories are represented in a unified product marketing launch pack.
+- Naming, scope, lifecycle, pricing, fee packaging, and revenue messaging are internally consistent.
+- Legal, compliance, finance, product, and operations review points are captured before external use.
+- Final copy is usable by sales, developer acquisition, investor acquisition, partnerships, and leadership.",,,

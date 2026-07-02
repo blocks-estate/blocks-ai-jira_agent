@@ -1,0 +1,495 @@
+openapi: 3.1.0
+info:
+  title: PR & Events API
+  description: >
+    REST API for the PR & Events domain. Manages PR, founder thought leadership,
+    events, and private roundtable presence — including share-of-voice tracking,
+    media mentions, event management, breakfast session tracking, and
+    competitive visibility measurement. Supports the build PR, founder thought
+    leadership, events motion (TGTM-15) and share of voice tracking (TGTM-158)
+    workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-15
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Media Mentions ───────────────────────────────────────────────────
+  /pr/mentions:
+    get:
+      tags:
+        - PR & Events
+        - Media
+      summary: List media mentions
+      operationId: getPrMentions
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+        - $ref: './common.openapi.yaml#/components/parameters/DateRangeFilter'
+      responses:
+        '200':
+          description: Paginated media mentions
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MediaMentionCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - PR & Events
+        - Media
+      summary: Create a media mention record
+      operationId: createPrMention
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateMediaMentionRequestDto'
+      responses:
+        '201':
+          description: Mention created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MediaMentionDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Events ───────────────────────────────────────────────────────────
+  /pr/events:
+    get:
+      tags:
+        - PR & Events
+        - Events
+      summary: List PR and events
+      operationId: getPrEvents
+      responses:
+        '200':
+          description: PR events list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PrEventDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - PR & Events
+        - Events
+      summary: Create an event record
+      operationId: createPrEvent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePrEventRequestDto'
+      responses:
+        '201':
+          description: Event created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PrEventDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Breakfast Sessions ───────────────────────────────────────────────
+  /pr/breakfast-sessions:
+    get:
+      tags:
+        - PR & Events
+        - Events
+      summary: List breakfast sessions
+      operationId: getPrBreakfastSessions
+      responses:
+        '200':
+          description: Breakfast sessions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BreakfastSessionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - PR & Events
+        - Events
+      summary: Create a breakfast session record
+      operationId: createPrBreakfastSession
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateBreakfastSessionRequestDto'
+      responses:
+        '201':
+          description: Session created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BreakfastSessionDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Share of Voice ───────────────────────────────────────────────────
+  /competitive-intelligence/share-of-voice:
+    get:
+      tags:
+        - PR & Events
+        - Competitive Intelligence
+      summary: Retrieve share of voice data
+      description: >
+        Returns competitive visibility tracking data comparing Blocks against
+        competing platforms across PR, search, social, content, and paid/earned
+        channels.
+      operationId: getCompetitiveIntelligenceShareOfVoice
+      responses:
+        '200':
+          description: Share of voice data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShareOfVoiceDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /pr/kpis:
+    get:
+      tags:
+        - PR & Events
+        - KPIs
+      summary: Retrieve PR and events KPI metrics
+      operationId: getPrEventsKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: PR and events KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PrEventsKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    MentionSentimentEnum:
+      type: string
+      enum:
+        - positive
+        - neutral
+        - negative
+
+    MentionSourceEnum:
+      type: string
+      enum:
+        - tier-1-media
+        - trade-publication
+        - podcast
+        - social-media
+        - blog
+        - event-coverage
+
+    EventTypeEnum:
+      type: string
+      enum:
+        - conference
+        - roundtable
+        - breakfast
+        - webinar
+        - interview
+        - private-dinner
+
+    # ─── Media Mentions ─────────────────────────────────────────────────
+    MediaMentionDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        outlet:
+          type: string
+          example: Bloomberg
+        source:
+          $ref: '#/components/schemas/MentionSourceEnum'
+        sentiment:
+          $ref: '#/components/schemas/MentionSentimentEnum'
+        url:
+          type: string
+          format: uri
+        reach:
+          type: string
+          example: High
+        mentionsBlocks:
+          type: boolean
+        competitorMentioned:
+          type: string
+        mentionDate:
+          type: string
+          format: date
+      required:
+        - id
+        - title
+        - outlet
+        - source
+        - sentiment
+        - mentionDate
+
+    MediaMentionCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/MediaMentionDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateMediaMentionRequestDto:
+      type: object
+      properties:
+        title:
+          type: string
+        outlet:
+          type: string
+        source:
+          $ref: '#/components/schemas/MentionSourceEnum'
+        sentiment:
+          $ref: '#/components/schemas/MentionSentimentEnum'
+        url:
+          type: string
+          format: uri
+        reach:
+          type: string
+        mentionsBlocks:
+          type: boolean
+        competitorMentioned:
+          type: string
+        mentionDate:
+          type: string
+          format: date
+      required:
+        - title
+        - outlet
+        - source
+        - mentionDate
+
+    # ─── Events ─────────────────────────────────────────────────────────
+    PrEventDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        eventType:
+          $ref: '#/components/schemas/EventTypeEnum'
+        date:
+          type: string
+          format: date
+        location:
+          type: string
+        audience:
+          type: string
+        attendeesCount:
+          type: integer
+        blocksRepresented:
+          type: boolean
+        outcomes:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - eventType
+        - date
+
+    CreatePrEventRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        eventType:
+          $ref: '#/components/schemas/EventTypeEnum'
+        date:
+          type: string
+          format: date
+        location:
+          type: string
+        audience:
+          type: string
+        attendeesCount:
+          type: integer
+        blocksRepresented:
+          type: boolean
+        outcomes:
+          type: string
+      required:
+        - name
+        - eventType
+        - date
+
+    # ─── Breakfast Sessions ─────────────────────────────────────────────
+    BreakfastSessionDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          type: string
+          example: Developer Breakfast — Dubai Marina
+        date:
+          type: string
+          format: date
+        host:
+          type: string
+        attendees:
+          type: array
+          items:
+            type: string
+        relationshipOutcome:
+          type: string
+        followUpOwner:
+          type: string
+        effectivenessScore:
+          type: integer
+          description: Post-event effectiveness rating (1-5)
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - title
+        - date
+        - host
+
+    CreateBreakfastSessionRequestDto:
+      type: object
+      properties:
+        title:
+          type: string
+        date:
+          type: string
+          format: date
+        host:
+          type: string
+        attendees:
+          type: array
+          items:
+            type: string
+      required:
+        - title
+        - date
+        - host
+
+    # ─── Share of Voice ─────────────────────────────────────────────────
+    SoVCompetitorDto:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Blocks
+        color:
+          type: string
+          pattern: '^#[0-9a-fA-F]{6}$'
+          example: '#6366f1'
+        channels:
+          type: object
+          properties:
+            pr:
+              type: number
+            search:
+              type: number
+            social:
+              type: number
+            content:
+              type: number
+            paid:
+              type: number
+        overall:
+          type: number
+          example: 28
+      required:
+        - name
+        - color
+        - channels
+        - overall
+
+    ShareOfVoiceDto:
+      type: object
+      properties:
+        description:
+          type: string
+        competitors:
+          type: array
+          items:
+            $ref: '#/components/schemas/SoVCompetitorDto'
+        channelTaxonomy:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              description:
+                type: string
+              sources:
+                type: array
+                items:
+                  type: string
+      required:
+        - description
+        - competitors
+        - channelTaxonomy
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    PrEventsKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

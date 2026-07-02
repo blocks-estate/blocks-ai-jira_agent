@@ -1,0 +1,2061 @@
+﻿Issue Type,Issue key,Issue id,Summary,Components,Priority,Status,Resolution,Created,Updated,Due date,Description,Parent,Parent key,Parent summary
+Task,TGTM-249,10442,Create an executive review draft of the differentiation narrative,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create an executive review draft of the differentiation narrative.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-249 — Create an executive review draft of the differentiation narrative
+* Related sibling work: TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-244 Inventory competitor positioning and key claims for each named platform; TGTM-243 Create a competitor-by-competitor differentiation matrix; plus 1 additional sibling task(s)
+
+h3. Original intent
+Package the final 'why Blocks' story into a review-ready draft for stakeholder alignment and approval before it is used across GTM assets.
+
+h3. How we are doing this
+Consolidate the narrative spine, competitor matrix, proof pillars, guardrails, and messaging themes into a leadership-ready document. Structure the draft as a short executive memo plus reusable copy blocks so reviewers can approve both strategy and language.
+
+h3. Preliminary solution
+The executive draft should open with the recommended category, move into the 'why Blocks' narrative, then show competitor/category contrasts, evidence pillars, usage guidance, and review questions. The preliminary recommendation is to approve the managed-marketplace narrative as the master story and use it as the control point for website, deck, sales, and investor-facing copy.
+
+h3. Deliverable
+Review-ready differentiation narrative memo with decision points, approved language candidates, and unresolved questions.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-248,10440,Translate the differentiation narrative into messaging themes and talking points,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Translate the differentiation narrative into messaging themes and talking points.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-248 — Translate the differentiation narrative into messaging themes and talking points
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-244 Inventory competitor positioning and key claims for each named platform; TGTM-243 Create a competitor-by-competitor differentiation matrix; plus 1 additional sibling task(s)
+
+h3. Original intent
+Turn the core story into reusable messaging blocks for sales, marketing, and leadership communications, including short-form talk tracks and headline-level themes.
+
+h3. How we are doing this
+Break the narrative into modular message blocks: a 10-second explanation, 30-second talk track, website headline/subhead options, sales conversation bullets, founder narrative, and investor/developer variants.
+
+h3. Preliminary solution
+Create reusable themes around managed access, Dubai real estate focus, curated opportunities, developer capital formation, compliance-aware tokenization, and trust-first execution. Each theme should include one approved phrase, one short proof point, and one example of how to say it in sales or marketing copy.
+
+h3. Deliverable
+Messaging theme library with headlines, talking points, and approved phrasing.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-247,10438,"Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons",Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-247 — Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-244 Inventory competitor positioning and key claims for each named platform; TGTM-243 Create a competitor-by-competitor differentiation matrix; plus 1 additional sibling task(s)
+
+h3. Original intent
+Clarify the language and framing that should be used to distinguish Blocks Estate from categories it is not, so the differentiation story stays aligned with category positioning.
+
+h3. How we are doing this
+Create category guardrails that explain which comparisons are allowed, which are risky, and which should be avoided. Map each wrong comparison to the correct reframing language.
+
+h3. Preliminary solution
+The preliminary guardrail is: do not describe Blocks as a crypto exchange, token trading venue, passive trading app, generic crowdfunding website, property portal, or self-serve tokenization SaaS. Reframe as a managed digital investment infrastructure platform for Dubai real estate with curated assets and structured capital-formation workflows.
+
+h3. Deliverable
+Guardrail table with prohibited labels, acceptable clarifications, and approved replacement phrases.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-246,10433,Develop proof points and evidence pillars for each differentiation claim,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Develop proof points and evidence pillars for each differentiation claim.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-246 — Develop proof points and evidence pillars for each differentiation claim
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-244 Inventory competitor positioning and key claims for each named platform; TGTM-243 Create a competitor-by-competitor differentiation matrix; plus 1 additional sibling task(s)
+
+h3. Original intent
+Identify the specific facts, product capabilities, market context, and operating model details that support the narrative so the story can be used confidently in GTM materials.
+
+h3. How we are doing this
+For every differentiation claim, require a supporting evidence pillar such as operating model, product capability, asset workflow, audience benefit, compliance posture, market focus, or proof from internal strategy documents.
+
+h3. Preliminary solution
+Build evidence pillars around curated Dubai property supply, managed investor journey, developer capital-formation support, tokenization execution, bilingual trust-first messaging, and category discipline. Each pillar should identify what can be stated now, what needs validation, and what must remain conservative.
+
+h3. Deliverable
+Claim-to-proof matrix with evidence source, confidence level, and usage boundary.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-245,10430,Define the Blocks Estate narrative spine and core positioning themes,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Define the Blocks Estate narrative spine and core positioning themes.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-245 — Define the Blocks Estate narrative spine and core positioning themes
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-244 Inventory competitor positioning and key claims for each named platform; TGTM-243 Create a competitor-by-competitor differentiation matrix; plus 1 additional sibling task(s)
+
+h3. Original intent
+Translate the competitive analysis into the central storyline for Blocks Estate, including the primary market category, audience, problem statement, and the strategic angle that sets Blocks apart.
+
+h3. How we are doing this
+Translate competitor and category analysis into a single storyline: market problem, category confusion, audience need, Blocks' role, proof, and call to action.
+
+h3. Preliminary solution
+The preliminary narrative spine is: Dubai real estate is attractive but difficult to access and structure digitally; existing categories solve only parts of the journey; Blocks creates a managed bridge between investors, developers, tokenized asset workflows, and trust-first market communication.
+
+h3. Deliverable
+Narrative spine with core themes, proof logic, and message hierarchy.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-244,10432,Inventory competitor positioning and key claims for each named platform,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Inventory competitor positioning and key claims for each named platform.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-244 — Inventory competitor positioning and key claims for each named platform
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-243 Create a competitor-by-competitor differentiation matrix; plus 1 additional sibling task(s)
+
+h3. Original intent
+Compile the current public positioning, value propositions, and differentiators for PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder to ground the narrative in accurate competitive context.
+
+h3. How we are doing this
+Create a research template for each named platform covering public tagline, claimed audience, product category, primary value proposition, proof points, limitations, and source link/date.
+
+h3. Preliminary solution
+Do not rely on memory or informal competitor assumptions; the preliminary solution is to create a neutral source-backed inventory that separates observed public claims from Blocks' interpretation. This becomes the factual base for differentiation without making unsupported competitor attacks.
+
+h3. Deliverable
+Competitor positioning inventory for PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-243,10429,Create a competitor-by-competitor differentiation matrix,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create a competitor-by-competitor differentiation matrix.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-243 — Create a competitor-by-competitor differentiation matrix
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-244 Inventory competitor positioning and key claims for each named platform; plus 1 additional sibling task(s)
+
+h3. Original intent
+For each competitor, map where Blocks Estate differs on product model, target user, operating model, asset access, regulatory posture, and end-to-end value proposition.
+
+h3. How we are doing this
+Use a row-per-competitor and column-per-dimension matrix to compare product model, user intent, asset access, transaction workflow, compliance posture, revenue model, and GTM message.
+
+h3. Preliminary solution
+The matrix should show that some competitors are investor apps, some are portals, some are infrastructure providers, and some support property discovery or fractional ownership; Blocks should be differentiated through managed Dubai real estate investment infrastructure and capital formation rather than one isolated feature.
+
+h3. Deliverable
+Competitor-by-competitor differentiation matrix with approved interpretation notes.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-242,10428,Draft the 'why Blocks' story framework,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:19 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Draft the 'why Blocks' story framework.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-242 — Draft the 'why Blocks' story framework
+* Related sibling work: TGTM-249 Create an executive review draft of the differentiation narrative; TGTM-248 Translate the differentiation narrative into messaging themes and talking points; TGTM-247 Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons; TGTM-246 Develop proof points and evidence pillars for each differentiation claim; TGTM-245 Define the Blocks Estate narrative spine and core positioning themes; TGTM-244 Inventory competitor positioning and key claims for each named platform; plus 1 additional sibling task(s)
+
+h3. Original intent
+Write a concise narrative that explains why Blocks Estate exists, why it is different from adjacent platforms, and why it is the right choice for the target audience.
+
+h3. How we are doing this
+Draft a concise story framework with sections for why now, why Dubai real estate, why tokenization needs management, why Blocks, and why each audience should care.
+
+h3. Preliminary solution
+The preliminary 'why Blocks' story should say: Blocks exists because the market needs a trusted managed layer that makes Dubai property investment more accessible, structured, and understandable for investors while giving developers a digital capital-formation channel that is not framed as speculative crypto trading.
+
+h3. Deliverable
+Draft 'why Blocks' framework ready for proof-point and executive-review layering.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10179,TGTM-35,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder"
+Task,TGTM-241,10426,Review the comparison language for consistency with the finalized positioning architecture,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Review the comparison language for consistency with the finalized positioning architecture.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-241 — Review the comparison language for consistency with the finalized positioning architecture
+* Related sibling work: TGTM-240 Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories; TGTM-238 Draft the Blocks vs. category comparison matrix; TGTM-237 Develop objection-handling talk tracks for common misclassification questions; TGTM-236 Write category-specific positioning statements for sales; TGTM-235 Create 'is / is not' messaging for Blocks
+
+h3. Original intent
+Check the draft against the broader category positioning and messaging architecture to ensure terminology, claims, and category distinctions are aligned.
+
+h3. How we are doing this
+Review every comparison claim against the approved category name, one-line positioning, tagline direction, and do-not-say rules. Flag wording that creates category confusion or overstates legal/product maturity.
+
+h3. Preliminary solution
+The preliminary solution is to use the positioning architecture as the control document: every comparison must reinforce managed real estate digital investment infrastructure and avoid drifting into exchange, trading, portal, or pure SaaS language.
+
+h3. Deliverable
+Comparison-language QA checklist with edits and approval notes.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10178,TGTM-34,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure"
+Task,TGTM-240,10422,Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-240 — Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories
+* Related sibling work: TGTM-241 Review the comparison language for consistency with the finalized positioning architecture; TGTM-238 Draft the Blocks vs. category comparison matrix; TGTM-237 Develop objection-handling talk tracks for common misclassification questions; TGTM-236 Write category-specific positioning statements for sales; TGTM-235 Create 'is / is not' messaging for Blocks
+
+h3. Original intent
+Identify the specific attributes to compare across crypto exchanges, crowdfunding apps, property portals, and tokenization infrastructure (for example: product function, buyer/user type, asset flow, custody, compliance posture, revenue model, and level of self-service). Gather the source materials needed to support the positioning comparison.
+
+h3. How we are doing this
+Define the comparison dimensions before writing copy, then gather internal and public source inputs for each dimension. Keep factual inputs separate from messaging conclusions.
+
+h3. Preliminary solution
+Use dimensions such as user intent, asset type, transaction model, custody/compliance posture, self-service level, revenue model, onboarding journey, and post-investment experience. The preliminary comparison model should prove that Blocks spans more of the end-to-end investment and capital formation journey than single-category alternatives.
+
+h3. Deliverable
+Comparison-dimension workbook or table with source inputs and interpretation notes.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10178,TGTM-34,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure"
+Task,TGTM-239,10423,Document tone adaptation rules by channel and asset type,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Document tone adaptation rules by channel and asset type.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-239 — Document tone adaptation rules by channel and asset type
+* Related sibling work: TGTM-234 Create English tone-of-voice examples for key marketing and product scenarios; TGTM-233 Create a do-not-say list for tone, claims, and language that conflict with the brand voice; TGTM-232 Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms; TGTM-231 Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios; TGTM-230 Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+
+h3. Original intent
+Specify how the voice should flex across channels such as website, deck, email, social, product UI, and sales materials while preserving the same brand feel and message discipline.
+
+h3. How we are doing this
+Create rules for how the voice flexes by channel without changing the strategic message: website is concise and premium, pitch decks are structured and proof-led, email is direct and human, social is educational, product UI is plain and reassuring, and sales materials are objection-aware.
+
+h3. Preliminary solution
+The preliminary solution is a channel adaptation grid that preserves the same core message while changing sentence length, level of detail, CTA style, and proof depth by asset type.
+
+h3. Deliverable
+Tone adaptation rules by channel and asset type.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10177,TGTM-33,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging"
+Task,TGTM-238,10415,Draft the Blocks vs. category comparison matrix,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Draft the Blocks vs. category comparison matrix.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-238 — Draft the Blocks vs. category comparison matrix
+* Related sibling work: TGTM-241 Review the comparison language for consistency with the finalized positioning architecture; TGTM-240 Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories; TGTM-237 Develop objection-handling talk tracks for common misclassification questions; TGTM-236 Write category-specific positioning statements for sales; TGTM-235 Create 'is / is not' messaging for Blocks
+
+h3. Original intent
+Create a clear side-by-side comparison that shows what Blocks is, what it is not, and how it differs from a crypto exchange, crowdfunding app, property portal, and tokenization infrastructure provider.
+
+h3. How we are doing this
+Draft a side-by-side matrix using four adjacent categories and one Blocks column. For each row, describe category function, user expectation, what it solves, what it does not solve, and how Blocks should be explained instead.
+
+h3. Preliminary solution
+The preliminary matrix should make the distinction simple: exchanges trade tokens, crowdfunding apps pool capital, portals list properties, infrastructure providers enable technical rails, and Blocks manages the real estate investment and capital-formation experience across the digital asset workflow.
+
+h3. Deliverable
+Blocks-vs-category comparison matrix with approved positioning language.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10178,TGTM-34,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure"
+Task,TGTM-237,10417,Develop objection-handling talk tracks for common misclassification questions,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Develop objection-handling talk tracks for common misclassification questions.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-237 — Develop objection-handling talk tracks for common misclassification questions
+* Related sibling work: TGTM-241 Review the comparison language for consistency with the finalized positioning architecture; TGTM-240 Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories; TGTM-238 Draft the Blocks vs. category comparison matrix; TGTM-236 Write category-specific positioning statements for sales; TGTM-235 Create 'is / is not' messaging for Blocks
+
+h3. Original intent
+Write short responses to likely buyer or partner questions such as whether Blocks is a crypto exchange, a crowdfunding app, a property portal, or a tokenization infrastructure product.
+
+h3. How we are doing this
+List the most likely misclassification questions, then write 1-sentence, 30-second, and deeper explanation responses for each.
+
+h3. Preliminary solution
+Example preliminary response: 'No, Blocks is not a crypto exchange; we are focused on managed Dubai real estate investment access and capital formation, using digital ownership infrastructure where appropriate rather than operating as a token trading venue.' Repeat this pattern for crowdfunding, portals, and tokenization SaaS.
+
+h3. Deliverable
+Objection-handling talk track library for sales and founder conversations.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10178,TGTM-34,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure"
+Task,TGTM-236,10414,Write category-specific positioning statements for sales,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Write category-specific positioning statements for sales.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-236 — Write category-specific positioning statements for sales
+* Related sibling work: TGTM-241 Review the comparison language for consistency with the finalized positioning architecture; TGTM-240 Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories; TGTM-238 Draft the Blocks vs. category comparison matrix; TGTM-237 Develop objection-handling talk tracks for common misclassification questions; TGTM-235 Create 'is / is not' messaging for Blocks
+
+h3. Original intent
+For each adjacent category, draft concise positioning language that helps sales teams explain Blocks in plain terms and avoid category confusion.
+
+h3. How we are doing this
+Write short positioning statements that start from the wrong category and pivot to the correct framing. Keep each version sales-friendly and easy to memorize.
+
+h3. Preliminary solution
+For a crypto-exchange comparison, say Blocks is not built around token speculation; for a crowdfunding comparison, emphasize managed real estate investment infrastructure; for a portal comparison, emphasize execution beyond discovery; for tokenization infrastructure, emphasize market-facing capital formation and investor/developer workflow management.
+
+h3. Deliverable
+Category-specific positioning statements for sales enablement.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10178,TGTM-34,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure"
+Task,TGTM-235,10416,Create 'is / is not' messaging for Blocks,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create 'is / is not' messaging for Blocks.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-235 — Create 'is / is not' messaging for Blocks
+* Related sibling work: TGTM-241 Review the comparison language for consistency with the finalized positioning architecture; TGTM-240 Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories; TGTM-238 Draft the Blocks vs. category comparison matrix; TGTM-237 Develop objection-handling talk tracks for common misclassification questions; TGTM-236 Write category-specific positioning statements for sales
+
+h3. Original intent
+Turn the comparison into explicit guidance on what Blocks should be described as and what it should not be described as, including short approved phrasing for sales conversations.
+
+h3. How we are doing this
+Create an explicit 'Blocks is / Blocks is not' list for the website, deck, SDR training, founder calls, and internal documentation.
+
+h3. Preliminary solution
+The preliminary guidance should state that Blocks is a managed Dubai real estate digital investment and capital-formation platform; it is not a crypto exchange, token speculation app, generic crowdfunding site, listing portal, or do-it-yourself tokenization software product.
+
+h3. Deliverable
+Approved is/is-not messaging table with examples and replacement wording.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10178,TGTM-34,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure"
+Task,TGTM-234,10407,Create English tone-of-voice examples for key marketing and product scenarios,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create English tone-of-voice examples for key marketing and product scenarios.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-234 — Create English tone-of-voice examples for key marketing and product scenarios
+* Related sibling work: TGTM-239 Document tone adaptation rules by channel and asset type; TGTM-233 Create a do-not-say list for tone, claims, and language that conflict with the brand voice; TGTM-232 Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms; TGTM-231 Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios; TGTM-230 Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+
+h3. Original intent
+Write before/after or approved example copy in English for common use cases such as homepage headers, subheaders, CTAs, email intros, short-form social copy, and product explanations.
+
+h3. How we are doing this
+Write English examples across common copy situations, showing approved and unapproved versions. Include short explanation of why each approved example works.
+
+h3. Preliminary solution
+The examples should favor clear, trust-building copy such as 'Access curated Dubai real estate opportunities through a managed digital platform' over hype language such as 'trade property tokens instantly' or 'unlock guaranteed returns.'
+
+h3. Deliverable
+English tone examples for homepage, CTAs, email intros, social, and product explanations.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10177,TGTM-33,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging"
+Task,TGTM-233,10408,"Create a do-not-say list for tone, claims, and language that conflict with the brand voice",Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create a do-not-say list for tone, claims, and language that conflict with the brand voice.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-233 — Create a do-not-say list for tone, claims, and language that conflict with the brand voice
+* Related sibling work: TGTM-239 Document tone adaptation rules by channel and asset type; TGTM-234 Create English tone-of-voice examples for key marketing and product scenarios; TGTM-232 Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms; TGTM-231 Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios; TGTM-230 Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+
+h3. Original intent
+Document words, phrases, and stylistic patterns to avoid because they sound hype-driven, overly technical, speculative, crypto-native, or inconsistent with premium trust-first positioning.
+
+h3. How we are doing this
+List words and sentence patterns that create the wrong impression, then provide safer replacement language. Organize by tone risk, legal risk, category risk, and brand risk.
+
+h3. Preliminary solution
+Preliminarily prohibit or restrict phrases like guaranteed returns, trade instantly, crypto revolution, moonshot, democratize wealth without context, frictionless profits, passive income promise, and exchange-style language. Replace with measured phrases around access, managed workflows, curated opportunities, transparency, and compliance-aware execution.
+
+h3. Deliverable
+Do-not-say list with rationale and approved alternatives.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10177,TGTM-33,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging"
+Task,TGTM-232,10406,"Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms",Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-232 — Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms
+* Related sibling work: TGTM-239 Document tone adaptation rules by channel and asset type; TGTM-234 Create English tone-of-voice examples for key marketing and product scenarios; TGTM-233 Create a do-not-say list for tone, claims, and language that conflict with the brand voice; TGTM-231 Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios; TGTM-230 Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+
+h3. Original intent
+Establish preferred English and Arabic terms for key concepts such as managed marketplace, tokenization, capital formation, trust, ownership, and investor eligibility so copy remains consistent and accurate.
+
+h3. How we are doing this
+Define a bilingual glossary for brand-critical terms, including English term, Arabic equivalent, usage note, restricted variants, and example sentence.
+
+h3. Preliminary solution
+The preliminary solution is to translate for trust and clarity, not literal word-for-word symmetry. Terms around ownership, eligibility, tokenization, investment, and capital formation should be reviewed carefully so Arabic copy does not overpromise or imply the wrong regulatory category.
+
+h3. Deliverable
+Bilingual terminology and approved translation guide.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10177,TGTM-33,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging"
+Task,TGTM-231,10404,Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-231 — Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios
+* Related sibling work: TGTM-239 Document tone adaptation rules by channel and asset type; TGTM-234 Create English tone-of-voice examples for key marketing and product scenarios; TGTM-233 Create a do-not-say list for tone, claims, and language that conflict with the brand voice; TGTM-232 Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms; TGTM-230 Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+
+h3. Original intent
+Develop Arabic examples that reflect the same premium, calm, Dubai-rooted, trust-first tone, including guidance on formality, terminology choices, and how to preserve meaning across Arabic copy types.
+
+h3. How we are doing this
+Create Arabic copy examples for homepage, deck, investor education, product explanation, and campaign copy. Include notes on formality, Gulf/Dubai relevance, and terms that should remain English or be explained.
+
+h3. Preliminary solution
+The Arabic voice should be polished, confident, and clear, avoiding exaggerated luxury language or overly technical Web3 phrasing. It should explain digital real estate access in a way that feels trustworthy to regional investors and partners.
+
+h3. Deliverable
+Arabic tone-of-voice examples with usage guidance.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10177,TGTM-33,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging"
+Task,TGTM-230,10405,"Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning",Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-230 — Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+* Related sibling work: TGTM-239 Document tone adaptation rules by channel and asset type; TGTM-234 Create English tone-of-voice examples for key marketing and product scenarios; TGTM-233 Create a do-not-say list for tone, claims, and language that conflict with the brand voice; TGTM-232 Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms; TGTM-231 Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios
+
+h3. Original intent
+Translate the positioning into a concise voice framework covering personality traits, audience expectations, key do/don't behaviors, and the core messaging principles that should remain consistent across all copy.
+
+h3. How we are doing this
+Define the voice framework around personality traits, message principles, copy behaviors, and approval rules. Convert abstract traits into practical writing guidance.
+
+h3. Preliminary solution
+The preliminary principles are: calm confidence, institutional clarity, Dubai credibility, investor protection mindset, plain-language tokenization, measured ambition, and zero hype. These principles should guide every asset from website copy to pitch decks.
+
+h3. Deliverable
+Core tone-of-voice principles and message pillars.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10177,TGTM-33,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging"
+Task,TGTM-229,10402,Validate the chosen tagline against the messaging architecture,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Validate the chosen tagline against the messaging architecture.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-32 — Choose launch tagline and approved alternates
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-229 — Validate the chosen tagline against the messaging architecture
+* Related sibling work: TGTM-228 Create a do-not-use list for tagline language; TGTM-227 Define messaging criteria for evaluating tagline options; TGTM-226 Select the primary launch tagline for the website hero; TGTM-225 Approve alternate tagline options for campaign copy; TGTM-224 Inventory candidate launch taglines from the positioning strategy
+
+h3. Original intent
+Check the selected primary tagline and alternates against the final positioning framework to ensure consistency with the approved category narrative.
+
+h3. How we are doing this
+Test the chosen tagline and alternates against category fit, one-line positioning, audience interpretation, legal safety, and campaign usability.
+
+h3. Preliminary solution
+The preliminary validation approach is to reject any tagline that could imply token trading, guaranteed returns, crypto speculation, or generic property search. The chosen tagline must support managed Dubai real estate investment access and fit naturally above the approved one-line positioning statement.
+
+h3. Deliverable
+Tagline validation notes with pass/fail rationale.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10176,TGTM-32,Choose launch tagline and approved alternates
+Task,TGTM-228,10400,Create a do-not-use list for tagline language,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Create a do-not-use list for tagline language.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-32 — Choose launch tagline and approved alternates
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-228 — Create a do-not-use list for tagline language
+* Related sibling work: TGTM-229 Validate the chosen tagline against the messaging architecture; TGTM-227 Define messaging criteria for evaluating tagline options; TGTM-226 Select the primary launch tagline for the website hero; TGTM-225 Approve alternate tagline options for campaign copy; TGTM-224 Inventory candidate launch taglines from the positioning strategy
+
+h3. Original intent
+Document words, phrases, and positioning cues that should be avoided because they imply the wrong category, product model, or regulatory posture.
+
+h3. How we are doing this
+Create a negative-language filter for taglines before final selection. Group prohibited directions by hype, return promise, crypto/trading framing, vague luxury, and SaaS jargon.
+
+h3. Preliminary solution
+The do-not-use list should exclude phrases like 'trade Dubai property,' 'guaranteed income,' 'crypto real estate revolution,' 'instant liquidity,' and generic claims such as 'the future of everything' unless backed and legally approved.
+
+h3. Deliverable
+Tagline do-not-use list and replacement guidance.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10176,TGTM-32,Choose launch tagline and approved alternates
+Task,TGTM-227,10395,Define messaging criteria for evaluating tagline options,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Define messaging criteria for evaluating tagline options.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-32 — Choose launch tagline and approved alternates
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-227 — Define messaging criteria for evaluating tagline options
+* Related sibling work: TGTM-229 Validate the chosen tagline against the messaging architecture; TGTM-228 Create a do-not-use list for tagline language; TGTM-226 Select the primary launch tagline for the website hero; TGTM-225 Approve alternate tagline options for campaign copy; TGTM-224 Inventory candidate launch taglines from the positioning strategy
+
+h3. Original intent
+Establish the criteria taglines must meet, including clarity, differentiation, category fit, audience relevance, and avoidance of crypto-exchange or self-serve SaaS framing.
+
+h3. How we are doing this
+Score each tagline against a consistent rubric so selection is not based on taste alone. Use criteria such as clarity, memorability, category fit, trust, Dubai relevance, legal safety, and adaptability.
+
+h3. Preliminary solution
+The preliminary scoring model should weight clarity and category safety above cleverness. A tagline should make the audience comfortable before it tries to sound disruptive.
+
+h3. Deliverable
+Tagline evaluation rubric and scoring table.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10176,TGTM-32,Choose launch tagline and approved alternates
+Task,TGTM-226,10393,Select the primary launch tagline for the website hero,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:44 PM,,"h3. Summary
+Select the primary launch tagline for the website hero.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-32 — Choose launch tagline and approved alternates
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-226 — Select the primary launch tagline for the website hero
+* Related sibling work: TGTM-229 Validate the chosen tagline against the messaging architecture; TGTM-228 Create a do-not-use list for tagline language; TGTM-227 Define messaging criteria for evaluating tagline options; TGTM-225 Approve alternate tagline options for campaign copy; TGTM-224 Inventory candidate launch taglines from the positioning strategy
+
+h3. Original intent
+Review the candidate options and choose one headline/tagline that best communicates Blocks Estate as a managed Dubai real estate tokenization marketplace and capital-formation platform.
+
+h3. How we are doing this
+Review the highest-scoring tagline candidates and choose one primary website hero option, then document why it wins and where it should be used.
+
+h3. Preliminary solution
+The working primary direction should be a plain, premium tagline such as 'Dubai real estate investment, professionally managed.' Final approval should depend on legal review and fit with the website hero subhead.
+
+h3. Deliverable
+Selected primary launch tagline with rationale and usage notes.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10176,TGTM-32,Choose launch tagline and approved alternates
+Task,TGTM-225,10394,Approve alternate tagline options for campaign copy,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Approve alternate tagline options for campaign copy.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-32 — Choose launch tagline and approved alternates
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-225 — Approve alternate tagline options for campaign copy
+* Related sibling work: TGTM-229 Validate the chosen tagline against the messaging architecture; TGTM-228 Create a do-not-use list for tagline language; TGTM-227 Define messaging criteria for evaluating tagline options; TGTM-226 Select the primary launch tagline for the website hero; TGTM-224 Inventory candidate launch taglines from the positioning strategy
+
+h3. Original intent
+Identify a short list of secondary tagline variants that are on-message and can be used across ads, email, social, and other campaign assets.
+
+h3. How we are doing this
+Select secondary tagline variants for channels where the primary hero tagline is too formal, too long, or too website-specific.
+
+h3. Preliminary solution
+Approved alternates should stay in the same message territory: managed access, curated Dubai real estate, digital investment infrastructure, trust, and capital formation. Avoid alternates that create a new category promise or introduce unsupported claims.
+
+h3. Deliverable
+Approved alternate tagline list with channel usage guidance.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10176,TGTM-32,Choose launch tagline and approved alternates
+Task,TGTM-224,10392,Inventory candidate launch taglines from the positioning strategy,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Inventory candidate launch taglines from the positioning strategy.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-32 — Choose launch tagline and approved alternates
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-224 — Inventory candidate launch taglines from the positioning strategy
+* Related sibling work: TGTM-229 Validate the chosen tagline against the messaging architecture; TGTM-228 Create a do-not-use list for tagline language; TGTM-227 Define messaging criteria for evaluating tagline options; TGTM-226 Select the primary launch tagline for the website hero; TGTM-225 Approve alternate tagline options for campaign copy
+
+h3. Original intent
+Collect all tagline options implied by the category positioning, value proposition, and hero/campaign messaging so they can be reviewed against the launch brief.
+
+h3. How we are doing this
+Collect candidate taglines from the strategy documents, founder language, audience pitch blocks, category statement, and competitor-differentiation story. Do not judge too early; inventory first, then score.
+
+h3. Preliminary solution
+The preliminary inventory should include functional, premium, investor-facing, developer-facing, and campaign-style options so the team can compare clarity versus emotional pull.
+
+h3. Deliverable
+Candidate tagline inventory prepared for scoring and review.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10176,TGTM-32,Choose launch tagline and approved alternates
+Task,TGTM-223,10390,Standardize reusable structure and CTA guidance for pitch modules,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Standardize reusable structure and CTA guidance for pitch modules.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-223 — Standardize reusable structure and CTA guidance for pitch modules
+* Related sibling work: TGTM-222 Define developer pitch block with approved positioning and proof points; TGTM-221 Define partner pitch block with approved positioning and proof points; TGTM-220 Create audience-specific do-not-say guidance for each pitch block; TGTM-219 Define regulator-safe pitch block with conservative wording; TGTM-218 Define investor pitch block with approved positioning and proof points
+
+h3. Original intent
+Define a consistent format for each pitch block, including recommended section order, audience-specific call to action, and notes on when each version should be used across sales and marketing assets.
+
+h3. How we are doing this
+Create a shared pitch block template that every audience module follows. Include headline, audience problem, Blocks answer, proof points, CTA, usage notes, and prohibited language.
+
+h3. Preliminary solution
+The preliminary structure should be modular enough for sales decks, one-pagers, outbound emails, and founder calls. Each module should have a long version, short version, and one-sentence version.
+
+h3. Deliverable
+Reusable pitch module structure and CTA guidance.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10175,TGTM-31,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts"
+Task,TGTM-222,10386,Define developer pitch block with approved positioning and proof points,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Define developer pitch block with approved positioning and proof points.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-222 — Define developer pitch block with approved positioning and proof points
+* Related sibling work: TGTM-223 Standardize reusable structure and CTA guidance for pitch modules; TGTM-221 Define partner pitch block with approved positioning and proof points; TGTM-220 Create audience-specific do-not-say guidance for each pitch block; TGTM-219 Define regulator-safe pitch block with conservative wording; TGTM-218 Define investor pitch block with approved positioning and proof points
+
+h3. Original intent
+Create a reusable pitch module for developers that explains the platform’s supply-side value, tokenization/asset onboarding benefits, and partnership terms using language aligned to the master message and category positioning.
+
+h3. How we are doing this
+Frame the developer pitch around capital formation, differentiated distribution, asset onboarding support, and credible investor-facing storytelling. Keep language business-focused, not token-hype driven.
+
+h3. Preliminary solution
+The preliminary developer pitch should say Blocks helps qualified developers present curated Dubai real estate opportunities to a digitally enabled investor base through a managed platform that supports tokenization workflows, investor education, and capital-formation communication.
+
+h3. Deliverable
+Developer pitch block with proof points and CTA.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10175,TGTM-31,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts"
+Task,TGTM-221,10383,Define partner pitch block with approved positioning and proof points,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Define partner pitch block with approved positioning and proof points.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-221 — Define partner pitch block with approved positioning and proof points
+* Related sibling work: TGTM-223 Standardize reusable structure and CTA guidance for pitch modules; TGTM-222 Define developer pitch block with approved positioning and proof points; TGTM-220 Create audience-specific do-not-say guidance for each pitch block; TGTM-219 Define regulator-safe pitch block with conservative wording; TGTM-218 Define investor pitch block with approved positioning and proof points
+
+h3. Original intent
+Create a reusable pitch module for strategic partners that describes collaboration models, ecosystem benefits, and integration language suitable for referrals, brokers, service providers, and ecosystem allies.
+
+h3. How we are doing this
+Define partner categories such as brokers, referral partners, service providers, ecosystem partners, and strategic alliances, then write a pitch block that explains mutual value.
+
+h3. Preliminary solution
+The partner pitch should emphasize trust, qualified deal/investor flow, ecosystem credibility, and clear collaboration models. It should avoid suggesting that partners are endorsing investment outcomes unless that is contractually approved.
+
+h3. Deliverable
+Partner pitch block with collaboration models and proof points.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10175,TGTM-31,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts"
+Task,TGTM-220,10382,Create audience-specific do-not-say guidance for each pitch block,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Create audience-specific do-not-say guidance for each pitch block.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-220 — Create audience-specific do-not-say guidance for each pitch block
+* Related sibling work: TGTM-223 Standardize reusable structure and CTA guidance for pitch modules; TGTM-222 Define developer pitch block with approved positioning and proof points; TGTM-221 Define partner pitch block with approved positioning and proof points; TGTM-219 Define regulator-safe pitch block with conservative wording; TGTM-218 Define investor pitch block with approved positioning and proof points
+
+h3. Original intent
+Document prohibited or risky phrases for investors, developers, partners, and regulator-safe contexts, along with compliant replacement language to keep all four modules aligned with the messaging architecture.
+
+h3. How we are doing this
+For each audience pitch block, list words that could mislead that audience and provide replacements. Separate investor, developer, partner, and regulator-safe restrictions.
+
+h3. Preliminary solution
+Investors should not hear return guarantees; developers should not hear guaranteed raise claims; partners should not hear unapproved endorsement language; regulator-safe contexts should avoid promotional investment language and instead use conservative, factual descriptions.
+
+h3. Deliverable
+Audience-specific do-not-say matrix.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10175,TGTM-31,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts"
+Task,TGTM-219,10381,Define regulator-safe pitch block with conservative wording,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Define regulator-safe pitch block with conservative wording.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-219 — Define regulator-safe pitch block with conservative wording
+* Related sibling work: TGTM-223 Standardize reusable structure and CTA guidance for pitch modules; TGTM-222 Define developer pitch block with approved positioning and proof points; TGTM-221 Define partner pitch block with approved positioning and proof points; TGTM-220 Create audience-specific do-not-say guidance for each pitch block; TGTM-218 Define investor pitch block with approved positioning and proof points
+
+h3. Original intent
+Create a reusable pitch module for regulator-facing or compliance-sensitive contexts that uses conservative, non-promissory wording and reinforces that Blocks Estate is not a crypto exchange, trading app, or self-serve SaaS product.
+
+h3. How we are doing this
+Write a conservative module for compliance-sensitive conversations with plain statements about what Blocks does, what it does not do, and how the platform should be discussed before approvals.
+
+h3. Preliminary solution
+The regulator-safe pitch should describe Blocks as developing managed digital infrastructure for real estate investment access and capital formation, with language focused on transparency, controls, eligibility, and governance rather than returns, trading, or speculation.
+
+h3. Deliverable
+Regulator-safe pitch block with conservative wording.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10175,TGTM-31,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts"
+Task,TGTM-218,10380,Define investor pitch block with approved positioning and proof points,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Define investor pitch block with approved positioning and proof points.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-218 — Define investor pitch block with approved positioning and proof points
+* Related sibling work: TGTM-223 Standardize reusable structure and CTA guidance for pitch modules; TGTM-222 Define developer pitch block with approved positioning and proof points; TGTM-221 Define partner pitch block with approved positioning and proof points; TGTM-220 Create audience-specific do-not-say guidance for each pitch block; TGTM-219 Define regulator-safe pitch block with conservative wording
+
+h3. Original intent
+Create a reusable pitch module for investors that frames Blocks Estate as a managed Dubai real estate tokenization marketplace and capital-formation platform, including value proposition, investment rationale, and compliant language boundaries.
+
+h3. How we are doing this
+Build the investor pitch around the investor's problem, the Blocks category, the Dubai opportunity, how opportunities are curated, the role of tokenization, and the trust/compliance boundaries.
+
+h3. Preliminary solution
+The preliminary investor pitch should present Blocks as a managed pathway to curated Dubai real estate opportunities, using digital ownership infrastructure to improve access and clarity while avoiding any promise of liquidity, returns, or exchange-like trading.
+
+h3. Deliverable
+Investor pitch block with approved proof points and CTA.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10175,TGTM-31,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts"
+Task,TGTM-217,10377,Inventory candidate category names and adjacent positioning language,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Inventory candidate category names and adjacent positioning language.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-217 — Inventory candidate category names and adjacent positioning language
+* Related sibling work: TGTM-216 Create a plain-language category description and one-line positioning statement; TGTM-215 Select the primary category name and supporting rationale; TGTM-214 Define approved and prohibited terminology for category framing; TGTM-213 Validate the category name and messaging with target audience interpretation
+
+h3. Original intent
+Compile a short list of viable category names and related descriptors for Blocks Estate, including variants that emphasize managed real estate investment, tokenization, infrastructure, and capital formation without crypto-first or trading-first framing.
+
+h3. How we are doing this
+Inventory category names from strategy, adjacent markets, competitor language, founder language, and audience interpretation. Include why each name helps or hurts.
+
+h3. Preliminary solution
+The shortlist should include managed real estate digital investment infrastructure, managed Dubai real estate investment platform, real estate tokenization marketplace, digital real estate capital-formation platform, and curated real estate investment marketplace. Each should be tested for clarity, legal safety, and category distinctiveness.
+
+h3. Deliverable
+Category-name inventory with pros, cons, and audience interpretation risk.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10174,TGTM-30,Define category name: managed real estate digital investment infrastructure
+Task,TGTM-216,10374,Create a plain-language category description and one-line positioning statement,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Create a plain-language category description and one-line positioning statement.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-216 — Create a plain-language category description and one-line positioning statement
+* Related sibling work: TGTM-217 Inventory candidate category names and adjacent positioning language; TGTM-215 Select the primary category name and supporting rationale; TGTM-214 Define approved and prohibited terminology for category framing; TGTM-213 Validate the category name and messaging with target audience interpretation
+
+h3. Original intent
+Draft the short category definition and a single-sentence positioning statement that clearly explain Blocks Estate as a managed Dubai real estate digital investment infrastructure platform rather than a crypto product.
+
+h3. How we are doing this
+Write a plain-language category description that can be understood by investors, developers, partners, and non-technical readers. Then compress it into a one-line category statement.
+
+h3. Preliminary solution
+Preliminary plain-language description: Blocks Estate helps investors access curated Dubai real estate opportunities through a managed digital platform and helps developers structure capital-formation campaigns using tokenization-enabled workflows. The wording should explain tokenization only as an enabling mechanism, not the category itself.
+
+h3. Deliverable
+Plain-language category description and one-line category statement.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10174,TGTM-30,Define category name: managed real estate digital investment infrastructure
+Task,TGTM-215,10373,Select the primary category name and supporting rationale,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Select the primary category name and supporting rationale.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-215 — Select the primary category name and supporting rationale
+* Related sibling work: TGTM-217 Inventory candidate category names and adjacent positioning language; TGTM-216 Create a plain-language category description and one-line positioning statement; TGTM-214 Define approved and prohibited terminology for category framing; TGTM-213 Validate the category name and messaging with target audience interpretation
+
+h3. Original intent
+Recommend the final category name, with a clear rationale for why it best fits the product and market positioning. Include the key meaning the name should convey and why alternative labels were rejected.
+
+h3. How we are doing this
+Recommend one primary category name and document why it is better than alternatives. Use criteria such as clarity, differentiation, legal safety, scalability, investor comfort, and sales usability.
+
+h3. Preliminary solution
+The preliminary recommendation is to use 'managed real estate digital investment infrastructure' as the internal strategic category and simplify externally to 'managed Dubai real estate investment platform' where audience clarity matters more than category precision.
+
+h3. Deliverable
+Primary category-name recommendation with rationale and rejected alternatives.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10174,TGTM-30,Define category name: managed real estate digital investment infrastructure
+Task,TGTM-214,10371,Define approved and prohibited terminology for category framing,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Define approved and prohibited terminology for category framing.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-214 — Define approved and prohibited terminology for category framing
+* Related sibling work: TGTM-217 Inventory candidate category names and adjacent positioning language; TGTM-216 Create a plain-language category description and one-line positioning statement; TGTM-215 Select the primary category name and supporting rationale; TGTM-213 Validate the category name and messaging with target audience interpretation
+
+h3. Original intent
+Create a concise language guide that specifies which words and phrases are approved, conditional, or prohibited when describing the category, especially terms that imply exchange, trading app, or self-serve SaaS positioning.
+
+h3. How we are doing this
+Build a terminology guide that labels terms as approved, conditional, or prohibited. Add explanation and replacement language for each restricted term.
+
+h3. Preliminary solution
+Approved terms should include managed, curated, Dubai real estate, digital investment platform, capital formation, tokenization-enabled workflows, and compliance-aware language. Conditional terms include token, fractional, marketplace, and yield depending on context. Prohibited or highly restricted terms include exchange, trading app, guaranteed returns, crypto speculation, and instant liquidity.
+
+h3. Deliverable
+Approved/prohibited terminology guide for category framing.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10174,TGTM-30,Define category name: managed real estate digital investment infrastructure
+Task,TGTM-213,10370,Validate the category name and messaging with target audience interpretation,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Validate the category name and messaging with target audience interpretation.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-213 — Validate the category name and messaging with target audience interpretation
+* Related sibling work: TGTM-217 Inventory candidate category names and adjacent positioning language; TGTM-216 Create a plain-language category description and one-line positioning statement; TGTM-215 Select the primary category name and supporting rationale; TGTM-214 Define approved and prohibited terminology for category framing
+
+h3. Original intent
+Review the proposed category name and framing to ensure it is understood as a managed real estate investment infrastructure offering, and not misread as a token trading platform or generic Web3 service.
+
+h3. How we are doing this
+Test the category name with the target interpretation question: after reading it, would the audience think Blocks is a managed real estate investment platform, or would they think it is a crypto/trading tool?
+
+h3. Preliminary solution
+The preliminary validation approach should use a small review panel of internal stakeholders and target-audience proxies. Any term that causes repeated confusion with exchanges, portals, or generic Web3 tools should be downgraded or surrounded with clarifying copy.
+
+h3. Deliverable
+Category-name validation notes and interpretation findings.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10174,TGTM-30,Define category name: managed real estate digital investment infrastructure
+Task,TGTM-212,10368,Map the positioning statement to core marketing assets,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Map the positioning statement to core marketing assets.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-29 — Finalize one-line positioning statement
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-212 — Map the positioning statement to core marketing assets
+* Related sibling work: TGTM-211 Draft the final one-line category positioning statement; TGTM-210 Create a do-not-say list for the positioning statement; TGTM-209 Create approved alternate versions for different top-level assets; TGTM-208 Validate the positioning statement against strategy and legal constraints; TGTM-207 Define the default market description usage rules
+
+h3. Original intent
+Document how the final one-line positioning should appear in top-level marketing assets, including the homepage, company profile, deck cover, and outbound materials.
+
+h3. How we are doing this
+Create an asset map that shows exactly where the approved one-line positioning appears and when a shorter or adapted version is permitted.
+
+h3. Preliminary solution
+The default statement should appear in the homepage hero/subhero, company profile, deck intro, investor one-pager, outbound templates, and internal sales script. Shortened versions can be used in ads or social only if they preserve managed Dubai real estate and avoid crypto/trading shortcuts.
+
+h3. Deliverable
+Positioning-to-asset usage map.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10173,TGTM-29,Finalize one-line positioning statement
+Task,TGTM-211,10363,Draft the final one-line category positioning statement,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Draft the final one-line category positioning statement.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-29 — Finalize one-line positioning statement
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-211 — Draft the final one-line category positioning statement
+* Related sibling work: TGTM-212 Map the positioning statement to core marketing assets; TGTM-210 Create a do-not-say list for the positioning statement; TGTM-209 Create approved alternate versions for different top-level assets; TGTM-208 Validate the positioning statement against strategy and legal constraints; TGTM-207 Define the default market description usage rules
+
+h3. Original intent
+Write the recommended positioning as a concise, market-facing one-liner that clearly frames Blocks Estate as a managed Dubai real estate tokenization marketplace and capital-formation platform.
+
+h3. How we are doing this
+Draft the one-line statement using the approved category language, audience value, product model, and compliance-safe boundaries. Keep it direct enough for a website and precise enough for a pitch deck.
+
+h3. Preliminary solution
+Preliminary one-liner: 'Blocks Estate is a managed Dubai real estate digital investment platform that helps investors access curated property opportunities while helping developers raise capital through structured, compliance-aware tokenization workflows.'
+
+h3. Deliverable
+Final one-line category positioning statement draft.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10173,TGTM-29,Finalize one-line positioning statement
+Task,TGTM-210,10362,Create a do-not-say list for the positioning statement,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Create a do-not-say list for the positioning statement.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-29 — Finalize one-line positioning statement
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-210 — Create a do-not-say list for the positioning statement
+* Related sibling work: TGTM-212 Map the positioning statement to core marketing assets; TGTM-211 Draft the final one-line category positioning statement; TGTM-209 Create approved alternate versions for different top-level assets; TGTM-208 Validate the positioning statement against strategy and legal constraints; TGTM-207 Define the default market description usage rules
+
+h3. Original intent
+Identify positioning language that could confuse Blocks Estate with a crypto exchange, trading app, or self-serve SaaS product, and provide compliant replacement phrasing.
+
+h3. How we are doing this
+Identify risky positioning wording and provide replacements that keep the statement clear while avoiding wrong-category signals.
+
+h3. Preliminary solution
+The do-not-say list should prevent phrases such as 'property token exchange,' 'trade real estate like crypto,' 'guaranteed returns,' 'instant liquidity,' and 'self-serve tokenization SaaS.' Replacements should focus on managed access, curated opportunities, structured workflows, and compliance-aware capital formation.
+
+h3. Deliverable
+Do-not-say list for the positioning statement.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10173,TGTM-29,Finalize one-line positioning statement
+Task,TGTM-209,10360,Create approved alternate versions for different top-level assets,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Create approved alternate versions for different top-level assets.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-29 — Finalize one-line positioning statement
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-209 — Create approved alternate versions for different top-level assets
+* Related sibling work: TGTM-212 Map the positioning statement to core marketing assets; TGTM-211 Draft the final one-line category positioning statement; TGTM-210 Create a do-not-say list for the positioning statement; TGTM-208 Validate the positioning statement against strategy and legal constraints; TGTM-207 Define the default market description usage rules
+
+h3. Original intent
+Adapt the core positioning statement for use across website hero copy, pitch decks, investor materials, and other top-level assets while keeping the same strategic meaning.
+
+h3. How we are doing this
+Adapt the core statement into variants for website, pitch deck, company profile, investor memo, outbound email, and social bio while preserving the same strategic meaning.
+
+h3. Preliminary solution
+The preliminary variant system should use one master statement and controlled versions: a short hero version, a formal investor version, a developer-facing version, and a plain-language version. None should introduce a new promise that is absent from the approved master statement.
+
+h3. Deliverable
+Approved alternate positioning statements by asset type.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10173,TGTM-29,Finalize one-line positioning statement
+Task,TGTM-208,10359,Validate the positioning statement against strategy and legal constraints,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Validate the positioning statement against strategy and legal constraints.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-29 — Finalize one-line positioning statement
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-208 — Validate the positioning statement against strategy and legal constraints
+* Related sibling work: TGTM-212 Map the positioning statement to core marketing assets; TGTM-211 Draft the final one-line category positioning statement; TGTM-210 Create a do-not-say list for the positioning statement; TGTM-209 Create approved alternate versions for different top-level assets; TGTM-207 Define the default market description usage rules
+
+h3. Original intent
+Review the proposed one-line statement to ensure it matches the category strategy, reflects the intended business model, and avoids unsupported or misleading claims.
+
+h3. How we are doing this
+Review the statement against category strategy, business model reality, legal/compliance constraints, and proof availability. Mark each phrase as approved, revise, or remove.
+
+h3. Preliminary solution
+The preliminary validation standard is: every phrase must be true, supportable, category-safe, and usable by sales without creating wrong expectations. Claims about returns, liquidity, regulation, or guarantees should be excluded unless separately approved.
+
+h3. Deliverable
+Validation checklist and proposed edits for legal/strategy review.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10173,TGTM-29,Finalize one-line positioning statement
+Task,TGTM-207,10358,Define the default market description usage rules,Positioning & Messaging,Medium,To Do,,30/Jun/26 10:18 AM,01/Jul/26 4:45 PM,,"h3. Summary
+Define the default market description usage rules.
+
+h3. Hierarchy / linkage
+* Parent Story: TGTM-29 — Finalize one-line positioning statement
+* Grandparent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Task: TGTM-207 — Define the default market description usage rules
+* Related sibling work: TGTM-212 Map the positioning statement to core marketing assets; TGTM-211 Draft the final one-line category positioning statement; TGTM-210 Create a do-not-say list for the positioning statement; TGTM-209 Create approved alternate versions for different top-level assets; TGTM-208 Validate the positioning statement against strategy and legal constraints
+
+h3. Original intent
+h3. Summary
+
+Define the default market description usage rules.
+
+h3. Context
+
+The issue is about specifying how the recommended positioning should be used by default.
+
+h3. Acceptance criteria
+
+* Specify where the recommended positioning should be used by default.
+* Specify when it may be shortened or adapted.
+* Specify which asset types must use the exact approved wording.
+
+h3. Other information
+
+N/A
+
+h3. How we are doing this
+Define the operating rules for when the default positioning must be used exactly and when teams may adapt it for channel, length, or audience.
+
+h3. Preliminary solution
+The default market description should be mandatory in top-level assets such as the homepage, deck intro, company profile, and investor-facing overview. Teams may shorten it for ads/social/email previews only if the shortened version retains the category, Dubai real estate focus, managed positioning, and no-hype boundaries.
+
+h3. Deliverable
+Usage rules for default market description and allowed adaptations.
+
+h3. Dependencies / inputs
+* Parent Story objective and acceptance criteria.
+* Approved or draft category positioning statement.
+* Existing GTM strategy, business plan, website copy direction, pitch deck language, and founder-approved narrative.
+* Legal/compliance guidance for claims related to investment, ownership, eligibility, tokenization, liquidity, regulation, and returns.
+* Competitive/source material where the task makes competitor or category comparisons.
+
+h3. Implementation notes
+* Write outputs in reusable blocks, not long-form prose only.
+* Separate approved language from draft language and prohibited language.
+* Make the recommendation explicit so reviewers are not forced to infer the intended solution.
+* Keep copy premium, calm, Dubai-rooted, trust-first, and easy for sales or marketing to reuse.
+* Flag any unresolved assumptions, missing proof points, or language that requires compliance review.
+
+h3. Acceptance criteria
+* The task output directly supports the parent Story and does not conflict with the grandparent Epic positioning.
+* A preliminary solution/recommendation is included, not only analysis.
+* Approved wording, do-not-use wording, and usage context are clear where relevant.
+* The deliverable is specific enough to be pasted into a GTM playbook, website brief, pitch deck, sales enablement document, or campaign brief.
+* Any risky claim is either removed, softened, or marked for legal/compliance review.",10173,TGTM-29,Finalize one-line positioning statement
+Story,TGTM-35,10179,"Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder",Positioning & Messaging,High,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,29/Aug/26 12:00 AM,"h3. Summary
+Create the master 'why Blocks' differentiation narrative using competitor context, proof points, category guardrails, and a review-ready story that can be reused across GTM assets.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* Child tasks in this CSV:
+* TGTM-249 — Create an executive review draft of the differentiation narrative
+* TGTM-248 — Translate the differentiation narrative into messaging themes and talking points
+* TGTM-247 — Define positioning guardrails against crypto exchange, trading app, and self-serve SaaS comparisons
+* TGTM-246 — Develop proof points and evidence pillars for each differentiation claim
+* TGTM-245 — Define the Blocks Estate narrative spine and core positioning themes
+* TGTM-244 — Inventory competitor positioning and key claims for each named platform
+* TGTM-243 — Create a competitor-by-competitor differentiation matrix
+* TGTM-242 — Draft the 'why Blocks' story framework
+
+h3. Original intent
+Convert competitive analysis into a clear 'why Blocks' story.
+
+h3. How we are doing this
+Use the child tasks as a sequence: first inventory competitor claims, then build a differentiation matrix, convert those differences into a narrative spine, support every claim with proof points, define what Blocks should not be compared to, convert the story into messaging blocks, and package the executive review draft.
+
+h3. Preliminary solution
+The preliminary narrative should position Blocks Estate as a managed Dubai real estate tokenization marketplace and capital-formation platform that combines curated real-estate access, developer capital formation, structured tokenization workflows, and trust-first investor communication. The story should avoid arguing that Blocks is simply cheaper, faster, or more crypto-native; instead, it should explain that Blocks sits between property access, managed investment infrastructure, and compliant digital ownership workflows.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Story,TGTM-34,10178,"Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure",Positioning & Messaging,Medium,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,29/Aug/26 12:00 AM,"h3. Summary
+Give sales and leadership a clear comparison framework for explaining what Blocks is, what it is not, and how it differs from adjacent categories.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* Child tasks in this CSV:
+* TGTM-241 — Review the comparison language for consistency with the finalized positioning architecture
+* TGTM-240 — Compile the comparison dimensions and source inputs for Blocks vs. adjacent categories
+* TGTM-238 — Draft the Blocks vs. category comparison matrix
+* TGTM-237 — Develop objection-handling talk tracks for common misclassification questions
+* TGTM-236 — Write category-specific positioning statements for sales
+* TGTM-235 — Create 'is / is not' messaging for Blocks
+
+h3. Original intent
+Help sales teams explain what Blocks is and is not.
+
+h3. How we are doing this
+Build a category-comparison matrix covering crypto exchanges, crowdfunding apps, property portals, and tokenization infrastructure providers, then translate the comparison into sales positioning statements, is/is-not language, and objection-handling talk tracks.
+
+h3. Preliminary solution
+The preliminary comparison should define crypto exchanges as trading venues, crowdfunding apps as campaign-based pooling tools, property portals as discovery/listing platforms, and tokenization infrastructure as enabling rails; Blocks should be framed as the managed layer that packages Dubai real estate access, asset onboarding, investor messaging, tokenization execution, and capital-formation workflows into one market-facing platform.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Story,TGTM-33,10177,"Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging",Positioning & Messaging,Medium,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,30/Jul/26 12:00 AM,"h3. Summary
+Create a bilingual tone-of-voice guide that makes all Blocks copy feel premium, calm, Dubai-rooted, and trust-first.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* Child tasks in this CSV:
+* TGTM-239 — Document tone adaptation rules by channel and asset type
+* TGTM-234 — Create English tone-of-voice examples for key marketing and product scenarios
+* TGTM-233 — Create a do-not-say list for tone, claims, and language that conflict with the brand voice
+* TGTM-232 — Define bilingual terminology, phrasing preferences, and approved translations for brand-critical terms
+* TGTM-231 — Create Arabic tone-of-voice examples and usage guidance for key messaging scenarios
+* TGTM-230 — Define core tone-of-voice principles and message pillars for premium, calm, trust-first positioning
+
+h3. Original intent
+Define the voice and examples for English and Arabic copy.
+
+h3. How we are doing this
+Define voice principles, approved terminology, Arabic/English examples, do-not-say rules, and channel adaptation rules, then align the guide with the positioning and legal/compliance constraints.
+
+h3. Preliminary solution
+The preliminary voice should sound institutional but accessible: confident without hype, modern without crypto slang, premium without sounding elitist, and Dubai-rooted without relying on generic luxury clichés. The Arabic version should preserve meaning and trust rather than literal English-to-Arabic translation.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Story,TGTM-32,10176,Choose launch tagline and approved alternates,Positioning & Messaging,Medium,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,30/Jul/26 12:00 AM,"h3. Summary
+Choose one launch tagline and a controlled set of alternates that can be used across the website hero, campaigns, emails, and social copy.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-32 — Choose launch tagline and approved alternates
+* Child tasks in this CSV:
+* TGTM-229 — Validate the chosen tagline against the messaging architecture
+* TGTM-228 — Create a do-not-use list for tagline language
+* TGTM-227 — Define messaging criteria for evaluating tagline options
+* TGTM-226 — Select the primary launch tagline for the website hero
+* TGTM-225 — Approve alternate tagline options for campaign copy
+* TGTM-224 — Inventory candidate launch taglines from the positioning strategy
+
+h3. Original intent
+Select tagline options for website hero and campaign copy.
+
+h3. How we are doing this
+Inventory candidate taglines, define evaluation criteria, filter out risky language, select a primary launch option, approve alternates, and validate the final set against the messaging architecture.
+
+h3. Preliminary solution
+The preliminary tagline direction should emphasize managed access to Dubai real estate rather than crypto trading. A working primary direction is: 'Dubai real estate investment, professionally managed.' Candidate alternates should stay close to accessibility, managed confidence, curated Dubai property access, and institutional trust, while avoiding return promises or token-hype language.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Story,TGTM-31,10175,"Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts",Positioning & Messaging,High,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,30/Jul/26 12:00 AM,"h3. Summary
+Create reusable pitch modules for investors, developers, partners, and regulator-safe contexts so all GTM conversations use the same message architecture.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* Child tasks in this CSV:
+* TGTM-223 — Standardize reusable structure and CTA guidance for pitch modules
+* TGTM-222 — Define developer pitch block with approved positioning and proof points
+* TGTM-221 — Define partner pitch block with approved positioning and proof points
+* TGTM-220 — Create audience-specific do-not-say guidance for each pitch block
+* TGTM-219 — Define regulator-safe pitch block with conservative wording
+* TGTM-218 — Define investor pitch block with approved positioning and proof points
+
+h3. Original intent
+Convert master message into four reusable pitch modules.
+
+h3. How we are doing this
+Create four modular pitch blocks using the same structure: audience pain point, what Blocks is, why it matters now, proof points, what action the audience should take, and do-not-say boundaries.
+
+h3. Preliminary solution
+The preliminary pitch architecture should keep one master narrative but adapt emphasis: investors hear curated Dubai real estate access and trust; developers hear capital formation and distribution; partners hear ecosystem alignment and referral/integration potential; regulator-safe audiences hear conservative language around managed workflows, transparency, and category boundaries.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Story,TGTM-30,10174,Define category name: managed real estate digital investment infrastructure,Positioning & Messaging,High,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,30/Jul/26 12:00 AM,"h3. Summary
+Define the category name and supporting language so Blocks is not misread as a crypto exchange, trading app, property portal, or pure tokenization SaaS tool.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* Child tasks in this CSV:
+* TGTM-217 — Inventory candidate category names and adjacent positioning language
+* TGTM-216 — Create a plain-language category description and one-line positioning statement
+* TGTM-215 — Select the primary category name and supporting rationale
+* TGTM-214 — Define approved and prohibited terminology for category framing
+* TGTM-213 — Validate the category name and messaging with target audience interpretation
+
+h3. Original intent
+Make the category clear and avoid crypto-first or trading-first framing.
+
+h3. How we are doing this
+Inventory category candidates, evaluate them against audience clarity and regulatory safety, select the primary category name, define approved/prohibited terms, create a plain-language description, and validate audience interpretation.
+
+h3. Preliminary solution
+The preliminary category should be 'managed real estate digital investment infrastructure' for internal architecture and long-form strategy, with a simpler market-facing phrase such as 'managed Dubai real estate investment platform' where plain language is needed. The category should signal management, real estate, Dubai focus, digital infrastructure, and capital formation without leading with crypto.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Story,TGTM-29,10173,Finalize one-line positioning statement,Positioning & Messaging,High,To Do,,30/Jun/26 9:41 AM,30/Jun/26 10:16 AM,30/Jul/26 12:00 AM,"h3. Summary
+Finalize the default one-line positioning statement that becomes the source-of-truth market description for top-level GTM assets.
+
+h3. Hierarchy / linkage
+* Parent Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Current Story: TGTM-29 — Finalize one-line positioning statement
+* Child tasks in this CSV:
+* TGTM-212 — Map the positioning statement to core marketing assets
+* TGTM-211 — Draft the final one-line category positioning statement
+* TGTM-210 — Create a do-not-say list for the positioning statement
+* TGTM-209 — Create approved alternate versions for different top-level assets
+* TGTM-208 — Validate the positioning statement against strategy and legal constraints
+* TGTM-207 — Define the default market description usage rules
+
+h3. Original intent
+Use the strategy's recommended positioning as the default market description for all top-level assets.
+
+h3. How we are doing this
+Define usage rules, draft the one-liner, create alternate versions for different assets, test against strategy/legal constraints, build do-not-say guidance, and map the final wording to core assets.
+
+h3. Preliminary solution
+The preliminary one-line positioning statement should be: 'Blocks Estate is a managed Dubai real estate digital investment platform that helps investors access curated property opportunities while helping developers raise capital through structured, compliance-aware tokenization workflows.' This statement should be tightened after legal review but should remain the default narrative anchor.
+
+h3. Implementation notes
+* Treat this Story as a source-of-truth messaging workstream, not a one-off copywriting exercise.
+* Ensure every child task output can be reused across website, sales, investor, developer, partner, and leadership-facing materials.
+* Any wording that implies guaranteed returns, token trading, instant liquidity, or unapproved regulatory status should be escalated before approval.
+* Final output should be written in a format that marketing, sales, founders, and compliance reviewers can all understand.
+
+h3. Acceptance criteria
+* All child tasks are completed or explicitly marked as not required for launch.
+* The Story produces a single coherent messaging output that aligns with the parent Epic.
+* Approved wording, prohibited wording, audience usage notes, and dependencies are clearly documented.
+* The output can be copied into GTM assets without needing strategic reinterpretation.",10146,TGTM-2,Finalize category positioning and messaging architecture
+Epic,TGTM-2,10146,Finalize category positioning and messaging architecture,Positioning & Messaging,High,To Do,,30/Jun/26 9:24 AM,01/Jul/26 1:56 PM,30/Jul/26 12:00 AM,"h3. Summary
+Finalize the full category positioning and messaging architecture for Blocks Estate so every GTM asset explains the company consistently, clearly, and safely.
+
+h3. Hierarchy / linkage
+* Current Epic: TGTM-2 — Finalize category positioning and messaging architecture
+* Child Stories in this CSV:
+* TGTM-35 — Create differentiation narrative vs PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare, Bayut, and Property Finder
+* TGTM-34 — Write positioning comparison against crypto exchange, crowdfunding app, property portal, and tokenization infrastructure
+* TGTM-33 — Create tone-of-voice guide for premium, calm, Dubai-rooted, trust-first messaging
+* TGTM-32 — Choose launch tagline and approved alternates
+* TGTM-31 — Create audience-specific pitch blocks for investors, developers, partners, and regulator-safe contexts
+* TGTM-30 — Define category name: managed real estate digital investment infrastructure
+* TGTM-29 — Finalize one-line positioning statement
+
+h3. Original intent
+Define Blocks Estate as a managed Dubai real estate tokenization marketplace and capital-formation platform, not a crypto exchange, trading app, or self-serve SaaS product.
+
+h3. How we are doing this
+Build the messaging architecture as a connected system rather than separate copy assets. The sequence is: define the one-line positioning statement, finalize the category name, create audience-specific pitch blocks, choose the launch tagline, define tone of voice, write category comparisons, and convert competitive analysis into the master differentiation narrative. Each child Story owns one layer of the architecture, and the Epic is complete only when those layers reinforce one another.
+
+h3. Preliminary solution
+The preliminary source-of-truth positioning should be: Blocks Estate is a managed Dubai real estate digital investment platform that helps investors access curated property opportunities while helping developers raise capital through structured, compliance-aware tokenization workflows. The architecture should consistently distinguish Blocks from crypto exchanges, trading apps, generic crowdfunding sites, property portals, and self-serve tokenization SaaS. The messaging system should emphasize managed access, curated Dubai real estate, developer capital formation, trust-first communication, and category clarity.
+
+h3. Architecture layers to produce
+* Category layer: approved category name, category description, and prohibited terminology.
+* Positioning layer: one-line market description, usage rules, and asset-specific versions.
+* Audience layer: pitch blocks for investors, developers, partners, and regulator-safe contexts.
+* Campaign layer: launch tagline, approved alternates, and tagline do-not-use list.
+* Voice layer: bilingual tone-of-voice guide, terminology, and channel adaptation rules.
+* Competitive layer: comparison matrix, proof pillars, objection handling, and 'why Blocks' narrative.
+
+h3. Governance / review approach
+* Treat the final messaging architecture as the canonical reference for GTM, sales, fundraising, website, and partner-facing copy.
+* Require legal/compliance review for language touching investment outcomes, liquidity, eligibility, regulation, ownership, tokenization, or returns.
+* Require leadership approval for the final one-line positioning, category name, primary tagline, and master differentiation narrative.
+* Use the parent-child issue structure to track which lower-level deliverables support each strategic messaging layer.
+
+h3. Acceptance criteria
+* All child Stories produce usable outputs and link back to the same category positioning.
+* The final architecture includes approved language, prohibited language, audience-specific guidance, and asset usage rules.
+* Sales, marketing, founders, and external copywriters can use the architecture without creating category confusion.
+* The messaging is ready to support launch campaigns, website copy, pitch decks, outbound messaging, developer outreach, investor education, and fundraising materials.",,,

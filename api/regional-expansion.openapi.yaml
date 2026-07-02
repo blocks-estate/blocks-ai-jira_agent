@@ -1,0 +1,487 @@
+openapi: 3.1.0
+info:
+  title: Regional Expansion API
+  description: >
+    REST API for the Regional Expansion domain. Manages GCC-ready regional
+    expansion playbooks — jurisdiction claim guardrails, market entry memos,
+    jurisdictional reference sheets, and region-specific messaging alignment.
+    Supports the GCC-ready regional expansion playbooks (TGTM-19) and GCC
+    jurisdiction claim guardrails (TGTM-190) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-19
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Jurisdictions ────────────────────────────────────────────────────
+  /regional/jurisdictions:
+    get:
+      tags:
+        - Regional Expansion
+        - Jurisdictions
+      summary: List GCC jurisdictions
+      operationId: getRegionalJurisdictions
+      responses:
+        '200':
+          description: Jurisdiction list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/JurisdictionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Regional Expansion
+        - Jurisdictions
+      summary: Create a jurisdiction record
+      operationId: createRegionalJurisdiction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateJurisdictionRequestDto'
+      responses:
+        '201':
+          description: Jurisdiction created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JurisdictionDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Jurisdiction Guardrails ──────────────────────────────────────────
+  /regional/jurisdictions/{id}/guardrails:
+    get:
+      tags:
+        - Regional Expansion
+        - Guardrails
+      summary: Get guardrails for a jurisdiction
+      operationId: getRegionalJurisdictionGuardrails
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Jurisdiction guardrails
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ClaimGuardrailDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Regional Expansion
+        - Guardrails
+      summary: Create a guardrail for a jurisdiction
+      operationId: createRegionalJurisdictionGuardrail
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateClaimGuardrailRequestDto'
+      responses:
+        '201':
+          description: Guardrail created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClaimGuardrailDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Entry Memos ──────────────────────────────────────────────────────
+  /regional/entry-memos:
+    get:
+      tags:
+        - Regional Expansion
+        - Market Entry
+      summary: List market entry memos
+      operationId: getRegionalEntryMemos
+      responses:
+        '200':
+          description: Entry memos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EntryMemoDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Regional Expansion
+        - Market Entry
+      summary: Create an entry memo
+      operationId: createRegionalEntryMemo
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateEntryMemoRequestDto'
+      responses:
+        '201':
+          description: Entry memo created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntryMemoDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Claim Reference ──────────────────────────────────────────────────
+  /regional/claim-reference:
+    get:
+      tags:
+        - Regional Expansion
+        - Claims
+      summary: Get jurisdiction claim reference sheet
+      operationId: getRegionalClaimReference
+      responses:
+        '200':
+          description: Claim reference entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ClaimReferenceEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Regional Expansion
+        - Claims
+      summary: Create a claim reference entry
+      operationId: createRegionalClaimReferenceEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateClaimReferenceEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClaimReferenceEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /regional/kpis:
+    get:
+      tags:
+        - Regional Expansion
+        - KPIs
+      summary: Retrieve regional expansion KPI metrics
+      operationId: getRegionalExpansionKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Regional expansion KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RegionalExpansionKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    MarketEntryStatusEnum:
+      type: string
+      enum:
+        - not-assessed
+        - in-assessment
+        - ready-to-enter
+        - partner-led
+        - phased-entry
+        - on-hold
+        - entered
+
+    GuardrailStatusEnum:
+      type: string
+      enum:
+        - allowed
+        - conditional
+        - restricted
+        - prohibited
+        - pending-review
+
+    # ─── Jurisdictions ──────────────────────────────────────────────────
+    JurisdictionDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: UAE
+        marketEntryStatus:
+          $ref: '#/components/schemas/MarketEntryStatusEnum'
+        regulatoryBody:
+          type: string
+          example: Securities and Commodities Authority (SCA)
+        primaryLanguage:
+          type: string
+          example: Arabic
+        priority:
+          type: integer
+          example: 1
+        notes:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - marketEntryStatus
+
+    CreateJurisdictionRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        marketEntryStatus:
+          $ref: '#/components/schemas/MarketEntryStatusEnum'
+        regulatoryBody:
+          type: string
+        primaryLanguage:
+          type: string
+        priority:
+          type: integer
+        notes:
+          type: string
+      required:
+        - name
+
+    # ─── Guardrails ─────────────────────────────────────────────────────
+    ClaimGuardrailDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        claim:
+          type: string
+          example: Fractional real estate ownership
+        status:
+          $ref: '#/components/schemas/GuardrailStatusEnum'
+        jurisdictionId:
+          type: string
+          format: uuid
+        mandatoryDisclaimer:
+          type: string
+        approvalOwner:
+          type: string
+        escalationPath:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - claim
+        - status
+        - jurisdictionId
+
+    CreateClaimGuardrailRequestDto:
+      type: object
+      properties:
+        claim:
+          type: string
+        status:
+          $ref: '#/components/schemas/GuardrailStatusEnum'
+        mandatoryDisclaimer:
+          type: string
+        approvalOwner:
+          type: string
+        escalationPath:
+          type: string
+      required:
+        - claim
+        - status
+
+    # ─── Entry Memos ────────────────────────────────────────────────────
+    EntryMemoDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        jurisdictionId:
+          type: string
+          format: uuid
+        title:
+          type: string
+          example: Bahrain Market Entry Assessment
+        executiveSummary:
+          type: string
+        recommendation:
+          type: string
+        evidenceHighlights:
+          type: string
+        risksAndAssumptions:
+          type: array
+          items:
+            type: string
+        nextActions30_60_90:
+          type: array
+          items:
+            type: string
+        owner:
+          type: string
+        status:
+          type: string
+          enum:
+            - draft
+            - reviewed
+            - approved
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - jurisdictionId
+        - title
+        - recommendation
+        - status
+        - createdAt
+
+    CreateEntryMemoRequestDto:
+      type: object
+      properties:
+        jurisdictionId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        executiveSummary:
+          type: string
+        recommendation:
+          type: string
+        evidenceHighlights:
+          type: string
+        risksAndAssumptions:
+          type: array
+          items:
+            type: string
+        nextActions30_60_90:
+          type: array
+          items:
+            type: string
+        owner:
+          type: string
+      required:
+        - jurisdictionId
+        - title
+        - recommendation
+        - owner
+
+    # ─── Claim Reference ────────────────────────────────────────────────
+    ClaimReferenceEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        jurisdictionId:
+          type: string
+          format: uuid
+        claim:
+          type: string
+        allowed:
+          type: boolean
+        condition:
+          type: string
+        mandatoryDisclaimer:
+          type: string
+        citation:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - jurisdictionId
+        - claim
+        - allowed
+
+    CreateClaimReferenceEntryRequestDto:
+      type: object
+      properties:
+        jurisdictionId:
+          type: string
+          format: uuid
+        claim:
+          type: string
+        allowed:
+          type: boolean
+        condition:
+          type: string
+        mandatoryDisclaimer:
+          type: string
+        citation:
+          type: string
+      required:
+        - jurisdictionId
+        - claim
+        - allowed
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    RegionalExpansionKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

@@ -1,0 +1,652 @@
+openapi: 3.1.0
+info:
+  title: Risk Management API
+  description: >
+    REST API for the Risk Management domain. Manages GTM risk mitigations —
+    market correction messaging, escalation guidance, FAQ/objection-handling
+    guides, internal talking points, and risk trigger monitoring. Supports the
+    operationalize GTM risk mitigations (TGTM-18) and market correction risk
+    messaging (TGTM-183) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-18
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Risk Mitigation Register ─────────────────────────────────────────
+  /risk/mitigation-register:
+    get:
+      tags:
+        - Risk Management
+        - Register
+      summary: Get the risk mitigation register
+      operationId: getRiskMitigationRegister
+      responses:
+        '200':
+          description: Risk mitigation entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/RiskMitigationEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Risk Management
+        - Register
+      summary: Create a risk mitigation entry
+      operationId: createRiskMitigationEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateRiskMitigationEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskMitigationEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /risk/mitigation-register/{id}:
+    patch:
+      tags:
+        - Risk Management
+        - Register
+      summary: Update a risk mitigation entry
+      operationId: updateRiskMitigationEntry
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateRiskMitigationEntryRequestDto'
+      responses:
+        '200':
+          description: Updated entry
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskMitigationEntryDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Market Outlook ───────────────────────────────────────────────────
+  /risk/market-outlook:
+    get:
+      tags:
+        - Risk Management
+        - Market
+      summary: Get market risk outlook
+      operationId: getRiskMarketOutlook
+      responses:
+        '200':
+          description: Market outlook data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MarketOutlookDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /risk/market-outlook/triggers:
+    post:
+      tags:
+        - Risk Management
+        - Market
+      summary: Create a market risk trigger condition
+      operationId: createRiskMarketTrigger
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateMarketTriggerRequestDto'
+      responses:
+        '201':
+          description: Trigger created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MarketTriggerDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Talking Points ───────────────────────────────────────────────────
+  /risk/talking-points:
+    get:
+      tags:
+        - Risk Management
+        - Communications
+      summary: List internal talking points
+      operationId: getRiskTalkingPoints
+      responses:
+        '200':
+          description: Talking points
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TalkingPointDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Risk Management
+        - Communications
+      summary: Create a talking point
+      operationId: createRiskTalkingPoint
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTalkingPointRequestDto'
+      responses:
+        '201':
+          description: Talking point created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TalkingPointDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Escalation Guides ────────────────────────────────────────────────
+  /risk/escalation-guides:
+    get:
+      tags:
+        - Risk Management
+        - Communications
+      summary: List escalation guides
+      operationId: getRiskEscalationGuides
+      responses:
+        '200':
+          description: Escalation guides
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EscalationGuideDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Risk Management
+        - Communications
+      summary: Create an escalation guide
+      operationId: createRiskEscalationGuide
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateEscalationGuideRequestDto'
+      responses:
+        '201':
+          description: Guide created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EscalationGuideDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── FAQ ──────────────────────────────────────────────────────────────
+  /risk/faq:
+    get:
+      tags:
+        - Risk Management
+        - Communications
+      summary: List risk FAQ entries
+      operationId: getRiskFaq
+      responses:
+        '200':
+          description: FAQ entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FaqEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Risk Management
+        - Communications
+      summary: Create an FAQ entry
+      operationId: createRiskFaqEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateFaqEntryRequestDto'
+      responses:
+        '201':
+          description: FAQ entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FaqEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /risk/kpis:
+    get:
+      tags:
+        - Risk Management
+        - KPIs
+      summary: Retrieve risk management KPI metrics
+      operationId: getRiskManagementKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Risk management KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskManagementKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    RiskSeverityEnum:
+      type: string
+      enum:
+        - low
+        - medium
+        - high
+        - critical
+
+    RiskCategoryEnum:
+      type: string
+      enum:
+        - market
+        - regulatory
+        - operational
+        - counterparty
+        - valuation
+        - liquidity
+        - reputational
+
+    # ─── Risk Register ──────────────────────────────────────────────────
+    RiskMitigationEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        riskName:
+          type: string
+          example: Market Correction Impact on Investor Confidence
+        category:
+          $ref: '#/components/schemas/RiskCategoryEnum'
+        severity:
+          $ref: '#/components/schemas/RiskSeverityEnum'
+        likelihood:
+          type: string
+          enum:
+            - unlikely
+            - possible
+            - likely
+            - very-likely
+        impact:
+          type: string
+        mitigationStrategy:
+          type: string
+        owner:
+          type: string
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        reviewCadence:
+          type: string
+          example: Monthly
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - riskName
+        - category
+        - severity
+        - likelihood
+        - mitigationStrategy
+        - owner
+        - status
+
+    CreateRiskMitigationEntryRequestDto:
+      type: object
+      properties:
+        riskName:
+          type: string
+        category:
+          $ref: '#/components/schemas/RiskCategoryEnum'
+        severity:
+          $ref: '#/components/schemas/RiskSeverityEnum'
+        likelihood:
+          type: string
+          enum:
+            - unlikely
+            - possible
+            - likely
+            - very-likely
+        impact:
+          type: string
+        mitigationStrategy:
+          type: string
+        owner:
+          type: string
+        reviewCadence:
+          type: string
+      required:
+        - riskName
+        - category
+        - severity
+        - likelihood
+        - mitigationStrategy
+        - owner
+
+    UpdateRiskMitigationEntryRequestDto:
+      type: object
+      properties:
+        severity:
+          $ref: '#/components/schemas/RiskSeverityEnum'
+        likelihood:
+          type: string
+          enum:
+            - unlikely
+            - possible
+            - likely
+            - very-likely
+        mitigationStrategy:
+          type: string
+        owner:
+          type: string
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+      minProperties: 1
+
+    # ─── Market Outlook ─────────────────────────────────────────────────
+    MarketOutlookDto:
+      type: object
+      properties:
+        summary:
+          type: string
+        keyIndicators:
+          type: array
+          items:
+            type: object
+            properties:
+              indicator:
+                type: string
+                example: Dubai Real Estate Price Index
+              currentValue:
+                type: number
+              trend:
+                type: string
+                enum:
+                  - rising
+                  - stable
+                  - declining
+              alertTriggered:
+                type: boolean
+        activeTriggers:
+          type: array
+          items:
+            $ref: '#/components/schemas/MarketTriggerDto'
+      required:
+        - summary
+        - keyIndicators
+
+    MarketTriggerDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: Price Drop > 5% in Quarter
+        condition:
+          type: string
+        severity:
+          $ref: '#/components/schemas/RiskSeverityEnum'
+        owner:
+          type: string
+        lastTriggered:
+          type: string
+          format: date-time
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - condition
+        - severity
+        - owner
+        - createdAt
+
+    CreateMarketTriggerRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        condition:
+          type: string
+        severity:
+          $ref: '#/components/schemas/RiskSeverityEnum'
+        owner:
+          type: string
+      required:
+        - name
+        - condition
+        - severity
+        - owner
+
+    # ─── Talking Points ─────────────────────────────────────────────────
+    TalkingPointDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        topic:
+          type: string
+          example: Market Correction Impact
+        audience:
+          type: string
+          example: Sales Team
+        approvedLanguage:
+          type: string
+        prohibitedLanguage:
+          type: string
+        owner:
+          type: string
+        version:
+          type: integer
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - topic
+        - audience
+        - approvedLanguage
+
+    CreateTalkingPointRequestDto:
+      type: object
+      properties:
+        topic:
+          type: string
+        audience:
+          type: string
+        approvedLanguage:
+          type: string
+        prohibitedLanguage:
+          type: string
+        owner:
+          type: string
+      required:
+        - topic
+        - audience
+        - approvedLanguage
+
+    # ─── Escalation Guides ──────────────────────────────────────────────
+    EscalationGuideDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        scenario:
+          type: string
+          example: Adverse Market Development
+        owner:
+          type: string
+        trigger:
+          type: string
+        responseSla:
+          type: string
+          example: 2 hours
+        steps:
+          type: array
+          items:
+            type: string
+        communicationTemplate:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - scenario
+        - owner
+        - trigger
+        - steps
+
+    CreateEscalationGuideRequestDto:
+      type: object
+      properties:
+        scenario:
+          type: string
+        owner:
+          type: string
+        trigger:
+          type: string
+        responseSla:
+          type: string
+        steps:
+          type: array
+          items:
+            type: string
+          minItems: 1
+        communicationTemplate:
+          type: string
+      required:
+        - scenario
+        - owner
+        - trigger
+        - steps
+
+    # ─── FAQ ────────────────────────────────────────────────────────────
+    FaqEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        question:
+          type: string
+        answer:
+          type: string
+        category:
+          type: string
+          example: Market Risk
+        audience:
+          type: string
+          example: Investor-Facing
+        status:
+          type: string
+          enum:
+            - draft
+            - approved
+            - superseded
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - question
+        - answer
+        - audience
+        - status
+
+    CreateFaqEntryRequestDto:
+      type: object
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
+        category:
+          type: string
+        audience:
+          type: string
+      required:
+        - question
+        - answer
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    RiskManagementKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

@@ -1,0 +1,647 @@
+openapi: 3.1.0
+info:
+  title: Content & SEO API
+  description: >
+    REST API for the Content & SEO domain. Manages the content inventory,
+    bilingual glossary, Arabic localization, content performance metrics,
+    SEO keyword tracking, and content operations workflow. Supports the
+    Dubai tokenized real estate education hub (TGTM-10) and Arabic
+    localization (TGTM-116) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-10
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Content Performance ──────────────────────────────────────────────
+  /content/performance:
+    get:
+      tags:
+        - Content & SEO
+        - Performance
+      summary: Get content performance metrics
+      description: >
+        Returns aggregated content performance data including page views,
+        time on page, bounce rate, assisted conversions, and download counts
+        grouped by content category and asset type.
+      operationId: getContentPerformance
+      responses:
+        '200':
+          description: Content performance data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentPerformanceDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Content Assets ───────────────────────────────────────────────────
+  /content/assets:
+    get:
+      tags:
+        - Content & SEO
+        - Assets
+      summary: List content assets
+      operationId: getContentAssets
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+      responses:
+        '200':
+          description: Paginated content assets
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentAssetCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Content & SEO
+        - Assets
+      summary: Create a content asset
+      operationId: createContentAsset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateContentAssetRequestDto'
+      responses:
+        '201':
+          description: Asset created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentAssetDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /content/assets/{id}:
+    get:
+      tags:
+        - Content & SEO
+        - Assets
+      summary: Get a content asset by ID
+      operationId: getContentAssetById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Content asset detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentAssetDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Content & SEO
+        - Assets
+      summary: Update a content asset
+      operationId: updateContentAsset
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateContentAssetRequestDto'
+      responses:
+        '200':
+          description: Updated asset
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentAssetDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Glossary ─────────────────────────────────────────────────────────
+  /content/glossary:
+    get:
+      tags:
+        - Content & SEO
+        - Glossary
+      summary: List glossary entries
+      operationId: getContentGlossary
+      responses:
+        '200':
+          description: Glossary entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GlossaryEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /content/glossary/entries:
+    post:
+      tags:
+        - Content & SEO
+        - Glossary
+      summary: Create a glossary entry
+      operationId: createContentGlossaryEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateGlossaryEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GlossaryEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Localization ─────────────────────────────────────────────────────
+  /content/localization-queue:
+    get:
+      tags:
+        - Content & SEO
+        - Localization
+      summary: List localization jobs
+      operationId: getContentLocalizationQueue
+      responses:
+        '200':
+          description: Localization queue
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LocalizationJobDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Content & SEO
+        - Localization
+      summary: Create a localization job
+      operationId: createContentLocalizationJob
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLocalizationJobRequestDto'
+      responses:
+        '201':
+          description: Job created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LocalizationJobDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── SEO ──────────────────────────────────────────────────────────────
+  /content/seo/keywords:
+    get:
+      tags:
+        - Content & SEO
+        - SEO
+      summary: List tracked SEO keywords
+      operationId: getContentSeoKeywords
+      responses:
+        '200':
+          description: Tracked keywords
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SeoKeywordDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /content/seo/rankings:
+    get:
+      tags:
+        - Content & SEO
+        - SEO
+      summary: Get keyword ranking history
+      operationId: getContentSeoRankings
+      responses:
+        '200':
+          description: Keyword ranking data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeoRankingDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /content/kpis:
+    get:
+      tags:
+        - Content & SEO
+        - KPIs
+      summary: Retrieve content and SEO KPI metrics
+      operationId: getContentSeoKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Content and SEO KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentSeoKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    ContentAssetTypeEnum:
+      type: string
+      enum:
+        - blog-post
+        - landing-page
+        - guide
+        - video
+        - infographic
+        - webinar-recording
+        - bilingual-page
+        - social-post
+
+    ContentAssetStatusEnum:
+      type: string
+      enum:
+        - draft
+        - in-review
+        - published
+        - archived
+
+    LocalizationTargetLangEnum:
+      type: string
+      enum:
+        - ar-ae
+        - en-us
+
+    # ─── Content Performance ────────────────────────────────────────────
+    ContentPerformanceDto:
+      type: object
+      properties:
+        totalPageViews:
+          type: integer
+        averageTimeOnPageSeconds:
+          type: integer
+        bounceRate:
+          type: number
+          format: float
+        totalDownloads:
+          type: integer
+        contentAssistedConversions:
+          type: integer
+        performanceByCategory:
+          type: array
+          items:
+            type: object
+            properties:
+              category:
+                type: string
+              views:
+                type: integer
+              downloads:
+                type: integer
+              conversionContribution:
+                type: number
+                format: float
+        trends:
+          $ref: './common.openapi.yaml#/components/schemas/TrendChartDto'
+      required:
+        - totalPageViews
+        - averageTimeOnPageSeconds
+        - bounceRate
+
+    # ─── Content Assets ─────────────────────────────────────────────────
+    ContentAssetDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        assetType:
+          $ref: '#/components/schemas/ContentAssetTypeEnum'
+        status:
+          $ref: '#/components/schemas/ContentAssetStatusEnum'
+        language:
+          $ref: '#/components/schemas/LocalizationTargetLangEnum'
+        sourceAssetId:
+          type: string
+          format: uuid
+          description: Reference to the original English asset (for localized versions)
+        url:
+          type: string
+          format: uri
+        seoMetadata:
+          type: object
+          properties:
+            targetKeywords:
+              type: array
+              items:
+                type: string
+            metaDescription:
+              type: string
+        performance:
+          type: object
+          properties:
+            views:
+              type: integer
+            downloads:
+              type: integer
+            conversions:
+              type: integer
+        createdAt:
+          type: string
+          format: date-time
+        publishedAt:
+          type: string
+          format: date-time
+          nullable: true
+      required:
+        - id
+        - title
+        - assetType
+        - status
+        - language
+        - createdAt
+
+    ContentAssetCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/ContentAssetDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateContentAssetRequestDto:
+      type: object
+      properties:
+        title:
+          type: string
+        assetType:
+          $ref: '#/components/schemas/ContentAssetTypeEnum'
+        language:
+          $ref: '#/components/schemas/LocalizationTargetLangEnum'
+        sourceAssetId:
+          type: string
+          format: uuid
+        url:
+          type: string
+          format: uri
+        seoMetadata:
+          type: object
+          properties:
+            targetKeywords:
+              type: array
+              items:
+                type: string
+            metaDescription:
+              type: string
+      required:
+        - title
+        - assetType
+        - language
+
+    UpdateContentAssetRequestDto:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/ContentAssetStatusEnum'
+        url:
+          type: string
+          format: uri
+        seoMetadata:
+          type: object
+          properties:
+            targetKeywords:
+              type: array
+              items:
+                type: string
+            metaDescription:
+              type: string
+        publishedAt:
+          type: string
+          format: date-time
+      minProperties: 1
+
+    # ─── Glossary ───────────────────────────────────────────────────────
+    GlossaryEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        termEn:
+          type: string
+          example: Tokenization
+        termAr:
+          type: string
+        definitionEn:
+          type: string
+        definitionAr:
+          type: string
+        category:
+          type: string
+          example: Technology
+        status:
+          type: string
+          enum:
+            - draft
+            - approved
+            - needs-review
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - termEn
+        - termAr
+        - status
+
+    CreateGlossaryEntryRequestDto:
+      type: object
+      properties:
+        termEn:
+          type: string
+        termAr:
+          type: string
+        definitionEn:
+          type: string
+        definitionAr:
+          type: string
+        category:
+          type: string
+      required:
+        - termEn
+        - termAr
+
+    # ─── Localization ───────────────────────────────────────────────────
+    LocalizationJobDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        sourceAssetId:
+          type: string
+          format: uuid
+        targetLanguage:
+          $ref: '#/components/schemas/LocalizationTargetLangEnum'
+        status:
+          type: string
+          enum:
+            - queued
+            - in-progress
+            - qa-pending
+            - completed
+            - blocked
+        reviewer:
+          type: string
+        qaNotes:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+        completedAt:
+          type: string
+          format: date-time
+          nullable: true
+      required:
+        - id
+        - sourceAssetId
+        - targetLanguage
+        - status
+        - createdAt
+
+    CreateLocalizationJobRequestDto:
+      type: object
+      properties:
+        sourceAssetId:
+          type: string
+          format: uuid
+        targetLanguage:
+          $ref: '#/components/schemas/LocalizationTargetLangEnum'
+        reviewer:
+          type: string
+      required:
+        - sourceAssetId
+        - targetLanguage
+
+    # ─── SEO ────────────────────────────────────────────────────────────
+    SeoKeywordDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        keyword:
+          type: string
+          example: tokenized real estate Dubai
+        currentRank:
+          type: integer
+        previousRank:
+          type: integer
+        searchVolume:
+          type: integer
+        trafficContribution:
+          type: number
+          format: float
+        lastUpdated:
+          type: string
+          format: date-time
+      required:
+        - id
+        - keyword
+        - currentRank
+
+    SeoRankingDto:
+      type: object
+      properties:
+        description:
+          type: string
+        rankings:
+          type: array
+          items:
+            type: object
+            properties:
+              keyword:
+                type: string
+              rankHistory:
+                type: array
+                items:
+                  type: integer
+              labels:
+                type: array
+                items:
+                  type: string
+      required:
+        - description
+        - rankings
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    ContentSeoKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

@@ -1,0 +1,512 @@
+openapi: 3.1.0
+info:
+  title: Operations API
+  description: >
+    REST API for the Operations domain. Manages GTM operations — vendor and
+    agency onboarding, escalation handling, budget model, martech stack
+    registry, and operating procedures. Supports the set up budget, team,
+    and martech operating model (TGTM-17) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-17
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Vendor Registry ──────────────────────────────────────────────────
+  /operations/vendor-registry:
+    get:
+      tags:
+        - Operations
+        - Vendors
+      summary: List vendors and agencies
+      operationId: getOperationsVendorRegistry
+      responses:
+        '200':
+          description: Vendor list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/VendorEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Operations
+        - Vendors
+      summary: Register a vendor
+      operationId: createOperationsVendorEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateVendorEntryRequestDto'
+      responses:
+        '201':
+          description: Vendor registered
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VendorEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Onboarding Workflow ──────────────────────────────────────────────
+  /operations/onboarding-workflow:
+    get:
+      tags:
+        - Operations
+        - Onboarding
+      summary: Get onboarding workflow status
+      operationId: getOperationsOnboardingWorkflow
+      responses:
+        '200':
+          description: Onboarding workflow
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OnboardingWorkflowDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /operations/onboarding-workflow/checklists:
+    post:
+      tags:
+        - Operations
+        - Onboarding
+      summary: Create an onboarding checklist
+      operationId: createOperationsOnboardingChecklist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateOnboardingChecklistRequestDto'
+      responses:
+        '201':
+          description: Checklist created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OnboardingChecklistDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Escalation Rules ─────────────────────────────────────────────────
+  /operations/escalation-rules:
+    get:
+      tags:
+        - Operations
+        - Escalations
+      summary: List escalation rules
+      operationId: getOperationsEscalationRules
+      responses:
+        '200':
+          description: Escalation rules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EscalationRuleDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Operations
+        - Escalations
+      summary: Create an escalation rule
+      operationId: createOperationsEscalationRule
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateEscalationRuleRequestDto'
+      responses:
+        '201':
+          description: Rule created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EscalationRuleDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Budget Model ─────────────────────────────────────────────────────
+  /operations/budget-model:
+    get:
+      tags:
+        - Operations
+        - Budget
+      summary: Get the GTM budget model
+      operationId: getOperationsBudgetModel
+      responses:
+        '200':
+          description: Budget model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BudgetModelDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Operations
+        - Budget
+      summary: Update the budget model
+      operationId: updateOperationsBudgetModel
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBudgetModelRequestDto'
+      responses:
+        '200':
+          description: Updated budget model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BudgetModelDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /operations/kpis:
+    get:
+      tags:
+        - Operations
+        - KPIs
+      summary: Retrieve operations KPI metrics
+      operationId: getOperationsKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Operations KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OperationsKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    VendorTypeEnum:
+      type: string
+      enum:
+        - agency
+        - freelancer
+        - saas-vendor
+        - service-provider
+        - contractor
+
+    OnboardingStatusEnum:
+      type: string
+      enum:
+        - not-started
+        - nda-pending
+        - contract-pending
+        - compliance-pending
+        - payment-setup
+        - onboarded
+
+    ExceptionCategoryEnum:
+      type: string
+      enum:
+        - budget
+        - compliance
+        - timeline
+        - scope
+        - payment
+
+    # ─── Vendor Registry ────────────────────────────────────────────────
+    VendorEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        legalName:
+          type: string
+        vendorType:
+          $ref: '#/components/schemas/VendorTypeEnum'
+        serviceScope:
+          type: string
+        owner:
+          type: string
+        contractStatus:
+          type: string
+          enum:
+            - draft
+            - signed
+            - expired
+        ndaSigned:
+          type: boolean
+        complianceAcknowledged:
+          type: boolean
+        bankDetailsProvided:
+          type: boolean
+        invoiceFormat:
+          type: string
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - legalName
+        - vendorType
+        - owner
+        - status
+        - createdAt
+
+    CreateVendorEntryRequestDto:
+      type: object
+      properties:
+        legalName:
+          type: string
+        vendorType:
+          $ref: '#/components/schemas/VendorTypeEnum'
+        serviceScope:
+          type: string
+        owner:
+          type: string
+        contractStatus:
+          type: string
+          enum:
+            - draft
+            - signed
+            - expired
+        ndaSigned:
+          type: boolean
+      required:
+        - legalName
+        - vendorType
+        - owner
+
+    # ─── Onboarding ─────────────────────────────────────────────────────
+    OnboardingWorkflowDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        vendorId:
+          type: string
+          format: uuid
+        status:
+          $ref: '#/components/schemas/OnboardingStatusEnum'
+        checks:
+          type: array
+          items:
+            type: object
+            properties:
+              step:
+                type: string
+                example: NDA Execution
+              completed:
+                type: boolean
+              completedAt:
+                type: string
+                format: date-time
+                nullable: true
+        owner:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - vendorId
+        - status
+
+    OnboardingChecklistDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        vendorId:
+          type: string
+          format: uuid
+        steps:
+          type: array
+          items:
+            type: object
+            properties:
+              stepName:
+                type: string
+              required:
+                type: boolean
+              completed:
+                type: boolean
+        allCompleted:
+          type: boolean
+        owner:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - vendorId
+        - steps
+        - allCompleted
+
+    CreateOnboardingChecklistRequestDto:
+      type: object
+      properties:
+        vendorId:
+          type: string
+          format: uuid
+        steps:
+          type: array
+          items:
+            type: object
+            properties:
+              stepName:
+                type: string
+              required:
+                type: boolean
+          minItems: 1
+        owner:
+          type: string
+      required:
+        - vendorId
+        - steps
+
+    # ─── Escalation Rules ──────────────────────────────────────────────
+    EscalationRuleDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        category:
+          $ref: '#/components/schemas/ExceptionCategoryEnum'
+        condition:
+          type: string
+          example: Budget overrun > 10%
+        approvalThreshold:
+          type: string
+        decisionOwner:
+          type: string
+        responseSla:
+          type: string
+          example: 24 hours
+        escalationPath:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - category
+        - condition
+        - decisionOwner
+
+    CreateEscalationRuleRequestDto:
+      type: object
+      properties:
+        category:
+          $ref: '#/components/schemas/ExceptionCategoryEnum'
+        condition:
+          type: string
+        approvalThreshold:
+          type: string
+        decisionOwner:
+          type: string
+        responseSla:
+          type: string
+        escalationPath:
+          type: string
+      required:
+        - category
+        - condition
+        - decisionOwner
+
+    # ─── Budget Model ──────────────────────────────────────────────────
+    BudgetModelDto:
+      type: object
+      properties:
+        totalBudget:
+          type: number
+        channelAllocation:
+          type: object
+          additionalProperties:
+            type: number
+        assumptions:
+          type: array
+          items:
+            type: string
+        personnelCosts:
+          type: number
+        toolingCosts:
+          type: number
+        spendToDate:
+          type: number
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - totalBudget
+        - channelAllocation
+        - updatedAt
+
+    UpdateBudgetModelRequestDto:
+      type: object
+      properties:
+        totalBudget:
+          type: number
+        channelAllocation:
+          type: object
+          additionalProperties:
+            type: number
+        assumptions:
+          type: array
+          items:
+            type: string
+        personnelCosts:
+          type: number
+        toolingCosts:
+          type: number
+        spendToDate:
+          type: number
+      minProperties: 1
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    OperationsKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

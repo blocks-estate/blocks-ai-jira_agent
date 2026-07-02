@@ -1,0 +1,1996 @@
+﻿Issue Type,Issue key,Issue id,Summary,Components,Priority,Status,Resolution,Created,Updated,Due date,Description,Parent,Parent key,Parent summary
+Task,TGTM-462,16427,Review compliance and positioning language for minimum-investment claims,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Parent Story context: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist > TGTM-462 Task: Review compliance and positioning language for minimum-investment claims.
+
+Original intent:
+Validate that the AED 2k-5k messaging is accurate, non-committal, and aligned with investor communications standards before publishing.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Test AED 2k-5k minimum investment positioning for broader waitlist. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Create a compliance review checklist, compare the proposed language against approved investor communication standards, flag unsupported claims, and rewrite any copy that could imply guaranteed access, returns, liquidity, eligibility, or regulatory approval.
+
+Preliminary solution:
+maintain a copy-review matrix with columns for claim, risk level, recommended wording, approval status, and reviewer notes. Use conservative language such as “target,” “test,” “expected,” or “subject to eligibility” where appropriate.
+
+Deliverable:
+Approved language matrix, redline notes, and final compliant copy snippets.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10201,TGTM-57,Test AED 2k-5k minimum investment positioning for broader waitlist
+Task,TGTM-461,16420,Define audience segments for lower-ticket positioning test,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Parent Story context: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist > TGTM-461 Task: Define audience segments for lower-ticket positioning test.
+
+Original intent:
+Specify which investor segments should receive the AED 2k-5k messaging, such as UAE/GCC HNWIs, sophisticated investors, expats, and digital-native investors, to compare response by cohort.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Test AED 2k-5k minimum investment positioning for broader waitlist. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Translate investor personas into practical audience cohorts using CRM attributes, declared interest, geography, language, ticket size, sophistication, engagement level, and source channel.
+
+Preliminary solution:
+create named CRM cohorts such as UAE/GCC HNWIs, sophisticated investors, expat professionals, digital-native investors, Arabic-first investors, webinar-engaged investors, and lower-ticket waitlist prospects.
+
+Deliverable:
+Segment definition table with inclusion/exclusion rules, CRM filters, and recommended messaging angle per segment.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10201,TGTM-57,Test AED 2k-5k minimum investment positioning for broader waitlist
+Task,TGTM-460,16421,Set success metrics for broader waitlist demand test,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Parent Story context: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist > TGTM-460 Task: Set success metrics for broader waitlist demand test.
+
+Original intent:
+Define the key metrics for evaluating the test, including waitlist conversion, click-through rate, sign-up quality, and segment-level engagement.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Test AED 2k-5k minimum investment positioning for broader waitlist. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the measurement framework before launch, including funnel events, source attribution, conversion definitions, segment cuts, reporting cadence, and decision thresholds.
+
+Preliminary solution:
+use a lightweight GTM dashboard covering impressions/visits, clicks, signups, qualification rate, email engagement, webinar engagement, booked calls, and investor progression by segment.
+
+Deliverable:
+KPI dictionary, event list, dashboard requirements, and pass/fail thresholds for the initiative.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10201,TGTM-57,Test AED 2k-5k minimum investment positioning for broader waitlist
+Task,TGTM-459,16419,Draft lower-ticket AED 2k-5k waitlist messaging variants,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Parent Story context: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist > TGTM-459 Task: Draft lower-ticket AED 2k-5k waitlist messaging variants.
+
+Original intent:
+Create alternative copy angles that position AED 2k-5k as an accessibility test for the waitlist, without implying guaranteed launch availability or product commitment.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Test AED 2k-5k minimum investment positioning for broader waitlist. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10201,TGTM-57,Test AED 2k-5k minimum investment positioning for broader waitlist
+Task,TGTM-458,16418,Update waitlist landing page to test broader minimum-investment language,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Parent Story context: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist > TGTM-458 Task: Update waitlist landing page to test broader minimum-investment language.
+
+Original intent:
+Revise the investor waitlist page with a broader lower-ticket callout and supporting disclaimer so the market response can be assessed before any launch decision.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Test AED 2k-5k minimum investment positioning for broader waitlist. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Design the investor journey from page arrival to qualification submission, confirmation, CRM routing, and follow-up nurture.
+
+Preliminary solution:
+create a gated landing page with hero value proposition, eligibility explanation, trust/compliance section, qualification form, FAQ, CTA, analytics events, and post-submit routing.
+
+Deliverable:
+Landing page wireframe/copy spec, event tracking requirements, CRM mapping, and acceptance checklist.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10201,TGTM-57,Test AED 2k-5k minimum investment positioning for broader waitlist
+Task,TGTM-457,16417,Prepare CRM and email segments for messaging experiment,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Parent Story context: TGTM-57 - Test AED 2k-5k minimum investment positioning for broader waitlist. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist > TGTM-457 Task: Prepare CRM and email segments for messaging experiment.
+
+Original intent:
+Set up the necessary waitlist or CRM segments so the broader minimum-investment messaging can be sent and tracked separately from existing investor messaging.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Test AED 2k-5k minimum investment positioning for broader waitlist. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10201,TGTM-57,Test AED 2k-5k minimum investment positioning for broader waitlist
+Task,TGTM-456,16415,Prepare private launch support and escalation process,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-456 Task: Prepare private launch support and escalation process.
+
+Original intent:
+Document how investor questions, access issues, and follow-up requests will be handled during the private cohort launch.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the private cohort structure, invite logic, onboarding sequence, engagement cadence, and escalation path so priority investors receive a controlled white-glove experience.
+
+Preliminary solution:
+create a cohort operating plan with investor tiers, invite waves, onboarding steps, scheduled touchpoints, owner assignments, feedback capture, and escalation rules.
+
+Deliverable:
+Private cohort plan, invite list rules, onboarding workflow, and operating cadence.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-455,16413,Define success metrics and feedback capture for the private launch,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-455 Task: Define success metrics and feedback capture for the private launch.
+
+Original intent:
+Establish the KPIs, conversion checkpoints, and qualitative feedback methods to evaluate whether the private cohort is ready for broader retail scale.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the measurement framework before launch, including funnel events, source attribution, conversion definitions, segment cuts, reporting cadence, and decision thresholds.
+
+Preliminary solution:
+use a lightweight GTM dashboard covering impressions/visits, clicks, signups, qualification rate, email engagement, webinar engagement, booked calls, and investor progression by segment.
+
+Deliverable:
+KPI dictionary, event list, dashboard requirements, and pass/fail thresholds for the initiative.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-454,16407,Design the private cohort onboarding flow,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-454 Task: Design the private cohort onboarding flow.
+
+Original intent:
+Define the steps from invitation acceptance through confirmation, access granting, and initial investor onboarding for the private launch group.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the private cohort structure, invite logic, onboarding sequence, engagement cadence, and escalation path so priority investors receive a controlled white-glove experience.
+
+Preliminary solution:
+create a cohort operating plan with investor tiers, invite waves, onboarding steps, scheduled touchpoints, owner assignments, feedback capture, and escalation rules.
+
+Deliverable:
+Private cohort plan, invite list rules, onboarding workflow, and operating cadence.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-453,16406,Develop private launch messaging and invitation assets,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-453 Task: Develop private launch messaging and invitation assets.
+
+Original intent:
+Create the email, landing-page, and direct outreach copy needed to invite selected investors into the private cohort.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-452,16403,Set up cohort engagement touchpoints and cadence,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-452 Task: Set up cohort engagement touchpoints and cadence.
+
+Original intent:
+Plan the sequence of follow-ups, check-ins, and any education or update touchpoints during the private launch cohort period.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the private cohort structure, invite logic, onboarding sequence, engagement cadence, and escalation path so priority investors receive a controlled white-glove experience.
+
+Preliminary solution:
+create a cohort operating plan with investor tiers, invite waves, onboarding steps, scheduled touchpoints, owner assignments, feedback capture, and escalation rules.
+
+Deliverable:
+Private cohort plan, invite list rules, onboarding workflow, and operating cadence.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-451,16405,Define private launch cohort structure and eligibility criteria,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-451 Task: Define private launch cohort structure and eligibility criteria.
+
+Original intent:
+Set the target cohort size, entry requirements, qualification criteria, and any exclusions for the higher-ticket private launch before retail rollout.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the private cohort structure, invite logic, onboarding sequence, engagement cadence, and escalation path so priority investors receive a controlled white-glove experience.
+
+Preliminary solution:
+create a cohort operating plan with investor tiers, invite waves, onboarding steps, scheduled touchpoints, owner assignments, feedback capture, and escalation rules.
+
+Deliverable:
+Private cohort plan, invite list rules, onboarding workflow, and operating cadence.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-450,16404,Segment and prioritize the HNWI/private launch invite list,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:37 PM,,"Hierarchy / linkage:
+Parent: TGTM-56 - Create private/HNWI launch cohort plan. Parent Story context: TGTM-56 - Create private/HNWI launch cohort plan. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan > TGTM-450 Task: Segment and prioritize the HNWI/private launch invite list.
+
+Original intent:
+Build a prioritized list of qualified private launch prospects, grouped by investor profile, geography, and likely ticket size.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create private/HNWI launch cohort plan. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the private cohort structure, invite logic, onboarding sequence, engagement cadence, and escalation path so priority investors receive a controlled white-glove experience.
+
+Preliminary solution:
+create a cohort operating plan with investor tiers, invite waves, onboarding steps, scheduled touchpoints, owner assignments, feedback capture, and escalation rules.
+
+Deliverable:
+Private cohort plan, invite list rules, onboarding workflow, and operating cadence.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10200,TGTM-56,Create private/HNWI launch cohort plan
+Task,TGTM-436,16375,Define newsletter performance tracking,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-436 Task: Define newsletter performance tracking.
+
+Original intent:
+Set up metrics and reporting for open rate, click-through rate, signups, and downstream investor engagement to measure newsletter effectiveness.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the measurement framework before launch, including funnel events, source attribution, conversion definitions, segment cuts, reporting cadence, and decision thresholds.
+
+Preliminary solution:
+use a lightweight GTM dashboard covering impressions/visits, clicks, signups, qualification rate, email engagement, webinar engagement, booked calls, and investor progression by segment.
+
+Deliverable:
+KPI dictionary, event list, dashboard requirements, and pass/fail thresholds for the initiative.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-435,16373,Compile product update and opportunity announcements,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-435 Task: Compile product update and opportunity announcements.
+
+Original intent:
+Collect and standardize updates on product changes, new features, and upcoming investor opportunities for inclusion in future newsletter issues.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Convert the investor value proposition into education-led content that explains the market problem, access model, trust safeguards, and next step without overpromising.
+
+Preliminary solution:
+create reusable content modules covering why real estate access is changing, how private access/waitlist works, what eligibility means, what risks/questions investors should understand, and what action they can take next.
+
+Deliverable:
+Reusable education modules, presentation slides or content blocks, and approved distribution notes.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-434,16371,Prepare market education content blocks,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-434 Task: Prepare market education content blocks.
+
+Original intent:
+Develop reusable educational snippets or articles that explain key market concepts, investor readiness topics, and private market opportunities.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Convert the investor value proposition into education-led content that explains the market problem, access model, trust safeguards, and next step without overpromising.
+
+Preliminary solution:
+create reusable content modules covering why real estate access is changing, how private access/waitlist works, what eligibility means, what risks/questions investors should understand, and what action they can take next.
+
+Deliverable:
+Reusable education modules, presentation slides or content blocks, and approved distribution notes.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-433,16365,Draft Arabic and English newsletter copy,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-433 Task: Draft Arabic and English newsletter copy.
+
+Original intent:
+Write and localize newsletter content in both Arabic and English, ensuring consistent messaging, tone, and terminology across languages.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-432,16364,Set up audience segmentation for newsletter delivery,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-432 Task: Set up audience segmentation for newsletter delivery.
+
+Original intent:
+Define subscriber segments for UAE/GCC HNWIs, sophisticated investors, expats, and digital-native investors so content and sending strategy can be tailored appropriately.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Translate investor personas into practical audience cohorts using CRM attributes, declared interest, geography, language, ticket size, sophistication, engagement level, and source channel.
+
+Preliminary solution:
+create named CRM cohorts such as UAE/GCC HNWIs, sophisticated investors, expat professionals, digital-native investors, Arabic-first investors, webinar-engaged investors, and lower-ticket waitlist prospects.
+
+Deliverable:
+Segment definition table with inclusion/exclusion rules, CRM filters, and recommended messaging angle per segment.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-431,16363,Design newsletter template and layout,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-431 Task: Design newsletter template and layout.
+
+Original intent:
+Create a reusable newsletter template optimized for bilingual readability, mobile rendering, branding, and clear section hierarchy.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build a repeatable bilingual newsletter process covering content planning, translation/adaptation, segmentation, approval, send operations, and performance review.
+
+Preliminary solution:
+structure each issue with a market education block, product/company update, opportunity preview, trust/compliance note, investor CTA, and Arabic/English versions adapted rather than directly translated.
+
+Deliverable:
+Newsletter content plan, template, bilingual copy, send workflow, and tracking plan.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-430,16362,Create newsletter distribution workflow,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-430 Task: Create newsletter distribution workflow.
+
+Original intent:
+Establish the process for drafting, review, approval, scheduling, and sending the newsletter through the chosen email platform.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Map the required investor data fields, define automation triggers, create routing rules, and test that every submission lands in the correct CRM segment and nurture path.
+
+Preliminary solution:
+build a CRM workflow where form submissions create/update contact records, assign persona and eligibility tags, trigger confirmation emails, and notify the responsible sales/founder owner when high-priority investors convert.
+
+Deliverable:
+CRM field map, automation diagram, routing logic, test cases, and launch checklist.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-429,16361,Define bilingual investor newsletter content plan,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-53 - Create Arabic/English investor newsletter. Parent Story context: TGTM-53 - Create Arabic/English investor newsletter. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter > TGTM-429 Task: Define bilingual investor newsletter content plan.
+
+Original intent:
+Create the newsletter structure and recurring sections for Arabic and English editions, covering market education, product updates, investor readiness, and upcoming opportunities.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create Arabic/English investor newsletter. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build a repeatable bilingual newsletter process covering content planning, translation/adaptation, segmentation, approval, send operations, and performance review.
+
+Preliminary solution:
+structure each issue with a market education block, product/company update, opportunity preview, trust/compliance note, investor CTA, and Arabic/English versions adapted rather than directly translated.
+
+Deliverable:
+Newsletter content plan, template, bilingual copy, send workflow, and tracking plan.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10197,TGTM-53,Create Arabic/English investor newsletter
+Task,TGTM-428,16359,Prepare post-webinar follow-up and conversion outreach,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-428 Task: Prepare post-webinar follow-up and conversion outreach.
+
+Original intent:
+Create the follow-up plan for attendees and no-shows, including thank-you messages, next-step calls to action, and any conversion or booking workflow.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-427,16357,Capture attendee questions and feedback after the webinar,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-427 Task: Capture attendee questions and feedback after the webinar.
+
+Original intent:
+Collect questions, objections, and qualitative feedback from attendees to inform follow-up messaging and improve the next webinar cadence.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-426,16355,"Coordinate host, moderator, and Q&A handling",Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-426 Task: Coordinate host, moderator, and Q&A handling.
+
+Original intent:
+Assign roles for the presenter, moderator, and support operator, and prepare procedures for managing questions, attendee issues, and the private investor tone during the session.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-425,16353,Set up webinar technology and conduct a rehearsal,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-425 Task: Set up webinar technology and conduct a rehearsal.
+
+Original intent:
+Configure the webinar platform, test audio/video and screen sharing, and run a dry run to validate the full delivery process before the live event.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-424,16350,"Define webinar format, agenda, and success criteria",Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-424 Task: Define webinar format, agenda, and success criteria.
+
+Original intent:
+Set the controlled pre-scale webinar structure, including target audience, run-of-show, key talking points, Q&A format, and the criteria for a successful first private session.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-423,16347,Develop webinar presentation and investor education materials,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-423 Task: Develop webinar presentation and investor education materials.
+
+Original intent:
+Create the slide deck, supporting talking points, and any educational assets needed to explain the opportunity clearly to private investors before public scale.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-422,16346,Prepare webinar registration and access flow,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-422 Task: Prepare webinar registration and access flow.
+
+Original intent:
+Set up the private registration process, confirmation messaging, and controlled access mechanism so only approved investors can attend the webinar.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-421,16343,Draft invitation and reminder messaging for each investor segment,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-421 Task: Draft invitation and reminder messaging for each investor segment.
+
+Original intent:
+Write tailored invitation, confirmation, reminder, and last-call messages for the relevant investor segments to maximize attendance and maintain a private-access tone.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-420,16342,Create the private investor invite list and segmentation,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:38 PM,,"Hierarchy / linkage:
+Parent: TGTM-52 - Launch first private investor webinar. Parent Story context: TGTM-52 - Launch first private investor webinar. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar > TGTM-420 Task: Create the private investor invite list and segmentation.
+
+Original intent:
+Build and validate the initial invite list for UAE/GCC HNWIs, sophisticated investors, expats, and digital-native investors, including any eligibility filtering and priority order for invitations.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Launch first private investor webinar. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Assemble and rank the investor list using ICP fit, relationship strength, ticket-size potential, geography, readiness, language preference, and engagement history.
+
+Preliminary solution:
+create an invite-priority scoring table that separates Tier 1 founder-led outreach, Tier 2 private webinar invitees, and Tier 3 nurture-only contacts.
+
+Deliverable:
+Ranked invite list, scoring criteria, segment tags, and recommended outreach owner.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10196,TGTM-52,Launch first private investor webinar
+Task,TGTM-409,16318,Build and configure CRM segments for investor personas,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-50 - Segment investor personas in CRM. Parent Story context: TGTM-50 - Segment investor personas in CRM. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-50 Story: Segment investor personas in CRM > TGTM-409 Task: Build and configure CRM segments for investor personas.
+
+Original intent:
+Set up the actual CRM segments or lists for each persona, ensuring the segments are distinct, non-overlapping where needed, and aligned to the defined criteria.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Segment investor personas in CRM. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Translate investor personas into practical audience cohorts using CRM attributes, declared interest, geography, language, ticket size, sophistication, engagement level, and source channel.
+
+Preliminary solution:
+create named CRM cohorts such as UAE/GCC HNWIs, sophisticated investors, expat professionals, digital-native investors, Arabic-first investors, webinar-engaged investors, and lower-ticket waitlist prospects.
+
+Deliverable:
+Segment definition table with inclusion/exclusion rules, CRM filters, and recommended messaging angle per segment.
+
+Dependencies / inputs:
+CRM fields, signup answers, persona definitions, source/channel data, language preference, investor status, lifecycle stage, routing rules
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: segment coverage, data completeness, routing accuracy, campaign engagement by persona, conversion by segment, manual correction rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10194,TGTM-50,Segment investor personas in CRM
+Sub-task,TGTM-408,16316,Validate segment membership and data quality,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-50 - Segment investor personas in CRM. Parent Story context: TGTM-50 - Segment investor personas in CRM. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-50 Story: Segment investor personas in CRM > TGTM-408 Sub-task: Validate segment membership and data quality.
+
+Original intent:
+Review sample contacts in each persona segment to confirm accuracy, identify missing fields or misclassified records, and correct any data issues affecting segmentation.
+
+What this item is meant to achieve:
+Complete this Sub-task as a concrete execution unit that contributes to the parent Story: Segment investor personas in CRM. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Break the work into concrete inputs, decisions, build steps, review checkpoints, and handoff requirements so the item can move from idea to operational execution.
+
+Preliminary solution:
+document the target output, create the first draft/specification, validate it with the relevant owner, and connect it to the parent workstream’s CRM, content, analytics, or compliance dependency.
+
+Deliverable:
+Completed task artifact, implementation notes, and acceptance evidence.
+
+Dependencies / inputs:
+CRM fields, signup answers, persona definitions, source/channel data, language preference, investor status, lifecycle stage, routing rules
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: segment coverage, data completeness, routing accuracy, campaign engagement by persona, conversion by segment, manual correction rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10194,TGTM-50,Segment investor personas in CRM
+Sub-task,TGTM-407,16314,Define CRM segmentation criteria for each investor persona,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-50 - Segment investor personas in CRM. Parent Story context: TGTM-50 - Segment investor personas in CRM. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-50 Story: Segment investor personas in CRM > TGTM-407 Sub-task: Define CRM segmentation criteria for each investor persona.
+
+Original intent:
+Create clear inclusion rules and field definitions for Dubai sophisticated investors, GCC Dubai allocators, expat professionals, international Dubai believers, digital-native investors, and family offices/advisors. Include required CRM attributes, scoring logic, and exclusion rules.
+
+What this item is meant to achieve:
+Complete this Sub-task as a concrete execution unit that contributes to the parent Story: Segment investor personas in CRM. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Translate investor personas into practical audience cohorts using CRM attributes, declared interest, geography, language, ticket size, sophistication, engagement level, and source channel.
+
+Preliminary solution:
+create named CRM cohorts such as UAE/GCC HNWIs, sophisticated investors, expat professionals, digital-native investors, Arabic-first investors, webinar-engaged investors, and lower-ticket waitlist prospects.
+
+Deliverable:
+Segment definition table with inclusion/exclusion rules, CRM filters, and recommended messaging angle per segment.
+
+Dependencies / inputs:
+CRM fields, signup answers, persona definitions, source/channel data, language preference, investor status, lifecycle stage, routing rules
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: segment coverage, data completeness, routing accuracy, campaign engagement by persona, conversion by segment, manual correction rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10194,TGTM-50,Segment investor personas in CRM
+Sub-task,TGTM-406,16315,Map persona segments to tailored messaging and nurture paths,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-50 - Segment investor personas in CRM. Parent Story context: TGTM-50 - Segment investor personas in CRM. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-50 Story: Segment investor personas in CRM > TGTM-406 Sub-task: Map persona segments to tailored messaging and nurture paths.
+
+Original intent:
+Assign each investor persona segment to the appropriate messaging themes, education content, and follow-up sequences so segmented outreach can be executed consistently.
+
+What this item is meant to achieve:
+Complete this Sub-task as a concrete execution unit that contributes to the parent Story: Segment investor personas in CRM. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Translate investor personas into practical audience cohorts using CRM attributes, declared interest, geography, language, ticket size, sophistication, engagement level, and source channel.
+
+Preliminary solution:
+create named CRM cohorts such as UAE/GCC HNWIs, sophisticated investors, expat professionals, digital-native investors, Arabic-first investors, webinar-engaged investors, and lower-ticket waitlist prospects.
+
+Deliverable:
+Segment definition table with inclusion/exclusion rules, CRM filters, and recommended messaging angle per segment.
+
+Dependencies / inputs:
+CRM fields, signup answers, persona definitions, source/channel data, language preference, investor status, lifecycle stage, routing rules
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: segment coverage, data completeness, routing accuracy, campaign engagement by persona, conversion by segment, manual correction rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10194,TGTM-50,Segment investor personas in CRM
+Task,TGTM-405,16313,Document segment definitions and CRM operating guide,Investor Acquisition,Medium,To Do,,01/Jul/26 8:29 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-50 - Segment investor personas in CRM. Parent Story context: TGTM-50 - Segment investor personas in CRM. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-50 Story: Segment investor personas in CRM > TGTM-405 Task: Document segment definitions and CRM operating guide.
+
+Original intent:
+Produce a brief reference guide covering each investor persona, its criteria, the CRM fields used, and how the segments should be maintained over time.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Segment investor personas in CRM. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Map the required investor data fields, define automation triggers, create routing rules, and test that every submission lands in the correct CRM segment and nurture path.
+
+Preliminary solution:
+build a CRM workflow where form submissions create/update contact records, assign persona and eligibility tags, trigger confirmation emails, and notify the responsible sales/founder owner when high-priority investors convert.
+
+Deliverable:
+CRM field map, automation diagram, routing logic, test cases, and launch checklist.
+
+Dependencies / inputs:
+CRM fields, signup answers, persona definitions, source/channel data, language preference, investor status, lifecycle stage, routing rules
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: segment coverage, data completeness, routing accuracy, campaign engagement by persona, conversion by segment, manual correction rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10194,TGTM-50,Segment investor personas in CRM
+Sub-task,TGTM-404,16311,Test the screening flow with sample investor personas,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-49 - Create investor eligibility screening questions. Parent Story context: TGTM-49 - Create investor eligibility screening questions. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions > TGTM-404 Sub-task: Test the screening flow with sample investor personas.
+
+Original intent:
+Run through representative cases such as UAE/GCC HNWIs, sophisticated investors, expats, and digital-native investors to confirm the questions and logic route users correctly.
+
+What this item is meant to achieve:
+Complete this Sub-task as a concrete execution unit that contributes to the parent Story: Create investor eligibility screening questions. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the screening rules, write clear questions, map answer combinations to eligibility outcomes, and ensure every outcome has compliant next-step messaging.
+
+Preliminary solution:
+create a question-to-outcome matrix that tags investors as priority eligible, requires review, nurture-only, or not eligible at this stage, then syncs that result to CRM for routing.
+
+Deliverable:
+Screening questionnaire, answer mapping logic, outcome copy, CRM field mapping, and test results.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10193,TGTM-49,Create investor eligibility screening questions
+Task,TGTM-403,16304,Define investor eligibility criteria and screening rules,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-49 - Create investor eligibility screening questions. Parent Story context: TGTM-49 - Create investor eligibility screening questions. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions > TGTM-403 Task: Define investor eligibility criteria and screening rules.
+
+Original intent:
+Document the eligibility thresholds and rule set for previewing access, including investor category, jurisdiction, and any minimum sophistication or wealth indicators needed to avoid global retail promises.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create investor eligibility screening questions. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the screening rules, write clear questions, map answer combinations to eligibility outcomes, and ensure every outcome has compliant next-step messaging.
+
+Preliminary solution:
+create a question-to-outcome matrix that tags investors as priority eligible, requires review, nurture-only, or not eligible at this stage, then syncs that result to CRM for routing.
+
+Deliverable:
+Screening questionnaire, answer mapping logic, outcome copy, CRM field mapping, and test results.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10193,TGTM-49,Create investor eligibility screening questions
+Sub-task,TGTM-402,16305,Draft the investor screening question set,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-49 - Create investor eligibility screening questions. Parent Story context: TGTM-49 - Create investor eligibility screening questions. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions > TGTM-402 Sub-task: Draft the investor screening question set.
+
+Original intent:
+Write the actual eligibility questions for the preview flow, covering investor profile, residency, knowledge/experience, and intended use of the product or service.
+
+What this item is meant to achieve:
+Complete this Sub-task as a concrete execution unit that contributes to the parent Story: Create investor eligibility screening questions. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the screening rules, write clear questions, map answer combinations to eligibility outcomes, and ensure every outcome has compliant next-step messaging.
+
+Preliminary solution:
+create a question-to-outcome matrix that tags investors as priority eligible, requires review, nurture-only, or not eligible at this stage, then syncs that result to CRM for routing.
+
+Deliverable:
+Screening questionnaire, answer mapping logic, outcome copy, CRM field mapping, and test results.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10193,TGTM-49,Create investor eligibility screening questions
+Sub-task,TGTM-401,16303,Prepare compliant copy for the eligibility preview,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-49 - Create investor eligibility screening questions. Parent Story context: TGTM-49 - Create investor eligibility screening questions. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions > TGTM-401 Sub-task: Prepare compliant copy for the eligibility preview.
+
+Original intent:
+Provide user-facing wording for the screening flow, including disclaimers and explanatory text that positions the preview as an eligibility check rather than a public offer or retail solicitation.
+
+What this item is meant to achieve:
+Complete this Sub-task as a concrete execution unit that contributes to the parent Story: Create investor eligibility screening questions. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10193,TGTM-49,Create investor eligibility screening questions
+Task,TGTM-400,16301,Map screening answers to eligibility outcomes,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-49 - Create investor eligibility screening questions. Parent Story context: TGTM-49 - Create investor eligibility screening questions. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions > TGTM-400 Task: Map screening answers to eligibility outcomes.
+
+Original intent:
+Create the decision logic that classifies respondents as eligible, ineligible, or needs-review based on their answers, including handling of ambiguous or incomplete responses.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create investor eligibility screening questions. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the screening rules, write clear questions, map answer combinations to eligibility outcomes, and ensure every outcome has compliant next-step messaging.
+
+Preliminary solution:
+create a question-to-outcome matrix that tags investors as priority eligible, requires review, nurture-only, or not eligible at this stage, then syncs that result to CRM for routing.
+
+Deliverable:
+Screening questionnaire, answer mapping logic, outcome copy, CRM field mapping, and test results.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10193,TGTM-49,Create investor eligibility screening questions
+Task,TGTM-399,16302,Validate screening questions with legal/compliance requirements,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-49 - Create investor eligibility screening questions. Parent Story context: TGTM-49 - Create investor eligibility screening questions. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions > TGTM-399 Task: Validate screening questions with legal/compliance requirements.
+
+Original intent:
+Review the proposed questions and outcomes against relevant UAE/GCC investor qualification and marketing constraints to ensure the flow does not create global retail promises.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Create investor eligibility screening questions. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Create a compliance review checklist, compare the proposed language against approved investor communication standards, flag unsupported claims, and rewrite any copy that could imply guaranteed access, returns, liquidity, eligibility, or regulatory approval.
+
+Preliminary solution:
+maintain a copy-review matrix with columns for claim, risk level, recommended wording, approval status, and reviewer notes. Use conservative language such as “target,” “test,” “expected,” or “subject to eligibility” where appropriate.
+
+Deliverable:
+Approved language matrix, redline notes, and final compliant copy snippets.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10193,TGTM-49,Create investor eligibility screening questions
+Task,TGTM-398,16299,Implement access gating and eligibility controls for the landing page,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-398 Task: Implement access gating and eligibility controls for the landing page.
+
+Original intent:
+Restrict the waitlist to eligible visitors using the defined gate rules, and ensure non-eligible users receive the appropriate messaging or fallback path.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Design the investor journey from page arrival to qualification submission, confirmation, CRM routing, and follow-up nurture.
+
+Preliminary solution:
+create a gated landing page with hero value proposition, eligibility explanation, trust/compliance section, qualification form, FAQ, CTA, analytics events, and post-submit routing.
+
+Deliverable:
+Landing page wireframe/copy spec, event tracking requirements, CRM mapping, and acceptance checklist.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-397,16297,Add analytics and conversion tracking for the waitlist page,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-397 Task: Add analytics and conversion tracking for the waitlist page.
+
+Original intent:
+Track page views, form starts, submissions, eligibility outcomes, and segment performance so the waitlist funnel can be measured and optimized.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the measurement framework before launch, including funnel events, source attribution, conversion definitions, segment cuts, reporting cadence, and decision thresholds.
+
+Preliminary solution:
+use a lightweight GTM dashboard covering impressions/visits, clicks, signups, qualification rate, email engagement, webinar engagement, booked calls, and investor progression by segment.
+
+Deliverable:
+KPI dictionary, event list, dashboard requirements, and pass/fail thresholds for the initiative.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-396,16295,Integrate waitlist submissions with CRM and email automation,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-396 Task: Integrate waitlist submissions with CRM and email automation.
+
+Original intent:
+Connect the landing page form to the CRM and email system so investor leads are stored, tagged by segment, and enrolled in the correct nurture sequence automatically.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Map the required investor data fields, define automation triggers, create routing rules, and test that every submission lands in the correct CRM segment and nurture path.
+
+Preliminary solution:
+build a CRM workflow where form submissions create/update contact records, assign persona and eligibility tags, trigger confirmation emails, and notify the responsible sales/founder owner when high-priority investors convert.
+
+Deliverable:
+CRM field map, automation diagram, routing logic, test cases, and launch checklist.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-395,16290,Build waitlist signup form with investor qualification fields,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-395 Task: Build waitlist signup form with investor qualification fields.
+
+Original intent:
+Implement the registration form to capture investor details needed for eligibility screening and segmentation, such as investor type, location, accreditation/sophistication, and investment interest.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Define the screening rules, write clear questions, map answer combinations to eligibility outcomes, and ensure every outcome has compliant next-step messaging.
+
+Preliminary solution:
+create a question-to-outcome matrix that tags investors as priority eligible, requires review, nurture-only, or not eligible at this stage, then syncs that result to CRM for routing.
+
+Deliverable:
+Screening questionnaire, answer mapping logic, outcome copy, CRM field mapping, and test results.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-394,16287,Set up waitlist confirmation and onboarding message flow,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-394 Task: Set up waitlist confirmation and onboarding message flow.
+
+Original intent:
+Create the post-signup confirmation experience and follow-up messaging that explains next steps, reinforces exclusivity, and directs qualified investors to the next stage of the funnel.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Map the investor onboarding sequence from conversion through confirmation, education, qualification, and next-step activation.
+
+Preliminary solution:
+use a staged sequence: confirmation email, eligibility/context explanation, education content, invitation to next event/call, and CRM task for high-priority investors.
+
+Deliverable:
+Onboarding flow, message sequence, owner handoffs, and completion criteria.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-393,16288,Design gated investor waitlist landing page UX and copy,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-393 Task: Design gated investor waitlist landing page UX and copy.
+
+Original intent:
+Create the landing page structure, messaging, and CTA flow for a private, eligibility-gated investor waitlist. Include headline/value proposition, trust signals, qualification messaging, and clear next-step conversion path.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-392,16286,Create investor segmentation rules for waitlist routing,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-392 Task: Create investor segmentation rules for waitlist routing.
+
+Original intent:
+Define and apply segmentation logic for UAE/GCC HNWIs, sophisticated investors, expats, and digital-native investors so submissions are tagged and routed into the correct audience segment.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Map the required investor data fields, define automation triggers, create routing rules, and test that every submission lands in the correct CRM segment and nurture path.
+
+Preliminary solution:
+build a CRM workflow where form submissions create/update contact records, assign persona and eligibility tags, trigger confirmation emails, and notify the responsible sales/founder owner when high-priority investors convert.
+
+Deliverable:
+CRM field map, automation diagram, routing logic, test cases, and launch checklist.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Task,TGTM-391,16285,Implement eligibility preview logic for prospective investors,Investor Acquisition,Medium,To Do,,01/Jul/26 8:28 AM,01/Jul/26 4:39 PM,,"Hierarchy / linkage:
+Parent: TGTM-48 - Build private investor waitlist landing page. Parent Story context: TGTM-48 - Build private investor waitlist landing page. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page > TGTM-391 Task: Implement eligibility preview logic for prospective investors.
+
+Original intent:
+Add a lightweight eligibility preview experience that tells visitors whether they are likely eligible to join the private waitlist, based on submitted criteria and defined qualification rules.
+
+What this item is meant to achieve:
+Complete this Task as a concrete execution unit that contributes to the parent Story: Build private investor waitlist landing page. It should not be treated as an isolated to-do; its output must plug into the parent workstream and the broader investor acquisition engine.
+
+How we are doing this:
+Draft copy around the parent initiative’s investor objective, then produce variants by segment, language, funnel stage, and risk sensitivity.
+
+Preliminary solution:
+write copy in modular blocks: headline, trust proof, education angle, eligibility caveat, CTA, FAQ/objection response, and compliance disclaimer. Keep variants short enough for landing page, email, and CRM reuse.
+
+Deliverable:
+Copy bank with approved variants, recommended placement, and target segment for each message.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10192,TGTM-48,Build private investor waitlist landing page
+Story,TGTM-57,10201,Test AED 2k-5k minimum investment positioning for broader waitlist,Investor Acquisition,Low,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-57 Story: Test AED 2k-5k minimum investment positioning for broader waitlist.
+
+Original intent:
+Assess broader lower-ticket messaging without committing to launch availability.
+
+What this item is meant to achieve:
+Deliver the AED 2k-5k minimum-investment positioning test workstream so it supports the wider investor acquisition engine. The objective is to measure whether lower-ticket access language increases qualified investor waitlist demand without creating a product or regulatory commitment
+
+How we are doing this:
+Assemble and rank the investor list using ICP fit, relationship strength, ticket-size potential, geography, readiness, language preference, and engagement history.
+
+Preliminary solution:
+create an invite-priority scoring table that separates Tier 1 founder-led outreach, Tier 2 private webinar invitees, and Tier 3 nurture-only contacts.
+
+Deliverable:
+Ranked invite list, scoring criteria, segment tags, and recommended outreach owner.
+
+Dependencies / inputs:
+current waitlist page, investor persona definitions, CRM segments, approved compliance language, analytics baseline, email engagement data
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: waitlist conversion rate, qualified signup rate, CTR, bounce rate, segment-level engagement, compliance review outcome, objection rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Story,TGTM-56,10200,Create private/HNWI launch cohort plan,Investor Acquisition,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-56 Story: Create private/HNWI launch cohort plan.
+
+Original intent:
+Test a higher-ticket private launch cohort before broad retail scale.
+
+What this item is meant to achieve:
+Deliver the private/HNWI launch cohort plan workstream so it supports the wider investor acquisition engine. The objective is to create a high-trust private access path for priority investors before wider public promotion
+
+How we are doing this:
+Define the private cohort structure, invite logic, onboarding sequence, engagement cadence, and escalation path so priority investors receive a controlled white-glove experience.
+
+Preliminary solution:
+create a cohort operating plan with investor tiers, invite waves, onboarding steps, scheduled touchpoints, owner assignments, feedback capture, and escalation rules.
+
+Deliverable:
+Private cohort plan, invite list rules, onboarding workflow, and operating cadence.
+
+Dependencies / inputs:
+CRM investor list, founder network, HNWI qualification criteria, launch assets, webinar/meeting availability, compliance guidance, support escalation owner
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: invite acceptance, activation rate, onboarding completion, meeting bookings, feedback quality, investment intent, referral potential.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Story,TGTM-53,10197,Create Arabic/English investor newsletter,Investor Acquisition,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,29/Aug/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-53 Story: Create Arabic/English investor newsletter.
+
+Original intent:
+Build a bilingual newsletter for market education, product updates, investor readiness, and upcoming opportunities.
+
+What this item is meant to achieve:
+Deliver the Arabic/English investor newsletter workstream so it supports the wider investor acquisition engine. The objective is to create a bilingual nurture channel that educates investors, builds trust, and keeps demand warm between launch milestones
+
+How we are doing this:
+Build a repeatable bilingual newsletter process covering content planning, translation/adaptation, segmentation, approval, send operations, and performance review.
+
+Preliminary solution:
+structure each issue with a market education block, product/company update, opportunity preview, trust/compliance note, investor CTA, and Arabic/English versions adapted rather than directly translated.
+
+Deliverable:
+Newsletter content plan, template, bilingual copy, send workflow, and tracking plan.
+
+Dependencies / inputs:
+investor personas, bilingual brand voice, content calendar, market education themes, property/investment updates, CRM/email platform, unsubscribe/compliance requirements
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: open rate, CTR, reply rate, unsubscribe rate, segment engagement, webinar registrations, qualified waitlist progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Story,TGTM-52,10196,Launch first private investor webinar,Investor Acquisition,High,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,28/Sep/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-52 Story: Launch first private investor webinar.
+
+Original intent:
+Run a controlled webinar before public paid scale.
+
+What this item is meant to achieve:
+Deliver the first private investor webinar workstream so it supports the wider investor acquisition engine. The objective is to convert early investor interest into trust, education, direct Q&A, and measurable next-step actions
+
+How we are doing this:
+Build the webinar as a conversion journey: targeted invitations, registration, reminders, live education, moderated Q&A, feedback capture, and post-event follow-up.
+
+Preliminary solution:
+use a closed registration flow connected to CRM, run a rehearsal with host/moderator roles, capture questions in a structured log, and trigger segmented follow-up based on attendance and engagement.
+
+Deliverable:
+Webinar runbook, registration workflow, deck/materials, Q&A log, follow-up sequence, and conversion report.
+
+Dependencies / inputs:
+invite list, investor personas, webinar platform, presentation deck, compliance-approved talking points, registration form, CRM follow-up workflow
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: registration rate, attendance rate, engagement/Q&A volume, follow-up reply rate, booked calls, waitlist conversion, qualified investor progression.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Story,TGTM-50,10194,Segment investor personas in CRM,Investor Acquisition,Medium,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,29/Aug/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-50 Story: Segment investor personas in CRM.
+
+Original intent:
+Set up segments for Dubai sophisticated investors, GCC Dubai allocators, expat professionals, international Dubai believers, digital-native investors, and family offices/advisors.
+
+What this item is meant to achieve:
+Deliver the investor persona segmentation in CRM workstream so it supports the wider investor acquisition engine. The objective is to turn investor personas into usable CRM segments that drive targeted messaging, routing, and nurture journeys
+
+How we are doing this:
+Translate investor personas into practical audience cohorts using CRM attributes, declared interest, geography, language, ticket size, sophistication, engagement level, and source channel.
+
+Preliminary solution:
+create named CRM cohorts such as UAE/GCC HNWIs, sophisticated investors, expat professionals, digital-native investors, Arabic-first investors, webinar-engaged investors, and lower-ticket waitlist prospects.
+
+Deliverable:
+Segment definition table with inclusion/exclusion rules, CRM filters, and recommended messaging angle per segment.
+
+Dependencies / inputs:
+CRM fields, signup answers, persona definitions, source/channel data, language preference, investor status, lifecycle stage, routing rules
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: segment coverage, data completeness, routing accuracy, campaign engagement by persona, conversion by segment, manual correction rate.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Story,TGTM-49,10193,Create investor eligibility screening questions,Investor Acquisition,High,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,30/Jul/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-49 Story: Create investor eligibility screening questions.
+
+Original intent:
+Define eligibility preview logic to avoid global retail promises.
+
+What this item is meant to achieve:
+Deliver the investor eligibility screening questions workstream so it supports the wider investor acquisition engine. The objective is to qualify prospective investors responsibly before exposing them to private access or investment-specific experiences
+
+How we are doing this:
+Define the screening rules, write clear questions, map answer combinations to eligibility outcomes, and ensure every outcome has compliant next-step messaging.
+
+Preliminary solution:
+create a question-to-outcome matrix that tags investors as priority eligible, requires review, nurture-only, or not eligible at this stage, then syncs that result to CRM for routing.
+
+Deliverable:
+Screening questionnaire, answer mapping logic, outcome copy, CRM field mapping, and test results.
+
+Dependencies / inputs:
+legal/compliance requirements, investor personas, eligibility criteria, CRM fields, landing page form design, jurisdiction rules, privacy/consent language
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: completion rate, eligibility match rate, disqualification clarity, compliance approval, CRM mapping accuracy, support questions triggered.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Story,TGTM-48,10192,Build private investor waitlist landing page,Investor Acquisition,Highest,To Do,,30/Jun/26 9:42 AM,30/Jun/26 12:37 PM,30/Jul/26 12:00 AM,"Hierarchy / linkage:
+Parent: TGTM-4 - Build investor demand and private access engine. Grandparent Epic context: TGTM-4 - Build investor demand and private access engine. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine > TGTM-48 Story: Build private investor waitlist landing page.
+
+Original intent:
+Create a gated waitlist for eligible investors with segmentation and eligibility preview.
+
+What this item is meant to achieve:
+Deliver the private investor waitlist landing page workstream so it supports the wider investor acquisition engine. The objective is to capture qualified investor demand through a gated, compliant, and trackable waitlist experience
+
+How we are doing this:
+Design the investor journey from page arrival to qualification submission, confirmation, CRM routing, and follow-up nurture.
+
+Preliminary solution:
+create a gated landing page with hero value proposition, eligibility explanation, trust/compliance section, qualification form, FAQ, CTA, analytics events, and post-submit routing.
+
+Deliverable:
+Landing page wireframe/copy spec, event tracking requirements, CRM mapping, and acceptance checklist.
+
+Dependencies / inputs:
+brand messaging, investor value proposition, eligibility questions, CRM integration, analytics events, email automation, compliance disclaimers, UX copy
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: page conversion rate, qualified lead rate, form completion rate, analytics event coverage, CRM sync success, email confirmation delivery, drop-off points.
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",10148,TGTM-4,Build investor demand and private access engine
+Epic,TGTM-4,10148,Build investor demand and private access engine,Investor Acquisition,High,To Do,,30/Jun/26 9:24 AM,01/Jul/26 1:51 PM,29/Aug/26 12:00 AM,"Hierarchy / linkage:
+This Epic is the root workstream for the Investor Acquisition domain. Hierarchy path: TGTM-4 Epic: Build investor demand and private access engine.
+
+Original intent:
+Create the investor waitlist, eligibility preview, education funnel, webinar cadence, and segmented investor messaging for UAE/GCC HNWIs, sophisticated investors, expats, and digital-native investors.
+
+What this item is meant to achieve:
+Build the full investor demand and private-access engine that turns early market interest into qualified, segmented, nurtured, and measurable investor relationships.
+
+How we are doing this:
+Coordinate investor demand generation, private access infrastructure, segmentation, education, screening, and conversion measurement as one connected GTM engine.
+
+Preliminary solution:
+operate the Epic as an integrated investor acquisition system with gated waitlist capture, persona-based CRM segmentation, eligibility screening, private events, bilingual nurture, HNWI cohort activation, and performance dashboards.
+
+Deliverable:
+Investor acquisition operating system with assets, workflows, CRM rules, reporting, and launch-readiness criteria.
+
+Dependencies / inputs:
+Investor personas, CRM architecture, compliance guidance, brand positioning, waitlist funnel, webinar/event plan, newsletter system, and private/HNWI launch cohort rules.
+
+Implementation notes:
+- Keep the work grounded in the parent-child context above; do not create a detached asset that cannot be used by the parent Story.
+- Ensure investor language remains trust-first, transparent, and careful around eligibility, access, minimum investment, private launch status, and any forward-looking product assumptions.
+- Where CRM or analytics is involved, define the exact fields, tags, events, owner handoffs, and reporting view needed before launch.
+- Where Arabic/English investor communication is involved, adapt the message for investor trust and cultural context instead of using direct word-for-word translation.
+- Capture assumptions, open questions, and approval requirements directly in the Jira item before marking it ready for execution or done.
+
+Acceptance criteria:
+- The output clearly supports the parent Story and, where applicable, the grandparent Epic.
+- The required artifact is complete, reviewable, and usable by marketing, sales/founder outreach, CRM operations, or compliance without needing to reinterpret the task.
+- Required dependencies, data inputs, owner handoffs, and approval checkpoints are documented.
+- Compliance-sensitive investor language is reviewed or prepared for review before publishing or automation.
+- Success metrics are defined or the item explicitly contributes to a measurable funnel outcome: qualified waitlist growth, lead-to-qualified-investor conversion, private cohort activation, webinar participation, CRM segment coverage, nurture engagement, and compliance approval readiness..
+- The final deliverable is attached, linked, or summarized in Jira with enough detail for the next owner to execute the following step.",,,

@@ -1,0 +1,530 @@
+openapi: 3.1.0
+info:
+  title: Campaigns API
+  description: >
+    REST API for the Campaigns domain. Manages campaign execution — from
+    planning and creative development through launch QA, measurement, and
+    post-test analysis. Includes referral/ambassador test management.
+    Supports the pre-launch, launch, post-launch campaigns (TGTM-11) and
+    referral/ambassador test plan (TGTM-125) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-11
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Campaigns ────────────────────────────────────────────────────────
+  /campaigns:
+    get:
+      tags:
+        - Campaigns
+      summary: List campaigns
+      operationId: getCampaigns
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+      responses:
+        '200':
+          description: Paginated campaigns
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Campaigns
+      summary: Create a campaign
+      operationId: createCampaign
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCampaignRequestDto'
+      responses:
+        '201':
+          description: Campaign created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /campaigns/{id}:
+    get:
+      tags:
+        - Campaigns
+      summary: Get campaign by ID
+      operationId: getCampaignById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Campaign detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Campaigns
+      summary: Update a campaign
+      operationId: updateCampaign
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateCampaignRequestDto'
+      responses:
+        '200':
+          description: Updated campaign
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Referral Tests ───────────────────────────────────────────────────
+  /campaigns/referral-tests:
+    get:
+      tags:
+        - Campaigns
+        - Referral Tests
+      summary: List referral/ambassador tests
+      operationId: getCampaignsReferralTests
+      responses:
+        '200':
+          description: Referral tests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ReferralTestDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Campaigns
+        - Referral Tests
+      summary: Create a referral test
+      operationId: createCampaignsReferralTest
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateReferralTestRequestDto'
+      responses:
+        '201':
+          description: Test created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReferralTestDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Launch Queue ─────────────────────────────────────────────────────
+  /campaigns/launch-queue:
+    get:
+      tags:
+        - Campaigns
+        - Launch
+      summary: List campaigns in launch queue
+      operationId: getCampaignsLaunchQueue
+      responses:
+        '200':
+          description: Launch queue
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LaunchQueueItemDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /campaigns/launch-queue/checklists:
+    post:
+      tags:
+        - Campaigns
+        - Launch
+      summary: Create a launch readiness checklist
+      operationId: createCampaignsLaunchChecklist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLaunchChecklistRequestDto'
+      responses:
+        '201':
+          description: Checklist created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LaunchChecklistDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /campaigns/kpis:
+    get:
+      tags:
+        - Campaigns
+        - KPIs
+      summary: Retrieve campaign KPI metrics
+      operationId: getCampaignsKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Campaign KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    CampaignStatusEnum:
+      type: string
+      enum:
+        - drafting
+        - in-review
+        - ready-for-launch
+        - live
+        - paused
+        - completed
+        - archived
+
+    ReferralTestStatusEnum:
+      type: string
+      enum:
+        - designing
+        - active
+        - paused
+        - analysing
+        - completed
+
+    # ─── Campaigns ──────────────────────────────────────────────────────
+    CampaignDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        status:
+          $ref: '#/components/schemas/CampaignStatusEnum'
+        audience:
+          type: string
+          example: UAE/GCC HNWIs
+        channels:
+          type: array
+          items:
+            type: string
+          example:
+            - LinkedIn
+            - Email
+            - Web
+        startDate:
+          type: string
+          format: date
+        endDate:
+          type: string
+          format: date
+          nullable: true
+        owner:
+          type: string
+        budget:
+          type: number
+        spend:
+          type: number
+        metrics:
+          type: object
+          properties:
+            impressions:
+              type: integer
+            clicks:
+              type: integer
+            conversions:
+              type: integer
+            costPerConversion:
+              type: number
+              format: float
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - status
+        - owner
+        - createdAt
+
+    CampaignCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/CampaignDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateCampaignRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        audience:
+          type: string
+        channels:
+          type: array
+          items:
+            type: string
+        startDate:
+          type: string
+          format: date
+        endDate:
+          type: string
+          format: date
+        owner:
+          type: string
+        budget:
+          type: number
+      required:
+        - name
+        - owner
+        - startDate
+
+    UpdateCampaignRequestDto:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/CampaignStatusEnum'
+        endDate:
+          type: string
+          format: date
+        budget:
+          type: number
+        spend:
+          type: number
+        metrics:
+          type: object
+          properties:
+            impressions:
+              type: integer
+            clicks:
+              type: integer
+            conversions:
+              type: integer
+      minProperties: 1
+
+    # ─── Referral Tests ─────────────────────────────────────────────────
+    ReferralTestDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: Month 6 Referral Test
+        status:
+          $ref: '#/components/schemas/ReferralTestStatusEnum'
+        participantRules:
+          type: string
+        rewardLogic:
+          type: string
+        trackingUtm:
+          type: string
+        crmFields:
+          type: array
+          items:
+            type: string
+        resultsSummary:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - status
+        - createdAt
+
+    CreateReferralTestRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        participantRules:
+          type: string
+        rewardLogic:
+          type: string
+        trackingUtm:
+          type: string
+        crmFields:
+          type: array
+          items:
+            type: string
+      required:
+        - name
+
+    # ─── Launch Queue ───────────────────────────────────────────────────
+    LaunchQueueItemDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        campaignId:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum:
+            - pending-qa
+            - qa-passed
+            - approved
+            - launched
+            - blocked
+        checklistCompleted:
+          type: boolean
+        launchOwner:
+          type: string
+        scheduledDate:
+          type: string
+          format: date-time
+      required:
+        - id
+        - campaignId
+        - status
+
+    LaunchChecklistDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        campaignId:
+          type: string
+          format: uuid
+        checks:
+          type: array
+          items:
+            type: object
+            properties:
+              item:
+                type: string
+              passed:
+                type: boolean
+              notes:
+                type: string
+        allPassed:
+          type: boolean
+        owner:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - campaignId
+        - checks
+        - allPassed
+
+    CreateLaunchChecklistRequestDto:
+      type: object
+      properties:
+        campaignId:
+          type: string
+          format: uuid
+        checks:
+          type: array
+          items:
+            type: object
+            properties:
+              item:
+                type: string
+              passed:
+                type: boolean
+              notes:
+                type: string
+          minItems: 1
+        owner:
+          type: string
+      required:
+        - campaignId
+        - checks
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    CampaignKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

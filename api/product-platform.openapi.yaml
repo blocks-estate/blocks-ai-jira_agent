@@ -1,0 +1,451 @@
+openapi: 3.1.0
+info:
+  title: Product & Platform API
+  description: >
+    REST API for the Product & Platform domain. Manages the platform and
+    product infrastructure — API usage analytics, integration roadmap phases,
+    governance and compliance constraints, integration tracking, and billing
+    visibility. Supports the white-label and enterprise infrastructure roadmap
+    (TGTM-7) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-7
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── API Usage ────────────────────────────────────────────────────────
+  /platform/api-usage:
+    get:
+      tags:
+        - Product & Platform
+        - Usage
+      summary: Get API usage analytics
+      operationId: getPlatformApiUsage
+      responses:
+        '200':
+          description: API usage metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiUsageDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Integration Roadmap ──────────────────────────────────────────────
+  /platform/integration-roadmap:
+    get:
+      tags:
+        - Product & Platform
+        - Roadmap
+      summary: Get the integration roadmap
+      operationId: getPlatformIntegrationRoadmap
+      responses:
+        '200':
+          description: Integration roadmap phases
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/IntegrationPhaseDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /platform/integration-roadmap/phases:
+    post:
+      tags:
+        - Product & Platform
+        - Roadmap
+      summary: Create an integration roadmap phase
+      operationId: createPlatformIntegrationPhase
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateIntegrationPhaseRequestDto'
+      responses:
+        '201':
+          description: Phase created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntegrationPhaseDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Governance ───────────────────────────────────────────────────────
+  /platform/governance-matrix:
+    get:
+      tags:
+        - Product & Platform
+        - Governance
+      summary: Get the integration governance matrix
+      operationId: getPlatformGovernanceMatrix
+      responses:
+        '200':
+          description: Governance rules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GovernanceRuleDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Product & Platform
+        - Governance
+      summary: Create a governance rule
+      operationId: createPlatformGovernanceRule
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateGovernanceRuleRequestDto'
+      responses:
+        '201':
+          description: Rule created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GovernanceRuleDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Integrations ─────────────────────────────────────────────────────
+  /platform/integrations:
+    get:
+      tags:
+        - Product & Platform
+        - Integrations
+      summary: List platform integrations
+      operationId: getPlatformIntegrations
+      responses:
+        '200':
+          description: Integration list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PlatformIntegrationDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Product & Platform
+        - Integrations
+      summary: Create a platform integration record
+      operationId: createPlatformIntegration
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePlatformIntegrationRequestDto'
+      responses:
+        '201':
+          description: Integration created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlatformIntegrationDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /platform/kpis:
+    get:
+      tags:
+        - Product & Platform
+        - KPIs
+      summary: Retrieve product and platform KPI metrics
+      operationId: getProductPlatformKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Product and platform KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductPlatformKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    IntegrationPhaseEnum:
+      type: string
+      enum:
+        - phase-0-manual
+        - phase-1-private-beta
+        - phase-2-partner
+        - phase-3-enterprise
+
+    IntegrationStatusEnum:
+      type: string
+      enum:
+        - planned
+        - in-development
+        - beta
+        - live
+        - deprecated
+
+    DataClassificationEnum:
+      type: string
+      enum:
+        - public
+        - internal
+        - confidential
+        - restricted
+
+    # ─── API Usage ──────────────────────────────────────────────────────
+    ApiUsageDto:
+      type: object
+      properties:
+        totalRequests:
+          type: integer
+        requestsByEndpoint:
+          type: object
+          additionalProperties:
+            type: integer
+        averageLatencyMs:
+          type: integer
+        errorRate:
+          type: number
+          format: float
+        activeConsumers:
+          type: integer
+        usageTrend:
+          $ref: './common.openapi.yaml#/components/schemas/TrendChartDto'
+      required:
+        - totalRequests
+        - averageLatencyMs
+        - errorRate
+
+    # ─── Integration Roadmap ────────────────────────────────────────────
+    IntegrationPhaseDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        phase:
+          $ref: '#/components/schemas/IntegrationPhaseEnum'
+        name:
+          type: string
+          example: Private Beta APIs
+        description:
+          type: string
+        targetUsers:
+          type: string
+        enabledUseCases:
+          type: array
+          items:
+            type: string
+        prerequisites:
+          type: array
+          items:
+            type: string
+        dependencies:
+          type: array
+          items:
+            type: string
+        readinessGates:
+          type: array
+          items:
+            type: string
+        targetDate:
+          type: string
+          format: date
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - phase
+        - name
+        - status
+        - createdAt
+
+    CreateIntegrationPhaseRequestDto:
+      type: object
+      properties:
+        phase:
+          $ref: '#/components/schemas/IntegrationPhaseEnum'
+        name:
+          type: string
+        description:
+          type: string
+        targetUsers:
+          type: string
+        enabledUseCases:
+          type: array
+          items:
+            type: string
+        prerequisites:
+          type: array
+          items:
+            type: string
+        dependencies:
+          type: array
+          items:
+            type: string
+        readinessGates:
+          type: array
+          items:
+            type: string
+        targetDate:
+          type: string
+          format: date
+      required:
+        - phase
+        - name
+
+    # ─── Governance ─────────────────────────────────────────────────────
+    GovernanceRuleDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        topic:
+          type: string
+          example: Data Classification
+        dataClassification:
+          $ref: '#/components/schemas/DataClassificationEnum'
+        consentRequired:
+          type: boolean
+        jurisdictionLimits:
+          type: string
+        retentionDays:
+          type: integer
+        auditRequired:
+          type: boolean
+        owner:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - topic
+        - dataClassification
+        - owner
+
+    CreateGovernanceRuleRequestDto:
+      type: object
+      properties:
+        topic:
+          type: string
+        dataClassification:
+          $ref: '#/components/schemas/DataClassificationEnum'
+        consentRequired:
+          type: boolean
+        jurisdictionLimits:
+          type: string
+        retentionDays:
+          type: integer
+        auditRequired:
+          type: boolean
+        owner:
+          type: string
+      required:
+        - topic
+        - dataClassification
+        - owner
+
+    # ─── Integrations ───────────────────────────────────────────────────
+    PlatformIntegrationDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: HubSpot CRM
+        type:
+          type: string
+          example: CRM
+        status:
+          $ref: '#/components/schemas/IntegrationStatusEnum'
+        partnerName:
+          type: string
+        apiVersion:
+          type: string
+        usageMetrics:
+          type: object
+          properties:
+            requestsPerMonth:
+              type: integer
+            errorsPerMonth:
+              type: integer
+            averageLatencyMs:
+              type: integer
+        owner:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - type
+        - status
+        - owner
+        - createdAt
+
+    CreatePlatformIntegrationRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+        status:
+          $ref: '#/components/schemas/IntegrationStatusEnum'
+        partnerName:
+          type: string
+        apiVersion:
+          type: string
+        owner:
+          type: string
+      required:
+        - name
+        - type
+        - status
+        - owner
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    ProductPlatformKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

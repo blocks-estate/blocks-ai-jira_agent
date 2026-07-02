@@ -1,0 +1,432 @@
+openapi: 3.1.0
+info:
+  title: Sales Ops & CRM API
+  description: >
+    REST API for the Sales Ops & CRM domain. Manages the LOI (Letter of Intent)
+    pipeline — from draft through signed/expired, with CRM tracking, pipeline
+    visibility, and reporting views. Supports the sales, CRM, ABM, and
+    partnership operations (TGTM-12) and LOI tracker (TGTM-134) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-12
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── LOI Tracking ─────────────────────────────────────────────────────
+  /loi/tracking:
+    get:
+      tags:
+        - Sales Ops & CRM
+        - LOI Pipeline
+      summary: List LOI records
+      description: >
+        Returns LOI (Letter of Intent) records with status, counterparty type,
+        asset/developer name, signed date, expiry date, owner, and next action.
+      operationId: getSalesOpsCrmLoiTracking
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+        - $ref: './common.openapi.yaml#/components/parameters/DateRangeFilter'
+      responses:
+        '200':
+          description: Paginated LOI records
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoiRecordCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Sales Ops & CRM
+        - LOI Pipeline
+      summary: Create an LOI record
+      operationId: createSalesOpsCrmLoiRecord
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLoiRecordRequestDto'
+      responses:
+        '201':
+          description: LOI record created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoiRecordDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /loi/tracking/{id}:
+    get:
+      tags:
+        - Sales Ops & CRM
+        - LOI Pipeline
+      summary: Get an LOI record by ID
+      operationId: getSalesOpsCrmLoiRecordById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: LOI record detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoiRecordDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Sales Ops & CRM
+        - LOI Pipeline
+      summary: Update an LOI record
+      operationId: updateSalesOpsCrmLoiRecord
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateLoiRecordRequestDto'
+      responses:
+        '200':
+          description: Updated LOI record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoiRecordDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    delete:
+      tags:
+        - Sales Ops & CRM
+        - LOI Pipeline
+      summary: Delete an LOI record
+      operationId: deleteSalesOpsCrmLoiRecord
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '204':
+          description: Record deleted
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── LOI Pipeline ─────────────────────────────────────────────────────
+  /loi/pipeline:
+    get:
+      tags:
+        - Sales Ops & CRM
+        - LOI Pipeline
+      summary: Get LOI pipeline summary
+      description: >
+        Returns aggregated pipeline view showing funnel movement, status
+        distribution, owner accountability, and next actions.
+      operationId: getSalesOpsCrmLoiPipeline
+      responses:
+        '200':
+          description: LOI pipeline summary
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoiPipelineDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── LOI Reporting ────────────────────────────────────────────────────
+  /loi/reporting:
+    get:
+      tags:
+        - Sales Ops & CRM
+        - Reporting
+      summary: Get LOI reporting views
+      description: >
+        Returns summary reports for signed and pending LOIs: counts, status
+        breakdowns, owner distribution, and pipeline value.
+      operationId: getSalesOpsCrmLoiReporting
+      responses:
+        '200':
+          description: LOI reporting data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoiReportingDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /loi/kpis:
+    get:
+      tags:
+        - Sales Ops & CRM
+        - KPIs
+      summary: Retrieve sales ops CRM KPI metrics
+      operationId: getSalesOpsCrmKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Sales ops CRM KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SalesOpsCrmKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    LoiStageEnum:
+      type: string
+      description: LOI pipeline stage definitions
+      enum:
+        - draft
+        - sent
+        - under-review
+        - negotiation
+        - signed
+        - expired
+        - not-proceeding
+
+    CounterpartyTypeEnum:
+      type: string
+      enum:
+        - developer
+        - asset-owner
+        - partner
+        - investor
+
+    # ─── LOI Records ────────────────────────────────────────────────────
+    LoiRecordDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        counterpartyName:
+          type: string
+          description: Developer, asset owner, or partner name
+        counterpartyType:
+          $ref: '#/components/schemas/CounterpartyTypeEnum'
+        stage:
+          $ref: '#/components/schemas/LoiStageEnum'
+        assetName:
+          type: string
+        signedDate:
+          type: string
+          format: date
+          nullable: true
+        expiryDate:
+          type: string
+          format: date
+          nullable: true
+        commercialNotes:
+          type: string
+        estimatedValue:
+          type: number
+          example: 15000000
+        owner:
+          type: string
+        nextAction:
+          type: string
+        documentLinks:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/DocumentReferenceDto'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - counterpartyName
+        - counterpartyType
+        - stage
+        - owner
+        - createdAt
+
+    LoiRecordCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/LoiRecordDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateLoiRecordRequestDto:
+      type: object
+      properties:
+        counterpartyName:
+          type: string
+        counterpartyType:
+          $ref: '#/components/schemas/CounterpartyTypeEnum'
+        stage:
+          $ref: '#/components/schemas/LoiStageEnum'
+        assetName:
+          type: string
+        signedDate:
+          type: string
+          format: date
+        expiryDate:
+          type: string
+          format: date
+        commercialNotes:
+          type: string
+        estimatedValue:
+          type: number
+        owner:
+          type: string
+        nextAction:
+          type: string
+      required:
+        - counterpartyName
+        - counterpartyType
+        - stage
+        - owner
+
+    UpdateLoiRecordRequestDto:
+      type: object
+      properties:
+        stage:
+          $ref: '#/components/schemas/LoiStageEnum'
+        signedDate:
+          type: string
+          format: date
+        expiryDate:
+          type: string
+          format: date
+        commercialNotes:
+          type: string
+        estimatedValue:
+          type: number
+        owner:
+          type: string
+        nextAction:
+          type: string
+        documentLinks:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/DocumentReferenceDto'
+      minProperties: 1
+
+    # ─── Pipeline ───────────────────────────────────────────────────────
+    LoiPipelineDto:
+      type: object
+      properties:
+        totalRecords:
+          type: integer
+        totalEstimatedValue:
+          type: number
+        stageDistribution:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/PipelineStageDto'
+        ownerDistribution:
+          type: array
+          items:
+            type: object
+            properties:
+              owner:
+                type: string
+              count:
+                type: integer
+              totalValue:
+                type: number
+        avgDaysToSign:
+          type: integer
+      required:
+        - totalRecords
+        - totalEstimatedValue
+        - stageDistribution
+
+    # ─── Reporting ──────────────────────────────────────────────────────
+    LoiReportingDto:
+      type: object
+      properties:
+        signedCount:
+          type: integer
+        pendingCount:
+          type: integer
+        expiredCount:
+          type: integer
+        notProceedingCount:
+          type: integer
+        conversionRateSigned:
+          type: number
+          format: float
+        valueByStage:
+          type: array
+          items:
+            type: object
+            properties:
+              stage:
+                $ref: '#/components/schemas/LoiStageEnum'
+              count:
+                type: integer
+              totalValue:
+                type: number
+        monthlyTrend:
+          $ref: './common.openapi.yaml#/components/schemas/TrendChartDto'
+      required:
+        - signedCount
+        - pendingCount
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    SalesOpsCrmKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

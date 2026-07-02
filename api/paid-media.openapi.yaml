@@ -1,0 +1,408 @@
+openapi: 3.1.0
+info:
+  title: Paid Media API
+  description: >
+    REST API for the Paid Media domain. Manages compliant education-first
+    paid media advertising — creative library, ad phrase avoid list, review
+    checklists, channel-specific creative variants, and platform policy
+    compliance. Supports the launch compliant education-first paid media
+    tests (TGTM-14) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-14
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Creative Library ─────────────────────────────────────────────────
+  /paid-media/creative-library:
+    get:
+      tags:
+        - Paid Media
+        - Creative
+      summary: List creative library assets
+      operationId: getPaidMediaCreativeLibrary
+      responses:
+        '200':
+          description: Creative assets
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CreativeAssetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Paid Media
+        - Creative
+      summary: Create a creative asset
+      operationId: createPaidMediaCreativeAsset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCreativeAssetRequestDto'
+      responses:
+        '201':
+          description: Asset created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreativeAssetDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Avoid List ───────────────────────────────────────────────────────
+  /paid-media/avoid-list:
+    get:
+      tags:
+        - Paid Media
+        - Compliance
+      summary: Get paid media avoid list
+      operationId: getPaidMediaAvoidList
+      responses:
+        '200':
+          description: Avoid list entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PaidMediaAvoidListEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Paid Media
+        - Compliance
+      summary: Add an avoid list entry
+      operationId: createPaidMediaAvoidListItem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePaidMediaAvoidListEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaidMediaAvoidListEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /paid-media/avoid-list/{id}:
+    delete:
+      tags:
+        - Paid Media
+        - Compliance
+      summary: Remove an avoid list entry
+      operationId: deletePaidMediaAvoidListItem
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '204':
+          description: Entry removed
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Review Queue ─────────────────────────────────────────────────────
+  /paid-media/review-queue:
+    get:
+      tags:
+        - Paid Media
+        - Reviews
+      summary: List ad review queue
+      operationId: getPaidMediaReviewQueue
+      responses:
+        '200':
+          description: Review queue items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AdReviewChecklistDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Paid Media
+        - Reviews
+      summary: Create an ad review checklist
+      operationId: createPaidMediaReviewChecklist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAdReviewChecklistRequestDto'
+      responses:
+        '201':
+          description: Checklist created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdReviewChecklistDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /paid-media/kpis:
+    get:
+      tags:
+        - Paid Media
+        - KPIs
+      summary: Retrieve paid media KPI metrics
+      operationId: getPaidMediaKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Paid media KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaidMediaKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    CreativeFormatEnum:
+      type: string
+      enum:
+        - text-ad
+        - display
+        - video
+        - carousel
+        - single-image
+        - sponsored-content
+
+    PlatformEnum:
+      type: string
+      enum:
+        - google
+        - linkedin
+        - meta
+        - tiktok
+        - x
+
+    ReviewResultEnum:
+      type: string
+      enum:
+        - pass
+        - fail
+        - conditional-pass
+
+    # ─── Creative Library ───────────────────────────────────────────────
+    CreativeAssetDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: Education-First Awareness - LinkedIn
+        format:
+          $ref: '#/components/schemas/CreativeFormatEnum'
+        platform:
+          $ref: '#/components/schemas/PlatformEnum'
+        headline:
+          type: string
+        body:
+          type: string
+        cta:
+          type: string
+        variantName:
+          type: string
+        riskLevel:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+        reviewStatus:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - format
+        - platform
+        - reviewStatus
+        - createdAt
+
+    CreateCreativeAssetRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        format:
+          $ref: '#/components/schemas/CreativeFormatEnum'
+        platform:
+          $ref: '#/components/schemas/PlatformEnum'
+        headline:
+          type: string
+        body:
+          type: string
+        cta:
+          type: string
+        variantName:
+          type: string
+        riskLevel:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+      required:
+        - name
+        - format
+        - platform
+
+    # ─── Avoid List ─────────────────────────────────────────────────────
+    PaidMediaAvoidListEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        phrase:
+          type: string
+          example: Instant liquidity
+        platform:
+          $ref: '#/components/schemas/PlatformEnum'
+        riskRationale:
+          type: string
+        approvedAlternative:
+          type: string
+        reviewer:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - phrase
+        - platform
+        - riskRationale
+
+    CreatePaidMediaAvoidListEntryRequestDto:
+      type: object
+      properties:
+        phrase:
+          type: string
+        platform:
+          $ref: '#/components/schemas/PlatformEnum'
+        riskRationale:
+          type: string
+        approvedAlternative:
+          type: string
+        reviewer:
+          type: string
+      required:
+        - phrase
+        - platform
+        - riskRationale
+
+    # ─── Ad Review Checklist ────────────────────────────────────────────
+    AdReviewChecklistDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        creativeId:
+          type: string
+          format: uuid
+        checks:
+          type: array
+          items:
+            type: object
+            properties:
+              item:
+                type: string
+                example: No prohibited liquidity language
+              passed:
+                type: boolean
+              notes:
+                type: string
+        result:
+          $ref: '#/components/schemas/ReviewResultEnum'
+        reviewer:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - creativeId
+        - checks
+        - result
+        - createdAt
+
+    CreateAdReviewChecklistRequestDto:
+      type: object
+      properties:
+        creativeId:
+          type: string
+          format: uuid
+        checks:
+          type: array
+          items:
+            type: object
+            properties:
+              item:
+                type: string
+              passed:
+                type: boolean
+              notes:
+                type: string
+          minItems: 1
+        reviewer:
+          type: string
+      required:
+        - creativeId
+        - checks
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    PaidMediaKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

@@ -1,25 +1,15 @@
 openapi: 3.1.0
 info:
   title: GTM Analytics & Reporting API
-  description: |
+  description: >
     Centralized REST API for the Go-To-Market (GTM) Analytics & Reporting Dashboard.
     Provides KPI metrics, conversion funnels, competitive intelligence, content analytics,
     subscription tracking, weekly reviews, KPI dictionary, and funnel instrumentation
-    specifications across five core business domains:
+    specifications. This spec is the canonical example for all GTM domain API specs.
 
-    - **Developer Pipeline** — Account coverage, meetings, assessments, signed developers,
-      asset submissions/approvals, offerings launched
-    - **Investor Growth** — Website visitors, waitlist signups, KYC rates, funded subscriptions,
-      repeat investment
-    - **PR & Media** — Tier-1 mentions, backlinks, founder interviews, event invitations,
-      share of voice, partner inquiries
-    - **SEO & Content** — Organic traffic, keyword rankings, backlinks, resource downloads,
-      webinar registrations, content-assisted conversions
-    - **Trust & Compliance** — Compliance turnaround, KYC rejection, risk acknowledgement,
-      complaints, support response, failed payments, due diligence, regulatory checks
-
-    Built with a lightweight analytics architecture: source systems → staging →
-    KPI calculation → dashboard/reporting view → weekly review/action log.
+    Imported shared components from `./common.openapi.yaml` include standard error
+    responses, enumerations, KPI metric shapes, funnel stages, trend series, pagination,
+    and audit metadata.
   version: 1.0.0
   contact:
     name: GTM Analytics Team
@@ -53,7 +43,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/OverviewDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Raw KPIs (Full Payload) ──────────────────────────────────────────
   /kpis:
@@ -61,7 +51,7 @@ paths:
       tags:
         - KPIs
       summary: Retrieve the complete KPI data payload
-      description: |
+      description: >
         Returns the entire KPI data set as a single JSON payload, including
         metrics across all domains across all time periods. Intended for
         client-side caching or data-export use cases. Most consumers should
@@ -75,7 +65,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/KpiRootDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Developer KPIs ───────────────────────────────────────────────────
   /kpis/developer:
@@ -91,7 +81,7 @@ paths:
         asset pipeline, approvals, and offerings launched.
       operationId: getDeveloperKpis
       parameters:
-        - $ref: '#/components/parameters/PeriodFilter'
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
       responses:
         '200':
           description: Developer KPI metrics
@@ -100,7 +90,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/DeveloperKpiSetDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Investor KPIs ────────────────────────────────────────────────────
   /kpis/investor:
@@ -115,7 +105,7 @@ paths:
         rates, offering page views, funded subscriptions, and repeat investment rate.
       operationId: getInvestorKpis
       parameters:
-        - $ref: '#/components/parameters/PeriodFilter'
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
       responses:
         '200':
           description: Investor KPI metrics
@@ -124,7 +114,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/InvestorKpiSetDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── PR KPIs ──────────────────────────────────────────────────────────
   /kpis/pr:
@@ -147,7 +137,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/PrKpiSetDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── SEO/Content KPIs ────────────────────────────────────────────────
   /kpis/seo-content:
@@ -171,7 +161,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SeoContentKpiSetDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Trust/Compliance KPIs ────────────────────────────────────────────
   /kpis/trust-compliance:
@@ -196,7 +186,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/TrustComplianceKpiSetDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Conversion Funnels ───────────────────────────────────────────────
   /funnels:
@@ -218,7 +208,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/FunnelCollectionDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   /funnels/investor:
     get:
@@ -239,7 +229,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/InvestorFunnelDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   /funnels/developer:
     get:
@@ -260,7 +250,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/DeveloperFunnelDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Share of Voice ───────────────────────────────────────────────────
   /share-of-voice:
@@ -282,7 +272,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ShareOfVoiceDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Document Tracking ────────────────────────────────────────────────
   /document-tracking:
@@ -303,7 +293,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/DocumentTrackingDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Subscription Tracking ────────────────────────────────────────────
   /subscription-tracking:
@@ -325,7 +315,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SubscriptionTrackingDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Weekly Review ────────────────────────────────────────────────────
   /weekly-review:
@@ -346,7 +336,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/WeeklyReviewDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── KPI Dictionary ───────────────────────────────────────────────────
   /kpi-dictionary:
@@ -368,7 +358,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/KpiDictionaryDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
   # ─── Funnel Instrumentation ───────────────────────────────────────────
   /funnel-instrumentation:
@@ -389,83 +379,10 @@ paths:
               schema:
                 $ref: '#/components/schemas/FunnelInstrumentationDto'
         '500':
-          $ref: '#/components/responses/InternalServerError'
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
 
 components:
-  parameters:
-    PeriodFilter:
-      name: period
-      in: query
-      description: >
-        Filter KPI metrics by time window. When omitted, both periods are
-        returned. Use `90days` for the sprint view or `12months` for the
-        strategic view.
-      schema:
-        type: string
-        enum:
-          - 90days
-          - 12months
-      example: 90days
-      required: false
-
-  responses:
-    BadRequest:
-      description: The request was malformed or contains invalid parameters
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/ProblemDetailDto'
-    NotFound:
-      description: The requested resource was not found
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/ProblemDetailDto'
-    InternalServerError:
-      description: An unexpected error occurred on the server
-      content:
-        application/problem+json:
-          schema:
-            $ref: '#/components/schemas/ProblemDetailDto'
-
   schemas:
-    # ─── Enumerations ───────────────────────────────────────────────────
-    KpiStatusEnum:
-      type: string
-      description: >
-        Standardized KPI health status used across all metric domains.
-        - `on-track`: Metric is meeting or exceeding target
-        - `at-risk`: Metric is below target but within recovery range
-        - `off-track`: Metric is significantly below target and requires escalation
-      enum:
-        - on-track
-        - at-risk
-        - off-track
-      example: on-track
-
-    ReviewStatusEnum:
-      type: string
-      description: >
-        RAG (Red-Amber-Green) status used in weekly reviews.
-        - `green`: All metrics on track, no blockers
-        - `amber`: Some metrics at risk, manageable blockers
-        - `red`: Critical issues requiring immediate escalation
-      enum:
-        - green
-        - amber
-        - red
-      example: green
-
-    ActionItemStatusEnum:
-      type: string
-      description: Status of an action item in the weekly review
-      enum:
-        - open
-        - in-progress
-        - done
-        - pending-approval
-      example: open
-
     # ─── Meta & Root ────────────────────────────────────────────────────
     MetaDto:
       type: object
@@ -505,6 +422,10 @@ components:
             kyc: KYC Provider
             searchConsole: Google Search Console
             paymentProcessor: Payment Processor
+      required:
+        - appName
+        - version
+        - lastUpdated
 
     KpiRootDto:
       type: object
@@ -549,113 +470,14 @@ components:
         - developerFunnel
 
     # ─── KPI Metrics ────────────────────────────────────────────────────
-    KpiMetricDto:
-      type: object
-      description: >
-        A single KPI metric with current value, target, status, trend data,
-        and ownership metadata. Used uniformly across all domain dashboards.
-      properties:
-        id:
-          type: string
-          description: Unique metric identifier using domain-period-sequence pattern
-          example: dev-90-accounts
-        name:
-          type: string
-          description: Human-readable display name
-          example: Target Accounts
-        targetRange:
-          type: string
-          description: Human-readable target range or threshold description
-          example: '150'
-        current:
-          type: number
-          description: Current measured value
-          example: 128
-        target:
-          type: number
-          description: Numeric target value for progress calculation
-          example: 150
-        unit:
-          type: string
-          description: Unit of measurement (accounts, %, hours, visitors, etc.)
-          example: accounts
-        status:
-          $ref: '#/components/schemas/KpiStatusEnum'
-        sourceSystem:
-          type: string
-          description: Name of the source system providing this metric
-          example: CRM / Target Account List
-        owner:
-          type: string
-          description: Responsible team or individual
-          example: GTM Team
-        refreshCadence:
-          type: string
-          description: Data refresh frequency
-          example: Weekly
-        trend:
-          type: array
-          description: Historical time-series data points for sparkline rendering
-          items:
-            type: number
-          example:
-            - 85
-            - 92
-            - 101
-            - 110
-            - 118
-            - 122
-            - 128
-        trendLabels:
-          type: array
-          description: Labels corresponding to each trend data point
-          items:
-            type: string
-          example:
-            - Week 1
-            - Week 2
-            - Week 3
-            - Week 4
-            - Week 5
-            - Week 6
-            - Week 7
-      required:
-        - id
-        - name
-        - targetRange
-        - current
-        - target
-        - unit
-        - status
-        - sourceSystem
-        - owner
-        - refreshCadence
-
-    KpiPeriodDto:
-      type: object
-      description: A collection of KPI metrics for a specific time window
-      properties:
-        description:
-          type: string
-          description: Semantic description of this time window's dashboard focus
-          example: 90-day developer pipeline dashboard with account coverage, meeting conversion, assessment velocity
-        metrics:
-          type: array
-          description: KPI metrics for this period
-          items:
-            $ref: '#/components/schemas/KpiMetricDto'
-      required:
-        - description
-        - metrics
-
     DeveloperKpiSetDto:
       type: object
       description: Developer pipeline KPIs across 90-day and 12-month windows
       properties:
         '90days':
-          $ref: '#/components/schemas/KpiPeriodDto'
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
         '12months':
-          $ref: '#/components/schemas/KpiPeriodDto'
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
       required:
         - '90days'
         - '12months'
@@ -665,9 +487,9 @@ components:
       description: Investor growth KPIs across 90-day and 12-month windows
       properties:
         '90days':
-          $ref: '#/components/schemas/KpiPeriodDto'
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
         '12months':
-          $ref: '#/components/schemas/KpiPeriodDto'
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
       required:
         - '90days'
         - '12months'
@@ -684,7 +506,7 @@ components:
           type: array
           description: PR KPI metrics
           items:
-            $ref: '#/components/schemas/KpiMetricDto'
+            $ref: './common.openapi.yaml#/components/schemas/KpiMetricDto'
       required:
         - description
         - metrics
@@ -699,7 +521,7 @@ components:
         metrics:
           type: array
           items:
-            $ref: '#/components/schemas/KpiMetricDto'
+            $ref: './common.openapi.yaml#/components/schemas/KpiMetricDto'
       required:
         - description
         - metrics
@@ -714,42 +536,12 @@ components:
         metrics:
           type: array
           items:
-            $ref: '#/components/schemas/KpiMetricDto'
+            $ref: './common.openapi.yaml#/components/schemas/KpiMetricDto'
       required:
         - description
         - metrics
 
     # ─── Conversion Funnels ─────────────────────────────────────────────
-    FunnelStageDto:
-      type: object
-      description: A single stage within a conversion funnel
-      properties:
-        id:
-          type: string
-          description: Unique stage identifier
-          example: awareness
-        name:
-          type: string
-          description: Human-readable stage name
-          example: Awareness
-        count:
-          type: integer
-          description: Current count of entities at this stage
-          example: 45200
-        previousCount:
-          type: integer
-          description: Count at the previous measurement period
-          example: 34500
-        source:
-          type: string
-          description: Source system providing this stage's data
-          example: Web Analytics
-      required:
-        - id
-        - name
-        - count
-        - previousCount
-        - source
 
     InvestorFunnelDto:
       type: object
@@ -762,7 +554,7 @@ components:
           type: array
           description: Funnel stages ordered from top-of-funnel to bottom
           items:
-            $ref: '#/components/schemas/FunnelStageDto'
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
           minItems: 1
       required:
         - description
@@ -778,7 +570,7 @@ components:
         stages:
           type: array
           items:
-            $ref: '#/components/schemas/FunnelStageDto'
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
           minItems: 1
       required:
         - description
@@ -1069,7 +861,7 @@ components:
           description: Section name identifying the KPI domain
           example: Developer KPIs - 90 Day
         status:
-          $ref: '#/components/schemas/ReviewStatusEnum'
+          $ref: './common.openapi.yaml#/components/schemas/ReviewStatusEnum'
         highlights:
           type: array
           description: Positive items and achievements
@@ -1113,7 +905,7 @@ components:
           description: Due date or milestone reference
           example: W28 Wed
         status:
-          $ref: '#/components/schemas/ActionItemStatusEnum'
+          $ref: './common.openapi.yaml#/components/schemas/ActionItemStatusEnum'
       required:
         - id
         - description
@@ -1148,26 +940,48 @@ components:
         - actionItems
 
     # ─── Overview ───────────────────────────────────────────────────────
-    KpiStatusSummaryDto:
+    OverviewDto:
       type: object
-      description: Simplified KPI status entry for overview rollups
+      description: Aggregated dashboard overview with KPI status rollups and funnel metrics
       properties:
-        name:
-          type: string
-        status:
-          $ref: '#/components/schemas/KpiStatusEnum'
-        current:
-          type: number
-        target:
-          type: number
-        unit:
-          type: string
+        meta:
+          $ref: '#/components/schemas/MetaDto'
+        dev90Status:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        dev12Status:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        inv90Status:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        inv12Status:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        prStatus:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        seoStatus:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        tcStatus:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/KpiStatusSummaryDto'
+        weeklyReview:
+          $ref: '#/components/schemas/WeeklyReviewSummaryDto'
+        funnelTotals:
+          $ref: '#/components/schemas/FunnelConversionDto'
       required:
-        - name
-        - status
-        - current
-        - target
-        - unit
+        - meta
+        - weeklyReview
+        - funnelTotals
 
     WeeklyReviewSummaryDto:
       type: object
@@ -1181,7 +995,7 @@ components:
               name:
                 type: string
               status:
-                $ref: '#/components/schemas/ReviewStatusEnum'
+                $ref: './common.openapi.yaml#/components/schemas/ReviewStatusEnum'
         openActions:
           type: integer
           description: Number of action items not yet marked as done
@@ -1203,59 +1017,16 @@ components:
         investorStages:
           type: array
           items:
-            $ref: '#/components/schemas/FunnelStageDto'
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
         developerStages:
           type: array
           items:
-            $ref: '#/components/schemas/FunnelStageDto'
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
       required:
         - investorConversionRate
         - developerConversionRate
         - investorStages
         - developerStages
-
-    OverviewDto:
-      type: object
-      description: Aggregated dashboard overview with KPI status rollups and funnel metrics
-      properties:
-        meta:
-          $ref: '#/components/schemas/MetaDto'
-        dev90Status:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        dev12Status:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        inv90Status:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        inv12Status:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        prStatus:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        seoStatus:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        tcStatus:
-          type: array
-          items:
-            $ref: '#/components/schemas/KpiStatusSummaryDto'
-        weeklyReview:
-          $ref: '#/components/schemas/WeeklyReviewSummaryDto'
-        funnelTotals:
-          $ref: '#/components/schemas/FunnelConversionDto'
-      required:
-        - meta
-        - weeklyReview
-        - funnelTotals
 
     # ─── KPI Dictionary ─────────────────────────────────────────────────
     KpiDictionaryEntryDto:
@@ -1391,36 +1162,3 @@ components:
       required:
         - investor
         - developer
-
-    # ─── Error Response ─────────────────────────────────────────────────
-    ProblemDetailDto:
-      type: object
-      description: >
-        RFC 9457 Problem Details for HTTP APIs.
-        Standard error response format used across all error scenarios.
-      properties:
-        type:
-          type: string
-          format: uri
-          description: URI identifying the problem type
-          example: about:blank
-        title:
-          type: string
-          description: Short human-readable summary of the problem
-          example: Resource Not Found
-        status:
-          type: integer
-          description: HTTP status code
-          example: 404
-        detail:
-          type: string
-          description: Human-readable explanation specific to this occurrence
-          example: The requested KPI data was not found.
-        instance:
-          type: string
-          format: uri
-          description: URI identifying the specific occurrence
-      required:
-        - type
-        - title
-        - status

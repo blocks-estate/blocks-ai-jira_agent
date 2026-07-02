@@ -1,0 +1,534 @@
+openapi: 3.1.0
+info:
+  title: Investor Acquisition API
+  description: >
+    REST API for the Investor Acquisition domain. Manages the investor demand
+    generation pipeline — waitlist signups, audience segmentation, positioning
+    tests, compliance review, and conversion funnel tracking. Supports the
+    investor demand and private access engine (TGTM-4) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-4
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Waitlist ─────────────────────────────────────────────────────────
+  /investor-acquisition/waitlist:
+    get:
+      tags:
+        - Investor Acquisition
+        - Waitlist
+      summary: List waitlist signups
+      description: >
+        Returns investor waitlist signups with demographic attributes,
+        source channel, engagement status, and conversion outcomes.
+      operationId: getInvestorAcquisitionWaitlist
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+      responses:
+        '200':
+          description: Paginated waitlist
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WaitlistCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Investor Acquisition
+        - Waitlist
+      summary: Create a waitlist signup
+      operationId: createInvestorAcquisitionWaitlistSignup
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWaitlistSignupRequestDto'
+      responses:
+        '201':
+          description: Signup created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WaitlistSignupDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Segments ─────────────────────────────────────────────────────────
+  /investor-acquisition/segments:
+    get:
+      tags:
+        - Investor Acquisition
+        - Segments
+      summary: List investor audience segments
+      description: >
+        Returns defined investor cohorts with inclusion/exclusion rules,
+        CRM filters, and recommended messaging angles per segment.
+      operationId: getInvestorAcquisitionSegments
+      responses:
+        '200':
+          description: Segment definitions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InvestorSegmentDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Investor Acquisition
+        - Segments
+      summary: Create an investor segment definition
+      operationId: createInvestorAcquisitionSegment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateInvestorSegmentRequestDto'
+      responses:
+        '201':
+          description: Segment created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorSegmentDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Positioning Tests ────────────────────────────────────────────────
+  /investor-acquisition/positioning-tests:
+    get:
+      tags:
+        - Investor Acquisition
+        - Tests
+      summary: List positioning tests
+      description: >
+        Returns A/B or cohort-based positioning tests tracking messaging
+        variants, audience assignments, conversion metrics, and compliance
+        review status.
+      operationId: getInvestorAcquisitionPositioningTests
+      responses:
+        '200':
+          description: Positioning tests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PositioningTestDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Investor Acquisition
+        - Tests
+      summary: Create a positioning test
+      operationId: createInvestorAcquisitionPositioningTest
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePositioningTestRequestDto'
+      responses:
+        '201':
+          description: Test created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositioningTestDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Compliance Matrix ────────────────────────────────────────────────
+  /investor-acquisition/compliance-matrix:
+    get:
+      tags:
+        - Investor Acquisition
+        - Compliance
+      summary: Get investor compliance review matrix
+      description: >
+        Returns the copy-review matrix tracking claims, risk levels,
+        recommended wording, approval status, and reviewer notes for
+        investor-facing communications.
+      operationId: getInvestorAcquisitionComplianceMatrix
+      responses:
+        '200':
+          description: Compliance matrix entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComplianceMatrixEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPI & Funnel ─────────────────────────────────────────────────────
+  /investor-acquisition/kpis:
+    get:
+      tags:
+        - Investor Acquisition
+        - KPIs
+      summary: Retrieve investor acquisition KPI metrics
+      description: >
+        Returns investor acquisition KPIs including waitlist conversion rate,
+        qualified signup rate, segment-level engagement, CTR, bounce rate,
+        and compliance review outcomes — across 90-day and 12-month windows.
+      operationId: getInvestorAcquisitionKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Investor acquisition KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorAcquisitionKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /investor-acquisition/funnel:
+    get:
+      tags:
+        - Investor Acquisition
+        - Funnel
+      summary: Retrieve investor acquisition conversion funnel
+      description: >
+        Returns the investor acquisition funnel from awareness through
+        waitlist signup, KYC initiation, and qualification.
+      operationId: getInvestorAcquisitionFunnel
+      responses:
+        '200':
+          description: Investor acquisition funnel
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorAcquisitionFunnelDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    InvestorAcquisitionStageEnum:
+      type: string
+      description: Stages in the investor acquisition lifecycle
+      enum:
+        - awareness
+        - landing-page-visit
+        - waitlist-signup
+        - kyc-started
+        - kyc-completed
+        - qualified-investor
+      example: waitlist-signup
+
+    PositioningTestStatusEnum:
+      type: string
+      enum:
+        - draft
+        - active
+        - paused
+        - completed
+        - analysing
+
+    ClaimRiskLevelEnum:
+      type: string
+      enum:
+        - low
+        - medium
+        - high
+        - prohibited
+
+    # ─── Waitlist ───────────────────────────────────────────────────────
+    WaitlistSignupDto:
+      type: object
+      description: A single waitlist signup record
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        segment:
+          type: string
+          example: UAE/GCC HNWI
+        sourceChannel:
+          type: string
+          example: LinkedIn Ad
+        declaredInterest:
+          type: string
+          example: Residential Investment
+        kycStatus:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        convertedToInvestor:
+          type: boolean
+        signedUpAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - email
+        - sourceChannel
+        - signedUpAt
+
+    WaitlistCollectionDto:
+      type: object
+      description: Paginated waitlist collection
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/WaitlistSignupDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateWaitlistSignupRequestDto:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        segment:
+          type: string
+        sourceChannel:
+          type: string
+        declaredInterest:
+          type: string
+      required:
+        - email
+
+    # ─── Segments ───────────────────────────────────────────────────────
+    InvestorSegmentDto:
+      type: object
+      description: A named investor audience cohort
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: UAE/GCC HNWIs
+        description:
+          type: string
+        inclusionRules:
+          type: string
+          description: CRM filter criteria for this segment
+        exclusionRules:
+          type: string
+        messagingAngle:
+          type: string
+        estimatedSize:
+          type: integer
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - messagingAngle
+
+    CreateInvestorSegmentRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        inclusionRules:
+          type: string
+        exclusionRules:
+          type: string
+        messagingAngle:
+          type: string
+        estimatedSize:
+          type: integer
+      required:
+        - name
+        - messagingAngle
+
+    # ─── Positioning Tests ──────────────────────────────────────────────
+    PositioningTestDto:
+      type: object
+      description: A positioning test comparing messaging variants across audience segments
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: AED 2k-5k Minimum Investment Test
+        status:
+          $ref: '#/components/schemas/PositioningTestStatusEnum'
+        variants:
+          type: array
+          items:
+            type: string
+          example:
+            - "From AED 2,000"
+            - "From AED 5,000"
+            - "From AED 10,000"
+        targetSegments:
+          type: array
+          items:
+            type: string
+        successMetrics:
+          type: object
+          properties:
+            waitlistConversionRate:
+              type: number
+              format: float
+            qualifiedSignupRate:
+              type: number
+              format: float
+            ctr:
+              type: number
+              format: float
+            bounceRate:
+              type: number
+              format: float
+        complianceStatus:
+          type: string
+          enum:
+            - pending-review
+            - approved
+            - rejected
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - status
+        - variants
+        - targetSegments
+
+    CreatePositioningTestRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        variants:
+          type: array
+          items:
+            type: string
+          minItems: 1
+        targetSegments:
+          type: array
+          items:
+            type: string
+          minItems: 1
+        successMetrics:
+          type: object
+          properties:
+            waitlistConversionRate:
+              type: number
+              format: float
+            qualifiedSignupRate:
+              type: number
+              format: float
+            ctr:
+              type: number
+              format: float
+            bounceRate:
+              type: number
+              format: float
+      required:
+        - name
+        - variants
+        - targetSegments
+
+    # ─── Compliance Matrix ──────────────────────────────────────────────
+    ComplianceMatrixEntryDto:
+      type: object
+      description: A claim-level compliance review entry
+      properties:
+        id:
+          type: string
+          format: uuid
+        claim:
+          type: string
+          example: "Invest from AED 2,000"
+        riskLevel:
+          $ref: '#/components/schemas/ClaimRiskLevelEnum'
+        recommendedWording:
+          type: string
+          example: "Target minimum investment from AED 2,000 (subject to eligibility)"
+        approvalStatus:
+          type: string
+          enum:
+            - pending
+            - approved
+            - rejected
+        reviewerNotes:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - claim
+        - riskLevel
+        - approvalStatus
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    InvestorAcquisitionKpiSetDto:
+      type: object
+      description: Investor acquisition KPIs across 90-day and 12-month windows
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'
+
+    # ─── Funnel ─────────────────────────────────────────────────────────
+    InvestorAcquisitionFunnelDto:
+      type: object
+      description: Investor acquisition funnel from awareness through qualification
+      properties:
+        description:
+          type: string
+          example: Investor acquisition funnel tracking from awareness through KYC qualification
+        stages:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
+          minItems: 1
+      required:
+        - description
+        - stages

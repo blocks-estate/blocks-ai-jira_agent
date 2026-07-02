@@ -1,0 +1,364 @@
+openapi: 3.1.0
+info:
+  title: Websites & Conversion API
+  description: >
+    REST API for the Websites & Conversion domain. Manages the developer and
+    investor conversion funnel mechanics — account creation, KYC/AML handoff,
+    conversion funnel metrics, event tracking, and conversion state management.
+    Supports the build developer and investor conversion funnel mechanics
+    (TGTM-13) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-13
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── KYC Handoff ──────────────────────────────────────────────────────
+  /conversion/kyc-handoff:
+    get:
+      tags:
+        - Websites & Conversion
+        - KYC
+      summary: List KYC handoff records
+      description: >
+        Returns KYC/AML provider handoff records tracking state transitions
+        from signup through KYC completion, including handoff status, failure
+        reasons, and timestamps.
+      operationId: getConversionKycHandoff
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+        - $ref: './common.openapi.yaml#/components/parameters/DateRangeFilter'
+      responses:
+        '200':
+          description: KYC handoff records
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KycHandoffCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Websites & Conversion
+        - KYC
+      summary: Create a KYC handoff record
+      operationId: createConversionKycHandoff
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateKycHandoffRequestDto'
+      responses:
+        '201':
+          description: Handoff record created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KycHandoffDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Funnel Metrics ───────────────────────────────────────────────────
+  /conversion/funnel-metrics:
+    get:
+      tags:
+        - Websites & Conversion
+        - Funnel
+      summary: Get conversion funnel metrics
+      description: >
+        Returns aggregated conversion funnel metrics across the investor and
+        developer journeys — handoff completion rate, KYC start rate, KYC
+        completion rate, time from signup to KYC initiation, and failure
+        breakdowns.
+      operationId: getConversionFunnelMetrics
+      responses:
+        '200':
+          description: Funnel metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConversionFunnelMetricsDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /conversion/funnel-metrics/{stage}:
+    get:
+      tags:
+        - Websites & Conversion
+        - Funnel
+      summary: Get metrics for a specific funnel stage
+      operationId: getConversionFunnelStageMetrics
+      parameters:
+        - name: stage
+          in: path
+          required: true
+          schema:
+            $ref: '#/components/schemas/ConversionStageEnum'
+      responses:
+        '200':
+          description: Stage metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FunnelStageDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Conversion Events ────────────────────────────────────────────────
+  /conversion/events:
+    post:
+      tags:
+        - Websites & Conversion
+        - Events
+      summary: Record a conversion event
+      operationId: createConversionEvent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateConversionEventRequestDto'
+      responses:
+        '201':
+          description: Event recorded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    format: uuid
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /conversion/kpis:
+    get:
+      tags:
+        - Websites & Conversion
+        - KPIs
+      summary: Retrieve website conversion KPI metrics
+      operationId: getWebsitesConversionKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Website conversion KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WebsitesConversionKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    ConversionStageEnum:
+      type: string
+      description: Stages in the user conversion lifecycle
+      enum:
+        - landing-page-visit
+        - signup-started
+        - signup-completed
+        - kyc-handoff-initiated
+        - kyc-in-progress
+        - kyc-completed
+        - account-activated
+        - first-subscription
+
+    KycProviderEnum:
+      type: string
+      enum:
+        - provider-a
+        - provider-b
+
+    HandoffStatusEnum:
+      type: string
+      enum:
+        - pending
+        - in-progress
+        - completed
+        - failed
+        - expired
+
+    # ─── KYC Handoff ────────────────────────────────────────────────────
+    KycHandoffDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        userType:
+          type: string
+          enum:
+            - investor
+            - developer
+        provider:
+          $ref: '#/components/schemas/KycProviderEnum'
+        handoffStatus:
+          $ref: '#/components/schemas/HandoffStatusEnum'
+        failureReason:
+          type: string
+          nullable: true
+        retryCount:
+          type: integer
+        consentProvided:
+          type: boolean
+        handoffInitiatedAt:
+          type: string
+          format: date-time
+        handoffCompletedAt:
+          type: string
+          format: date-time
+          nullable: true
+      required:
+        - id
+        - userId
+        - userType
+        - provider
+        - handoffStatus
+        - handoffInitiatedAt
+
+    KycHandoffCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/KycHandoffDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateKycHandoffRequestDto:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        userType:
+          type: string
+          enum:
+            - investor
+            - developer
+        provider:
+          $ref: '#/components/schemas/KycProviderEnum'
+        consentProvided:
+          type: boolean
+      required:
+        - userId
+        - userType
+        - provider
+
+    # ─── Funnel Metrics ─────────────────────────────────────────────────
+    ConversionFunnelMetricsDto:
+      type: object
+      properties:
+        description:
+          type: string
+        totalVisitors:
+          type: integer
+        totalSignups:
+          type: integer
+        kycStarted:
+          type: integer
+        kycCompleted:
+          type: integer
+        accountsActivated:
+          type: integer
+        conversionRates:
+          type: object
+          properties:
+            visitorToSignup:
+              type: number
+              format: float
+            signupToKycStart:
+              type: number
+              format: float
+            kycStartToKycComplete:
+              type: number
+              format: float
+            kycCompleteToActivated:
+              type: number
+              format: float
+        handoffFailureRate:
+          type: number
+          format: float
+        averageTimeToKycInitiationHours:
+          type: number
+          format: float
+        stageBreakdown:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
+      required:
+        - totalVisitors
+        - totalSignups
+        - kycStarted
+        - kycCompleted
+        - accountsActivated
+
+    # ─── Conversion Events ──────────────────────────────────────────────
+    CreateConversionEventRequestDto:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        eventName:
+          type: string
+          example: page_viewed
+        properties:
+          type: object
+          additionalProperties:
+            type: string
+        timestamp:
+          type: string
+          format: date-time
+      required:
+        - userId
+        - eventName
+        - timestamp
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    WebsitesConversionKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

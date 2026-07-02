@@ -1,0 +1,707 @@
+openapi: 3.1.0
+info:
+  title: Developer Acquisition API
+  description: >
+    REST API for the Developer Acquisition domain. Manages the developer supply
+    pipeline — from target-account identification, asset prioritization, and
+    offering positioning through LOI execution and onboarding. Supports the
+    developer supply acquisition engine (TGTM-3) and residential asset
+    prioritization (TGTM-47) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-3
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Developer Opportunities ──────────────────────────────────────────
+  /developer-acquisition/opportunities:
+    get:
+      tags:
+        - Developer Acquisition
+        - Pipeline
+      summary: List developer opportunities
+      description: >
+        Returns developer opportunities with current pipeline stage, priority
+        score, asset type, and owner. Supports the developer supply acquisition
+        pipeline — tracking accounts from target identification through onboarding.
+      operationId: getDeveloperAcquisitionOpportunities
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+        - $ref: './common.openapi.yaml#/components/parameters/DateRangeFilter'
+      responses:
+        '200':
+          description: Paginated list of developer opportunities
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperOpportunityCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Developer Acquisition
+        - Pipeline
+      summary: Register a new developer opportunity
+      description: Creates a new developer opportunity record in the acquisition pipeline.
+      operationId: createDeveloperAcquisitionOpportunity
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateDeveloperOpportunityRequestDto'
+      responses:
+        '201':
+          description: Opportunity created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperOpportunityDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /developer-acquisition/opportunities/{id}:
+    get:
+      tags:
+        - Developer Acquisition
+        - Pipeline
+      summary: Get a developer opportunity by ID
+      operationId: getDeveloperAcquisitionOpportunityById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Developer opportunity detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperOpportunityDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Developer Acquisition
+        - Pipeline
+      summary: Update developer opportunity
+      description: Updates stage, priority score, notes, or owner for an existing opportunity.
+      operationId: updateDeveloperAcquisitionOpportunity
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateDeveloperOpportunityRequestDto'
+      responses:
+        '200':
+          description: Updated opportunity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperOpportunityDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Asset Scorecards ─────────────────────────────────────────────────
+  /developer-acquisition/scorecards:
+    get:
+      tags:
+        - Developer Acquisition
+        - Scorecards
+      summary: List asset prioritization scorecards
+      description: >
+        Returns asset prioritization scorecards based on the 100-point scoring
+        model covering asset readiness, income/valuation, developer credibility,
+        Dubai market relevance, investor appeal, and legal/compliance clarity.
+      operationId: getDeveloperAcquisitionScorecards
+      responses:
+        '200':
+          description: List of asset scorecards
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AssetScorecardDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Developer Acquisition
+        - Scorecards
+      summary: Create a new asset scorecard evaluation
+      operationId: createDeveloperAcquisitionScorecard
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAssetScorecardRequestDto'
+      responses:
+        '201':
+          description: Scorecard created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetScorecardDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /developer-acquisition/scorecards/{id}:
+    get:
+      tags:
+        - Developer Acquisition
+        - Scorecards
+      summary: Get a scorecard with category breakdown
+      operationId: getDeveloperAcquisitionScorecardById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Scorecard detail with category scores
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetScorecardDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Candidate Assets ─────────────────────────────────────────────────
+  /developer-acquisition/assets:
+    get:
+      tags:
+        - Developer Acquisition
+        - Assets
+      summary: List candidate assets
+      description: Inventory of residential and commercial assets under evaluation.
+      operationId: getDeveloperAcquisitionAssets
+      responses:
+        '200':
+          description: Candidate asset list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CandidateAssetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Developer Acquisition
+        - Assets
+      summary: Register a candidate asset
+      operationId: createDeveloperAcquisitionAsset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCandidateAssetRequestDto'
+      responses:
+        '201':
+          description: Asset created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CandidateAssetDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Priority Areas ───────────────────────────────────────────────────
+  /developer-acquisition/areas:
+    get:
+      tags:
+        - Developer Acquisition
+        - Strategy
+      summary: List priority Dubai residential areas
+      description: >
+        Returns the shortlist of recognizable Dubai neighborhoods ranked by
+        market familiarity, investor demand, and supply availability.
+      operationId: getDeveloperAcquisitionAreas
+      responses:
+        '200':
+          description: Priority area list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PriorityAreaDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPI & Funnel ─────────────────────────────────────────────────────
+  /developer-acquisition/kpis:
+    get:
+      tags:
+        - Developer Acquisition
+        - KPIs
+      summary: Retrieve developer acquisition KPI metrics
+      description: >
+        Returns KPI metrics for the developer acquisition funnel including
+        target accounts identified, meetings held, assets evaluated, LOIs
+        signed, and developers onboarded — across 90-day and 12-month windows.
+      operationId: getDeveloperAcquisitionKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Developer acquisition KPI metrics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperAcquisitionKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /developer-acquisition/funnel:
+    get:
+      tags:
+        - Developer Acquisition
+        - Funnel
+      summary: Retrieve developer acquisition pipeline funnel
+      description: >
+        Returns the developer acquisition pipeline funnel with stages from
+        target identification through onboarding, including per-stage counts,
+        prior-period comparisons, and stage-to-stage conversion rates.
+      operationId: getDeveloperAcquisitionFunnel
+      responses:
+        '200':
+          description: Developer acquisition funnel
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeveloperAcquisitionFunnelDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /developer-acquisition/pipeline-summary:
+    get:
+      tags:
+        - Developer Acquisition
+        - Pipeline
+      summary: Retrieve pipeline status distribution
+      description: >
+        Aggregated pipeline view showing counts per stage, total deal value,
+        average velocity, and owner distribution.
+      operationId: getDeveloperAcquisitionPipelineSummary
+      responses:
+        '200':
+          description: Pipeline summary
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PipelineSummaryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    DeveloperAcquisitionStageEnum:
+      type: string
+      description: Pipeline stages in the developer acquisition lifecycle
+      enum:
+        - target-identified
+        - outreach-in-progress
+        - meeting-scheduled
+        - due-diligence
+        - loi-sent
+        - loi-signed
+        - onboarding
+      example: meeting-scheduled
+
+    DeveloperAcquisitionScoreTierEnum:
+      type: string
+      description: Asset scorecard tier classification
+      enum:
+        - tier-1
+        - tier-2
+        - tier-3
+      example: tier-1
+
+    # ─── DTOs ───────────────────────────────────────────────────────────
+    DeveloperOpportunityDto:
+      type: object
+      description: A developer opportunity record in the acquisition pipeline
+      properties:
+        id:
+          type: string
+          format: uuid
+        developerName:
+          type: string
+          description: Name of the developer or asset owner
+          example: Emaar Properties
+        stage:
+          $ref: '#/components/schemas/DeveloperAcquisitionStageEnum'
+        priorityScore:
+          type: integer
+          description: Overall priority score (0-100)
+          minimum: 0
+          maximum: 100
+          example: 78
+        assetType:
+          type: string
+          description: Type of asset under discussion
+          example: Ready Residential
+        location:
+          type: string
+          description: Asset location or area
+          example: Dubai Marina
+        owner:
+          type: string
+          description: Responsible team member
+          example: GTM Lead
+        notes:
+          type: string
+        documents:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/DocumentReferenceDto'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - developerName
+        - stage
+        - owner
+        - createdAt
+
+    DeveloperOpportunityCollectionDto:
+      type: object
+      description: Paginated collection of developer opportunities
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeveloperOpportunityDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateDeveloperOpportunityRequestDto:
+      type: object
+      description: Payload for creating a new developer opportunity
+      properties:
+        developerName:
+          type: string
+          example: Emaar Properties
+        stage:
+          $ref: '#/components/schemas/DeveloperAcquisitionStageEnum'
+        assetType:
+          type: string
+        location:
+          type: string
+        owner:
+          type: string
+        notes:
+          type: string
+      required:
+        - developerName
+        - stage
+        - owner
+
+    UpdateDeveloperOpportunityRequestDto:
+      type: object
+      description: Payload for updating an existing developer opportunity
+      properties:
+        stage:
+          $ref: '#/components/schemas/DeveloperAcquisitionStageEnum'
+        priorityScore:
+          type: integer
+          minimum: 0
+          maximum: 100
+        owner:
+          type: string
+        notes:
+          type: string
+      minProperties: 1
+
+    # ─── Scorecards ─────────────────────────────────────────────────────
+    ScoreCategoryDto:
+      type: object
+      description: A single category within the asset scorecard
+      properties:
+        name:
+          type: string
+          description: Category name
+          example: Asset Readiness
+        weight:
+          type: number
+          format: float
+          description: Weight contribution to total score (0-1)
+          example: 0.20
+        score:
+          type: integer
+          description: Category score (0-100)
+          example: 85
+        evidence:
+          type: string
+          description: Evidence or rationale for the score
+          example: Title deed verified, NOC obtained, no disputes
+      required:
+        - name
+        - weight
+        - score
+
+    AssetScorecardDto:
+      type: object
+      description: A 100-point asset prioritization scorecard
+      properties:
+        id:
+          type: string
+          format: uuid
+        assetId:
+          type: string
+          description: Reference to the candidate asset
+        totalScore:
+          type: integer
+          minimum: 0
+          maximum: 100
+          example: 82
+        categories:
+          type: array
+          items:
+            $ref: '#/components/schemas/ScoreCategoryDto'
+        tier:
+          $ref: '#/components/schemas/DeveloperAcquisitionScoreTierEnum'
+        recommendation:
+          type: string
+          description: Recommended next action
+          example: Proceed to LOI stage
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - assetId
+        - totalScore
+        - categories
+        - tier
+
+    CreateAssetScorecardRequestDto:
+      type: object
+      description: Payload for creating a new scorecard
+      properties:
+        assetId:
+          type: string
+        categories:
+          type: array
+          items:
+            $ref: '#/components/schemas/ScoreCategoryDto'
+          minItems: 1
+        recommendation:
+          type: string
+      required:
+        - assetId
+        - categories
+
+    # ─── Candidate Assets ───────────────────────────────────────────────
+    CandidateAssetDto:
+      type: object
+      description: A candidate real estate asset under evaluation
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          description: Asset name or title
+          example: Palm Jumeirah Crescent Tower
+        assetType:
+          type: string
+          description: Type of asset
+          example: Ready Residential
+        location:
+          type: string
+          example: Palm Jumeirah
+        developerName:
+          type: string
+        estimatedValue:
+          type: number
+          description: Estimated market value in AED
+          example: 25000000
+        rentalYieldEstimate:
+          type: number
+          format: float
+          description: Estimated rental yield as a percentage
+          example: 6.5
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        documents:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/DocumentReferenceDto'
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - assetType
+        - location
+        - status
+        - createdAt
+
+    CreateCandidateAssetRequestDto:
+      type: object
+      description: Payload for registering a candidate asset
+      properties:
+        name:
+          type: string
+        assetType:
+          type: string
+        location:
+          type: string
+        developerName:
+          type: string
+        estimatedValue:
+          type: number
+        rentalYieldEstimate:
+          type: number
+          format: float
+      required:
+        - name
+        - assetType
+        - location
+
+    # ─── Priority Areas ─────────────────────────────────────────────────
+    PriorityAreaDto:
+      type: object
+      description: A prioritized Dubai residential area for initial offerings
+      properties:
+        name:
+          type: string
+          example: Dubai Marina
+        rank:
+          type: integer
+          description: Priority rank (1 = highest)
+        marketFamiliarity:
+          type: string
+          description: Recognizability to target investors
+          example: High
+        investorDemand:
+          type: string
+          description: Estimated investor demand level
+          example: Very High
+        supplyAvailability:
+          type: string
+          description: Available ready-residential inventory
+          example: Medium
+        rationale:
+          type: string
+      required:
+        - name
+        - rank
+        - marketFamiliarity
+        - investorDemand
+        - supplyAvailability
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    DeveloperAcquisitionKpiSetDto:
+      type: object
+      description: Developer acquisition KPIs across 90-day and 12-month windows
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'
+
+    # ─── Funnel ─────────────────────────────────────────────────────────
+    DeveloperAcquisitionFunnelDto:
+      type: object
+      description: Developer acquisition pipeline funnel from target identification through onboarding
+      properties:
+        description:
+          type: string
+          example: Developer acquisition funnel tracking from target-account identification through onboarding
+        stages:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/FunnelStageDto'
+          minItems: 1
+      required:
+        - description
+        - stages
+
+    # ─── Pipeline Summary ───────────────────────────────────────────────
+    PipelineSummaryDto:
+      type: object
+      description: Aggregated pipeline status and velocity metrics
+      properties:
+        totalOpportunities:
+          type: integer
+          example: 24
+        totalEstimatedValue:
+          type: number
+          example: 320000000
+        stageDistribution:
+          type: array
+          items:
+            $ref: './common.openapi.yaml#/components/schemas/PipelineStageDto'
+        averageVelocityDays:
+          type: integer
+          description: Average days from target-identified to loi-signed
+          example: 45
+      required:
+        - totalOpportunities
+        - totalEstimatedValue
+        - stageDistribution

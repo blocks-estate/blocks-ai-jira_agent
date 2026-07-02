@@ -1,0 +1,536 @@
+openapi: 3.1.0
+info:
+  title: GTM Common API Components
+  description: >
+    Shared schema components, parameters, and response templates used across all
+    GTM domain API specifications. Each domain spec imports these via $ref to
+    ensure consistent error handling, enumeration values, and metric shapes.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+
+components:
+  parameters:
+    PeriodFilter:
+      name: period
+      in: query
+      description: >
+        Filter KPI metrics by time window. When omitted, both periods are
+        returned. Use `90days` for the sprint view or `12months` for the
+        strategic view.
+      schema:
+        type: string
+        enum:
+          - 90days
+          - 12months
+      example: 90days
+      required: false
+
+    PaginationParams:
+      name: pagination
+      in: query
+      description: Pagination parameters for list endpoints.
+      schema:
+        type: object
+        properties:
+          page:
+            type: integer
+            minimum: 1
+            default: 1
+            description: Page number (1-indexed)
+          limit:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+            description: Number of items per page
+      required: false
+
+    DateRangeFilter:
+      name: dateRange
+      in: query
+      description: >
+        ISO 8601 date range filter. Format: `startDate,endDate`.
+        Example: `2026-01-01,2026-06-30`.
+      schema:
+        type: string
+        pattern: '^\d{4}-\d{2}-\d{2},\d{4}-\d{2}-\d{2}$'
+      example: '2026-01-01,2026-06-30'
+      required: false
+
+  responses:
+    BadRequest:
+      description: The request was malformed or contains invalid parameters
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetailDto'
+
+    NotFound:
+      description: The requested resource was not found
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetailDto'
+
+    InternalServerError:
+      description: An unexpected error occurred on the server
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetailDto'
+
+  schemas:
+    # ─── Enumerations ───────────────────────────────────────────────────
+    KpiStatusEnum:
+      type: string
+      description: >
+        Standardized KPI health status used across all metric domains.
+        - `on-track`: Metric is meeting or exceeding target
+        - `at-risk`: Metric is below target but within recovery range
+        - `off-track`: Metric is significantly below target and requires escalation
+      enum:
+        - on-track
+        - at-risk
+        - off-track
+      example: on-track
+
+    ReviewStatusEnum:
+      type: string
+      description: >
+        RAG (Red-Amber-Green) status used in weekly reviews.
+        - `green`: All metrics on track, no blockers
+        - `amber`: Some metrics at risk, manageable blockers
+        - `red`: Critical issues requiring immediate escalation
+      enum:
+        - green
+        - amber
+        - red
+      example: green
+
+    ActionItemStatusEnum:
+      type: string
+      description: Status of an action item in the weekly review
+      enum:
+        - open
+        - in-progress
+        - done
+        - pending-approval
+      example: open
+
+    GenericStatusEnum:
+      type: string
+      description: Generic status enumeration for entities across all domains
+      enum:
+        - active
+        - pending
+        - completed
+        - blocked
+        - cancelled
+      example: active
+
+    # ─── Shared DTOs ────────────────────────────────────────────────────
+
+    MetaDto:
+      type: object
+      description: Application metadata and source system registry
+      properties:
+        appName:
+          type: string
+          description: Display name of the application
+          example: GTM Analytics & Reporting Dashboard
+        version:
+          type: string
+          description: Semantic version of the data payload
+          example: 1.0.0
+        lastUpdated:
+          type: string
+          format: date
+          description: ISO 8601 date of last data refresh
+          example: '2026-07-02'
+        sourceSystems:
+          type: object
+          description: Registry of integrated source systems
+          additionalProperties:
+            type: string
+          example:
+            analytics: Web Analytics (GA4)
+            crm: CRM / HubSpot
+            kyc: KYC Provider
+            searchConsole: Google Search Console
+            paymentProcessor: Payment Processor
+      required:
+        - appName
+        - version
+        - lastUpdated
+
+    KpiMetricDto:
+      type: object
+      description: >
+        A single KPI metric with current value, target, status, trend data,
+        and ownership metadata. Used uniformly across all domain dashboards.
+      properties:
+        id:
+          type: string
+          description: Unique metric identifier using domain-period-sequence pattern
+          example: dev-90-accounts
+        name:
+          type: string
+          description: Human-readable display name
+          example: Target Accounts
+        targetRange:
+          type: string
+          description: Human-readable target range or threshold description
+          example: '150'
+        current:
+          type: number
+          description: Current measured value
+          example: 128
+        target:
+          type: number
+          description: Numeric target value for progress calculation
+          example: 150
+        unit:
+          type: string
+          description: Unit of measurement (accounts, %, hours, visitors, etc.)
+          example: accounts
+        status:
+          $ref: '#/components/schemas/KpiStatusEnum'
+        sourceSystem:
+          type: string
+          description: Name of the source system providing this metric
+          example: CRM / Target Account List
+        owner:
+          type: string
+          description: Responsible team or individual
+          example: GTM Team
+        refreshCadence:
+          type: string
+          description: Data refresh frequency
+          example: Weekly
+        trend:
+          type: array
+          description: Historical time-series data points for sparkline rendering
+          items:
+            type: number
+          example:
+            - 85
+            - 92
+            - 101
+            - 110
+            - 118
+            - 122
+            - 128
+        trendLabels:
+          type: array
+          description: Labels corresponding to each trend data point
+          items:
+            type: string
+          example:
+            - Week 1
+            - Week 2
+            - Week 3
+            - Week 4
+            - Week 5
+            - Week 6
+            - Week 7
+      required:
+        - id
+        - name
+        - targetRange
+        - current
+        - target
+        - unit
+        - status
+        - sourceSystem
+        - owner
+        - refreshCadence
+
+    KpiPeriodDto:
+      type: object
+      description: A collection of KPI metrics for a specific time window
+      properties:
+        description:
+          type: string
+          description: Semantic description of this time window's dashboard focus
+          example: 90-day developer pipeline dashboard with account coverage, meeting conversion, assessment velocity
+        metrics:
+          type: array
+          description: KPI metrics for this period
+          items:
+            $ref: '#/components/schemas/KpiMetricDto'
+      required:
+        - description
+        - metrics
+
+    KpiStatusSummaryDto:
+      type: object
+      description: Simplified KPI status entry for overview rollups
+      properties:
+        name:
+          type: string
+        status:
+          $ref: '#/components/schemas/KpiStatusEnum'
+        current:
+          type: number
+        target:
+          type: number
+        unit:
+          type: string
+      required:
+        - name
+        - status
+        - current
+        - target
+        - unit
+
+    # ─── Funnel / Pipeline ─────────────────────────────────────────────
+
+    FunnelStageDto:
+      type: object
+      description: A single stage within a conversion funnel
+      properties:
+        id:
+          type: string
+          description: Unique stage identifier
+          example: awareness
+        name:
+          type: string
+          description: Human-readable stage name
+          example: Awareness
+        count:
+          type: integer
+          description: Current count of entities at this stage
+          example: 45200
+        previousCount:
+          type: integer
+          description: Count at the previous measurement period
+          example: 34500
+        source:
+          type: string
+          description: Source system providing this stage's data
+          example: Web Analytics
+      required:
+        - id
+        - name
+        - count
+        - previousCount
+        - source
+
+    FunnelConversionDto:
+      type: object
+      description: Funnel conversion rate summary
+      properties:
+        conversionRate:
+          type: number
+          format: float
+          description: Overall conversion rate from first to last stage
+        stages:
+          type: array
+          description: Ordered funnel stages
+          items:
+            $ref: '#/components/schemas/FunnelStageDto'
+      required:
+        - conversionRate
+        - stages
+
+    PipelineStageDto:
+      type: object
+      description: A single stage within a business pipeline
+      properties:
+        id:
+          type: string
+          description: Unique stage identifier
+          example: outreach
+        name:
+          type: string
+          description: Human-readable stage name
+          example: Outreach in Progress
+        count:
+          type: integer
+          description: Number of items currently in this stage
+          example: 24
+        value:
+          type: number
+          description: Total estimated value of items in this stage (optional)
+          example: 12000000
+        conversionRate:
+          type: number
+          format: float
+          description: Conversion rate to the next stage (0-1)
+          example: 0.45
+      required:
+        - id
+        - name
+        - count
+
+    # ─── Trends ─────────────────────────────────────────────────────────
+
+    TrendSeriesDto:
+      type: object
+      description: A generic time-series data series
+      properties:
+        label:
+          type: string
+          description: Label identifying this series
+          example: Subscription Starts
+        values:
+          type: array
+          description: Ordered time-series data points
+          items:
+            type: number
+          example:
+            - 12
+            - 18
+            - 22
+        changePercentage:
+          type: number
+          format: float
+          description: Period-over-period change as a decimal (e.g., 0.12 = +12%)
+          example: 0.12
+      required:
+        - label
+        - values
+
+    TrendChartDto:
+      type: object
+      description: A complete trend chart with multiple series and labels
+      properties:
+        series:
+          type: array
+          description: One or more data series
+          items:
+            $ref: '#/components/schemas/TrendSeriesDto'
+        labels:
+          type: array
+          description: Labels corresponding to the data points across all series
+          items:
+            type: string
+          example:
+            - Week 1
+            - Week 2
+            - Week 3
+      required:
+        - series
+        - labels
+
+    # ─── Audit ──────────────────────────────────────────────────────────
+
+    AuditMetadataDto:
+      type: object
+      description: Standard audit trail fields for domain entities
+      properties:
+        createdAt:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of creation
+        updatedAt:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of last update
+        owner:
+          type: string
+          description: Responsible team or individual
+          example: GTM Lead
+        version:
+          type: integer
+          description: Monotonic version number for optimistic concurrency
+          example: 3
+      required:
+        - createdAt
+        - updatedAt
+        - owner
+
+    # ─── Pagination ─────────────────────────────────────────────────────
+
+    PagedResponseDto:
+      type: object
+      description: Generic paginated response wrapper
+      properties:
+        items:
+          type: array
+          description: Array of items for the current page
+        totalItems:
+          type: integer
+          description: Total number of items across all pages
+          example: 142
+        totalPages:
+          type: integer
+          description: Total number of pages
+          example: 8
+        currentPage:
+          type: integer
+          description: Current page number (1-indexed)
+          example: 1
+        pageSize:
+          type: integer
+          description: Number of items per page
+          example: 20
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    # ─── Documents ──────────────────────────────────────────────────────
+
+    DocumentReferenceDto:
+      type: object
+      description: A reference to an external document or evidence
+      properties:
+        type:
+          type: string
+          description: Document type or category
+          example: Contract
+        title:
+          type: string
+          description: Document title
+          example: LOI - Palm Jumeirah Development
+        url:
+          type: string
+          format: uri
+          description: Link to the document
+        uploadedAt:
+          type: string
+          format: date-time
+          description: When the document was uploaded
+      required:
+        - type
+        - title
+        - url
+
+    # ─── Error Response ─────────────────────────────────────────────────
+
+    ProblemDetailDto:
+      type: object
+      description: >
+        RFC 9457 Problem Details for HTTP APIs.
+        Standard error response format used across all error scenarios.
+      properties:
+        type:
+          type: string
+          format: uri
+          description: URI identifying the problem type
+          example: about:blank
+        title:
+          type: string
+          description: Short human-readable summary of the problem
+          example: Resource Not Found
+        status:
+          type: integer
+          description: HTTP status code
+          example: 404
+        detail:
+          type: string
+          description: Human-readable explanation specific to this occurrence
+          example: The requested KPI data was not found.
+        instance:
+          type: string
+          format: uri
+          description: URI identifying the specific occurrence
+      required:
+        - type
+        - title
+        - status

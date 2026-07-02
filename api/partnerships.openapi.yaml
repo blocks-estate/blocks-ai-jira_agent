@@ -1,0 +1,466 @@
+openapi: 3.1.0
+info:
+  title: Partnerships API
+  description: >
+    REST API for the Partnerships domain. Manages partner recruitment and
+    relationship pipeline — property management partners, due diligence,
+    use-case mapping, outreach, and partner candidate tracking. Supports
+    the recruit legal, valuation, audit, KYC, custody, payments, and
+    servicing partners (TGTM-8) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-8
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Partnership Pipeline ─────────────────────────────────────────────
+  /partnerships/pipeline:
+    get:
+      tags:
+        - Partnerships
+        - Pipeline
+      summary: List partnership pipeline entries
+      operationId: getPartnershipsPipeline
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+      responses:
+        '200':
+          description: Paginated pipeline entries
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PartnerPipelineCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Partnerships
+        - Pipeline
+      summary: Create a partnership pipeline entry
+      operationId: createPartnershipsPipelineEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePartnerPipelineEntryRequestDto'
+      responses:
+        '201':
+          description: Pipeline entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PartnerPipelineEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /partnerships/pipeline/{id}:
+    patch:
+      tags:
+        - Partnerships
+        - Pipeline
+      summary: Update a partnership pipeline entry
+      operationId: updatePartnershipsPipelineEntry
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatePartnerPipelineEntryRequestDto'
+      responses:
+        '200':
+          description: Updated entry
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PartnerPipelineEntryDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Due Diligence ────────────────────────────────────────────────────
+  /partnerships/diligence:
+    get:
+      tags:
+        - Partnerships
+        - Diligence
+      summary: List due diligence records
+      operationId: getPartnershipsDiligence
+      responses:
+        '200':
+          description: Due diligence records
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DueDiligenceRecordDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Partnerships
+        - Diligence
+      summary: Create a due diligence record
+      operationId: createPartnershipsDiligenceRecord
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateDueDiligenceRecordRequestDto'
+      responses:
+        '201':
+          description: Record created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DueDiligenceRecordDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Use Case Mapping ─────────────────────────────────────────────────
+  /partnerships/use-case-mapping:
+    get:
+      tags:
+        - Partnerships
+        - Use Cases
+      summary: Get partner-to-use-case mapping
+      operationId: getPartnershipsUseCaseMapping
+      responses:
+        '200':
+          description: Use case mappings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UseCaseMappingDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Partnerships
+        - Use Cases
+      summary: Create a use case mapping
+      operationId: createPartnershipsUseCaseMapping
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUseCaseMappingRequestDto'
+      responses:
+        '201':
+          description: Mapping created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UseCaseMappingDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /partnerships/kpis:
+    get:
+      tags:
+        - Partnerships
+        - KPIs
+      summary: Retrieve partnership KPI metrics
+      operationId: getPartnershipsKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Partnership KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PartnershipsKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    PartnerTypeEnum:
+      type: string
+      enum:
+        - property-management
+        - legal
+        - valuation
+        - audit
+        - kyc
+        - custody
+        - payment
+        - servicing
+
+    PartnerStageEnum:
+      type: string
+      enum:
+        - identified
+        - contacted
+        - in-discussion
+        - due-diligence
+        - negotiating
+        - onboarded
+        - not-proceeding
+
+    # ─── Pipeline ───────────────────────────────────────────────────────
+    PartnerPipelineEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        partnerName:
+          type: string
+        partnerType:
+          $ref: '#/components/schemas/PartnerTypeEnum'
+        stage:
+          $ref: '#/components/schemas/PartnerStageEnum'
+        contactName:
+          type: string
+        serviceCoverage:
+          type: string
+        evaluationScore:
+          type: integer
+          description: Internal evaluation score (1-10)
+        owner:
+          type: string
+        notes:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - partnerName
+        - partnerType
+        - stage
+        - owner
+        - createdAt
+
+    PartnerPipelineCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/PartnerPipelineEntryDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreatePartnerPipelineEntryRequestDto:
+      type: object
+      properties:
+        partnerName:
+          type: string
+        partnerType:
+          $ref: '#/components/schemas/PartnerTypeEnum'
+        stage:
+          $ref: '#/components/schemas/PartnerStageEnum'
+        contactName:
+          type: string
+        serviceCoverage:
+          type: string
+        evaluationScore:
+          type: integer
+        owner:
+          type: string
+        notes:
+          type: string
+      required:
+        - partnerName
+        - partnerType
+        - stage
+        - owner
+
+    UpdatePartnerPipelineEntryRequestDto:
+      type: object
+      properties:
+        stage:
+          $ref: '#/components/schemas/PartnerStageEnum'
+        evaluationScore:
+          type: integer
+        contactName:
+          type: string
+        serviceCoverage:
+          type: string
+        owner:
+          type: string
+        notes:
+          type: string
+      minProperties: 1
+
+    # ─── Due Diligence ──────────────────────────────────────────────────
+    DueDiligenceRecordDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        partnerId:
+          type: string
+          format: uuid
+        corporateStatusVerified:
+          type: boolean
+        credentialsVerified:
+          type: boolean
+        regulatoryComfort:
+          type: string
+        capacityAssessment:
+          type: string
+        pricingReviewed:
+          type: boolean
+        conflictsIdentified:
+          type: string
+        referencesContacted:
+          type: boolean
+        overallAssessment:
+          type: string
+        reviewer:
+          type: string
+        status:
+          type: string
+          enum:
+            - pending
+            - in-progress
+            - cleared
+            - flagged
+        completedAt:
+          type: string
+          format: date-time
+          nullable: true
+      required:
+        - id
+        - partnerId
+        - reviewer
+        - status
+
+    CreateDueDiligenceRecordRequestDto:
+      type: object
+      properties:
+        partnerId:
+          type: string
+          format: uuid
+        corporateStatusVerified:
+          type: boolean
+        credentialsVerified:
+          type: boolean
+        regulatoryComfort:
+          type: string
+        capacityAssessment:
+          type: string
+        pricingReviewed:
+          type: boolean
+        conflictsIdentified:
+          type: string
+        referencesContacted:
+          type: boolean
+        overallAssessment:
+          type: string
+        reviewer:
+          type: string
+      required:
+        - partnerId
+        - reviewer
+
+    # ─── Use Case Mapping ──────────────────────────────────────────────
+    UseCaseMappingDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        partnerId:
+          type: string
+          format: uuid
+        useCase:
+          type: string
+          example: Tenant Placement
+        partnerOwned:
+          type: boolean
+        blocksOwned:
+          type: boolean
+        integrationRequired:
+          type: boolean
+        slaExpectation:
+          type: string
+        notes:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - partnerId
+        - useCase
+
+    CreateUseCaseMappingRequestDto:
+      type: object
+      properties:
+        partnerId:
+          type: string
+          format: uuid
+        useCase:
+          type: string
+        partnerOwned:
+          type: boolean
+        blocksOwned:
+          type: boolean
+        integrationRequired:
+          type: boolean
+        slaExpectation:
+          type: string
+        notes:
+          type: string
+      required:
+        - partnerId
+        - useCase
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    PartnershipsKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

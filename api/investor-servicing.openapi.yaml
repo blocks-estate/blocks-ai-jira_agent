@@ -1,0 +1,516 @@
+openapi: 3.1.0
+info:
+  title: Investor Servicing API
+  description: >
+    REST API for the Investor Servicing domain. Manages post-launch investor
+    support, education completion, burden assessment, and six-month gate
+    reviews. Supports the investor servicing, reporting, and retention system
+    (TGTM-20) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-20
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Service Dashboard ────────────────────────────────────────────────
+  /investor-servicing/dashboard:
+    get:
+      tags:
+        - Investor Servicing
+        - Dashboard
+      summary: Get investor servicing dashboard
+      description: >
+        Returns an aggregated view of support ticket volume, SLA performance,
+        education completion rates, and open escalations.
+      operationId: getInvestorServicingDashboard
+      responses:
+        '200':
+          description: Servicing dashboard data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorServicingDashboardDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Support Tickets ──────────────────────────────────────────────────
+  /investor-servicing/support-tickets:
+    get:
+      tags:
+        - Investor Servicing
+        - Support
+      summary: List support tickets
+      operationId: getInvestorServicingSupportTickets
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PaginationParams'
+        - $ref: './common.openapi.yaml#/components/parameters/DateRangeFilter'
+      responses:
+        '200':
+          description: Paginated support tickets
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SupportTicketCollectionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Investor Servicing
+        - Support
+      summary: Create a support ticket
+      operationId: createInvestorServicingSupportTicket
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateSupportTicketRequestDto'
+      responses:
+        '201':
+          description: Ticket created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SupportTicketDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /investor-servicing/support-tickets/{id}:
+    get:
+      tags:
+        - Investor Servicing
+        - Support
+      summary: Get a support ticket by ID
+      operationId: getInvestorServicingSupportTicketById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Support ticket detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SupportTicketDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Investor Servicing
+        - Support
+      summary: Update support ticket status
+      operationId: updateInvestorServicingSupportTicket
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateSupportTicketRequestDto'
+      responses:
+        '200':
+          description: Updated ticket
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SupportTicketDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Education Completion ─────────────────────────────────────────────
+  /investor-servicing/education-completion:
+    get:
+      tags:
+        - Investor Servicing
+        - Education
+      summary: List investor education completion records
+      operationId: getInvestorServicingEducationCompletion
+      responses:
+        '200':
+          description: Education completion records
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EducationCompletionDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Investor Servicing
+        - Education
+      summary: Record investor education completion
+      operationId: createInvestorServicingEducationRecord
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateEducationRecordRequestDto'
+      responses:
+        '201':
+          description: Education record created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EducationCompletionDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Six-Month Gate ───────────────────────────────────────────────────
+  /investor-servicing/six-month-gate:
+    get:
+      tags:
+        - Investor Servicing
+        - Reviews
+      summary: Get the current six-month gate review
+      operationId: getInvestorServicingSixMonthGate
+      responses:
+        '200':
+          description: Six-month gate review data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SixMonthGateReviewDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /investor-servicing/six-month-gate/decisions:
+    post:
+      tags:
+        - Investor Servicing
+        - Reviews
+      summary: Record a six-month gate decision
+      operationId: createInvestorServicingGateDecision
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateGateDecisionRequestDto'
+      responses:
+        '201':
+          description: Decision recorded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GateDecisionDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /investor-servicing/kpis:
+    get:
+      tags:
+        - Investor Servicing
+        - KPIs
+      summary: Retrieve investor servicing KPIs
+      operationId: getInvestorServicingKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Investor servicing KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvestorServicingKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    TicketPriorityEnum:
+      type: string
+      enum:
+        - low
+        - medium
+        - high
+        - critical
+
+    TicketCategoryEnum:
+      type: string
+      enum:
+        - account
+        - kyc
+        - payment
+        - education
+        - technical
+        - compliance
+        - general
+
+    GateDecisionEnum:
+      type: string
+      enum:
+        - proceed
+        - adjust
+        - pause
+
+    # ─── Dashboard ──────────────────────────────────────────────────────
+    InvestorServicingDashboardDto:
+      type: object
+      properties:
+        totalOpenTickets:
+          type: integer
+        slaComplianceRate:
+          type: number
+          format: float
+          description: Percentage of tickets resolved within SLA (0-100)
+        averageResponseTimeHours:
+          type: number
+          format: float
+        educationCompletionRate:
+          type: number
+          format: float
+        openEscalations:
+          type: integer
+        volumeTrend:
+          $ref: './common.openapi.yaml#/components/schemas/TrendSeriesDto'
+      required:
+        - totalOpenTickets
+        - slaComplianceRate
+        - averageResponseTimeHours
+        - educationCompletionRate
+        - openEscalations
+
+    # ─── Support Tickets ────────────────────────────────────────────────
+    SupportTicketDto:
+      type: object
+      description: An investor support ticket record
+      properties:
+        id:
+          type: string
+          format: uuid
+        investorId:
+          type: string
+        category:
+          $ref: '#/components/schemas/TicketCategoryEnum'
+        priority:
+          $ref: '#/components/schemas/TicketPriorityEnum'
+        subject:
+          type: string
+        description:
+          type: string
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        assignedTo:
+          type: string
+        responseTimeMinutes:
+          type: integer
+        resolutionTimeMinutes:
+          type: integer
+        createdAt:
+          type: string
+          format: date-time
+        resolvedAt:
+          type: string
+          format: date-time
+          nullable: true
+      required:
+        - id
+        - investorId
+        - category
+        - subject
+        - status
+        - createdAt
+
+    SupportTicketCollectionDto:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/SupportTicketDto'
+        totalItems:
+          type: integer
+        totalPages:
+          type: integer
+        currentPage:
+          type: integer
+        pageSize:
+          type: integer
+      required:
+        - items
+        - totalItems
+        - totalPages
+        - currentPage
+        - pageSize
+
+    CreateSupportTicketRequestDto:
+      type: object
+      properties:
+        investorId:
+          type: string
+        category:
+          $ref: '#/components/schemas/TicketCategoryEnum'
+        priority:
+          $ref: '#/components/schemas/TicketPriorityEnum'
+        subject:
+          type: string
+        description:
+          type: string
+      required:
+        - investorId
+        - category
+        - subject
+
+    UpdateSupportTicketRequestDto:
+      type: object
+      properties:
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        assignedTo:
+          type: string
+        resolutionTimeMinutes:
+          type: integer
+      minProperties: 1
+
+    # ─── Education ──────────────────────────────────────────────────────
+    EducationCompletionDto:
+      type: object
+      description: An investor education module completion record
+      properties:
+        id:
+          type: string
+          format: uuid
+        investorId:
+          type: string
+        moduleName:
+          type: string
+          example: Tokenization Basics
+        completedAt:
+          type: string
+          format: date-time
+        score:
+          type: integer
+          description: Quiz or assessment score (optional)
+        followUpRequired:
+          type: boolean
+      required:
+        - id
+        - investorId
+        - moduleName
+        - completedAt
+
+    CreateEducationRecordRequestDto:
+      type: object
+      properties:
+        investorId:
+          type: string
+        moduleName:
+          type: string
+        score:
+          type: integer
+        followUpRequired:
+          type: boolean
+      required:
+        - investorId
+        - moduleName
+
+    # ─── Six-Month Gate ─────────────────────────────────────────────────
+    SixMonthGateReviewDto:
+      type: object
+      description: Aggregated data for the six-month operational gate review
+      properties:
+        periodEnd:
+          type: string
+          format: date
+        executiveSummary:
+          type: string
+        supportVolumeTrend:
+          $ref: './common.openapi.yaml#/components/schemas/TrendSeriesDto'
+        topRisks:
+          type: array
+          items:
+            type: string
+        mitigationOptions:
+          type: array
+          items:
+            type: string
+        latestDecision:
+          $ref: '#/components/schemas/GateDecisionDto'
+      required:
+        - periodEnd
+        - executiveSummary
+        - supportVolumeTrend
+
+    GateDecisionDto:
+      type: object
+      description: A recorded gate review decision
+      properties:
+        id:
+          type: string
+          format: uuid
+        decision:
+          $ref: '#/components/schemas/GateDecisionEnum'
+        rationale:
+          type: string
+        evidenceSummary:
+          type: string
+        decidedBy:
+          type: string
+        decidedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - decision
+        - decidedBy
+        - decidedAt
+
+    CreateGateDecisionRequestDto:
+      type: object
+      properties:
+        decision:
+          $ref: '#/components/schemas/GateDecisionEnum'
+        rationale:
+          type: string
+        evidenceSummary:
+          type: string
+        decidedBy:
+          type: string
+      required:
+        - decision
+        - decidedBy
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    InvestorServicingKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

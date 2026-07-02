@@ -1,0 +1,533 @@
+openapi: 3.1.0
+info:
+  title: Compliance & Trust API
+  description: >
+    REST API for the Compliance & Trust domain. Manages compliance-safe GTM
+    claim guardrails — the campaign avoid list, claim matrix, risk language
+    modules, copy review checklists, and compliance approval workflows.
+    Supports the compliance-safe GTM claim guardrails (TGTM-1) and risk
+    language module (TGTM-28) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-1
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Avoid List ───────────────────────────────────────────────────────
+  /compliance/avoid-list:
+    get:
+      tags:
+        - Compliance & Trust
+        - Avoid List
+      summary: Get the campaign avoid list
+      description: >
+        Returns prohibited claims and phrases for campaign messaging,
+        including risk classification, safer alternatives, and reviewer
+        sign-off status.
+      operationId: getComplianceAvoidList
+      responses:
+        '200':
+          description: Avoid list entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AvoidListEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Compliance & Trust
+        - Avoid List
+      summary: Add an avoid list entry
+      operationId: createComplianceAvoidListItem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAvoidListEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AvoidListEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /compliance/avoid-list/{id}:
+    delete:
+      tags:
+        - Compliance & Trust
+        - Avoid List
+      summary: Remove an avoid list entry
+      operationId: deleteComplianceAvoidListItem
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '204':
+          description: Entry removed
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Claim Matrix ─────────────────────────────────────────────────────
+  /compliance/claim-matrix:
+    get:
+      tags:
+        - Compliance & Trust
+        - Claims
+      summary: Get the claim matrix
+      description: >
+        Returns the full claims library with risk classifications, approved
+        alternatives, evidence requirements, and approval status for every
+        tracked GTM claim.
+      operationId: getComplianceClaimMatrix
+      responses:
+        '200':
+          description: Claim matrix entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ClaimMatrixEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Compliance & Trust
+        - Claims
+      summary: Create a claim matrix entry
+      operationId: createComplianceClaimMatrixEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateClaimMatrixEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClaimMatrixEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /compliance/claim-matrix/{id}:
+    patch:
+      tags:
+        - Compliance & Trust
+        - Claims
+      summary: Update a claim matrix entry
+      operationId: updateComplianceClaimMatrixEntry
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateClaimMatrixEntryRequestDto'
+      responses:
+        '200':
+          description: Updated entry
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClaimMatrixEntryDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Checklists ───────────────────────────────────────────────────────
+  /compliance/checklists:
+    get:
+      tags:
+        - Compliance & Trust
+        - Checklists
+      summary: List copy review checklists
+      operationId: getComplianceChecklists
+      responses:
+        '200':
+          description: Review checklists
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CopyReviewChecklistDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Compliance & Trust
+        - Checklists
+      summary: Create a copy review checklist
+      operationId: createComplianceChecklist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCopyReviewChecklistRequestDto'
+      responses:
+        '201':
+          description: Checklist created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CopyReviewChecklistDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Risk Language ────────────────────────────────────────────────────
+  /compliance/risk-language:
+    get:
+      tags:
+        - Compliance & Trust
+        - Risk Language
+      summary: Get risk language modules
+      operationId: getComplianceRiskLanguage
+      responses:
+        '200':
+          description: Risk language modules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/RiskLanguageModuleDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /compliance/risk-language/modules:
+    post:
+      tags:
+        - Compliance & Trust
+        - Risk Language
+      summary: Create a risk language module
+      operationId: createComplianceRiskLanguageModule
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateRiskLanguageModuleRequestDto'
+      responses:
+        '201':
+          description: Module created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RiskLanguageModuleDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /compliance/kpis:
+    get:
+      tags:
+        - Compliance & Trust
+        - KPIs
+      summary: Retrieve compliance and trust KPI metrics
+      operationId: getComplianceTrustKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Compliance and trust KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComplianceTrustKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    AvoidListRiskTypeEnum:
+      type: string
+      enum:
+        - investment-promise
+        - liquidity-promise
+        - eligibility-overreach
+        - regulatory-implication
+        - security-guarantee
+        - urgency-trading
+
+    ClaimCategoryEnum:
+      type: string
+      enum:
+        - approved
+        - conditional
+        - prohibited
+        - pending-review
+
+    # ─── Avoid List ─────────────────────────────────────────────────────
+    AvoidListEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        phrase:
+          type: string
+          example: trade now
+        riskType:
+          $ref: '#/components/schemas/AvoidListRiskTypeEnum'
+        riskRationale:
+          type: string
+        saferAlternative:
+          type: string
+          example: Explore available opportunities
+        reviewerSignOff:
+          type: boolean
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - phrase
+        - riskType
+        - riskRationale
+
+    CreateAvoidListEntryRequestDto:
+      type: object
+      properties:
+        phrase:
+          type: string
+        riskType:
+          $ref: '#/components/schemas/AvoidListRiskTypeEnum'
+        riskRationale:
+          type: string
+        saferAlternative:
+          type: string
+      required:
+        - phrase
+        - riskType
+        - riskRationale
+
+    # ─── Claim Matrix ───────────────────────────────────────────────────
+    ClaimMatrixEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        claim:
+          type: string
+          example: Guaranteed rental yield
+        category:
+          $ref: '#/components/schemas/ClaimCategoryEnum'
+        evidenceRequirement:
+          type: string
+        approvedAlternative:
+          type: string
+          example: Target rental yield (subject to market conditions)
+        reviewer:
+          type: string
+        approvalStatus:
+          type: string
+          enum:
+            - pending
+            - approved
+            - rejected
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - claim
+        - category
+        - approvalStatus
+
+    CreateClaimMatrixEntryRequestDto:
+      type: object
+      properties:
+        claim:
+          type: string
+        category:
+          $ref: '#/components/schemas/ClaimCategoryEnum'
+        evidenceRequirement:
+          type: string
+        approvedAlternative:
+          type: string
+        reviewer:
+          type: string
+      required:
+        - claim
+        - category
+
+    UpdateClaimMatrixEntryRequestDto:
+      type: object
+      properties:
+        category:
+          $ref: '#/components/schemas/ClaimCategoryEnum'
+        evidenceRequirement:
+          type: string
+        approvedAlternative:
+          type: string
+        approvalStatus:
+          type: string
+          enum:
+            - pending
+            - approved
+            - rejected
+      minProperties: 1
+
+    # ─── Copy Review Checklist ──────────────────────────────────────────
+    CopyReviewChecklistDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        campaignName:
+          type: string
+        assetType:
+          type: string
+          example: Landing Page
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              checkName:
+                type: string
+                example: No prohibited liquidity claims
+              passed:
+                type: boolean
+              notes:
+                type: string
+        reviewer:
+          type: string
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - campaignName
+        - items
+        - status
+        - createdAt
+
+    CreateCopyReviewChecklistRequestDto:
+      type: object
+      properties:
+        campaignName:
+          type: string
+        assetType:
+          type: string
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              checkName:
+                type: string
+              passed:
+                type: boolean
+              notes:
+                type: string
+          minItems: 1
+        reviewer:
+          type: string
+      required:
+        - campaignName
+        - items
+
+    # ─── Risk Language ──────────────────────────────────────────────────
+    RiskLanguageModuleDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: Property Risk Disclosure
+        content:
+          type: string
+        version:
+          type: integer
+        owner:
+          type: string
+        approvalStatus:
+          type: string
+          enum:
+            - draft
+            - in-review
+            - approved
+            - superseded
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - content
+        - version
+        - approvalStatus
+
+    CreateRiskLanguageModuleRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        content:
+          type: string
+        owner:
+          type: string
+      required:
+        - name
+        - content
+        - owner
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    ComplianceTrustKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

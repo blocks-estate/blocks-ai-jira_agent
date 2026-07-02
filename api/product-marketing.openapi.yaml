@@ -1,0 +1,443 @@
+openapi: 3.1.0
+info:
+  title: Product Marketing API
+  description: >
+    REST API for the Product Marketing domain. Manages product launch
+    marketing — GTM messaging on marketplace liquidity, fee structure,
+    pricing documentation, launch trackers, and messaging guides. Supports
+    the launch Managed Tokenization Marketplace product marketing (TGTM-5)
+    and trading fee positioning (TGTM-66) workstreams.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-5
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Launch Tracker ───────────────────────────────────────────────────
+  /product-marketing/launch-tracker:
+    get:
+      tags:
+        - Product Marketing
+        - Launch
+      summary: Get the product launch tracker
+      operationId: getProductMarketingLaunchTracker
+      responses:
+        '200':
+          description: Launch tracker items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LaunchTrackerItemDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Product Marketing
+        - Launch
+      summary: Create a launch tracker item
+      operationId: createProductMarketingLaunchItem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateLaunchTrackerItemRequestDto'
+      responses:
+        '201':
+          description: Item created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LaunchTrackerItemDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  /product-marketing/launch-tracker/{id}:
+    patch:
+      tags:
+        - Product Marketing
+        - Launch
+      summary: Update a launch tracker item
+      operationId: updateProductMarketingLaunchItem
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateLaunchTrackerItemRequestDto'
+      responses:
+        '200':
+          description: Updated item
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LaunchTrackerItemDto'
+        '404':
+          $ref: './common.openapi.yaml#/components/responses/NotFound'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Messaging Guides ─────────────────────────────────────────────────
+  /product-marketing/messaging:
+    get:
+      tags:
+        - Product Marketing
+        - Messaging
+      summary: Get product messaging guides
+      operationId: getProductMarketingMessaging
+      responses:
+        '200':
+          description: Messaging guides
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MessagingGuideDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Product Marketing
+        - Messaging
+      summary: Create a messaging guide
+      operationId: createProductMarketingMessagingGuide
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateMessagingGuideRequestDto'
+      responses:
+        '201':
+          description: Guide created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessagingGuideDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Fee Structure ────────────────────────────────────────────────────
+  /product-marketing/fee-structure:
+    get:
+      tags:
+        - Product Marketing
+        - Pricing
+      summary: Get the product fee structure
+      operationId: getProductMarketingFeeStructure
+      responses:
+        '200':
+          description: Fee structure
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeeStructureDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Product Marketing
+        - Pricing
+      summary: Create a fee structure record
+      operationId: createProductMarketingFeeStructure
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateFeeStructureRequestDto'
+      responses:
+        '201':
+          description: Fee structure created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeeStructureDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /product-marketing/kpis:
+    get:
+      tags:
+        - Product Marketing
+        - KPIs
+      summary: Retrieve product marketing KPI metrics
+      operationId: getProductMarketingKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Product marketing KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductMarketingKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    LaunchItemStatusEnum:
+      type: string
+      enum:
+        - not-started
+        - in-progress
+        - in-review
+        - approved
+        - blocked
+
+    MessageAudienceEnum:
+      type: string
+      enum:
+        - investor-facing
+        - developer-facing
+        - partner-facing
+        - internal
+        - leadership
+
+    # ─── Launch Tracker ─────────────────────────────────────────────────
+    LaunchTrackerItemDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: Marketplace Liquidity Messaging
+        status:
+          $ref: '#/components/schemas/LaunchItemStatusEnum'
+        owner:
+          type: string
+        targetDate:
+          type: string
+          format: date
+        dependencies:
+          type: array
+          items:
+            type: string
+        deliverables:
+          type: array
+          items:
+            type: string
+        notes:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - status
+        - owner
+        - createdAt
+
+    CreateLaunchTrackerItemRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        owner:
+          type: string
+        targetDate:
+          type: string
+          format: date
+        dependencies:
+          type: array
+          items:
+            type: string
+        deliverables:
+          type: array
+          items:
+            type: string
+        notes:
+          type: string
+      required:
+        - name
+        - owner
+
+    UpdateLaunchTrackerItemRequestDto:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/LaunchItemStatusEnum'
+        targetDate:
+          type: string
+          format: date
+        notes:
+          type: string
+      minProperties: 1
+
+    # ─── Messaging Guides ───────────────────────────────────────────────
+    MessagingGuideDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        topic:
+          type: string
+          example: Secondary Market Liquidity
+        audience:
+          $ref: '#/components/schemas/MessageAudienceEnum'
+        approvedLanguage:
+          type: string
+        prohibitedLanguage:
+          type: string
+        evidenceRequired:
+          type: string
+        complianceStatus:
+          type: string
+          enum:
+            - draft
+            - reviewed
+            - approved
+        version:
+          type: integer
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - topic
+        - audience
+        - approvedLanguage
+        - complianceStatus
+
+    CreateMessagingGuideRequestDto:
+      type: object
+      properties:
+        topic:
+          type: string
+        audience:
+          $ref: '#/components/schemas/MessageAudienceEnum'
+        approvedLanguage:
+          type: string
+        prohibitedLanguage:
+          type: string
+        evidenceRequired:
+          type: string
+      required:
+        - topic
+        - audience
+        - approvedLanguage
+
+    # ─── Fee Structure ──────────────────────────────────────────────────
+    FeeStructureDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        feeName:
+          type: string
+          example: Marketplace Trading Fee
+        feePurpose:
+          type: string
+        payer:
+          type: string
+          example: Seller
+        trigger:
+          type: string
+          example: Trade Execution
+        amount:
+          type: string
+          example: 0.5% of trade value
+        timing:
+          type: string
+          example: At settlement
+        includedServices:
+          type: array
+          items:
+            type: string
+        excludedServices:
+          type: array
+          items:
+            type: string
+        financeTreatment:
+          type: string
+        approvedCustomerCopy:
+          type: string
+        status:
+          $ref: './common.openapi.yaml#/components/schemas/GenericStatusEnum'
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - feeName
+        - payer
+        - trigger
+        - amount
+        - status
+
+    CreateFeeStructureRequestDto:
+      type: object
+      properties:
+        feeName:
+          type: string
+        feePurpose:
+          type: string
+        payer:
+          type: string
+        trigger:
+          type: string
+        amount:
+          type: string
+        timing:
+          type: string
+        includedServices:
+          type: array
+          items:
+            type: string
+        excludedServices:
+          type: array
+          items:
+            type: string
+        financeTreatment:
+          type: string
+        approvedCustomerCopy:
+          type: string
+      required:
+        - feeName
+        - payer
+        - trigger
+        - amount
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    ProductMarketingKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'

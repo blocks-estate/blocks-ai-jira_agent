@@ -1,0 +1,2582 @@
+﻿Issue Type,Issue key,Issue id,Summary,Components,Priority,Status,Resolution,Created,Updated,Due date,Description,Parent,Parent key,Parent summary
+Task,TGTM-1491,18485,Create a jurisdiction claim reference sheet for sales and marketing teams,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1491 (Task) - Create a jurisdiction claim reference sheet for sales and marketing teams
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1491 (Task): Create a jurisdiction claim reference sheet for sales and marketing teams
+
+Original intent:
+Produce a concise reference that teams can use to quickly verify which claims, terms, and positioning are acceptable in each GCC market.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a compact matrix for sales, marketing, PR, and partner teams showing allowed claims, restricted claims, mandatory disclaimers, approval owner, and escalation path for each GCC market.
+
+Expected deliverable:
+A usable matrix or reference guide that teams can apply directly during campaign, sales, and partner execution.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1490,18482,Recommend Bahrain entry positioning and next steps,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1490 (Task) - Recommend Bahrain entry positioning and next steps
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1490 (Task): Recommend Bahrain entry positioning and next steps
+
+Original intent:
+Translate the assessment into a concise recommendation on whether to prioritize Bahrain, what entry model to use, and the immediate follow-up actions needed.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate findings into a practical action plan with decision recommendation, owners, 30/60/90-day next steps, required approvals, and unresolved questions.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Use a decision-memo format: executive summary, recommendation, evidence, market context, constraints, partner route, risks, assumptions, unresolved questions, and 30/60/90-day next actions.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1489,18481,Align regional messaging to readiness and market-entry status,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1489 (Task) - Align regional messaging to readiness and market-entry status
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1489 (Task): Align regional messaging to readiness and market-entry status
+
+Original intent:
+Create guidance for how marketing claims should differ between ready-to-enter markets and markets requiring partner-led or phased entry.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Define a messaging-tier model that separates launch-ready markets, partner-led markets, monitoring markets, and deferred markets, then map approved copy examples to each tier.
+
+Expected deliverable:
+A ready-to-use messaging pack with approved copy, scripts, templates, and review notes.
+
+Implementation notes:
+Write outputs in a form that non-legal GTM teams can use without interpretation: approved examples, blocked examples, required qualifier language, and review/approval owner.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1488,18479,Outline go-to-market risks and entry constraints,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1488 (Task) - Outline go-to-market risks and entry constraints
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1488 (Task): Outline go-to-market risks and entry constraints
+
+Original intent:
+Capture the main risks, barriers, and constraints for Bahrain entry, including market scale limitations, regulatory dependencies, and partner reliance.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a risk and dependency register covering regulatory uncertainty, partner dependency, licensing timeline, market demand, compliance readiness, operational cost, and reputational exposure.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1487,18477,Identify partner-led entry use cases for each market,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:04 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1487 (Task) - Identify partner-led entry use cases for each market
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1487 (Task): Identify partner-led entry use cases for each market
+
+Original intent:
+Capture the most plausible partner-led entry paths in ADGM, Saudi, Qatar, and Bahrain, such as referral partners, channel partners, implementation partners, or local sponsors.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Document the entry archetypes available in each market, such as referral partner, licensed distribution partner, implementation partner, local sponsor, ecosystem partner, or strategic alliance.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1486,18472,Document partner diligence requirements and decision checkpoints,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:04 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1486 (Task) - Document partner diligence requirements and decision checkpoints
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1486 (Task): Document partner diligence requirements and decision checkpoints
+
+Original intent:
+Outline the information needed to validate each partner candidate, including commercial terms, local presence, regulatory status, and any required internal approval steps.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Define due-diligence checkpoints covering license status, reputation, ownership, conflicts, compliance posture, distribution permissions, technical readiness, and commercial terms.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1485,18469,"Summarize risks, assumptions, and next actions for Oman",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1485 (Task) - Summarize risks, assumptions, and next actions for Oman
+- Uploaded parent: TGTM-188 - Create Oman monitoring memo (Yes)
+- Parent Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo > TGTM-1485 (Task): Summarize risks, assumptions, and next actions for Oman
+
+Original intent:
+Record key uncertainties in the emerging framework, assumptions used for planning, and the immediate follow-up actions required before pilot execution.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-188 - Create Oman monitoring memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a risk and dependency register covering regulatory uncertainty, partner dependency, licensing timeline, market demand, compliance readiness, operational cost, and reputational exposure.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10332,TGTM-188,Create Oman monitoring memo
+Task,TGTM-1484,18470,Define target customer segments and priority use cases,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1484 (Task) - Define target customer segments and priority use cases
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1484 (Task): Define target customer segments and priority use cases
+
+Original intent:
+Specify which customer segments in Bahrain are most relevant for entry, and highlight the highest-value use cases or products to lead with.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Break the work into a concise research-and-execution brief for Create Bahrain entry memo, covering facts gathered, analysis, recommendation, deliverable format, dependencies, and approval path.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1483,18471,Establish market-specific approval workflow for campaign launch,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1483 (Task) - Establish market-specific approval workflow for campaign launch
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1483 (Task): Establish market-specific approval workflow for campaign launch
+
+Original intent:
+Define the steps, owners, and sign-off checkpoints required to approve regional marketing campaigns before launch in each jurisdiction.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Design a lightweight campaign launch approval workflow with intake form, market classification, legal/compliance review, partner review where relevant, final approver, and evidence archive.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Write outputs in a form that non-legal GTM teams can use without interpretation: approved examples, blocked examples, required qualifier language, and review/approval owner.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1482,18467,Compile key risks and readiness gaps for Qatar/QFC entry,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1482 (Task) - Compile key risks and readiness gaps for Qatar/QFC entry
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1482 (Task): Compile key risks and readiness gaps for Qatar/QFC entry
+
+Original intent:
+Consolidate the main legal, regulatory, operational, and commercial risks, and highlight the gaps that must be closed before launch or partner onboarding.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a risk and dependency register covering regulatory uncertainty, partner dependency, licensing timeline, market demand, compliance readiness, operational cost, and reputational exposure.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1481,18465,"Summarize tax, reporting, and governance considerations",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1481 (Task) - Summarize tax, reporting, and governance considerations
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1481 (Task): Summarize tax, reporting, and governance considerations
+
+Original intent:
+Capture any tax, regulatory reporting, audit, and governance obligations that may affect the Qatar/QFC entry plan and ongoing operating model.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Summarize tax, reporting, governance, disclosure, board/committee, and local filing considerations that affect the entry model and ongoing operating burden.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1480,18441,Draft the Kuwait defer memo for stakeholder review,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1480 (Task) - Draft the Kuwait defer memo for stakeholder review
+- Uploaded parent: TGTM-189 - Create Kuwait defer memo (Yes)
+- Parent Story context: TGTM-189 - Create Kuwait defer memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-189 (Story): Create Kuwait defer memo > TGTM-1480 (Task): Draft the Kuwait defer memo for stakeholder review
+
+Original intent:
+Prepare the final memo summarizing the deferral decision, supporting evidence, and recommended next steps for internal stakeholders.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-189 - Create Kuwait defer memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Document a clear defer decision with rationale, current blockers, future revisit triggers, monitoring cadence, and stakeholder-facing explanation.
+
+Expected deliverable:
+A concise decision memo with recommendation, rationale, evidence, risks, dependencies, and next actions.
+
+Implementation notes:
+Use a decision-memo format: executive summary, recommendation, evidence, market context, constraints, partner route, risks, assumptions, unresolved questions, and 30/60/90-day next actions.
+
+Dependencies / inputs:
+Kuwait regulatory guidance, virtual-asset restrictions, local market data, partner availability, competitive context, and internal expansion priorities. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10333,TGTM-189,Create Kuwait defer memo
+Task,TGTM-1479,18431,Document Kuwait virtual asset regulatory restrictions and market-entry constraints,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1479 (Task) - Document Kuwait virtual asset regulatory restrictions and market-entry constraints
+- Uploaded parent: TGTM-189 - Create Kuwait defer memo (Yes)
+- Parent Story context: TGTM-189 - Create Kuwait defer memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-189 (Story): Create Kuwait defer memo > TGTM-1479 (Task): Document Kuwait virtual asset regulatory restrictions and market-entry constraints
+
+Original intent:
+Summarize the current regulatory stance in Kuwait that limits virtual asset activity, including the specific restrictions that prevent a GCC-ready launch or partner-led pathway.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-189 - Create Kuwait defer memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Separate confirmed requirements from assumptions. Flag legal uncertainties, source every regulatory claim internally, and identify where external counsel or regulator clarification is needed.
+
+Dependencies / inputs:
+Kuwait regulatory guidance, virtual-asset restrictions, local market data, partner availability, competitive context, and internal expansion priorities. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.",10333,TGTM-189,Create Kuwait defer memo
+Task,TGTM-1478,18442,Compile Oman virtual-asset regulatory monitoring notes,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1478 (Task) - Compile Oman virtual-asset regulatory monitoring notes
+- Uploaded parent: TGTM-188 - Create Oman monitoring memo (Yes)
+- Parent Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo > TGTM-1478 (Task): Compile Oman virtual-asset regulatory monitoring notes
+
+Original intent:
+Track emerging legislation, regulator guidance, and policy updates relevant to virtual assets in Oman, and summarize the key changes that could affect market entry planning.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-188 - Create Oman monitoring memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Separate confirmed requirements from assumptions. Flag legal uncertainties, source every regulatory claim internally, and identify where external counsel or regulator clarification is needed.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.",10332,TGTM-188,Create Oman monitoring memo
+Task,TGTM-1477,18428,Map regulator and legal review requirements for marketing content,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1477 (Task) - Map regulator and legal review requirements for marketing content
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1477 (Task): Map regulator and legal review requirements for marketing content
+
+Original intent:
+Identify which jurisdiction-specific campaigns, claims, and materials require legal, compliance, or partner review before publication.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules. Also requires: legal/compliance review and approved regulatory source notes; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1476,18446,Build a market-by-market partner pipeline tracker,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:05 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1476 (Task) - Build a market-by-market partner pipeline tracker
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1476 (Task): Build a market-by-market partner pipeline tracker
+
+Original intent:
+Create a structured tracker for each target market with partner name, contact status, qualification stage, notes, and next steps to support ongoing pipeline management.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a structured partner pipeline sheet or CRM view with market, partner category, target contact, strategic rationale, status, diligence score, owner, next action, and expected entry value.
+
+Expected deliverable:
+A structured tracker or CRM-ready table with fields, scoring, ownership, status, and next actions.
+
+Implementation notes:
+Use a structured table that can later be imported into CRM or Airtable. Include clear status definitions, scoring logic, owner, last-touch date, next action, and decision checkpoint.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1475,18432,Score and prioritize partner-led market entry candidates by market,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:05 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1475 (Task) - Score and prioritize partner-led market entry candidates by market
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1475 (Task): Score and prioritize partner-led market entry candidates by market
+
+Original intent:
+Evaluate potential partners against the qualification criteria and rank the strongest options for ADGM, Saudi, Qatar, and Bahrain based on readiness and strategic fit.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a scoring model that weights regulatory fit, distribution access, credibility, execution speed, compliance complexity, and commercial upside for each partner candidate.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Use a structured table that can later be imported into CRM or Airtable. Include clear status definitions, scoring logic, owner, last-touch date, next action, and decision checkpoint.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1474,18437,Explain the rationale for deferring Kuwait in the regional expansion plan,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1474 (Task) - Explain the rationale for deferring Kuwait in the regional expansion plan
+- Uploaded parent: TGTM-189 - Create Kuwait defer memo (Yes)
+- Parent Story context: TGTM-189 - Create Kuwait defer memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-189 (Story): Create Kuwait defer memo > TGTM-1474 (Task): Explain the rationale for deferring Kuwait in the regional expansion plan
+
+Original intent:
+Capture the business and compliance reasons for placing Kuwait on hold, and tie the deferral decision back to the broader GCC market-entry prioritization framework.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-189 - Create Kuwait defer memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Document a clear defer decision with rationale, current blockers, future revisit triggers, monitoring cadence, and stakeholder-facing explanation.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Use a decision-memo format: executive summary, recommendation, evidence, market context, constraints, partner route, risks, assumptions, unresolved questions, and 30/60/90-day next actions.
+
+Dependencies / inputs:
+Kuwait regulatory guidance, virtual-asset restrictions, local market data, partner availability, competitive context, and internal expansion priorities.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10333,TGTM-189,Create Kuwait defer memo
+Task,TGTM-1473,18425,Define GCC marketing claim rules by jurisdiction,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1473 (Task) - Define GCC marketing claim rules by jurisdiction
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1473 (Task): Define GCC marketing claim rules by jurisdiction
+
+Original intent:
+Create a market-by-market matrix of allowed, restricted, and prohibited marketing claims for ADGM/Abu Dhabi, Saudi, Qatar, Bahrain, Oman, and Kuwait.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate legal and market-readiness findings into a claims matrix that tells teams what they can say, cannot say, and must qualify in each jurisdiction.
+
+Expected deliverable:
+A usable matrix or reference guide that teams can apply directly during campaign, sales, and partner execution.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1472,18433,Identify local stakeholders and decision-makers in Oman,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1472 (Task) - Identify local stakeholders and decision-makers in Oman
+- Uploaded parent: TGTM-188 - Create Oman monitoring memo (Yes)
+- Parent Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo > TGTM-1472 (Task): Identify local stakeholders and decision-makers in Oman
+
+Original intent:
+Map the relevant regulators, ministries, potential partners, and internal owners needed to validate the framework and progress the pilot plan.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-188 - Create Oman monitoring memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map the local ecosystem of regulators, free zones, fintech bodies, developer groups, wealth channels, banks, legal advisors, service providers, and anchor partners with contact and priority status.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10332,TGTM-188,Create Oman monitoring memo
+Task,TGTM-1471,18429,Create prohibited-claims examples and do-not-use messaging guidance,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1471 (Task) - Create prohibited-claims examples and do-not-use messaging guidance
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1471 (Task): Create prohibited-claims examples and do-not-use messaging guidance
+
+Original intent:
+List examples of claims, phrases, and positioning that must not be used in each GCC market, with clear replacement guidance where needed.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a prohibited-claims library with unsafe phrases, why they are risky, safer substitute wording, and examples by market and audience.
+
+Expected deliverable:
+A ready-to-use messaging pack with approved copy, scripts, templates, and review notes.
+
+Implementation notes:
+Write outputs in a form that non-legal GTM teams can use without interpretation: approved examples, blocked examples, required qualifier language, and review/approval owner.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1470,18443,"Review cross-border, marketing, and distribution constraints",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1470 (Task) - Review cross-border, marketing, and distribution constraints
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1470 (Task): Review cross-border, marketing, and distribution constraints
+
+Original intent:
+Identify any restrictions on servicing clients, cross-border solicitation, onboarding, and marketing digital asset services into Qatar or the QFC.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Identify whether cross-border marketing, solicitation, onboarding, distribution, referrals, and investment execution are allowed, restricted, or require a local partner or approval.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1469,18440,Define pilot operating scope for Oman,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1469 (Task) - Define pilot operating scope for Oman
+- Uploaded parent: TGTM-188 - Create Oman monitoring memo (Yes)
+- Parent Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo > TGTM-1469 (Task): Define pilot operating scope for Oman
+
+Original intent:
+Outline the activities, products, customer segments, and transaction types that should be included or excluded in an initial Oman pilot based on the current framework.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-188 - Create Oman monitoring memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Define a narrow pilot scope including target users, product modules, allowed activities, excluded activities, partner role, compliance controls, success metrics, and stop/go criteria.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10332,TGTM-188,Create Oman monitoring memo
+Task,TGTM-1468,18438,Document compliance requirements for the Oman pilot,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1468 (Task) - Document compliance requirements for the Oman pilot
+- Uploaded parent: TGTM-188 - Create Oman monitoring memo (Yes)
+- Parent Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo > TGTM-1468 (Task): Document compliance requirements for the Oman pilot
+
+Original intent:
+Capture the core compliance expectations for the pilot, including AML/KYC, sanctions, onboarding, reporting, recordkeeping, and local partner obligations.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-188 - Create Oman monitoring memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a compliance checklist for the pilot or market entry with required controls, documents, approvals, disclosures, screening requirements, audit evidence, and operating limitations.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria. Also requires: legal/compliance review and approved regulatory source notes; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10332,TGTM-188,Create Oman monitoring memo
+Task,TGTM-1467,18434,Document required disclaimers and mandatory wording for each target market,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1467 (Task) - Document required disclaimers and mandatory wording for each target market
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1467 (Task): Document required disclaimers and mandatory wording for each target market
+
+Original intent:
+Specify the standard disclaimers, risk statements, and jurisdiction-specific wording that must appear in customer-facing materials for each GCC market.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a disclaimer library by jurisdiction, audience, asset type, and channel, with short-form and long-form versions ready for landing pages, decks, ads, emails, and partner materials.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Write outputs in a form that non-legal GTM teams can use without interpretation: approved examples, blocked examples, required qualifier language, and review/approval owner.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1466,18430,Outline conditions required to revisit Kuwait entry in the future,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1466 (Task) - Outline conditions required to revisit Kuwait entry in the future
+- Uploaded parent: TGTM-189 - Create Kuwait defer memo (Yes)
+- Parent Story context: TGTM-189 - Create Kuwait defer memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-189 (Story): Create Kuwait defer memo > TGTM-1466 (Task): Outline conditions required to revisit Kuwait entry in the future
+
+Original intent:
+Define the regulatory or market changes that would be needed before Kuwait can be reconsidered, such as licensing clarity, permitted activities, or viable local partner options.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-189 - Create Kuwait defer memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Define measurable triggers for reopening Kuwait entry, such as regulatory change, partner availability, demand signals, licensed pathway clarity, or strategic need.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Kuwait regulatory guidance, virtual-asset restrictions, local market data, partner availability, competitive context, and internal expansion priorities.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10333,TGTM-189,Create Kuwait defer memo
+Task,TGTM-1465,18436,Define partner outreach and engagement messaging,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:05 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1465 (Task) - Define partner outreach and engagement messaging
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1465 (Task): Define partner outreach and engagement messaging
+
+Original intent:
+Prepare the outreach approach and core messaging for engaging prospective regional partners, tailored to each target market and partner type.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Prepare partner-specific outreach scripts, email templates, discovery questions, meeting agenda, and follow-up sequence aligned to the value proposition for each market.
+
+Expected deliverable:
+A ready-to-use messaging pack with approved copy, scripts, templates, and review notes.
+
+Implementation notes:
+Write outputs in a form that non-legal GTM teams can use without interpretation: approved examples, blocked examples, required qualifier language, and review/approval owner.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1464,18435,Assess pilot licensing and approval requirements for Oman,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1464 (Task) - Assess pilot licensing and approval requirements for Oman
+- Uploaded parent: TGTM-188 - Create Oman monitoring memo (Yes)
+- Parent Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo > TGTM-1464 (Task): Assess pilot licensing and approval requirements for Oman
+
+Original intent:
+Identify any approvals, registrations, sandbox participation, or other regulatory steps needed to run a pilot in Oman, including likely lead times and dependencies.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-188 - Create Oman monitoring memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map the likely regulatory perimeter, required licenses or exemptions, allowed activities, prohibited activities, regulator touchpoints, and minimum evidence needed before making an entry recommendation.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria. Also requires: legal/compliance review and approved regulatory source notes; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10332,TGTM-188,Create Oman monitoring memo
+Task,TGTM-1463,18426,"Research and map the partner landscape in ADGM, Saudi, Qatar, and Bahrain",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:05 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1463 (Task) - Research and map the partner landscape in ADGM, Saudi, Qatar, and Bahrain
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1463 (Task): Research and map the partner landscape in ADGM, Saudi, Qatar, and Bahrain
+
+Original intent:
+Identify candidate firms, channels, and ecosystem players relevant to market entry in each target market, and capture their core capabilities, coverage, and sector focus.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Research and categorize relevant banks, brokerages, wealth firms, fintechs, real-estate developers, fund managers, advisors, consultants, and ecosystem bodies by market.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1462,18439,Define partner qualification criteria for each target market,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1462 (Task) - Define partner qualification criteria for each target market
+- Uploaded parent: TGTM-191 - Build regional partner pipeline (Yes)
+- Parent Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline > TGTM-1462 (Task): Define partner qualification criteria for each target market
+
+Original intent:
+Set the criteria for identifying viable partner-led market entry candidates in ADGM, Saudi, Qatar, and Bahrain, including regulatory fit, market reach, licensing capability, and implementation support.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-191 - Build regional partner pipeline. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Define minimum qualification and disqualification criteria for partners, including license coverage, audience access, credibility, compliance fit, operating capacity, and strategic alignment.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10335,TGTM-191,Build regional partner pipeline
+Task,TGTM-1461,18427,Define partner-led marketing guardrails and co-branding rules,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:06 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1461 (Task) - Define partner-led marketing guardrails and co-branding rules
+- Uploaded parent: TGTM-190 - Build GCC jurisdiction claim guardrails (Yes)
+- Parent Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails > TGTM-1461 (Task): Define partner-led marketing guardrails and co-branding rules
+
+Original intent:
+Set rules for content, logos, endorsements, and claim usage when marketing is executed through local partners or channel allies.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-190 - Build GCC jurisdiction claim guardrails. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Define partner-led marketing rules for logo use, endorsement language, responsibility disclaimers, approval routing, and evidence retention.
+
+Expected deliverable:
+A usable matrix or reference guide that teams can apply directly during campaign, sales, and partner execution.
+
+Implementation notes:
+Write outputs in a form that non-legal GTM teams can use without interpretation: approved examples, blocked examples, required qualifier language, and review/approval owner.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10334,TGTM-190,Build GCC jurisdiction claim guardrails
+Task,TGTM-1460,18423,Identify partner-led entry pathways in Bahrain,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1460 (Task) - Identify partner-led entry pathways in Bahrain
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1460 (Task): Identify partner-led entry pathways in Bahrain
+
+Original intent:
+Map the most practical partner-led routes to market, such as local distributors, banks, PSPs, or ecosystem partners, and note which model is best suited to a smaller market.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Document the entry archetypes available in each market, such as referral partner, licensed distribution partner, implementation partner, local sponsor, ecosystem partner, or strategic alliance.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1459,18418,Map key Bahrain fintech and ecosystem stakeholders,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1459 (Task) - Map key Bahrain fintech and ecosystem stakeholders
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1459 (Task): Map key Bahrain fintech and ecosystem stakeholders
+
+Original intent:
+Identify relevant regulators, free zone or ecosystem bodies, industry groups, accelerators, and major local players that may influence or support market entry.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map the local ecosystem of regulators, free zones, fintech bodies, developer groups, wealth channels, banks, legal advisors, service providers, and anchor partners with contact and priority status.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1458,18415,Assess competitive landscape and local incumbents,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1458 (Task) - Assess competitive landscape and local incumbents
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1458 (Task): Assess competitive landscape and local incumbents
+
+Original intent:
+Review major competitors, adjacent local providers, and market concentration to understand how crowded the Bahrain fintech market is and where whitespace may exist.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a competitor and comparable-market benchmark covering regulated platforms, digital securities players, investment marketplaces, fund platforms, tokenization providers, and regional financial hubs.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand. Also requires: market research, comparable entrants, investor/developer demand signals, and competitor benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1457,18416,Assess Bahrain market size and fintech opportunity,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1457 (Task) - Assess Bahrain market size and fintech opportunity
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1457 (Task): Assess Bahrain market size and fintech opportunity
+
+Original intent:
+Summarize Bahrain’s market attractiveness, including the relative size of the addressable market, fintech ecosystem depth, and why it is or is not a priority versus other GCC markets.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Estimate market attractiveness using investor/developer demand, wealth concentration, real-estate development activity, regulatory openness, adoption readiness, and comparable digital-investment activity.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand. Also requires: market research, comparable entrants, investor/developer demand signals, and competitor benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1456,18417,Review Bahrain regulatory and licensing requirements,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1456 (Task) - Review Bahrain regulatory and licensing requirements
+- Uploaded parent: TGTM-187 - Create Bahrain entry memo (Yes)
+- Parent Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo > TGTM-1456 (Task): Review Bahrain regulatory and licensing requirements
+
+Original intent:
+Document the key financial services and fintech regulatory considerations in Bahrain, including any licensing, approvals, and compliance implications for market entry.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-187 - Create Bahrain entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand. Also requires: legal/compliance review and approved regulatory source notes; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10331,TGTM-187,Create Bahrain entry memo
+Task,TGTM-1455,18412,"Review AML, KYC, and sanctions requirements for Qatar/QFC",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1455 (Task) - Review AML, KYC, and sanctions requirements for Qatar/QFC
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1455 (Task): Review AML, KYC, and sanctions requirements for Qatar/QFC
+
+Original intent:
+Summarize the financial crime obligations that apply to digital asset activities, including customer due diligence, transaction monitoring, sanctions screening, and reporting expectations.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a compliance checklist covering customer due diligence, AML screening, sanctions checks, investor suitability, beneficial-owner review, suspicious activity escalation, and recordkeeping expectations.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints. Also requires: legal/compliance review and approved regulatory source notes; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1454,18411,"Assess custody, safeguarding, and asset control requirements",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1454 (Task) - Assess custody, safeguarding, and asset control requirements
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1454 (Task): Assess custody, safeguarding, and asset control requirements
+
+Original intent:
+Document any requirements or market expectations for custody arrangements, key management, segregation of client assets, and third-party custody providers.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Document custody, safeguarding, asset-control, wallet, nominee, escrow, and third-party-provider requirements relevant to the local operating model.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints. Also requires: legal/compliance review and approved regulatory source notes; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1453,18406,Outline next-step actions for Saudi entry execution,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1453 (Task) - Outline next-step actions for Saudi entry execution
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1453 (Task): Outline next-step actions for Saudi entry execution
+
+Original intent:
+Translate the memo findings into concrete follow-up actions, such as partner outreach, diligence, regulatory validation, and internal decision points.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate findings into a practical action plan with decision recommendation, owners, 30/60/90-day next steps, required approvals, and unresolved questions.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1452,18405,Identify licensing and approval pathways for Qatar/QFC entry,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1452 (Task) - Identify licensing and approval pathways for Qatar/QFC entry
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1452 (Task): Identify licensing and approval pathways for Qatar/QFC entry
+
+Original intent:
+Determine the registrations, approvals, permissions, and timeline required to operate in Qatar and the Qatar Financial Centre, and note any gating dependencies.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map the likely regulatory perimeter, required licenses or exemptions, allowed activities, prohibited activities, regulator touchpoints, and minimum evidence needed before making an entry recommendation.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Separate confirmed requirements from assumptions. Flag legal uncertainties, source every regulatory claim internally, and identify where external counsel or regulator clarification is needed.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1451,18404,Evaluate local presence and partner-led operating options,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1451 (Task) - Evaluate local presence and partner-led operating options
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1451 (Task): Evaluate local presence and partner-led operating options
+
+Original intent:
+Assess whether a local entity, branch, or partner-led model is needed for market entry and identify suitable operating structures for the Qatar/QFC context.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Compare direct local presence, partner-led presence, regulated affiliate, representative office, outsourced operating model, and phased-entry options, with pros/cons and decision criteria.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1450,18403,Assess Qatar and QFC regulatory perimeter for digital assets,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:07 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1450 (Task) - Assess Qatar and QFC regulatory perimeter for digital assets
+- Uploaded parent: TGTM-186 - Create Qatar/QFC entry memo (Yes)
+- Parent Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo > TGTM-1450 (Task): Assess Qatar and QFC regulatory perimeter for digital assets
+
+Original intent:
+Map the activities, products, and services that fall inside or outside the Qatar and QFC digital assets framework, including any restrictions relevant to market entry.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-186 - Create Qatar/QFC entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Separate confirmed requirements from assumptions. Flag legal uncertainties, source every regulatory claim internally, and identify where external counsel or regulator clarification is needed.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints. Also requires: legal/compliance review and approved regulatory source notes.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.",10330,TGTM-186,Create Qatar/QFC entry memo
+Task,TGTM-1449,18400,Recommend a Saudi market-entry model and partnership approach,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1449 (Task) - Recommend a Saudi market-entry model and partnership approach
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1449 (Task): Recommend a Saudi market-entry model and partnership approach
+
+Original intent:
+Define the preferred entry thesis for Saudi Arabia, including the role of local partners, target customer segments, and sequencing for launch.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Convert the research into a decision memo with recommendation, strategic rationale, entry model, expected upside, key risks, required approvals, and immediate next actions.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Use a decision-memo format: executive summary, recommendation, evidence, market context, constraints, partner route, risks, assumptions, unresolved questions, and 30/60/90-day next actions.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1448,18399,"Document key risks, constraints, and dependencies for Saudi entry",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1448 (Task) - Document key risks, constraints, and dependencies for Saudi entry
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1448 (Task): Document key risks, constraints, and dependencies for Saudi entry
+
+Original intent:
+Summarize regulatory, commercial, operational, and partnership risks that could affect a Saudi market-entry plan, along with key dependencies to resolve.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a risk and dependency register covering regulatory uncertainty, partner dependency, licensing timeline, market demand, compliance readiness, operational cost, and reputational exposure.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1447,18397,Develop a recommended ADGM entry thesis and decision memo,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1447 (Task) - Develop a recommended ADGM entry thesis and decision memo
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1447 (Task): Develop a recommended ADGM entry thesis and decision memo
+
+Original intent:
+Synthesize findings into a clear recommendation on whether ADGM is attractive for institutional/wealth and digital securities partnerships, including rationale and next steps.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Convert the research into a decision memo with recommendation, strategic rationale, entry model, expected upside, key risks, required approvals, and immediate next actions.
+
+Expected deliverable:
+A concise decision memo with recommendation, rationale, evidence, risks, dependencies, and next actions.
+
+Implementation notes:
+Use a decision-memo format: executive summary, recommendation, evidence, market context, constraints, partner route, risks, assumptions, unresolved questions, and 30/60/90-day next actions.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1446,18395,"Assess key risks, constraints, and dependencies for ADGM entry",Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1446 (Task) - Assess key risks, constraints, and dependencies for ADGM entry
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1446 (Task): Assess key risks, constraints, and dependencies for ADGM entry
+
+Original intent:
+Document the main commercial, regulatory, operational, and reputational risks that could affect entry into ADGM and the assumptions that underpin the recommendation.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Build a risk and dependency register covering regulatory uncertainty, partner dependency, licensing timeline, market demand, compliance readiness, operational cost, and reputational exposure.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1445,18386,Identify suitable partnership entry pathways and operating models,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1445 (Task) - Identify suitable partnership entry pathways and operating models
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1445 (Task): Identify suitable partnership entry pathways and operating models
+
+Original intent:
+Define the most viable routes to market in ADGM, such as referral, distribution, joint venture, outsourced service, or strategic alliance models.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Break the work into a concise research-and-execution brief for Create Abu Dhabi/ADGM entry memo, covering facts gathered, analysis, recommendation, deliverable format, dependencies, and approval path.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1444,18385,Analyze competitive and comparable market entrants in Saudi Arabia,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1444 (Task) - Analyze competitive and comparable market entrants in Saudi Arabia
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1444 (Task): Analyze competitive and comparable market entrants in Saudi Arabia
+
+Original intent:
+Review how similar firms have entered the Saudi market, including partner structures, positioning, and any observed go-to-market patterns.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a competitor and comparable-market benchmark covering regulated platforms, digital securities players, investment marketplaces, fund platforms, tokenization providers, and regional financial hubs.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks. Also requires: market research, comparable entrants, investor/developer demand signals, and competitor benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1443,18387,Map the Saudi developer and fund ecosystem,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1443 (Task) - Map the Saudi developer and fund ecosystem
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1443 (Task): Map the Saudi developer and fund ecosystem
+
+Original intent:
+Identify the key developer-focused firms, funds, and ecosystem participants that could serve as launch partners or distribution channels in Saudi Arabia.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Break the work into a concise research-and-execution brief for Create Saudi entry memo, covering facts gathered, analysis, recommendation, deliverable format, dependencies, and approval path.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1442,18388,Assess Saudi regulatory entry pathways for partner-led market access,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1442 (Task) - Assess Saudi regulatory entry pathways for partner-led market access
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1442 (Task): Assess Saudi regulatory entry pathways for partner-led market access
+
+Original intent:
+Review the licensing, sandbox, and local participation options that support a partner-led entry model for Saudi Arabia, including any constraints for foreign-led direct entry.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Separate confirmed requirements from assumptions. Flag legal uncertainties, source every regulatory claim internally, and identify where external counsel or regulator clarification is needed.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks. Also requires: legal/compliance review and approved regulatory source notes; partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1441,18384,Identify local licensed and sandbox participants relevant to Saudi expansion,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1441 (Task) - Identify local licensed and sandbox participants relevant to Saudi expansion
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1441 (Task): Identify local licensed and sandbox participants relevant to Saudi expansion
+
+Original intent:
+Compile a shortlist of Saudi-based licensed entities, sandbox participants, and regulated partners that align with the target market-entry approach.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Break the work into a concise research-and-execution brief for Create Saudi entry memo, covering facts gathered, analysis, recommendation, deliverable format, dependencies, and approval path.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1440,18383,Evaluate Saudi market fit for a developer/fund focus,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1440 (Task) - Evaluate Saudi market fit for a developer/fund focus
+- Uploaded parent: TGTM-185 - Create Saudi entry memo (Yes)
+- Parent Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo > TGTM-1440 (Task): Evaluate Saudi market fit for a developer/fund focus
+
+Original intent:
+Assess demand, customer segments, and use cases in Saudi Arabia to confirm whether a developer and fund-centric positioning is the right entry angle.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-185 - Create Saudi entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Break the work into a concise research-and-execution brief for Create Saudi entry memo, covering facts gathered, analysis, recommendation, deliverable format, dependencies, and approval path.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10329,TGTM-185,Create Saudi entry memo
+Task,TGTM-1439,18378,Analyze market attractiveness and demand drivers for institutional and wealth segments,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1439 (Task) - Analyze market attractiveness and demand drivers for institutional and wealth segments
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1439 (Task): Analyze market attractiveness and demand drivers for institutional and wealth segments
+
+Original intent:
+Estimate the attractiveness of ADGM for institutional and wealth use cases by reviewing client demand, capital flows, regional positioning, and fit for the target offering.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Estimate market attractiveness using investor/developer demand, wealth concentration, real-estate development activity, regulatory openness, adoption readiness, and comparable digital-investment activity.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions. Also requires: market research, comparable entrants, investor/developer demand signals, and competitor benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1438,18376,Evaluate the digital securities ecosystem and adoption potential in ADGM,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1438 (Task) - Evaluate the digital securities ecosystem and adoption potential in ADGM
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1438 (Task): Evaluate the digital securities ecosystem and adoption potential in ADGM
+
+Original intent:
+Assess the maturity of digital securities activity in ADGM, including market infrastructure, tokenization interest, service providers, and indicators of partnership opportunity.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Break the work into a concise research-and-execution brief for Create Abu Dhabi/ADGM entry memo, covering facts gathered, analysis, recommendation, deliverable format, dependencies, and approval path.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1437,18377,Map the institutional and wealth management partner landscape in Abu Dhabi/ADGM,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1437 (Task) - Map the institutional and wealth management partner landscape in Abu Dhabi/ADGM
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1437 (Task): Map the institutional and wealth management partner landscape in Abu Dhabi/ADGM
+
+Original intent:
+Identify banks, asset managers, family offices, private wealth firms, custodians, and other priority counterparties that could support a GCC entry strategy in ADGM.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Research and categorize relevant banks, brokerages, wealth firms, fintechs, real-estate developers, fund managers, advisors, consultants, and ecosystem bodies by market.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1436,18375,Benchmark competing regional financial centers and partnership hubs,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1436 (Task) - Benchmark competing regional financial centers and partnership hubs
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1436 (Task): Benchmark competing regional financial centers and partnership hubs
+
+Original intent:
+Compare ADGM with other relevant GCC and international hubs to identify differentiators, constraints, and why ADGM may or may not be the preferred entry point.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Create a competitor and comparable-market benchmark covering regulated platforms, digital securities players, investment marketplaces, fund platforms, tokenization providers, and regional financial hubs.
+
+Expected deliverable:
+A practical work product that can be reviewed, approved, and used by the GTM, legal/compliance, product, and partnership teams.
+
+Implementation notes:
+Keep the output practical and execution-ready. Separate facts, assumptions, recommendation, owner, next step, and evidence required for approval.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions. Also requires: partner target list, ecosystem map, contact ownership, and partner qualification criteria; market research, comparable entrants, investor/developer demand signals, and competitor benchmarks.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-1435,18373,Assess ADGM regulatory and licensing requirements for partnership entry,Regional Expansion,Medium,To Do,,01/Jul/26 9:50 AM,01/Jul/26 3:08 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-1435 (Task) - Assess ADGM regulatory and licensing requirements for partnership entry
+- Uploaded parent: TGTM-184 - Create Abu Dhabi/ADGM entry memo (Yes)
+- Parent Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo > TGTM-1435 (Task): Assess ADGM regulatory and licensing requirements for partnership entry
+
+Original intent:
+Review the ADGM legal and regulatory framework relevant to institutional, wealth, and digital securities activities, including any licensing, approval, or structuring requirements that would affect a partnership-led market entry.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-184 - Create Abu Dhabi/ADGM entry memo. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Map which campaign types require legal, compliance, regulator, or partner review, and create a review checklist that teams must complete before launch.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions. Also requires: legal/compliance review and approved regulatory source notes; partner target list, ecosystem map, contact ownership, and partner qualification criteria; product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Regulatory or compliance-sensitive statements are flagged as requiring legal/compliance validation before external use.
+- Partner or stakeholder outputs include owner, priority, rationale, status, and next engagement step.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10328,TGTM-184,Create Abu Dhabi/ADGM entry memo
+Task,TGTM-639,16781,Define jurisdiction module administration and lifecycle rules,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-639 (Task) - Define jurisdiction module administration and lifecycle rules
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-639 (Task): Define jurisdiction module administration and lifecycle rules
+
+Original intent:
+Document how jurisdiction modules are enabled, disabled, versioned, and maintained over time, including release and change management expectations.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-638,16779,Define jurisdiction selection and switching rules,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-638 (Task) - Define jurisdiction selection and switching rules
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-638 (Task): Define jurisdiction selection and switching rules
+
+Original intent:
+Specify how users choose, change, and persist a jurisdiction context across the product, including default behavior and guardrails when multiple jurisdiction modules are available.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A usable matrix or reference guide that teams can apply directly during campaign, sales, and partner execution.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-637,16777,Define Kuwait jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-637 (Task) - Define Kuwait jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-637 (Task): Define Kuwait jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for Kuwait.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-636,16774,Define Bahrain jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-636 (Task) - Define Bahrain jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-636 (Task): Define Bahrain jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for Bahrain.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-635,16773,Define Oman jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-635 (Task) - Define Oman jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-635 (Task): Define Oman jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for Oman.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-631,16761,Define the common jurisdiction module framework and shared requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-631 (Task) - Define the common jurisdiction module framework and shared requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-631 (Task): Define the common jurisdiction module framework and shared requirements
+
+Original intent:
+Specify the baseline capabilities every jurisdiction module must support, including configuration, data model, validation, and how jurisdiction-specific rules are extended from the common framework.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-630,16762,Define Saudi jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-630 (Task) - Define Saudi jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-630 (Task): Define Saudi jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for Saudi Arabia.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-629,16759,Define Qatar jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-629 (Task) - Define Qatar jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-629 (Task): Define Qatar jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for Qatar.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-628,16758,Define ADGM jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-628 (Task) - Define ADGM jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-628 (Task): Define ADGM jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for ADGM.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Task,TGTM-627,16757,Define Dubai jurisdiction module requirements,Regional Expansion,Medium,To Do,,01/Jul/26 8:36 AM,01/Jul/26 4:23 PM,,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-627 (Task) - Define Dubai jurisdiction module requirements
+- Uploaded parent: TGTM-80 - Define jurisdiction module requirements (Yes)
+- Parent Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define jurisdiction module requirements > TGTM-80 (Story): Define jurisdiction module requirements > TGTM-627 (Task): Define Dubai jurisdiction module requirements
+
+Original intent:
+Document the future module scope, configuration needs, and any jurisdiction-specific rules for Dubai.
+
+How we are doing this:
+Execute this Task as a component of the parent Story: TGTM-80 - Define jurisdiction module requirements. Use the parent Story objective as the decision frame, produce a concrete artifact, and make the output easy to roll up into the Story deliverable.
+
+Preliminary solution:
+Translate market requirements into configurable product rules for jurisdiction selection, user eligibility, disclaimers, workflow controls, content restrictions, lifecycle events, administration, and audit logs.
+
+Expected deliverable:
+A requirements specification with functional rules, configuration logic, dependencies, and acceptance criteria.
+
+Implementation notes:
+Frame requirements as configurable platform rules. Specify user-facing behavior, admin behavior, data fields, workflow triggers, audit events, and edge cases.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions. Also requires: product/platform architecture assumptions, white-label roadmap, jurisdiction rules, and operations requirements.
+
+Acceptance criteria:
+- Output directly addresses the task summary and parent Story objective.
+- Findings are organized into clear facts, assumptions, recommendation, and next actions.
+- Dependencies, required inputs, and approval needs are documented.
+- Deliverable is specific enough for the next GTM, product, legal/compliance, or partnership action.
+- Parent Story can consume the output without needing major rework.
+- Product requirements include functional behavior, configuration rules, edge cases, and acceptance test conditions.",10224,TGTM-80,Define jurisdiction module requirements
+Story,TGTM-191,10335,Build regional partner pipeline,Regional Expansion,Medium,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:55 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-191 (Story) - Build regional partner pipeline
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-191 - Build regional partner pipeline
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-191 (Story): Build regional partner pipeline
+
+Original intent:
+Identify partner-led market entry candidates for ADGM, Saudi, Qatar, and Bahrain.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: identify, qualify, prioritize, and activate partners that can support market entry across ADGM, Saudi Arabia, Qatar/QFC, and Bahrain.
+
+Preliminary solution:
+Create a single partner operating system: a market-by-market partner tracker, scoring criteria, diligence checklist, outreach messaging, co-branding rules, and decision checkpoints for partner-led entry.
+
+Expected deliverable:
+Partner pipeline tracker, qualification model, outreach package, diligence checklist, and prioritized partner shortlist by market.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Target market list, ICP definitions, regulatory constraints, ecosystem stakeholder lists, partnership categories, existing founder network, and compliance guardrails.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-190,10334,Build GCC jurisdiction claim guardrails,Regional Expansion,Medium,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:55 PM,30/Dec/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-190 (Story) - Build GCC jurisdiction claim guardrails
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-190 - Build GCC jurisdiction claim guardrails
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-190 (Story): Build GCC jurisdiction claim guardrails
+
+Original intent:
+Create regional marketing rules for each target market.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: define what Blocks Estate can and cannot say in each GCC market before launching marketing, sales, PR, partner, or investor-facing campaigns.
+
+Preliminary solution:
+Build a jurisdiction-by-jurisdiction claims matrix covering allowed claims, restricted language, required disclaimers, prohibited statements, approval workflow, and partner-led co-branding constraints.
+
+Expected deliverable:
+GCC claims guardrail matrix, prohibited-claims examples, mandatory disclaimer library, and campaign approval workflow.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Legal/regulatory review, compliance requirements, market-entry readiness status, product capability boundaries, investor-risk disclosures, and partner distribution rules.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-189,10333,Create Kuwait defer memo,Regional Expansion,Low,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:55 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-189 (Story) - Create Kuwait defer memo
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-189 - Create Kuwait defer memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-189 (Story): Create Kuwait defer memo
+
+Original intent:
+Document why Kuwait is deferred due to restrictive virtual asset stance.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: document why Kuwait should be deferred now, what constraints drive the decision, and what future triggers would justify revisiting the market.
+
+Preliminary solution:
+Create a decision memo that clearly separates current market attractiveness, regulatory restrictions, virtual-asset limitations, business constraints, and revisit criteria.
+
+Expected deliverable:
+Kuwait defer memo with rationale, constraint analysis, future entry triggers, monitoring cadence, and stakeholder-facing summary.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Kuwait regulatory guidance, virtual-asset restrictions, local market data, partner availability, competitive context, and internal expansion priorities.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-188,10332,Create Oman monitoring memo,Regional Expansion,Low,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:55 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-188 (Story) - Create Oman monitoring memo
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-188 - Create Oman monitoring memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-188 (Story): Create Oman monitoring memo
+
+Original intent:
+Monitor emerging virtual-asset framework and identify pilot requirements.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: keep Oman in a structured monitoring lane while defining what pilot scope, compliance conditions, and stakeholder readiness would be needed before entry.
+
+Preliminary solution:
+Create a monitoring memo with regulatory notes, stakeholder map, pilot licensing assumptions, operating scope, compliance requirements, risks, and next actions.
+
+Expected deliverable:
+Oman monitoring memo, pilot-readiness checklist, stakeholder map, and regulatory monitoring log.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Oman regulatory updates, fintech ecosystem contacts, pilot use cases, compliance obligations, local stakeholder feedback, and regional prioritization criteria.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-187,10331,Create Bahrain entry memo,Regional Expansion,Low,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:55 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-187 (Story) - Create Bahrain entry memo
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-187 - Create Bahrain entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-187 (Story): Create Bahrain entry memo
+
+Original intent:
+Assess Bahrain fintech-friendly but smaller market.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: assess whether Bahrain should be prioritized and define the best entry positioning, partner-led route, and immediate execution steps.
+
+Preliminary solution:
+Create a Bahrain entry memo covering market size, fintech opportunity, regulatory requirements, competitive landscape, target segments, partner pathways, risks, and recommended next steps.
+
+Expected deliverable:
+Bahrain entry decision memo with market thesis, entry model, priority stakeholders, risk register, and recommended follow-up plan.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Bahrain fintech ecosystem data, regulator requirements, CBB/licensing considerations, partner options, local competitors, and investor/developer use-case demand.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-186,10330,Create Qatar/QFC entry memo,Regional Expansion,Low,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:55 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-186 (Story) - Create Qatar/QFC entry memo
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-186 - Create Qatar/QFC entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-186 (Story): Create Qatar/QFC entry memo
+
+Original intent:
+Assess Qatar and QFC digital assets framework readiness.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: evaluate whether Qatar/QFC is a viable expansion path and identify the regulatory, custody, AML/KYC, local presence, and partner-led requirements for entry.
+
+Preliminary solution:
+Create a Qatar/QFC entry memo with regulatory perimeter analysis, licensing pathways, custody/safeguarding requirements, AML/KYC obligations, tax/governance notes, local-presence options, and risks.
+
+Expected deliverable:
+Qatar/QFC entry memo with recommended entry model, compliance checklist, partner thesis, and execution next steps.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+QFC and Qatar regulatory guidance, digital-asset perimeter analysis, AML/KYC standards, custody requirements, local partner options, and distribution constraints.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-185,10329,Create Saudi entry memo,Regional Expansion,Medium,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:54 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-185 (Story) - Create Saudi entry memo
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-185 - Create Saudi entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-185 (Story): Create Saudi entry memo
+
+Original intent:
+Assess Saudi as a partner-led developer/fund focus market with local licensed/sandbox participants.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: evaluate Saudi Arabia as a high-priority regional expansion market for developer, fund, and institutional distribution use cases.
+
+Preliminary solution:
+Create a Saudi entry memo that connects market fit, regulatory pathways, local licensed/sandbox participants, developer/fund ecosystem, competition, partner approach, constraints, and next-step actions.
+
+Expected deliverable:
+Saudi entry memo with market thesis, partner-led access model, risk/dependency register, and execution roadmap.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Saudi fintech and capital-markets landscape, regulatory pathways, licensed participants, sandbox programs, developer/fund ecosystem data, potential local partners, and competitive benchmarks.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-184,10328,Create Abu Dhabi/ADGM entry memo,Regional Expansion,Medium,To Do,,30/Jun/26 9:45 AM,30/Jun/26 1:54 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-184 (Story) - Create Abu Dhabi/ADGM entry memo
+- Uploaded parent: TGTM-19 - Create GCC-ready regional expansion playbooks (Yes)
+- Story context: TGTM-184 - Create Abu Dhabi/ADGM entry memo
+- Grandparent / visible Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks > TGTM-184 (Story): Create Abu Dhabi/ADGM entry memo
+
+Original intent:
+Assess ADGM as an institutional/wealth and digital securities partnership market.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: assess ADGM as a strategic entry or expansion hub for digital securities, institutional distribution, wealth management partnerships, and regulated regional credibility.
+
+Preliminary solution:
+Create an ADGM entry memo that combines licensing requirements, institutional demand, digital-securities ecosystem maturity, partner landscape, competing hub benchmarks, risk constraints, and an entry thesis.
+
+Expected deliverable:
+ADGM decision memo with regulatory path, partnership map, market-demand thesis, risk register, and recommended entry model.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+ADGM regulatory framework, FSRA guidance, digital securities ecosystem data, Abu Dhabi wealth/institutional partners, competitors, comparable regional hubs, and platform readiness assumptions.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10163,TGTM-19,Create GCC-ready regional expansion playbooks
+Story,TGTM-80,10224,Define jurisdiction module requirements,Regional Expansion,Low,To Do,,30/Jun/26 9:42 AM,30/Jun/26 1:07 PM,30/Dec/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-80 (Story) - Define jurisdiction module requirements
+- Uploaded parent: TGTM-7 - Define white-label and enterprise infrastructure roadmap (No - parent is outside this extract)
+- Story context: TGTM-80 - Define jurisdiction module requirements
+- Hierarchy path: TGTM-7 (External/Not in extract): Define white-label and enterprise infrastructure roadmap > TGTM-80 (Story): Define jurisdiction module requirements
+- Note: the uploaded parent is not included in this extract; the link is preserved exactly as provided.
+
+Original intent:
+Specify future modules for Dubai, ADGM, Saudi, Qatar, Bahrain, Oman, and Kuwait.
+
+How we are doing this:
+Run this workstream as a structured Regional Expansion package. Start from the parent strategy, gather market/regulatory/partner evidence, organize it into a comparable memo or operating artifact, then turn the findings into a recommendation, execution steps, risks, and approval needs. Objective: translate regional expansion strategy into product/platform requirements that allow Blocks Estate to support jurisdiction-specific rules, disclosures, workflows, and lifecycle controls.
+
+Preliminary solution:
+Define a modular jurisdiction framework with common shared requirements plus Dubai, ADGM, Qatar, Saudi, Oman, Bahrain, and Kuwait market-specific configuration rules.
+
+Expected deliverable:
+Jurisdiction module requirements specification covering market selection, switching, administration, lifecycle rules, compliance controls, content disclaimers, and operational configuration.
+
+Implementation notes:
+Use a consistent workstream format: objective, current recommendation, evidence, required approvals, risks, owner, due date, and next decision checkpoint. Link outputs to the relevant campaign, product, compliance, and partnership workstreams.
+
+Dependencies / inputs:
+Regional market memos, compliance guardrails, product roadmap, legal constraints, investor onboarding requirements, jurisdiction-specific disclosure needs, and white-label/enterprise architecture assumptions.
+
+Acceptance criteria:
+- Story output is complete and aligned to the parent expansion strategy.
+- Recommendation, rationale, risks, dependencies, and next actions are documented.
+- Relevant Tasks under this Story are reflected in the final workstream output.
+- Open assumptions and required approvals are clearly marked.
+- Deliverable is ready for founder/leadership review and can be used by downstream GTM teams.",10151,TGTM-7,Define white-label and enterprise infrastructure roadmap
+Epic,TGTM-19,10163,Create GCC-ready regional expansion playbooks,Regional Expansion,Medium,To Do,,30/Jun/26 9:25 AM,01/Jul/26 1:53 PM,30/Jun/27 12:00 AM,"Expanded execution description
+
+Hierarchy / linkage:
+- Issue: TGTM-19 (Epic) - Create GCC-ready regional expansion playbooks
+- Uploaded parent: None visible in this extract
+- Epic context: TGTM-19 - Create GCC-ready regional expansion playbooks
+- Hierarchy path: TGTM-19 (Epic): Create GCC-ready regional expansion playbooks
+
+Original intent:
+Develop market-entry playbooks for ADGM/Abu Dhabi, Saudi, Qatar, Bahrain, Oman, and Kuwait, based on readiness and partner-led pathways.
+
+How we are doing this:
+Coordinate all Regional Expansion workstreams into one GCC-ready playbook suite. Standardize market-entry memos, jurisdiction claim guardrails, partner pipeline methods, and jurisdiction module requirements so leadership can compare markets consistently and execute with legal/compliance discipline.
+
+Preliminary solution:
+Build a regional expansion operating pack that covers ADGM, Saudi Arabia, Qatar/QFC, Bahrain, Oman, Kuwait, and supporting jurisdiction-module requirements. The pack should classify each market as launch-ready, partner-led, monitor, or defer; then connect that recommendation to GTM messaging, partner strategy, product configuration, and compliance review.
+
+Expected deliverable:
+A complete GCC regional expansion playbook suite, including market-entry memos, jurisdiction guardrails, partner pipeline, and product/platform jurisdiction requirements.
+
+Implementation notes:
+Maintain a single source of truth for regional expansion decisions. Each market memo should use the same structure so leadership can compare markets consistently and decide where to launch, monitor, partner, or defer.
+
+Dependencies / inputs:
+Inputs from all market-entry memos, legal/compliance review, product/platform readiness, partner research, claims guardrails, market attractiveness analysis, and leadership prioritization decisions.
+
+Acceptance criteria:
+- All regional expansion workstreams have complete, comparable outputs.
+- Each target market has a clear recommendation: launch, partner-led entry, monitor, or defer.
+- Legal/compliance-sensitive claims and market-entry assumptions are clearly flagged for review.
+- Partner, product, and GTM dependencies are documented with owners and next actions.
+- Leadership can use the playbook to make market prioritization decisions.",,,

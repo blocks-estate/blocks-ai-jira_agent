@@ -1,0 +1,426 @@
+openapi: 3.1.0
+info:
+  title: Positioning & Messaging API
+  description: >
+    REST API for the Positioning & Messaging domain. Manages category
+    positioning and messaging architecture — competitor differentiation
+    matrix, narrative spine, messaging themes, positioning guardrails, and
+    proof point evidence pillars. Supports the finalize category positioning
+    and messaging architecture (TGTM-2) workstream.
+  version: 1.0.0
+  contact:
+    name: GTM Analytics Team
+    email: gtm-analytics@blocks.io
+  x-application-name: GTM Analytics & Reporting Dashboard
+  x-domain-epic: TGTM-2
+
+servers:
+  - url: http://localhost:3001/api
+    description: Local development server
+  - url: https://api.blocks.io/gtm/v1
+    description: Production server (future)
+
+paths:
+  # ─── Differentiation Matrix ───────────────────────────────────────────
+  /positioning/differentiation-matrix:
+    get:
+      tags:
+        - Positioning & Messaging
+        - Differentiation
+      summary: Get competitor differentiation matrix
+      description: >
+        Returns the competitor-by-competitor differentiation matrix comparing
+        Blocks against PRYPCO Mint, Stake, SmartCrowd, Deed, Blocksquare,
+        Bayut, and Property Finder.
+      operationId: getPositioningDifferentiationMatrix
+      responses:
+        '200':
+          description: Differentiation matrix entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DifferentiationEntryDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Positioning & Messaging
+        - Differentiation
+      summary: Create a differentiation matrix entry
+      operationId: createPositioningDifferentiationEntry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateDifferentiationEntryRequestDto'
+      responses:
+        '201':
+          description: Entry created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DifferentiationEntryDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Positioning Themes ───────────────────────────────────────────────
+  /positioning/themes:
+    get:
+      tags:
+        - Positioning & Messaging
+        - Themes
+      summary: Get positioning themes
+      operationId: getPositioningThemes
+      responses:
+        '200':
+          description: Positioning themes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PositioningThemeDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Positioning & Messaging
+        - Themes
+      summary: Create a positioning theme
+      operationId: createPositioningTheme
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePositioningThemeRequestDto'
+      responses:
+        '201':
+          description: Theme created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositioningThemeDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Messaging Guide ──────────────────────────────────────────────────
+  /positioning/messaging-guide:
+    get:
+      tags:
+        - Positioning & Messaging
+        - Messaging
+      summary: Get messaging guide blocks
+      operationId: getPositioningMessagingGuide
+      responses:
+        '200':
+          description: Message blocks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MessageBlockDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Positioning & Messaging
+        - Messaging
+      summary: Create a message block
+      operationId: createPositioningMessageBlock
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateMessageBlockRequestDto'
+      responses:
+        '201':
+          description: Message block created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageBlockDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── Guardrails ───────────────────────────────────────────────────────
+  /positioning/guardrails:
+    get:
+      tags:
+        - Positioning & Messaging
+        - Guardrails
+      summary: Get positioning guardrails
+      operationId: getPositioningGuardrails
+      responses:
+        '200':
+          description: Positioning guardrails
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PositioningGuardrailDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Positioning & Messaging
+        - Guardrails
+      summary: Create a positioning guardrail
+      operationId: createPositioningGuardrail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePositioningGuardrailRequestDto'
+      responses:
+        '201':
+          description: Guardrail created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositioningGuardrailDto'
+        '400':
+          $ref: './common.openapi.yaml#/components/responses/BadRequest'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+  # ─── KPIs ─────────────────────────────────────────────────────────────
+  /positioning/kpis:
+    get:
+      tags:
+        - Positioning & Messaging
+        - KPIs
+      summary: Retrieve positioning and messaging KPI metrics
+      operationId: getPositioningMessagingKpis
+      parameters:
+        - $ref: './common.openapi.yaml#/components/parameters/PeriodFilter'
+      responses:
+        '200':
+          description: Positioning and messaging KPIs
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositioningMessagingKpiSetDto'
+        '500':
+          $ref: './common.openapi.yaml#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    # ─── Enums ──────────────────────────────────────────────────────────
+    MessageBlockTypeEnum:
+      type: string
+      enum:
+        - ten-second
+        - thirty-second
+        - headline
+        - sales-bullet
+        - founder-narrative
+        - investor-variant
+        - developer-variant
+
+    GuardrailTypeEnum:
+      type: string
+      enum:
+        - crypto-comparison
+        - trading-app-comparison
+        - self-serve-saas
+        - regulatory-claim
+        - liquidity-claim
+
+    # ─── Differentiation ────────────────────────────────────────────────
+    DifferentiationEntryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        competitorName:
+          type: string
+          example: PRYPCO
+        category:
+          type: string
+          example: Platform
+        blocksAdvantage:
+          type: string
+          example: Managed marketplace with curated opportunities
+        competitorWeakness:
+          type: string
+        evidenceSource:
+          type: string
+        proofPoint:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - competitorName
+        - blocksAdvantage
+
+    CreateDifferentiationEntryRequestDto:
+      type: object
+      properties:
+        competitorName:
+          type: string
+        category:
+          type: string
+        blocksAdvantage:
+          type: string
+        competitorWeakness:
+          type: string
+        evidenceSource:
+          type: string
+        proofPoint:
+          type: string
+      required:
+        - competitorName
+        - blocksAdvantage
+
+    # ─── Themes ─────────────────────────────────────────────────────────
+    PositioningThemeDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          example: Managed Access
+        approvedPhrase:
+          type: string
+        proofPoint:
+          type: string
+        usageExample:
+          type: string
+        active:
+          type: boolean
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - name
+        - approvedPhrase
+
+    CreatePositioningThemeRequestDto:
+      type: object
+      properties:
+        name:
+          type: string
+        approvedPhrase:
+          type: string
+        proofPoint:
+          type: string
+        usageExample:
+          type: string
+      required:
+        - name
+        - approvedPhrase
+
+    # ─── Message Blocks ─────────────────────────────────────────────────
+    MessageBlockDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        blockType:
+          $ref: '#/components/schemas/MessageBlockTypeEnum'
+        content:
+          type: string
+        audience:
+          type: string
+        version:
+          type: integer
+        status:
+          type: string
+          enum:
+            - draft
+            - reviewed
+            - approved
+            - superseded
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - blockType
+        - content
+        - status
+
+    CreateMessageBlockRequestDto:
+      type: object
+      properties:
+        blockType:
+          $ref: '#/components/schemas/MessageBlockTypeEnum'
+        content:
+          type: string
+        audience:
+          type: string
+      required:
+        - blockType
+        - content
+
+    # ─── Guardrails ─────────────────────────────────────────────────────
+    PositioningGuardrailDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        guardrailType:
+          $ref: '#/components/schemas/GuardrailTypeEnum'
+        rule:
+          type: string
+          example: Do not compare Blocks to a crypto exchange or trading app
+        rationale:
+          type: string
+        approvedAlternative:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - guardrailType
+        - rule
+
+    CreatePositioningGuardrailRequestDto:
+      type: object
+      properties:
+        guardrailType:
+          $ref: '#/components/schemas/GuardrailTypeEnum'
+        rule:
+          type: string
+        rationale:
+          type: string
+        approvedAlternative:
+          type: string
+      required:
+        - guardrailType
+        - rule
+
+    # ─── KPIs ───────────────────────────────────────────────────────────
+    PositioningMessagingKpiSetDto:
+      type: object
+      properties:
+        '90days':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+        '12months':
+          $ref: './common.openapi.yaml#/components/schemas/KpiPeriodDto'
+      required:
+        - '90days'
+        - '12months'
