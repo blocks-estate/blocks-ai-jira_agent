@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "crm": "CRM / HubSpot",
+      "documentManagement": "Document Management System",
+      "loiTracking": "LOI Tracking System"
+    }
+  },
+  "loiTracking": {
+    "items": [
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000001",
+        "counterpartyName": "Emaar Properties",
+        "counterpartyType": "developer",
+        "stage": "signed",
+        "assetName": "Palm Jumeirah - Villa Collection",
+        "signedDate": "2026-05-15",
+        "expiryDate": "2026-11-15",
+        "commercialNotes": "Exclusive tokenization rights for 12 luxury villas. 3-year partnership framework.",
+        "estimatedValue": 45000000,
+        "owner": "Ahmed Al-Rashid",
+        "nextAction": "Finalize SPV structure and schedule asset valuation",
+        "documentLinks": [
+          {
+            "type": "Contract",
+            "title": "LOI - Emaar Palm Jumeirah Development",
+            "url": "https://docs.blocks.io/loi/emaar-pj-villas",
+            "uploadedAt": "2026-05-15T14:00:00Z"
+          },
+          {
+            "type": "Due Diligence",
+            "title": "Emaar Financial Health Report",
+            "url": "https://docs.blocks.io/diligence/emaar-financial",
+            "uploadedAt": "2026-05-20T10:00:00Z"
+          }
+        ],
+        "createdAt": "2026-04-01T09:00:00Z",
+        "updatedAt": "2026-06-28T11:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000002",
+        "counterpartyName": "Nakheel Properties",
+        "counterpartyType": "developer",
+        "stage": "negotiation",
+        "assetName": "The Palm Jebel Ali - Phase 1",
+        "signedDate": null,
+        "expiryDate": null,
+        "commercialNotes": "Under exclusivity negotiation for 8 waterfront developments. Legal teams reviewing terms.",
+        "estimatedValue": 85000000,
+        "owner": "Ahmed Al-Rashid",
+        "nextAction": "Counterparty legal team to return redlined LOI by July 15",
+        "documentLinks": [
+          {
+            "type": "Proposal",
+            "title": "Nakheel Proposal Deck v3",
+            "url": "https://docs.blocks.io/loi/nakheel-proposal",
+            "uploadedAt": "2026-06-25T15:00:00Z"
+          }
+        ],
+        "createdAt": "2026-05-10T10:00:00Z",
+        "updatedAt": "2026-06-30T09:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000003",
+        "counterpartyName": "DAMAC Properties",
+        "counterpartyType": "developer",
+        "stage": "under-review",
+        "assetName": "DAMAC Towers - Portfolio Tokenization",
+        "signedDate": null,
+        "expiryDate": null,
+        "commercialNotes": "Initial proposal under review by DAMAC board. Interested in portfolio-wide approach.",
+        "estimatedValue": 120000000,
+        "owner": "Layla Hassan",
+        "nextAction": "Prepare board presentation and financial modeling for DAMAC review meeting",
+        "documentLinks": [],
+        "createdAt": "2026-06-15T08:00:00Z",
+        "updatedAt": "2026-06-22T14:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000004",
+        "counterpartyName": "Al-Futtaim Group Real Estate",
+        "counterpartyType": "developer",
+        "stage": "sent",
+        "assetName": "Festival City - Mixed Use Portfolio",
+        "signedDate": null,
+        "expiryDate": null,
+        "commercialNotes": "Proposal sent to Al-Futtaim investment committee. Awaiting initial response.",
+        "estimatedValue": 65000000,
+        "owner": "Ahmed Al-Rashid",
+        "nextAction": "Follow-up call scheduled July 10",
+        "documentLinks": [
+          {
+            "type": "Proposal",
+            "title": "Al-Futtaim Tokenization Proposal",
+            "url": "https://docs.blocks.io/loi/alfuttaim-proposal",
+            "uploadedAt": "2026-06-28T12:00:00Z"
+          }
+        ],
+        "createdAt": "2026-06-20T11:00:00Z",
+        "updatedAt": "2026-06-28T12:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000005",
+        "counterpartyName": "OMNIYAT",
+        "counterpartyType": "developer",
+        "stage": "draft",
+        "assetName": "One at Palm - Ultra Luxury Token",
+        "signedDate": null,
+        "expiryDate": null,
+        "commercialNotes": "Early-stage discussions for ultra-luxury single-asset tokenization. OMNIYAT exploring concept.",
+        "estimatedValue": 250000000,
+        "owner": "Layla Hassan",
+        "nextAction": "Draft preliminary LOI and share concept paper with OMNIYAT CEO",
+        "documentLinks": [],
+        "createdAt": "2026-06-25T09:00:00Z",
+        "updatedAt": "2026-06-25T09:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000006",
+        "counterpartyName": "Savills UAE",
+        "counterpartyType": "partner",
+        "stage": "signed",
+        "assetName": "Strategic Partnership - Valuation & Advisory",
+        "signedDate": "2026-04-20",
+        "expiryDate": "2027-04-20",
+        "commercialNotes": "Preferred valuation partner for all Blocks tokenized assets. Fixed fee schedule agreed.",
+        "estimatedValue": 2500000,
+        "owner": "Sara Al-Mutairi",
+        "nextAction": "Integrate valuation API with platform - due Q3 2026",
+        "documentLinks": [
+          {
+            "type": "Contract",
+            "title": "Savills Partnership Agreement",
+            "url": "https://docs.blocks.io/partners/savills-agreement",
+            "uploadedAt": "2026-04-20T16:00:00Z"
+          }
+        ],
+        "createdAt": "2026-03-01T10:00:00Z",
+        "updatedAt": "2026-05-10T11:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000007",
+        "counterpartyName": "Al Mal Capital",
+        "counterpartyType": "investor",
+        "stage": "expired",
+        "assetName": "Institutional Investment Vehicle",
+        "signedDate": "2026-01-10",
+        "expiryDate": "2026-04-10",
+        "commercialNotes": "LOI expired without conversion. Fund restructuring delayed their participation. Re-engagement possible in Q4.",
+        "estimatedValue": 30000000,
+        "owner": "Khalid Al-Faisal",
+        "nextAction": "Re-engage in Q4 2026 after fund restructuring completes",
+        "documentLinks": [
+          {
+            "type": "Contract",
+            "title": "LOI - Al Mal Capital (Expired)",
+            "url": "https://docs.blocks.io/loi/almal-capital-expired",
+            "uploadedAt": "2026-01-10T14:00:00Z"
+          }
+        ],
+        "createdAt": "2025-12-01T09:00:00Z",
+        "updatedAt": "2026-04-10T17:00:00Z"
+      },
+      {
+        "id": "loi1a2b3c4-1301-4000-8000-000000000008",
+        "counterpartyName": "Property Finder Group",
+        "counterpartyType": "partner",
+        "stage": "not-proceeding",
+        "assetName": "Listing Integration Partnership",
+        "signedDate": null,
+        "expiryDate": null,
+        "commercialNotes": "Discussions terminated. Property Finder pursuing internal tokenization solution.",
+        "estimatedValue": 0,
+        "owner": "Sara Al-Mutairi",
+        "nextAction": "Close record and revisit in 12 months",
+        "documentLinks": [],
+        "createdAt": "2026-02-15T10:00:00Z",
+        "updatedAt": "2026-05-01T09:00:00Z"
+      }
+    ],
+    "totalItems": 8,
+    "totalPages": 1,
+    "currentPage": 1,
+    "pageSize": 20
+  },
+  "loiPipeline": {
+    "totalRecords": 8,
+    "totalEstimatedValue": 572500000,
+    "stageDistribution": [
+      { "id": "draft", "name": "Draft", "count": 1, "value": 250000000, "conversionRate": 0.20 },
+      { "id": "sent", "name": "Sent", "count": 1, "value": 65000000, "conversionRate": 0.35 },
+      { "id": "under-review", "name": "Under Review", "count": 1, "value": 120000000, "conversionRate": 0.45 },
+      { "id": "negotiation", "name": "Negotiation", "count": 1, "value": 85000000, "conversionRate": 0.60 },
+      { "id": "signed", "name": "Signed", "count": 2, "value": 47500000, "conversionRate": 1.0 },
+      { "id": "expired", "name": "Expired", "count": 1, "value": 30000000, "conversionRate": 0.0 },
+      { "id": "not-proceeding", "name": "Not Proceeding", "count": 1, "value": 0, "conversionRate": 0.0 }
+    ],
+    "ownerDistribution": [
+      { "owner": "Ahmed Al-Rashid", "count": 3, "totalValue": 195000000 },
+      { "owner": "Layla Hassan", "count": 2, "totalValue": 370000000 },
+      { "owner": "Sara Al-Mutairi", "count": 2, "totalValue": 2500000 },
+      { "owner": "Khalid Al-Faisal", "count": 1, "totalValue": 30000000 }
+    ],
+    "avgDaysToSign": 45
+  },
+  "loiReporting": {
+    "signedCount": 2,
+    "pendingCount": 4,
+    "expiredCount": 1,
+    "notProceedingCount": 1,
+    "conversionRateSigned": 0.25,
+    "valueByStage": [
+      { "stage": "draft", "count": 1, "totalValue": 250000000 },
+      { "stage": "sent", "count": 1, "totalValue": 65000000 },
+      { "stage": "under-review", "count": 1, "totalValue": 120000000 },
+      { "stage": "negotiation", "count": 1, "totalValue": 85000000 },
+      { "stage": "signed", "count": 2, "totalValue": 47500000 },
+      { "stage": "expired", "count": 1, "totalValue": 30000000 },
+      { "stage": "not-proceeding", "count": 1, "totalValue": 0 }
+    ],
+    "monthlyTrend": {
+      "series": [
+        {
+          "label": "New LOIs",
+          "values": [2, 1, 0, 1, 2, 1, 1],
+          "changePercentage": 0.0
+        },
+        {
+          "label": "Signed LOIs",
+          "values": [0, 1, 0, 0, 0, 0, 1],
+          "changePercentage": 1.0
+        }
+      ],
+      "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+    }
+  },
+  "kpis": {
+    "90days": {
+      "description": "90-day sales ops and CRM dashboard with LOI pipeline velocity, conversion metrics, and partner onboarding tracking.",
+      "metrics": [
+        {
+          "id": "soc-90-active-pipeline",
+          "name": "Active Pipeline Value",
+          "targetRange": "$500M+",
+          "current": 572500000,
+          "target": 500000000,
+          "unit": "USD",
+          "status": "on-track",
+          "sourceSystem": "LOI Tracking System",
+          "owner": "Sales Ops Lead",
+          "refreshCadence": "Weekly",
+          "trend": [350000000, 380000000, 410000000, 450000000, 490000000, 525000000, 572500000],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "soc-90-sign-rate",
+          "name": "LOI Sign Rate",
+          "targetRange": ">30%",
+          "current": 0.25,
+          "target": 0.30,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "LOI Tracking System",
+          "owner": "Sales Ops Lead",
+          "refreshCadence": "Weekly",
+          "trend": [0.20, 0.20, 0.22, 0.22, 0.25, 0.25, 0.25],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "soc-90-avg-cycle",
+          "name": "Average LOI Cycle Time",
+          "targetRange": "<60 days",
+          "current": 45,
+          "target": 60,
+          "unit": "days",
+          "status": "on-track",
+          "sourceSystem": "LOI Tracking System",
+          "owner": "Sales Ops Lead",
+          "refreshCadence": "Weekly",
+          "trend": [75, 70, 62, 58, 52, 48, 45],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic sales ops dashboard with annual LOI targets and partner ecosystem growth.",
+      "metrics": [
+        {
+          "id": "soc-12-total-signed",
+          "name": "Total Signed LOIs (YTD)",
+          "targetRange": "8",
+          "current": 2,
+          "target": 8,
+          "unit": "LOIs",
+          "status": "off-track",
+          "sourceSystem": "LOI Tracking System",
+          "owner": "Sales Ops Lead",
+          "refreshCadence": "Monthly",
+          "trend": [0, 0, 0, 1, 1, 1, 2],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "soc-12-partner-count",
+          "name": "Active Partners",
+          "targetRange": "15",
+          "current": 8,
+          "target": 15,
+          "unit": "partners",
+          "status": "at-risk",
+          "sourceSystem": "CRM / HubSpot",
+          "owner": "Partnerships Lead",
+          "refreshCadence": "Monthly",
+          "trend": [3, 4, 4, 5, 6, 7, 8],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

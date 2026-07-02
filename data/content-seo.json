@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "analytics": "Web Analytics (GA4)",
+      "crm": "CRM / HubSpot",
+      "searchConsole": "Google Search Console",
+      "contentManagement": "Content CMS"
+    }
+  },
+  "performance": {
+    "totalPageViews": 284500,
+    "averageTimeOnPageSeconds": 187,
+    "bounceRate": 0.342,
+    "totalDownloads": 8230,
+    "contentAssistedConversions": 1452,
+    "performanceByCategory": [
+      {
+        "category": "Tokenization Guides",
+        "views": 82300,
+        "downloads": 3150,
+        "conversionContribution": 0.28
+      },
+      {
+        "category": "Market Education",
+        "views": 67100,
+        "downloads": 2280,
+        "conversionContribution": 0.22
+      },
+      {
+        "category": "Platform Documentation",
+        "views": 54800,
+        "downloads": 1540,
+        "conversionContribution": 0.31
+      },
+      {
+        "category": "Investor Resources",
+        "views": 46300,
+        "downloads": 980,
+        "conversionContribution": 0.15
+      },
+      {
+        "category": "Developer Content",
+        "views": 34000,
+        "downloads": 280,
+        "conversionContribution": 0.04
+      }
+    ],
+    "trends": {
+      "series": [
+        {
+          "label": "Page Views",
+          "values": [18500, 20300, 22100, 24500, 26300, 28400, 30100],
+          "changePercentage": 0.12
+        },
+        {
+          "label": "Downloads",
+          "values": [580, 620, 690, 710, 750, 810, 880],
+          "changePercentage": 0.08
+        },
+        {
+          "label": "Assisted Conversions",
+          "values": [95, 108, 120, 135, 142, 155, 168],
+          "changePercentage": 0.14
+        }
+      ],
+      "labels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+    }
+  },
+  "assets": {
+    "items": [
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000001",
+        "title": "What Is Tokenized Real Estate? A Complete Guide",
+        "assetType": "guide",
+        "status": "published",
+        "language": "en-us",
+        "url": "https://blocks.io/guides/tokenized-real-estate",
+        "seoMetadata": {
+          "targetKeywords": ["tokenized real estate", "real estate tokenization guide", "blockchain property investment"],
+          "metaDescription": "Learn how tokenized real estate works, the benefits of fractional property investment, and how Blocks makes it accessible."
+        },
+        "performance": {
+          "views": 45200,
+          "downloads": 1850,
+          "conversions": 210
+        },
+        "createdAt": "2026-01-15T08:00:00Z",
+        "publishedAt": "2026-02-01T10:00:00Z"
+      },
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000002",
+        "title": "دليل الاستثمار العقاري بالرمز الرقمي",
+        "assetType": "bilingual-page",
+        "status": "published",
+        "language": "ar-ae",
+        "sourceAssetId": "c1a2b3c4-0101-4000-8000-000000000001",
+        "url": "https://blocks.io/ar/guides/tokenized-real-estate",
+        "seoMetadata": {
+          "targetKeywords": ["الاستثمار العقاري الرقمي", "التملك الجزئي للعقارات", "توكين العقارات في دبي"],
+          "metaDescription": "تعرف على كيفية عمل التملك الجزئي للعقارات عبر التوكين الرقمي وفوائده"
+        },
+        "performance": {
+          "views": 18300,
+          "downloads": 980,
+          "conversions": 85
+        },
+        "createdAt": "2026-02-20T09:00:00Z",
+        "publishedAt": "2026-03-10T11:00:00Z"
+      },
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000003",
+        "title": "Dubai Real Estate Market: Tokenization Opportunity",
+        "assetType": "blog-post",
+        "status": "published",
+        "language": "en-us",
+        "url": "https://blocks.io/blog/dubai-tokenization-opportunity",
+        "seoMetadata": {
+          "targetKeywords": ["Dubai real estate tokenization", "UAE property investment", "Dubai property market 2026"],
+          "metaDescription": "Explore the Dubai real estate tokenization opportunity and how Blocks is making property investment accessible."
+        },
+        "performance": {
+          "views": 28100,
+          "downloads": 620,
+          "conversions": 95
+        },
+        "createdAt": "2026-03-05T10:00:00Z",
+        "publishedAt": "2026-03-12T14:00:00Z"
+      },
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000004",
+        "title": "Understanding Property Tokenization - Infographic",
+        "assetType": "infographic",
+        "status": "published",
+        "language": "en-us",
+        "url": "https://blocks.io/resources/infographic-tokenization",
+        "seoMetadata": {
+          "targetKeywords": ["property tokenization infographic", "fractional ownership explained"],
+          "metaDescription": "Visual guide to understanding property tokenization and fractional real estate investment."
+        },
+        "performance": {
+          "views": 14200,
+          "downloads": 2100,
+          "conversions": 62
+        },
+        "createdAt": "2026-03-18T12:00:00Z",
+        "publishedAt": "2026-03-25T09:00:00Z"
+      },
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000005",
+        "title": "Platform Walkthrough for First-Time Investors",
+        "assetType": "video",
+        "status": "published",
+        "language": "en-us",
+        "url": "https://blocks.io/videos/investor-walkthrough",
+        "seoMetadata": {
+          "targetKeywords": ["Blocks platform tutorial", "real estate investment platform", "how to invest in tokenized property"],
+          "metaDescription": "Step-by-step walkthrough of the Blocks investment platform for first-time real estate token investors."
+        },
+        "performance": {
+          "views": 8900,
+          "downloads": 0,
+          "conversions": 134
+        },
+        "createdAt": "2026-04-02T11:00:00Z",
+        "publishedAt": "2026-04-10T15:00:00Z"
+      },
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000006",
+        "title": "UAE Regulatory Landscape for Tokenized Assets",
+        "assetType": "guide",
+        "status": "draft",
+        "language": "en-us",
+        "url": null,
+        "seoMetadata": {
+          "targetKeywords": ["UAE tokenization regulations", "SCA digital assets", "Dubai crypto regulation"],
+          "metaDescription": "Overview of the UAE regulatory framework for tokenized real estate assets and investor protections."
+        },
+        "performance": {
+          "views": 0,
+          "downloads": 0,
+          "conversions": 0
+        },
+        "createdAt": "2026-06-20T08:00:00Z"
+      },
+      {
+        "id": "c1a2b3c4-0101-4000-8000-000000000007",
+        "title": "سوق العقارات في دبي: فرصة التوكين الرقمي",
+        "assetType": "bilingual-page",
+        "status": "in-review",
+        "language": "ar-ae",
+        "sourceAssetId": "c1a2b3c4-0101-4000-8000-000000000003",
+        "url": null,
+        "seoMetadata": {
+          "targetKeywords": ["سوق العقارات دبي", "التوكين الرقمي", "الاستثمار العقاري الإمارات"],
+          "metaDescription": "استكشف فرصة التوكين الرقمي في سوق العقارات في دبي"
+        },
+        "performance": {
+          "views": 0,
+          "downloads": 0,
+          "conversions": 0
+        },
+        "createdAt": "2026-06-25T10:00:00Z"
+      }
+    ],
+    "totalItems": 7,
+    "totalPages": 1,
+    "currentPage": 1,
+    "pageSize": 20
+  },
+  "glossary": [
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000001",
+      "termEn": "Tokenization",
+      "termAr": "التوكين",
+      "definitionEn": "The process of converting ownership rights in a real-world asset into digital tokens on a blockchain.",
+      "definitionAr": "عملية تحويل حقوق الملكية في أصل حقيقي إلى رموز رقمية على blockchain",
+      "category": "Technology",
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000002",
+      "termEn": "Fractional Ownership",
+      "termAr": "الملكية الجزئية",
+      "definitionEn": "Shared ownership of a real estate asset where multiple investors hold proportional stakes.",
+      "definitionAr": "ملكية مشتركة لأصل عقاري حيث يمتلك مستثمرون متعددون حصصاً نسبية",
+      "category": "Investment",
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000003",
+      "termEn": "Secondary Market",
+      "termAr": "السوق الثانوي",
+      "definitionEn": "A marketplace where existing token holders can sell their tokens to new investors.",
+      "definitionAr": "سوق يمكن لحاملي الرموز الحاليين بيع رموزهم لمستثمرين جدد",
+      "category": "Market",
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000004",
+      "termEn": "KYC/AML",
+      "termAr": "اعرف عميلك / مكافحة غسل الأموال",
+      "definitionEn": "Know Your Customer and Anti-Money Laundering verification processes required for investor onboarding.",
+      "definitionAr": "عمليات التحقق من هوية العميل ومكافحة غسل الأموال المطلوبة لتسجيل المستثمرين",
+      "category": "Compliance",
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000005",
+      "termEn": "SPV",
+      "termAr": "شركة الأغراض الخاصة",
+      "definitionEn": "Special Purpose Vehicle - a legal entity created to hold the underlying real estate asset.",
+      "definitionAr": "كيان قانوني يتم إنشاؤه لامتلاك الأصل العقاري الأساسي",
+      "category": "Legal",
+      "status": "approved",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000006",
+      "termEn": "Net Asset Value (NAV)",
+      "termAr": "صافي قيمة الأصول",
+      "definitionEn": "The per-token value of the underlying real estate asset, calculated periodically.",
+      "definitionAr": "قيمة كل رمز من الأصل العقاري الأساسي، وتحسب بشكل دوري",
+      "category": "Finance",
+      "status": "approved",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000007",
+      "termEn": "Liquidity Event",
+      "termAr": "حدث السيولة",
+      "definitionEn": "An opportunity for token holders to exit their investment through the secondary market or property sale.",
+      "definitionAr": "فرصة لحاملي الرموز للخروج من استثماراتهم عبر السوق الثانوي أو بيع العقار",
+      "category": "Market",
+      "status": "needs-review",
+      "updatedAt": "2026-06-25T14:00:00Z"
+    },
+    {
+      "id": "g1a2b3c4-0201-4000-8000-000000000008",
+      "termEn": "Smart Contract",
+      "termAr": "العقد الذكي",
+      "definitionEn": "Self-executing code on a blockchain that automates ownership transfers and distributions.",
+      "definitionAr": "كود ذاتي التنفيذ على blockchain يقوم بأتمتة نقل الملكية والتوزيعات",
+      "category": "Technology",
+      "status": "draft",
+      "updatedAt": "2026-06-28T08:00:00Z"
+    }
+  ],
+  "localizationQueue": [
+    {
+      "id": "l1a2b3c4-0301-4000-8000-000000000001",
+      "sourceAssetId": "c1a2b3c4-0101-4000-8000-000000000003",
+      "targetLanguage": "ar-ae",
+      "status": "completed",
+      "reviewer": "Noura Al-Rashid",
+      "qaNotes": "Arabic terminology approved by compliance team. Minor adjustments to financial terms.",
+      "createdAt": "2026-06-01T08:00:00Z",
+      "completedAt": "2026-06-10T16:00:00Z"
+    },
+    {
+      "id": "l1a2b3c4-0301-4000-8000-000000000002",
+      "sourceAssetId": "c1a2b3c4-0101-4000-8000-000000000005",
+      "targetLanguage": "ar-ae",
+      "status": "qa-pending",
+      "reviewer": "Fatima Al-Mansouri",
+      "qaNotes": "Translated captions and voiceover script ready for QA review.",
+      "createdAt": "2026-06-22T10:00:00Z"
+    },
+    {
+      "id": "l1a2b3c4-0301-4000-8000-000000000003",
+      "sourceAssetId": "c1a2b3c4-0101-4000-8000-000000000004",
+      "targetLanguage": "ar-ae",
+      "status": "in-progress",
+      "reviewer": "Layla Hassan",
+      "qaNotes": "Infographic text extraction completed. Design team working on RTL layout.",
+      "createdAt": "2026-06-28T09:00:00Z"
+    },
+    {
+      "id": "l1a2b3c4-0301-4000-8000-000000000004",
+      "sourceAssetId": "c1a2b3c4-0101-4000-8000-000000000006",
+      "targetLanguage": "ar-ae",
+      "status": "queued",
+      "reviewer": "Noura Al-Rashid",
+      "qaNotes": null,
+      "createdAt": "2026-07-01T11:00:00Z"
+    }
+  ],
+  "seoKeywords": [
+    {
+      "id": "k1a2b3c4-0401-4000-8000-000000000001",
+      "keyword": "tokenized real estate Dubai",
+      "currentRank": 4,
+      "previousRank": 6,
+      "searchVolume": 3200,
+      "trafficContribution": 0.18,
+      "lastUpdated": "2026-07-01T00:00:00Z"
+    },
+    {
+      "id": "k1a2b3c4-0401-4000-8000-000000000002",
+      "keyword": "fractional real estate investment UAE",
+      "currentRank": 3,
+      "previousRank": 5,
+      "searchVolume": 2400,
+      "trafficContribution": 0.15,
+      "lastUpdated": "2026-07-01T00:00:00Z"
+    },
+    {
+      "id": "k1a2b3c4-0401-4000-8000-000000000003",
+      "keyword": "Blockchain property investment",
+      "currentRank": 7,
+      "previousRank": 9,
+      "searchVolume": 1800,
+      "trafficContribution": 0.09,
+      "lastUpdated": "2026-07-01T00:00:00Z"
+    },
+    {
+      "id": "k1a2b3c4-0401-4000-8000-000000000004",
+      "keyword": "real estate tokenization guide",
+      "currentRank": 2,
+      "previousRank": 2,
+      "searchVolume": 4100,
+      "trafficContribution": 0.22,
+      "lastUpdated": "2026-07-01T00:00:00Z"
+    },
+    {
+      "id": "k1a2b3c4-0401-4000-8000-000000000005",
+      "keyword": "invest in Dubai property online",
+      "currentRank": 8,
+      "previousRank": 11,
+      "searchVolume": 5600,
+      "trafficContribution": 0.12,
+      "lastUpdated": "2026-07-01T00:00:00Z"
+    },
+    {
+      "id": "k1a2b3c4-0401-4000-8000-000000000006",
+      "keyword": "استثمار عقاري رقمي دبي",
+      "currentRank": 1,
+      "previousRank": 1,
+      "searchVolume": 1500,
+      "trafficContribution": 0.14,
+      "lastUpdated": "2026-07-01T00:00:00Z"
+    }
+  ],
+  "seoRankings": {
+    "description": "Keyword ranking performance over the last 12 weeks for top tracked terms. Lower rank = better position.",
+    "rankings": [
+      {
+        "keyword": "tokenized real estate Dubai",
+        "rankHistory": [12, 11, 9, 8, 6, 6, 5, 5, 4, 4, 4, 4],
+        "labels": ["W-12", "W-11", "W-10", "W-9", "W-8", "W-7", "W-6", "W-5", "W-4", "W-3", "W-2", "W-1"]
+      },
+      {
+        "keyword": "fractional real estate investment UAE",
+        "rankHistory": [9, 9, 8, 7, 7, 6, 6, 5, 5, 4, 3, 3],
+        "labels": ["W-12", "W-11", "W-10", "W-9", "W-8", "W-7", "W-6", "W-5", "W-4", "W-3", "W-2", "W-1"]
+      },
+      {
+        "keyword": "real estate tokenization guide",
+        "rankHistory": [4, 4, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2],
+        "labels": ["W-12", "W-11", "W-10", "W-9", "W-8", "W-7", "W-6", "W-5", "W-4", "W-3", "W-2", "W-1"]
+      },
+      {
+        "keyword": "Blockchain property investment",
+        "rankHistory": [15, 14, 13, 12, 11, 10, 10, 9, 8, 8, 7, 7],
+        "labels": ["W-12", "W-11", "W-10", "W-9", "W-8", "W-7", "W-6", "W-5", "W-4", "W-3", "W-2", "W-1"]
+      }
+    ]
+  },
+  "kpis": {
+    "90days": {
+      "description": "90-day content and SEO performance dashboard with traffic, engagement, and conversion metrics.",
+      "metrics": [
+        {
+          "id": "seo-90-organic-traffic",
+          "name": "Organic Traffic",
+          "targetRange": "75,000",
+          "current": 82300,
+          "target": 75000,
+          "unit": "visitors",
+          "status": "on-track",
+          "sourceSystem": "Google Search Console",
+          "owner": "Content Team",
+          "refreshCadence": "Weekly",
+          "trend": [45000, 52000, 58000, 61000, 67000, 74000, 82300],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "seo-90-avg-position",
+          "name": "Average Keyword Position",
+          "targetRange": "Top 5",
+          "current": 4.2,
+          "target": 5.0,
+          "unit": "position",
+          "status": "on-track",
+          "sourceSystem": "Google Search Console",
+          "owner": "SEO Specialist",
+          "refreshCadence": "Weekly",
+          "trend": [7.8, 7.1, 6.5, 5.9, 5.4, 4.8, 4.2],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "seo-90-top10-keywords",
+          "name": "Keywords in Top 10",
+          "targetRange": "25",
+          "current": 28,
+          "target": 25,
+          "unit": "keywords",
+          "status": "on-track",
+          "sourceSystem": "Google Search Console",
+          "owner": "SEO Specialist",
+          "refreshCadence": "Weekly",
+          "trend": [12, 14, 16, 18, 20, 24, 28],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "seo-90-ar-content",
+          "name": "Arabic Content Coverage",
+          "targetRange": "80%",
+          "current": 0.65,
+          "target": 0.80,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Content CMS",
+          "owner": "Localization Team",
+          "refreshCadence": "Monthly",
+          "trend": [0.30, 0.35, 0.42, 0.48, 0.52, 0.58, 0.65],
+          "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic content and SEO dashboard with annual growth and localization targets.",
+      "metrics": [
+        {
+          "id": "seo-12-organic-growth",
+          "name": "Annual Organic Traffic Growth",
+          "targetRange": "+50% YoY",
+          "current": 42.0,
+          "target": 50.0,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Google Analytics",
+          "owner": "Content Team",
+          "refreshCadence": "Monthly",
+          "trend": [15, 18, 22, 26, 30, 35, 38, 40, 42, 42, 42, 42],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        },
+        {
+          "id": "seo-12-guide-downloads",
+          "name": "Content Asset Downloads",
+          "targetRange": "12,000",
+          "current": 8230,
+          "target": 12000,
+          "unit": "downloads",
+          "status": "at-risk",
+          "sourceSystem": "Content CMS",
+          "owner": "Content Team",
+          "refreshCadence": "Monthly",
+          "trend": [420, 580, 620, 690, 710, 750, 810, 880, 940, 1020, 1150, 1240],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        }
+      ]
+    }
+  }
+}

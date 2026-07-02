@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "complianceRegistry": "Compliance Registry",
+      "legalReview": "Legal Review System",
+      "riskManagement": "Risk Management System"
+    }
+  },
+  "avoidList": [
+    {
+      "id": "av1a2b3c4-0501-4000-8000-000000000001",
+      "phrase": "guaranteed returns",
+      "riskType": "investment-promise",
+      "riskRationale": "Implies assured profitability which is prohibited under securities regulations and may mislead investors regarding market risk.",
+      "saferAlternative": "Target returns (subject to market conditions)",
+      "reviewerSignOff": true,
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "av1a2b3c4-0501-4000-8000-000000000002",
+      "phrase": "instant liquidity",
+      "riskType": "liquidity-promise",
+      "riskRationale": "Suggests immediate ability to sell tokens which may not be available on secondary market at all times.",
+      "saferAlternative": "Secondary market access (trading subject to demand)",
+      "reviewerSignOff": true,
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "av1a2b3c4-0501-4000-8000-000000000003",
+      "phrase": "anyone can invest",
+      "riskType": "eligibility-overreach",
+      "riskRationale": "Fails to communicate accredited investor or jurisdictional eligibility requirements.",
+      "saferAlternative": "Eligible investors can participate",
+      "reviewerSignOff": true,
+      "updatedAt": "2026-06-20T14:00:00Z"
+    },
+    {
+      "id": "av1a2b3c4-0501-4000-8000-000000000004",
+      "phrase": "trade now",
+      "riskType": "urgency-trading",
+      "riskRationale": "Creates inappropriate urgency and resembles cryptocurrency trading culture, not real asset investment.",
+      "saferAlternative": "Explore available opportunities",
+      "reviewerSignOff": true,
+      "updatedAt": "2026-06-20T14:00:00Z"
+    },
+    {
+      "id": "av1a2b3c4-0501-4000-8000-000000000005",
+      "phrase": "SEC regulated",
+      "riskType": "regulatory-implication",
+      "riskRationale": "False implication of SEC regulation. Blocks operates under UAE/VARA jurisdiction, not US SEC.",
+      "saferAlternative": "Regulated by VARA (Virtual Assets Regulatory Authority)",
+      "reviewerSignOff": true,
+      "updatedAt": "2026-06-25T09:00:00Z"
+    },
+    {
+      "id": "av1a2b3c4-0501-4000-8000-000000000006",
+      "phrase": "risk-free investment",
+      "riskType": "security-guarantee",
+      "riskRationale": "No investment is risk-free. This claim could be considered deceptive marketing.",
+      "saferAlternative": "Manageable risk profile with diversified portfolio options",
+      "reviewerSignOff": false,
+      "updatedAt": "2026-06-28T11:00:00Z"
+    }
+  ],
+  "claimMatrix": [
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000001",
+      "claim": "Fractional real estate ownership starting from $100",
+      "category": "approved",
+      "evidenceRequirement": "Pricing page showing minimum investment amount and live token offerings",
+      "approvedAlternative": null,
+      "reviewer": "Legal Team",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-10T10:00:00Z"
+    },
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000002",
+      "claim": "Backed by physical real estate in Dubai",
+      "category": "approved",
+      "evidenceRequirement": "SPV documentation, title deed registration, and property valuation reports",
+      "approvedAlternative": null,
+      "reviewer": "Legal Team",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-10T10:00:00Z"
+    },
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000003",
+      "claim": "Guaranteed rental yield of 8% annually",
+      "category": "prohibited",
+      "evidenceRequirement": null,
+      "approvedAlternative": "Target rental yield of 6-8% (historical performance, not guaranteed)",
+      "reviewer": "Compliance Lead",
+      "approvalStatus": "rejected",
+      "updatedAt": "2026-06-12T15:00:00Z"
+    },
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000004",
+      "claim": "Most regulated tokenization platform in the UAE",
+      "category": "conditional",
+      "evidenceRequirement": "Current regulatory licenses from VARA, DIFC, and other UAE authorities",
+      "approvedAlternative": "Regulated tokenization platform operating under VARA oversight",
+      "reviewer": "Compliance Lead",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-18T11:00:00Z"
+    },
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000005",
+      "claim": "Sell your tokens anytime on the secondary market",
+      "category": "conditional",
+      "evidenceRequirement": "Secondary market terms, liquidity history, and trading volume data",
+      "approvedAlternative": "Secondary market access for token holders with trading subject to demand",
+      "reviewer": "Legal Team",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000006",
+      "claim": "Zero fees for first-time investors",
+      "category": "pending-review",
+      "evidenceRequirement": "Fee schedule documentation and pricing approval",
+      "approvedAlternative": null,
+      "reviewer": null,
+      "approvalStatus": "pending",
+      "updatedAt": "2026-07-01T08:00:00Z"
+    },
+    {
+      "id": "cm1a2b3c4-0601-4000-8000-000000000007",
+      "claim": "Blockchain-powered property tokens",
+      "category": "approved",
+      "evidenceRequirement": "Technical documentation on token standard and blockchain architecture",
+      "approvedAlternative": null,
+      "reviewer": "Tech Lead",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-22T14:00:00Z"
+    }
+  ],
+  "checklists": [
+    {
+      "id": "cl1a2b3c4-0701-4000-8000-000000000001",
+      "campaignName": "Q3 Investor Acquisition",
+      "assetType": "Landing Page",
+      "items": [
+        { "checkName": "No prohibited investment promises", "passed": true, "notes": "All yield claims use 'target' language" },
+        { "checkName": "No prohibited liquidity claims", "passed": true, "notes": "Secondary market described accurately" },
+        { "checkName": "Eligibility criteria clearly stated", "passed": true, "notes": "Accredited investor requirements front and center" },
+        { "checkName": "VARA regulatory disclaimer present", "passed": true, "notes": "Footer disclaimer added" },
+        { "checkName": "Arabic translation verified", "passed": false, "notes": "Pending QA review for Arabic version" },
+        { "checkName": "Risk disclosure included", "passed": true, "notes": "Standard risk language module attached" }
+      ],
+      "reviewer": "Sarah Al-Mutairi",
+      "status": "completed",
+      "createdAt": "2026-06-25T09:00:00Z"
+    },
+    {
+      "id": "cl1a2b3c4-0701-4000-8000-000000000002",
+      "campaignName": "Developer Outreach - Email Series",
+      "assetType": "Email",
+      "items": [
+        { "checkName": "No prohibited investment promises", "passed": true, "notes": "Developer-focused, no investment claims" },
+        { "checkName": "Technical claims verified", "passed": true, "notes": "API and integration claims match documentation" },
+        { "checkName": "Compliance disclaimer included", "passed": true, "notes": "Standard footer added" }
+      ],
+      "reviewer": "Khalid Al-Faisal",
+      "status": "completed",
+      "createdAt": "2026-06-28T10:00:00Z"
+    },
+    {
+      "id": "cl1a2b3c4-0701-4000-8000-000000000003",
+      "campaignName": "LinkedIn Thought Leadership",
+      "assetType": "Social Post",
+      "items": [
+        { "checkName": "No prohibited investment promises", "passed": true, "notes": "" },
+        { "checkName": "No crypto comparison language", "passed": true, "notes": "" },
+        { "checkName": "Brand positioning claims approved", "passed": false, "notes": "Awaiting positioning team sign-off" }
+      ],
+      "reviewer": "Mona Al-Qahtani",
+      "status": "pending",
+      "createdAt": "2026-07-01T14:00:00Z"
+    }
+  ],
+  "riskLanguageModules": [
+    {
+      "id": "rl1a2b3c4-0801-4000-8000-000000000001",
+      "name": "Property Risk Disclosure",
+      "content": "Investment in tokenized real estate carries risks including but not limited to property value fluctuation, liquidity risk, regulatory changes, and potential loss of capital. Past performance is not indicative of future results. Please review the offering memorandum for complete risk factors.",
+      "version": 3,
+      "owner": "Legal Team",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "rl1a2b3c4-0801-4000-8000-000000000002",
+      "name": "Market Risk Language",
+      "content": "Real estate markets are subject to economic cycles, interest rate changes, and geopolitical factors that may affect property valuations. Token holders should consider their investment horizon and risk tolerance before participating.",
+      "version": 2,
+      "owner": "Risk Team",
+      "approvalStatus": "approved",
+      "updatedAt": "2026-06-18T14:00:00Z"
+    },
+    {
+      "id": "rl1a2b3c4-0801-4000-8000-000000000003",
+      "name": "Liquidity Risk Statement",
+      "content": "There is no guarantee of a liquid secondary market for tokens. The ability to sell tokens depends on buyer demand, market conditions, and platform availability. Token holders may not be able to exit their investment immediately.",
+      "version": 1,
+      "owner": "Legal Team",
+      "approvalStatus": "in-review",
+      "updatedAt": "2026-06-25T11:00:00Z"
+    },
+    {
+      "id": "rl1a2b3c4-0801-4000-8000-000000000004",
+      "name": "Regulatory Risk Disclosure",
+      "content": "The regulatory framework for tokenized assets continues to evolve. Changes in regulations or their interpretation could materially affect the operation of the platform and the value of tokens.",
+      "version": 1,
+      "owner": "Legal Team",
+      "approvalStatus": "draft",
+      "updatedAt": "2026-06-30T08:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day compliance and trust dashboard with claim review velocity, avoid list coverage, and checklist completion rates.",
+      "metrics": [
+        {
+          "id": "comp-90-claim-approval-rate",
+          "name": "Claim Approval Rate",
+          "targetRange": ">80%",
+          "current": 0.75,
+          "target": 0.80,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Compliance Registry",
+          "owner": "Compliance Lead",
+          "refreshCadence": "Weekly",
+          "trend": [0.65, 0.68, 0.70, 0.72, 0.73, 0.74, 0.75],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "comp-90-checklist-pass",
+          "name": "Checklist Pass Rate",
+          "targetRange": ">90%",
+          "current": 0.88,
+          "target": 0.90,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Compliance Registry",
+          "owner": "Compliance Team",
+          "refreshCadence": "Weekly",
+          "trend": [0.82, 0.84, 0.85, 0.86, 0.87, 0.87, 0.88],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "comp-90-review-velocity",
+          "name": "Average Review Time",
+          "targetRange": "<48 hours",
+          "current": 36.0,
+          "target": 48.0,
+          "unit": "hours",
+          "status": "on-track",
+          "sourceSystem": "Compliance Registry",
+          "owner": "Legal Team",
+          "refreshCadence": "Weekly",
+          "trend": [52, 48, 44, 42, 40, 38, 36],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic compliance dashboard with annual risk language coverage and regulatory alignment targets.",
+      "metrics": [
+        {
+          "id": "comp-12-risk-modules",
+          "name": "Risk Language Module Coverage",
+          "targetRange": "100%",
+          "current": 4,
+          "target": 8,
+          "unit": "modules",
+          "status": "at-risk",
+          "sourceSystem": "Compliance Registry",
+          "owner": "Legal Team",
+          "refreshCadence": "Monthly",
+          "trend": [2, 2, 3, 3, 3, 4, 4],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "comp-12-avoid-list",
+          "name": "Avoid List Entries",
+          "targetRange": "20",
+          "current": 6,
+          "target": 20,
+          "unit": "entries",
+          "status": "off-track",
+          "sourceSystem": "Compliance Registry",
+          "owner": "Compliance Team",
+          "refreshCadence": "Monthly",
+          "trend": [2, 3, 3, 4, 4, 5, 6],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

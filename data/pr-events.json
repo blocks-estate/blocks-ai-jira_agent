@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "mediaMonitoring": "Media Monitoring Platform",
+      "eventManagement": "Event Management System",
+      "crm": "CRM / HubSpot",
+      "socialListening": "Social Listening Platform"
+    }
+  },
+  "mediaMentions": {
+    "items": [
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000001",
+        "title": "Dubai's Tokenized Real Estate Market Gains Institutional Interest",
+        "outlet": "Bloomberg",
+        "source": "tier-1-media",
+        "sentiment": "positive",
+        "url": "https://bloomberg.com/articles/dubai-tokenized-real-estate",
+        "reach": "High",
+        "mentionsBlocks": true,
+        "competitorMentioned": "Stake, PRYPCO",
+        "mentionDate": "2026-06-28"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000002",
+        "title": "How Blockchain Is Changing Real Estate Investment in the Gulf",
+        "outlet": "Reuters",
+        "source": "tier-1-media",
+        "sentiment": "positive",
+        "url": "https://reuters.com/blockchain-real-estate-gulf",
+        "reach": "High",
+        "mentionsBlocks": true,
+        "competitorMentioned": null,
+        "mentionDate": "2026-06-25"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000003",
+        "title": "Tokenization Trends in GCC Real Estate Markets",
+        "outlet": "MEED",
+        "source": "trade-publication",
+        "sentiment": "neutral",
+        "url": "https://meed.com/tokenization-gcc-real-estate",
+        "reach": "Medium",
+        "mentionsBlocks": true,
+        "competitorMentioned": "Stake, SmartCrowd",
+        "mentionDate": "2026-06-22"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000004",
+        "title": "Interview: Blocks Founder on the Future of Property Investment",
+        "outlet": "The Fintech Times",
+        "source": "podcast",
+        "sentiment": "positive",
+        "url": "https://fintechtimes.com/podcast/blocks-founder",
+        "reach": "Medium",
+        "mentionsBlocks": true,
+        "competitorMentioned": null,
+        "mentionDate": "2026-06-20"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000005",
+        "title": "Fractional Real Estate Platforms Face Regulatory Scrutiny",
+        "outlet": "Financial Times",
+        "source": "tier-1-media",
+        "sentiment": "neutral",
+        "url": "https://ft.com/fractional-real-estate-regulation",
+        "reach": "Very High",
+        "mentionsBlocks": false,
+        "competitorMentioned": "Multiple platforms",
+        "mentionDate": "2026-06-18"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000006",
+        "title": "Why UAE is Becoming a Hub for Real Estate Tokenization",
+        "outlet": "Arabian Business",
+        "source": "trade-publication",
+        "sentiment": "positive",
+        "url": "https://arabianbusiness.com/uae-tokenization-hub",
+        "reach": "Medium",
+        "mentionsBlocks": true,
+        "competitorMentioned": null,
+        "mentionDate": "2026-06-15"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000007",
+        "title": "Blocks Platform Review: User Experience Analysis",
+        "outlet": "Real Estate Tech Review",
+        "source": "blog",
+        "sentiment": "positive",
+        "url": "https://retrechreview.com/blocks-platform-review",
+        "reach": "Low",
+        "mentionsBlocks": true,
+        "competitorMentioned": "SmartCrowd",
+        "mentionDate": "2026-06-12"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000008",
+        "title": "Investor Concerns Grow Over Tokenized Asset Liquidity",
+        "outlet": "The National",
+        "source": "tier-1-media",
+        "sentiment": "negative",
+        "url": "https://thenational.ae/tokenized-liquidity-concerns",
+        "reach": "High",
+        "mentionsBlocks": true,
+        "competitorMentioned": "Stake, SmartCrowd",
+        "mentionDate": "2026-06-10"
+      },
+      {
+        "id": "mm1a2b3c4-2901-4000-8000-000000000009",
+        "title": "LinkedIn Post: Tokenization Market Update",
+        "outlet": "LinkedIn",
+        "source": "social-media",
+        "sentiment": "positive",
+        "url": "https://linkedin.com/posts/blocks-tokenization",
+        "reach": "Medium",
+        "mentionsBlocks": true,
+        "competitorMentioned": null,
+        "mentionDate": "2026-07-01"
+      }
+    ],
+    "totalItems": 9,
+    "totalPages": 1,
+    "currentPage": 1,
+    "pageSize": 20
+  },
+  "events": [
+    {
+      "id": "ev1a2b3c4-3001-4000-8000-000000000001",
+      "name": "Fintech Surge 2026 - Dubai",
+      "eventType": "conference",
+      "date": "2026-05-20",
+      "location": "Dubai World Trade Centre",
+      "audience": "Fintech Professionals, Investors",
+      "attendeesCount": 15000,
+      "blocksRepresented": true,
+      "outcomes": "Generated 85 qualified leads, 3 partnership discussions initiated, 2 media interviews secured.",
+      "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "ev1a2b3c4-3001-4000-8000-000000000002",
+      "name": "Founder Breakfast - Dubai Marina",
+      "eventType": "breakfast",
+      "date": "2026-06-10",
+      "location": "Dubai Marina - The Ritz-Carlton",
+      "audience": "Real Estate Developers, Family Offices",
+      "attendeesCount": 25,
+      "blocksRepresented": true,
+      "outcomes": "2 developer LOIs initiated, 3 family office follow-ups scheduled.",
+      "createdAt": "2026-05-01T09:00:00Z"
+    },
+    {
+      "id": "ev1a2b3c4-3001-4000-8000-000000000003",
+      "name": "HNWI Private Roundtable - Abu Dhabi",
+      "eventType": "private-dinner",
+      "date": "2026-06-25",
+      "location": "Abu Dhabi - Emirates Palace",
+      "audience": "High Net Worth Individuals",
+      "attendeesCount": 12,
+      "blocksRepresented": true,
+      "outcomes": "4 prospective investors identified, 1 confirmed meeting for platform demo.",
+      "createdAt": "2026-05-15T11:00:00Z"
+    },
+    {
+      "id": "ev1a2b3c4-3001-4000-8000-000000000004",
+      "name": "Webinar: Understanding Tokenized Real Estate",
+      "eventType": "webinar",
+      "date": "2026-07-08",
+      "location": "Virtual",
+      "audience": "Prospective Investors",
+      "attendeesCount": 340,
+      "blocksRepresented": true,
+      "outcomes": "45 sign-ups post-webinar, 12 scheduled consultations.",
+      "createdAt": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "ev1a2b3c4-3001-4000-8000-000000000005",
+      "name": "Interview with CNBC Arabia",
+      "eventType": "interview",
+      "date": "2026-06-30",
+      "location": "Dubai Media City",
+      "audience": "General Public, Investors",
+      "attendeesCount": 0,
+      "blocksRepresented": true,
+      "outcomes": "Broadcast reached estimated 500K viewers. Website traffic spike of 40% post-interview.",
+      "createdAt": "2026-06-10T08:00:00Z"
+    },
+    {
+      "id": "ev1a2b3c4-3001-4000-8000-000000000006",
+      "name": "Developer Roundtable - Property Technology",
+      "eventType": "roundtable",
+      "date": "2026-07-20",
+      "location": "Dubai - DIFC",
+      "audience": "Real Estate Developers, PropTech Founders",
+      "attendeesCount": 30,
+      "blocksRepresented": false,
+      "outcomes": null,
+      "createdAt": "2026-06-20T09:00:00Z"
+    }
+  ],
+  "breakfastSessions": [
+    {
+      "id": "bs1a2b3c4-3101-4000-8000-000000000001",
+      "title": "Developer Breakfast — Dubai Marina",
+      "date": "2026-06-10",
+      "host": "Ahmed Al-Rashid",
+      "attendees": ["Ahmed Al-Rashid", "Sara Al-Mutairi", "3 Developer Representatives", "1 Family Office Representative"],
+      "relationshipOutcome": "Two developers expressed strong interest in tokenization pilot. Follow-up meetings scheduled.",
+      "followUpOwner": "Ahmed Al-Rashid",
+      "effectivenessScore": 4,
+      "createdAt": "2026-05-15T10:00:00Z"
+    },
+    {
+      "id": "bs1a2b3c4-3101-4000-8000-000000000002",
+      "title": "Investor Breakfast — Emirates Hills",
+      "date": "2026-05-25",
+      "host": "Fatima Al-Mansouri",
+      "attendees": ["Fatima Al-Mansouri", "4 HNWI Investors", "1 Family Office Principal"],
+      "relationshipOutcome": "Two attendees proceeded to platform registration. One family office requested private briefing for their investment committee.",
+      "followUpOwner": "Fatima Al-Mansouri",
+      "effectivenessScore": 5,
+      "createdAt": "2026-04-20T11:00:00Z"
+    },
+    {
+      "id": "bs1a2b3c4-3101-4000-8000-000000000003",
+      "title": "Partner Breakfast — Valuation & Legal",
+      "date": "2026-07-02",
+      "date": "2026-07-02",
+      "host": "Khalid Al-Faisal",
+      "attendees": ["Khalid Al-Faisal", "Savills Representative", "Legal Counsel", "2 Prospective Valuers"],
+      "relationshipOutcome": "Onboarding discussion with new valuation partner. Existing partnership with Savills reaffirmed.",
+      "followUpOwner": "Khalid Al-Faisal",
+      "effectivenessScore": 3,
+      "createdAt": "2026-06-10T09:00:00Z"
+    }
+  ],
+  "shareOfVoice": {
+    "description": "Share of voice across PR, search, social, content, and paid channels for H1 2026. Data sourced from media monitoring, social listening, search analytics, and ad platforms.",
+    "competitors": [
+      {
+        "name": "Blocks",
+        "color": "#6366f1",
+        "channels": {
+          "pr": 28,
+          "search": 22,
+          "social": 35,
+          "content": 25,
+          "paid": 30
+        },
+        "overall": 28
+      },
+      {
+        "name": "Stake",
+        "color": "#10b981",
+        "channels": {
+          "pr": 22,
+          "search": 28,
+          "social": 20,
+          "content": 18,
+          "paid": 25
+        },
+        "overall": 23
+      },
+      {
+        "name": "SmartCrowd",
+        "color": "#f59e0b",
+        "channels": {
+          "pr": 15,
+          "search": 18,
+          "social": 12,
+          "content": 20,
+          "paid": 15
+        },
+        "overall": 16
+      },
+      {
+        "name": "PRYPCO",
+        "color": "#ef4444",
+        "channels": {
+          "pr": 18,
+          "search": 20,
+          "social": 15,
+          "content": 22,
+          "paid": 18
+        },
+        "overall": 19
+      },
+      {
+        "name": "Property Finder",
+        "color": "#3b82f6",
+        "channels": {
+          "pr": 12,
+          "search": 8,
+          "social": 10,
+          "content": 8,
+          "paid": 8
+        },
+        "overall": 9
+      },
+      {
+        "name": "Bayut",
+        "color": "#8b5cf6",
+        "channels": {
+          "pr": 5,
+          "search": 4,
+          "social": 8,
+          "content": 7,
+          "paid": 4
+        },
+        "overall": 5
+      }
+    ],
+    "channelTaxonomy": {
+      "pr": {
+        "description": "Media mentions in tier-1, trade, and regional publications",
+        "sources": ["Bloomberg", "Reuters", "Financial Times", "MEED", "Arabian Business", "The National"]
+      },
+      "search": {
+        "description": "Google search impression share for key category terms",
+        "sources": ["Google Search Console", "SEMrush"]
+      },
+      "social": {
+        "description": "Social media mentions, engagement, and follower growth across LinkedIn, Twitter/X, Instagram",
+        "sources": ["LinkedIn", "Twitter/X", "Instagram", "Brandwatch"]
+      },
+      "content": {
+        "description": "Content marketing output including blog posts, guides, videos, and infographics",
+        "sources": ["Content CMS", "YouTube Analytics", "SlideShare"]
+      },
+      "paid": {
+        "description": "Paid media impression share and ad recall across platforms",
+        "sources": ["LinkedIn Ads", "Google Ads", "Meta Ads"]
+      }
+    }
+  },
+  "kpis": {
+    "90days": {
+      "description": "90-day PR and events dashboard with media coverage, event outcomes, and share of voice metrics.",
+      "metrics": [
+        {
+          "id": "pr-90-mentions",
+          "name": "Media Mentions (Blocks)",
+          "targetRange": "15",
+          "current": 8,
+          "target": 15,
+          "unit": "mentions",
+          "status": "at-risk",
+          "sourceSystem": "Media Monitoring Platform",
+          "owner": "PR Team",
+          "refreshCadence": "Weekly",
+          "trend": [3, 4, 4, 5, 6, 7, 8],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pr-90-sentiment",
+          "name": "Positive Sentiment Ratio",
+          "targetRange": ">70%",
+          "current": 0.75,
+          "target": 0.70,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Media Monitoring Platform",
+          "owner": "PR Team",
+          "refreshCadence": "Weekly",
+          "trend": [0.80, 0.78, 0.75, 0.72, 0.70, 0.72, 0.75],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pr-90-events",
+          "name": "Events Attended",
+          "targetRange": "4",
+          "current": 3,
+          "target": 4,
+          "unit": "events",
+          "status": "on-track",
+          "sourceSystem": "Event Management System",
+          "owner": "PR Team",
+          "refreshCadence": "Weekly",
+          "trend": [1, 1, 1, 2, 2, 2, 3],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pr-90-sov",
+          "name": "Share of Voice (Overall)",
+          "targetRange": ">25%",
+          "current": 28,
+          "target": 25,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Social Listening Platform",
+          "owner": "PR Team",
+          "refreshCadence": "Monthly",
+          "trend": [20, 22, 22, 24, 25, 26, 28],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic PR dashboard with annual media reach and thought leadership milestones.",
+      "metrics": [
+        {
+          "id": "pr-12-breakfast-sessions",
+          "name": "Breakfast Sessions Completed",
+          "targetRange": "12",
+          "current": 3,
+          "target": 12,
+          "unit": "sessions",
+          "status": "on-track",
+          "sourceSystem": "Event Management System",
+          "owner": "PR Team",
+          "refreshCadence": "Monthly",
+          "trend": [0, 0, 1, 1, 1, 2, 3],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "pr-12-media-reach",
+          "name": "Total Media Reach",
+          "targetRange": "5M",
+          "current": 2100000,
+          "target": 5000000,
+          "unit": "impressions",
+          "status": "at-risk",
+          "sourceSystem": "Media Monitoring Platform",
+          "owner": "PR Team",
+          "refreshCadence": "Monthly",
+          "trend": [250000, 350000, 400000, 500000, 600000, 700000, 800000],
+          "trendLabels": ["Monthly cumulative"]
+        }
+      ]
+    }
+  }
+}

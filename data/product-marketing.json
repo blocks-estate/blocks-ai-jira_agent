@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "projectManagement": "Project Management System",
+      "contentSystem": "Content Management System",
+      "pricingSystem": "Pricing & Fee Management System"
+    }
+  },
+  "launchTracker": [
+    {
+      "id": "lt1a2b3c4-2601-4000-8000-000000000001",
+      "name": "Marketplace Liquidity Messaging",
+      "status": "approved",
+      "owner": "Mona Al-Qahtani",
+      "targetDate": "2026-07-15",
+      "dependencies": ["Secondary market launch date confirmed", "Legal approval on liquidity claims"],
+      "deliverables": [
+        "Liquidity messaging framework document",
+        "Approved language for investor-facing comms",
+        "Sales enablement one-pager"
+      ],
+      "notes": "Approved by legal and compliance. Ready for campaign integration.",
+      "createdAt": "2026-05-10T09:00:00Z"
+    },
+    {
+      "id": "lt1a2b3c4-2601-4000-8000-000000000002",
+      "name": "Trading Fee Positioning",
+      "status": "in-review",
+      "owner": "Khalid Al-Faisal",
+      "targetDate": "2026-07-20",
+      "dependencies": ["Finance team fee structure finalization", "Competitive analysis complete"],
+      "deliverables": [
+        "Fee comparison with competitor platforms",
+        "Value justification messaging",
+        "Customer FAQ on fee structure"
+      ],
+      "notes": "Under review by finance team. VP approval pending.",
+      "createdAt": "2026-05-20T10:00:00Z"
+    },
+    {
+      "id": "lt1a2b3c4-2601-4000-8000-000000000003",
+      "name": "Managed Tokenization Marketplace Product Launch",
+      "status": "in-progress",
+      "owner": "Fatima Al-Mansouri",
+      "targetDate": "2026-08-01",
+      "dependencies": ["Platform feature complete", "Integrations QA passed", "Marketing collateral ready"],
+      "deliverables": [
+        "Product launch deck",
+        "Press release and media kit",
+        "Email campaign sequence",
+        "Landing page content",
+        "Sales training materials"
+      ],
+      "notes": "Cross-team collaboration in progress. Weekly standups established.",
+      "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "lt1a2b3c4-2601-4000-8000-000000000004",
+      "name": "Arabic Localization Package",
+      "status": "in-progress",
+      "owner": "Noura Al-Rashid",
+      "targetDate": "2026-08-15",
+      "dependencies": ["Marketing collateral finalized in English", "Glossary terms approved"],
+      "deliverables": [
+        "Arabic marketing collateral set",
+        "Localized landing pages",
+        "Arabic email templates",
+        "Social media content calendar - Arabic"
+      ],
+      "notes": "Translation in progress. QA review scheduled for July 25.",
+      "createdAt": "2026-06-01T11:00:00Z"
+    },
+    {
+      "id": "lt1a2b3c4-2601-4000-8000-000000000005",
+      "name": "Secondary Market Launch Comms",
+      "status": "not-started",
+      "owner": "Mona Al-Qahtani",
+      "targetDate": "2026-07-28",
+      "dependencies": ["Secondary market go-live date", "Liquidity messaging approved"],
+      "deliverables": [
+        "Investor announcement email",
+        "Platform notification banners",
+        "Blog post: How Secondary Market Works",
+        "Social media campaign"
+      ],
+      "notes": "Awaiting product team confirmation on launch date.",
+      "createdAt": "2026-06-15T09:00:00Z"
+    },
+    {
+      "id": "lt1a2b3c4-2601-4000-8000-000000000006",
+      "name": "Developer-Facing Product Documentation",
+      "status": "blocked",
+      "owner": "Ahmed Al-Rashid",
+      "targetDate": "2026-08-30",
+      "dependencies": ["API documentation complete", "Developer portal ready"],
+      "deliverables": [
+        "Getting started guide for developers",
+        "API reference documentation",
+        "Integration tutorials",
+        "SDK usage examples"
+      ],
+      "notes": "Blocked pending API documentation finalization by engineering team.",
+      "createdAt": "2026-06-10T08:00:00Z"
+    }
+  ],
+  "messagingGuides": [
+    {
+      "id": "mg1a2b3c4-2701-4000-8000-000000000001",
+      "topic": "Secondary Market Liquidity",
+      "audience": "investor-facing",
+      "approvedLanguage": "The Blocks secondary market provides token holders with the ability to list and sell their tokens to other verified investors. Trading is peer-to-peer with settlement processed on-chain.",
+      "prohibitedLanguage": "Do not use 'instant liquidity', 'guaranteed buyers', or 'trade anytime' as these imply guaranteed market depth.",
+      "evidenceRequired": "Secondary market trading volume data, average time-to-sell metrics, number of active buyers",
+      "complianceStatus": "approved",
+      "version": 2,
+      "updatedAt": "2026-06-20T14:00:00Z"
+    },
+    {
+      "id": "mg1a2b3c4-2701-4000-8000-000000000002",
+      "topic": "Marketplace Fee Structure",
+      "audience": "investor-facing",
+      "approvedLanguage": "Blocks charges transparent fees for token purchases and management services. All fees are disclosed before transaction confirmation. There are no hidden charges.",
+      "prohibitedLanguage": "Do not claim 'lowest fees in the market' without competitive comparison data. Avoid 'zero fees' unless specifically approved promotion.",
+      "evidenceRequired": "Published fee schedule, competitive fee comparison, regulatory compliance with VARA fee disclosure rules",
+      "complianceStatus": "reviewed",
+      "version": 1,
+      "updatedAt": "2026-06-25T10:00:00Z"
+    },
+    {
+      "id": "mg1a2b3c4-2701-4000-8000-000000000003",
+      "topic": "Tokenized Real Estate Value Proposition",
+      "audience": "partner-facing",
+      "approvedLanguage": "Blocks enables property owners and developers to unlock capital through tokenization, reaching a global investor base while maintaining operational control of their assets.",
+      "prohibitedLanguage": "Avoid implying Blocks replaces traditional real estate agents or brokers. Do not make claims about specific ROI for partners.",
+      "evidenceRequired": "Platform metrics, case studies of successful tokenizations, partner testimonials",
+      "complianceStatus": "approved",
+      "version": 1,
+      "updatedAt": "2026-06-15T09:00:00Z"
+    },
+    {
+      "id": "mg1a2b3c4-2701-4000-8000-000000000004",
+      "topic": "Technology & Security Overview",
+      "audience": "developer-facing",
+      "approvedLanguage": "Blocks platform is built on enterprise-grade blockchain infrastructure with multi-layer security controls, regular penetration testing, and compliance with industry security standards.",
+      "prohibitedLanguage": "Avoid 'unhackable', '100% secure', or specific comparisons to other blockchain platforms.",
+      "evidenceRequired": "Security audit reports, penetration testing results, infrastructure architecture documentation",
+      "complianceStatus": "approved",
+      "version": 1,
+      "updatedAt": "2026-06-18T11:00:00Z"
+    },
+    {
+      "id": "mg1a2b3c4-2701-4000-8000-000000000005",
+      "topic": "Q3 Launch Internal Briefing",
+      "audience": "internal",
+      "approvedLanguage": "Q3 launch represents a major milestone in our product roadmap. The Managed Tokenization Marketplace positions Blocks as the leading platform in the region.",
+      "prohibitedLanguage": "Internal only. Do not share specific launch dates externally until confirmed.",
+      "evidenceRequired": "Product roadmap, competitive positioning analysis, market readiness assessment",
+      "complianceStatus": "draft",
+      "version": 1,
+      "updatedAt": "2026-07-01T08:00:00Z"
+    }
+  ],
+  "feeStructure": {
+    "id": "fs1a2b3c4-2801-4000-8000-000000000001",
+    "feeName": "Marketplace Trading Fee",
+    "feePurpose": "Covers platform infrastructure, security, compliance, and operational costs for facilitating token transactions.",
+    "payer": "Seller",
+    "trigger": "Trade Execution",
+    "amount": "0.5% of trade value",
+    "timing": "At settlement",
+    "includedServices": [
+      "Transaction processing and settlement",
+      "Smart contract execution",
+      "Custody and security",
+      "Compliance screening"
+    ],
+    "excludedServices": [
+      "Valuation reports (charged separately by valuation partner)",
+      "Legal documentation (third-party legal fees)",
+      "KYC/AML verification (included in onboarding)"
+    ],
+    "financeTreatment": "Recognized as revenue at settlement. Deferred revenue recognition for membership fees.",
+    "approvedCustomerCopy": "Blocks charges a 0.5% trading fee on each token transaction. This fee covers platform operations, security, and compliance. All fees are transparently displayed before you confirm any transaction.",
+    "status": "active",
+    "updatedAt": "2026-06-20T10:00:00Z"
+  },
+  "feeStructureHistory": [
+    {
+      "id": "fs1a2b3c4-2801-4000-8000-000000000002",
+      "feeName": "Annual Platform Membership Fee",
+      "feePurpose": "Annual fee for platform access including portfolio tracking, reporting, and priority support.",
+      "payer": "Investor",
+      "trigger": "Annual Renewal",
+      "amount": "$199/year",
+      "timing": "Annually at account anniversary",
+      "includedServices": [
+        "Portfolio dashboard access",
+        "Quarterly performance reports",
+        "Priority customer support",
+        "Investor relations updates"
+      ],
+      "excludedServices": [
+        "Trading fees (separate)",
+        "Premium concierge services (add-on)"
+      ],
+      "financeTreatment": "Recognized ratably over 12-month membership period.",
+      "approvedCustomerCopy": "Annual platform membership is $199 per year and includes portfolio tracking, reporting, and priority support.",
+      "status": "pending",
+      "updatedAt": "2026-06-28T14:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day product marketing dashboard with launch readiness, messaging approval velocity, and content completion rates.",
+      "metrics": [
+        {
+          "id": "pm-90-launch-items",
+          "name": "Launch Tracker Items Approved",
+          "targetRange": "4",
+          "current": 1,
+          "target": 4,
+          "unit": "items",
+          "status": "off-track",
+          "sourceSystem": "Project Management System",
+          "owner": "Product Marketing Lead",
+          "refreshCadence": "Weekly",
+          "trend": [0, 0, 0, 0, 0, 1, 1],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pm-90-msg-guides",
+          "name": "Messaging Guides Approved",
+          "targetRange": "5",
+          "current": 3,
+          "target": 5,
+          "unit": "guides",
+          "status": "at-risk",
+          "sourceSystem": "Content Management System",
+          "owner": "Product Marketing Lead",
+          "refreshCadence": "Weekly",
+          "trend": [1, 1, 2, 2, 2, 3, 3],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pm-90-content-completion",
+          "name": "Launch Content Completion",
+          "targetRange": "100%",
+          "current": 0.45,
+          "target": 1.0,
+          "unit": "%",
+          "status": "off-track",
+          "sourceSystem": "Project Management System",
+          "owner": "Product Marketing Lead",
+          "refreshCadence": "Weekly",
+          "trend": [0.10, 0.15, 0.20, 0.25, 0.30, 0.38, 0.45],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic product marketing dashboard with annual product launch success and messaging maturity.",
+      "metrics": [
+        {
+          "id": "pm-12-product-launches",
+          "name": "Product Launches",
+          "targetRange": "2",
+          "current": 0,
+          "target": 2,
+          "unit": "launches",
+          "status": "at-risk",
+          "sourceSystem": "Project Management System",
+          "owner": "Product Marketing Lead",
+          "refreshCadence": "Quarterly",
+          "trend": [0, 0],
+          "trendLabels": ["H1", "H2"]
+        },
+        {
+          "id": "pm-12-fee-docs",
+          "name": "Fee Structure Docs Approved",
+          "targetRange": "5",
+          "current": 1,
+          "target": 5,
+          "unit": "docs",
+          "status": "off-track",
+          "sourceSystem": "Pricing & Fee Management System",
+          "owner": "Finance Team",
+          "refreshCadence": "Monthly",
+          "trend": [0, 0, 0, 0, 0, 1, 1],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

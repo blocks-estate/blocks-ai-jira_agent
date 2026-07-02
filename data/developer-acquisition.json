@@ -1,0 +1,254 @@
+{
+  "opportunities": {
+    "items": [
+      {
+        "id": "dev-opp-001-aaaa-bbbb-cccccccccccc",
+        "developerName": "Emaar Properties",
+        "stage": "loi-signed",
+        "priorityScore": 92,
+        "assetType": "Ready Residential",
+        "location": "Dubai Marina",
+        "owner": "Aisha Al Maktoum",
+        "notes": "Premium waterfront tower with strong rental history. LOI signed Q2 2026.",
+        "documents": [
+          { "type": "Contract", "title": "LOI - Dubai Marina Tower", "url": "https://docs.blocks.io/loi/dubai-marina-tower.pdf", "uploadedAt": "2026-04-15T10:30:00Z" },
+          { "type": "Valuation", "title": "Valuation Report - Q1 2026", "url": "https://docs.blocks.io/val/dubai-marina-tower.pdf", "uploadedAt": "2026-03-20T14:00:00Z" }
+        ],
+        "createdAt": "2025-11-01T08:00:00Z",
+        "updatedAt": "2026-06-28T16:45:00Z"
+      },
+      {
+        "id": "dev-opp-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+        "developerName": "Nakheel",
+        "stage": "due-diligence",
+        "priorityScore": 85,
+        "assetType": "Off-Plan Residential",
+        "location": "Palm Jumeirah",
+        "owner": "Khalid Al Hashimi",
+        "notes": "Crescent tower expansion project. Due diligence in progress, title deed verification pending.",
+        "documents": [
+          { "type": "Title Deed", "title": "Title Deed - Palm Jumeirah Plot 42", "url": "https://docs.blocks.io/deeds/palm-jumeirah-42.pdf", "uploadedAt": "2026-05-10T09:15:00Z" }
+        ],
+        "createdAt": "2026-01-15T11:00:00Z",
+        "updatedAt": "2026-06-25T08:30:00Z"
+      },
+      {
+        "id": "dev-opp-003-cccc-dddd-eeee-ffffffffffff",
+        "developerName": "Damac Properties",
+        "stage": "meeting-scheduled",
+        "priorityScore": 72,
+        "assetType": "Ready Residential",
+        "location": "Business Bay",
+        "owner": "Fatima Al Suwaidi",
+        "notes": "Initial meeting scheduled for Jul 15. Damac has multiple suitable ready units in Dubai Canal area.",
+        "documents": [],
+        "createdAt": "2026-06-01T07:30:00Z",
+        "updatedAt": "2026-06-20T12:00:00Z"
+      },
+      {
+        "id": "dev-opp-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+        "developerName": "Sobha Realty",
+        "stage": "target-identified",
+        "priorityScore": 65,
+        "assetType": "Ready Residential",
+        "location": "Dubai Hills Estate",
+        "owner": "Aisha Al Maktoum",
+        "notes": "Sobha has strong GCC investor base. Target for Q3 outreach. Priority area: Dubai Hills.",
+        "documents": [],
+        "createdAt": "2026-06-10T14:00:00Z",
+        "updatedAt": "2026-06-10T14:00:00Z"
+      },
+      {
+        "id": "dev-opp-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+        "developerName": "Meraas Holding",
+        "stage": "outreach-in-progress",
+        "priorityScore": 78,
+        "assetType": "Mixed-Use",
+        "location": "City Walk",
+        "owner": "Khalid Al Hashimi",
+        "notes": "Initial contact made via industry event. Follow-up email sent Jun 28.",
+        "documents": [
+          { "type": "Presentation", "title": "Meraas Partnership Deck", "url": "https://docs.blocks.io/decks/meraas-partnership.pdf", "uploadedAt": "2026-06-20T11:00:00Z" }
+        ],
+        "createdAt": "2026-05-20T09:00:00Z",
+        "updatedAt": "2026-06-28T10:30:00Z"
+      }
+    ],
+    "totalItems": 24,
+    "totalPages": 5,
+    "currentPage": 1,
+    "pageSize": 5
+  },
+  "scorecards": [
+    {
+      "id": "sc-001-aaaa-bbbb-cccc-dddddddddddd",
+      "assetId": "asset-001",
+      "totalScore": 88,
+      "categories": [
+        { "name": "Asset Readiness", "weight": 0.20, "score": 92, "evidence": "Title deed verified, NOC obtained, no disputes" },
+        { "name": "Income & Valuation", "weight": 0.20, "score": 85, "evidence": "Stable rental income 6.2% yield, valuation confirmed Q1 2026" },
+        { "name": "Developer Credibility", "weight": 0.15, "score": 90, "evidence": "Emaar - top-tier developer, listed on DFM" },
+        { "name": "Dubai Market Relevance", "weight": 0.15, "score": 95, "evidence": "Dubai Marina - highest investor demand area" },
+        { "name": "Investor Appeal", "weight": 0.15, "score": 88, "evidence": "High institutional and HNWI demand" },
+        { "name": "Legal & Compliance", "weight": 0.15, "score": 78, "evidence": "Standard RERA compliance, no special restrictions" }
+      ],
+      "tier": "tier-1",
+      "recommendation": "Proceed to LOI stage immediately",
+      "createdAt": "2026-04-10T10:00:00Z",
+      "updatedAt": "2026-04-10T10:00:00Z"
+    },
+    {
+      "id": "sc-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "assetId": "asset-002",
+      "totalScore": 76,
+      "categories": [
+        { "name": "Asset Readiness", "weight": 0.20, "score": 70, "evidence": "Off-plan, construction 85% complete, completion expected Q4 2026" },
+        { "name": "Income & Valuation", "weight": 0.20, "score": 65, "evidence": "Pre-completion, projected yield 5.8%" },
+        { "name": "Developer Credibility", "weight": 0.15, "score": 85, "evidence": "Nakheel - government-backed developer" },
+        { "name": "Dubai Market Relevance", "weight": 0.15, "score": 90, "evidence": "Palm Jumeirah - iconic location" },
+        { "name": "Investor Appeal", "weight": 0.15, "score": 82, "evidence": "Strong international investor interest" },
+        { "name": "Legal & Compliance", "weight": 0.15, "score": 68, "evidence": "Off-plan registration verified, escrow account active" }
+      ],
+      "tier": "tier-2",
+      "recommendation": "Continue due diligence, monitor construction milestone",
+      "createdAt": "2026-05-15T14:00:00Z",
+      "updatedAt": "2026-05-15T14:00:00Z"
+    },
+    {
+      "id": "sc-003-cccc-dddd-eeee-ffffffffffff",
+      "assetId": "asset-003",
+      "totalScore": 64,
+      "categories": [
+        { "name": "Asset Readiness", "weight": 0.20, "score": 75, "evidence": "Ready units available, some finishing required" },
+        { "name": "Income & Valuation", "weight": 0.15, "score": 60, "evidence": "Moderate yield 5.1%, valuation in progress" },
+        { "name": "Developer Credibility", "weight": 0.15, "score": 70, "evidence": "Damac - established but mixed reputation" },
+        { "name": "Dubai Market Relevance", "weight": 0.15, "score": 75, "evidence": "Business Bay - good but not top-tier area" },
+        { "name": "Investor Appeal", "weight": 0.15, "score": 65, "evidence": "Moderate demand, limited institutional interest" },
+        { "name": "Legal & Compliance", "weight": 0.15, "score": 55, "evidence": "Some compliance documentation pending" }
+      ],
+      "tier": "tier-3",
+      "recommendation": "Explore alternative assets from higher-tier areas",
+      "createdAt": "2026-05-28T09:30:00Z",
+      "updatedAt": "2026-05-28T09:30:00Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-001",
+      "name": "Dubai Marina Crescent Tower",
+      "assetType": "Ready Residential",
+      "location": "Dubai Marina",
+      "developerName": "Emaar Properties",
+      "estimatedValue": 25000000,
+      "rentalYieldEstimate": 6.2,
+      "status": "active",
+      "documents": [
+        { "type": "Title Deed", "title": "Title Deed - Marina Crescent", "url": "https://docs.blocks.io/deeds/marina-crescent.pdf", "uploadedAt": "2026-01-15T10:00:00Z" }
+      ],
+      "createdAt": "2025-10-01T08:00:00Z"
+    },
+    {
+      "id": "asset-002",
+      "name": "Palm Jumeirah Crescent Tower",
+      "assetType": "Off-Plan Residential",
+      "location": "Palm Jumeirah",
+      "developerName": "Nakheel",
+      "estimatedValue": 35000000,
+      "rentalYieldEstimate": 5.8,
+      "status": "pending",
+      "documents": [],
+      "createdAt": "2026-01-10T09:00:00Z"
+    },
+    {
+      "id": "asset-003",
+      "name": "Business Bay Canal Residences",
+      "assetType": "Ready Residential",
+      "location": "Business Bay",
+      "developerName": "Damac Properties",
+      "estimatedValue": 15000000,
+      "rentalYieldEstimate": 5.1,
+      "status": "active",
+      "documents": [],
+      "createdAt": "2026-02-20T11:00:00Z"
+    },
+    {
+      "id": "asset-004",
+      "name": "Dubai Hills Golf View Villas",
+      "assetType": "Ready Residential",
+      "location": "Dubai Hills Estate",
+      "developerName": "Sobha Realty",
+      "estimatedValue": 18000000,
+      "rentalYieldEstimate": 5.5,
+      "status": "active",
+      "documents": [],
+      "createdAt": "2026-03-05T14:00:00Z"
+    },
+    {
+      "id": "asset-005",
+      "name": "City Walk Mixed-Use Complex",
+      "assetType": "Mixed-Use",
+      "location": "City Walk",
+      "developerName": "Meraas Holding",
+      "estimatedValue": 42000000,
+      "rentalYieldEstimate": 6.8,
+      "status": "pending",
+      "documents": [],
+      "createdAt": "2026-04-01T10:00:00Z"
+    }
+  ],
+  "areas": [
+    { "name": "Dubai Marina", "rank": 1, "marketFamiliarity": "High", "investorDemand": "Very High", "supplyAvailability": "Medium", "rationale": "Highest investor recognition, strong rental yields, abundant ready inventory" },
+    { "name": "Palm Jumeirah", "rank": 2, "marketFamiliarity": "High", "investorDemand": "Very High", "supplyAvailability": "Low", "rationale": "Iconic location, limited supply drives premium pricing" },
+    { "name": "Downtown Dubai", "rank": 3, "marketFamiliarity": "High", "investorDemand": "High", "supplyAvailability": "Medium", "rationale": "Core commercial district, strong capital appreciation" },
+    { "name": "Jumeirah Beach Residence (JBR)", "rank": 4, "marketFamiliarity": "High", "investorDemand": "High", "supplyAvailability": "Medium", "rationale": "Beachfront living, strong rental demand from tourists" },
+    { "name": "Dubai Hills Estate", "rank": 5, "marketFamiliarity": "Medium", "investorDemand": "High", "supplyAvailability": "High", "rationale": "Growing community, new inventory coming online" },
+    { "name": "Business Bay", "rank": 6, "marketFamiliarity": "Medium", "investorDemand": "Medium", "supplyAvailability": "High", "rationale": "Affordable luxury segment, high supply keeps prices competitive" }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day developer pipeline dashboard with account coverage, meeting conversion, assessment velocity",
+      "metrics": [
+        { "id": "dev-90-accounts", "name": "Target Accounts Identified", "targetRange": "50", "current": 38, "target": 50, "unit": "accounts", "status": "at-risk", "sourceSystem": "CRM / Target Account List", "owner": "GTM Team", "refreshCadence": "Weekly", "trend": [22, 25, 28, 32, 35, 38], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"] },
+        { "id": "dev-90-meetings", "name": "Meetings Held", "targetRange": "25", "current": 18, "target": 25, "unit": "meetings", "status": "at-risk", "sourceSystem": "CRM / Meeting Log", "owner": "GTM Team", "refreshCadence": "Weekly", "trend": [3, 6, 9, 12, 15, 18], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"] },
+        { "id": "dev-90-assets", "name": "Assets Evaluated", "targetRange": "20", "current": 15, "target": 20, "unit": "assets", "status": "at-risk", "sourceSystem": "Scorecard Engine", "owner": "Acquisitions Team", "refreshCadence": "Weekly", "trend": [2, 5, 7, 10, 12, 15], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"] },
+        { "id": "dev-90-loi", "name": "LOIs Signed", "targetRange": "8", "current": 5, "target": 8, "unit": "LOIs", "status": "at-risk", "sourceSystem": "CRM / LOI Tracker", "owner": "Sales Ops", "refreshCadence": "Weekly", "trend": [0, 1, 2, 3, 3, 5], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"] },
+        { "id": "dev-90-onboarded", "name": "Developers Onboarded", "targetRange": "5", "current": 2, "target": 5, "unit": "developers", "status": "off-track", "sourceSystem": "CRM / Onboarding", "owner": "GTM Team", "refreshCadence": "Weekly", "trend": [0, 0, 1, 1, 2, 2], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"] },
+        { "id": "dev-90-priority", "name": "Average Priority Score", "targetRange": "75", "current": 78, "target": 75, "unit": "score", "status": "on-track", "sourceSystem": "Scorecard Engine", "owner": "Acquisitions Team", "refreshCadence": "Monthly", "trend": [72, 73, 75, 76, 77, 78], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6"] }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic developer acquisition pipeline outlook",
+      "metrics": [
+        { "id": "dev-12m-accounts", "name": "Target Accounts (Annual)", "targetRange": "120", "current": 85, "target": 120, "unit": "accounts", "status": "at-risk", "sourceSystem": "CRM / Target Account List", "owner": "GTM Team", "refreshCadence": "Monthly", "trend": [45, 52, 58, 64, 70, 78, 85], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"] },
+        { "id": "dev-12m-loi", "name": "LOIs Signed (Annual)", "targetRange": "25", "current": 12, "target": 25, "unit": "LOIs", "status": "off-track", "sourceSystem": "CRM / LOI Tracker", "owner": "Sales Ops", "refreshCadence": "Monthly", "trend": [2, 4, 5, 7, 8, 10, 12], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"] },
+        { "id": "dev-12m-value", "name": "Pipeline Value (AED)", "targetRange": "500M", "current": 320000000, "target": 500000000, "unit": "AED", "status": "at-risk", "sourceSystem": "CRM / Deal Value", "owner": "GTM Team", "refreshCadence": "Monthly", "trend": [150000000, 180000000, 210000000, 240000000, 270000000, 290000000, 320000000], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"] },
+        { "id": "dev-12m-yield", "name": "Average Rental Yield", "targetRange": "6.0%", "current": 5.9, "target": 6.0, "unit": "%", "status": "on-track", "sourceSystem": "Valuation Reports", "owner": "Acquisitions Team", "refreshCadence": "Quarterly", "trend": [5.7, 5.8, 5.8, 5.9], "trendLabels": ["Q1", "Q2", "Q3", "Q4"] }
+      ]
+    }
+  },
+  "funnel": {
+    "description": "Developer acquisition funnel tracking from target-account identification through onboarding",
+    "stages": [
+      { "id": "target-identified", "name": "Target Identified", "count": 85, "previousCount": 70, "source": "CRM" },
+      { "id": "outreach-in-progress", "name": "Outreach in Progress", "count": 52, "previousCount": 42, "source": "CRM" },
+      { "id": "meeting-scheduled", "name": "Meeting Scheduled", "count": 31, "previousCount": 25, "source": "CRM" },
+      { "id": "due-diligence", "name": "Due Diligence", "count": 18, "previousCount": 14, "source": "CRM" },
+      { "id": "loi-sent", "name": "LOI Sent", "count": 10, "previousCount": 8, "source": "CRM" },
+      { "id": "loi-signed", "name": "LOI Signed", "count": 5, "previousCount": 3, "source": "CRM" },
+      { "id": "onboarding", "name": "Onboarding", "count": 2, "previousCount": 1, "source": "CRM" }
+    ]
+  },
+  "pipelineSummary": {
+    "totalOpportunities": 24,
+    "totalEstimatedValue": 320000000,
+    "stageDistribution": [
+      { "id": "target-identified", "name": "Target Identified", "count": 8, "value": 0, "conversionRate": 0.62 },
+      { "id": "outreach-in-progress", "name": "Outreach in Progress", "count": 5, "value": 65000000, "conversionRate": 0.58 },
+      { "id": "meeting-scheduled", "name": "Meeting Scheduled", "count": 4, "value": 52000000, "conversionRate": 0.55 },
+      { "id": "due-diligence", "name": "Due Diligence", "count": 3, "value": 85000000, "conversionRate": 0.48 },
+      { "id": "loi-sent", "name": "LOI Sent", "count": 2, "value": 45000000, "conversionRate": 0.50 },
+      { "id": "loi-signed", "name": "LOI Signed", "count": 2, "value": 73000000, "conversionRate": 0.40 }
+    ],
+    "averageVelocityDays": 45
+  }
+}

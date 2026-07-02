@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "positioningSystem": "Positioning & Messaging System",
+      "competitiveIntelligence": "Competitive Intelligence",
+      "contentSystem": "Content Management System"
+    }
+  },
+  "differentiationMatrix": [
+    {
+      "id": "dm1a2b3c4-3201-4000-8000-000000000001",
+      "competitorName": "PRYPCO",
+      "category": "Platform",
+      "blocksAdvantage": "Managed marketplace with curated opportunities vs. PRYPCO's self-serve, auction-style platform. Blocks provides institutional-grade due diligence on every asset.",
+      "competitorWeakness": "PRYPCO's auction model may not appeal to risk-averse investors. Less emphasis on regulatory compliance and investor protection.",
+      "evidenceSource": "Platform comparison analysis - June 2026",
+      "proofPoint": "Blocks has 100% regulatory compliance coverage vs. PRYPCO's limited regulatory framework disclosure",
+      "updatedAt": "2026-06-20T10:00:00Z"
+    },
+    {
+      "id": "dm1a2b3c4-3201-4000-8000-000000000002",
+      "competitorName": "Stake",
+      "category": "Market Focus",
+      "blocksAdvantage": "Dual focus on developers and investors. Stake primarily serves end-buyers. Blocks enables property owners to tokenize and raise capital.",
+      "competitorWeakness": "Stake doesn't offer tokenization services for property owners. Limited to brokerage model.",
+      "evidenceSource": "Service offering comparison - June 2026",
+      "proofPoint": "Blocks supports both capital raising (for developers) and investment (for investors) on a single platform",
+      "updatedAt": "2026-06-20T10:00:00Z"
+    },
+    {
+      "id": "dm1a2b3c4-3201-4000-8000-000000000003",
+      "competitorName": "SmartCrowd",
+      "category": "Investment Model",
+      "blocksAdvantage": "Token-based fractional ownership enabling secondary market trading vs. SmartCrowd's traditional crowdfunding model with limited liquidity options.",
+      "competitorWeakness": "SmartCrowd lacks secondary market trading capability. Investors locked in until property sale or exit event.",
+      "evidenceSource": "Investment model analysis - May 2026",
+      "proofPoint": "Blocks secondary market enables peer-to-peer token trading, providing liquidity optionality",
+      "updatedAt": "2026-06-18T14:00:00Z"
+    },
+    {
+      "id": "dm1a2b3c4-3201-4000-8000-000000000004",
+      "competitorName": "Deed",
+      "category": "Geographic Coverage",
+      "blocksAdvantage": "GCC-focused with deep UAE market expertise. Deed is UK/EU focused with limited GCC presence.",
+      "competitorWeakness": "Deed lacks understanding of UAE regulatory environment and local market dynamics.",
+      "evidenceSource": "Market presence analysis - April 2026",
+      "proofPoint": "Blocks exclusively operates under VARA regulation and has established partnerships with top UAE developers",
+      "updatedAt": "2026-06-15T09:00:00Z"
+    },
+    {
+      "id": "dm1a2b3c4-3201-4000-8000-000000000005",
+      "competitorName": "Blocksquare",
+      "category": "Technology",
+      "blocksAdvantage": "End-to-end managed platform vs. Blocksquare's white-label technology provider model. Blocks handles all aspects including investor relations and compliance.",
+      "competitorWeakness": "Blocksquare requires clients to manage their own investor compliance and operations. No direct investor access.",
+      "evidenceSource": "Technology comparison - June 2026",
+      "proofPoint": "Blocks manages the full investor lifecycle from acquisition to ongoing relationship management",
+      "updatedAt": "2026-06-22T11:00:00Z"
+    },
+    {
+      "id": "dm1a2b3c4-3201-4000-8000-000000000006",
+      "competitorName": "Bayut / Property Finder",
+      "category": "Business Model",
+      "blocksAdvantage": "Not a competitor but adjacent. Blocks enables actual investment (ownership) vs. listing/aggregation. Complements rather than competes.",
+      "competitorWeakness": "Listing platforms do not facilitate investment. No tokenization or fractional ownership capabilities.",
+      "evidenceSource": "Business model analysis - April 2026",
+      "proofPoint": "Blocks complements listing platforms by providing the investment layer on top of property discovery",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    }
+  ],
+  "positioningThemes": [
+    {
+      "id": "pt1a2b3c4-3301-4000-8000-000000000001",
+      "name": "Managed Access",
+      "approvedPhrase": "Curated access to institutional-quality real estate investments, typically reserved for large funds, now available through tokenization.",
+      "proofPoint": "All properties undergo institutional-grade due diligence including independent valuation, legal verification, and structural assessment.",
+      "usageExample": "Blocks gives you managed access to Dubai's prime real estate market without the multi-million dollar entry barrier.",
+      "active": true,
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "pt1a2b3c4-3301-4000-8000-000000000002",
+      "name": "Trust & Transparency",
+      "approvedPhrase": "Every property is independently verified, every transaction recorded on-chain, and every fee disclosed upfront.",
+      "proofPoint": "All token issuances backed by legal SPV structure with independent custodianship and regular audit trails.",
+      "usageExample": "With Blocks, you always know exactly what you own, what it's worth, and what you're paying.",
+      "active": true,
+      "updatedAt": "2026-06-18T14:00:00Z"
+    },
+    {
+      "id": "pt1a2b3c4-3301-4000-8000-000000000003",
+      "name": "GCC First, Global Ready",
+      "approvedPhrase": "Built in the UAE for the GCC market, with deep understanding of local regulations, culture, and investor preferences.",
+      "proofPoint": "Operates under VARA regulation. Arabic language platform. Sharia-compliant investment structures available.",
+      "usageExample": "Blocks is built by a team that understands the GCC market, with products designed for regional investors.",
+      "active": true,
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "pt1a2b3c4-3301-4000-8000-000000000004",
+      "name": "Liquidity Optionality",
+      "approvedPhrase": "Tokenization unlocks the ability to trade real estate positions on the secondary market, providing flexibility traditional ownership cannot offer.",
+      "proofPoint": "Secondary market enables peer-to-peer token trading. Liquidity depends on market demand.",
+      "usageExample": "Unlike traditional real estate where your capital is locked in, Blocks gives you the option to trade your position.",
+      "active": false,
+      "updatedAt": "2026-06-25T11:00:00Z"
+    },
+    {
+      "id": "pt1a2b3c4-3301-4000-8000-000000000005",
+      "name": "Developer Enablement",
+      "approvedPhrase": "Unlock capital from your real estate portfolio through tokenization, reaching a global investor base.",
+      "proofPoint": "Emaar and Nakheel partnerships demonstrate Blocks' ability to tokenize institutional-grade assets.",
+      "usageExample": "Transform your real estate assets into investable opportunities for a global audience.",
+      "active": true,
+      "updatedAt": "2026-06-28T10:00:00Z"
+    }
+  ],
+  "messagingGuide": [
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000001",
+      "blockType": "ten-second",
+      "content": "Blocks is the UAE's trusted platform for tokenized real estate investment — giving you access to prime Dubai properties from $100.",
+      "audience": "General Public",
+      "version": 3,
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000002",
+      "blockType": "thirty-second",
+      "content": "Blocks makes real estate investment accessible, transparent, and liquid. We tokenize prime Dubai properties, breaking them into digital tokens you can buy from $100. Every property undergoes institutional-grade due diligence. You can track your portfolio in real-time and trade tokens on our secondary market.",
+      "audience": "Prospective Investors",
+      "version": 2,
+      "status": "approved",
+      "updatedAt": "2026-06-18T14:00:00Z"
+    },
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000003",
+      "blockType": "headline",
+      "content": "Own Dubai Real Estate. Starting at $100.",
+      "audience": "General Public",
+      "version": 5,
+      "status": "approved",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000004",
+      "blockType": "sales-bullet",
+      "content": "• Access Dubai's prime real estate market with minimum $100 investment\n• Each property independently valued and legally verified\n• Trade your tokens on the secondary market\n• Track performance through your investor dashboard\n• Regulated platform with full compliance framework",
+      "audience": "Investor-Facing",
+      "version": 2,
+      "status": "approved",
+      "updatedAt": "2026-06-22T10:00:00Z"
+    },
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000005",
+      "blockType": "founder-narrative",
+      "content": "We built Blocks because we believe real estate investment should not be reserved for the ultra-wealthy. By combining blockchain technology with rigorous traditional due diligence, we've created a platform that opens Dubai's premium property market to a new generation of investors.",
+      "audience": "Media, Partners",
+      "version": 1,
+      "status": "reviewed",
+      "updatedAt": "2026-06-25T11:00:00Z"
+    },
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000006",
+      "blockType": "investor-variant",
+      "content": "Diversify your portfolio with real assets. Blocks provides institutional-grade real estate investments with lower minimums, full transparency, and the flexibility to trade your position.",
+      "audience": "Sophisticated Investors",
+      "version": 1,
+      "status": "approved",
+      "updatedAt": "2026-06-28T09:00:00Z"
+    },
+    {
+      "id": "mb1a2b3c4-3401-4000-8000-000000000007",
+      "blockType": "developer-variant",
+      "content": "Tokenize your real estate portfolio and unlock capital for growth. Blocks helps developers reach a global investor base while maintaining operational control.",
+      "audience": "Real Estate Developers",
+      "version": 1,
+      "status": "draft",
+      "updatedAt": "2026-07-01T08:00:00Z"
+    }
+  ],
+  "guardrails": [
+    {
+      "id": "pg1a2b3c4-3501-4000-8000-000000000001",
+      "guardrailType": "crypto-comparison",
+      "rule": "Do not compare Blocks to a crypto exchange or trading app. Blocks is a real estate investment platform, not a cryptocurrency platform.",
+      "rationale": "Comparisons to crypto platforms may create confusion about the nature of the investment and attract the wrong regulatory classification.",
+      "approvedAlternative": "Position as a regulated real estate investment platform leveraging blockchain technology for efficient ownership transfer.",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "pg1a2b3c4-3501-4000-8000-000000000002",
+      "guardrailType": "trading-app-comparison",
+      "rule": "Do not market Blocks as a 'trading app' or suggest token holders should actively trade properties. Real estate is a long-term investment.",
+      "rationale": "Active trading framing could mislead investors about the liquidity and appropriate holding period for real estate tokens.",
+      "approvedAlternative": "Emphasize long-term investment with secondary market access providing flexibility, not a day-trading platform.",
+      "updatedAt": "2026-06-18T14:00:00Z"
+    },
+    {
+      "id": "pg1a2b3c4-3501-4000-8000-000000000003",
+      "guardrailType": "self-serve-saas",
+      "rule": "Avoid positioning Blocks as a self-serve SaaS platform. Blocks is a managed marketplace with curated opportunities.",
+      "rationale": "Self-serve framing could imply less oversight and due diligence. Blocks' value proposition includes active curation and management.",
+      "approvedAlternative": "Highlight managed marketplace with institutional-grade vetting and ongoing portfolio monitoring.",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "pg1a2b3c4-3501-4000-8000-000000000004",
+      "guardrailType": "regulatory-claim",
+      "rule": "Do not claim Blocks is 'fully regulated' by any government authority. Use accurate language about regulatory framework compliance.",
+      "rationale": "Absolute regulatory claims may be misleading. Blocks operates within available regulatory frameworks but is not 'government regulated' in the traditional securities sense in all jurisdictions.",
+      "approvedAlternative": "State that Blocks operates under VARA's regulatory framework and complies with applicable UAE regulations.",
+      "updatedAt": "2026-06-22T11:00:00Z"
+    },
+    {
+      "id": "pg1a2b3c4-3501-4000-8000-000000000005",
+      "guardrailType": "liquidity-claim",
+      "rule": "Do not guarantee liquidity or imply immediate sale capability on the secondary market.",
+      "rationale": "Secondary market liquidity depends on buyer demand. Guaranteeing liquidity could create regulatory exposure and investor complaints.",
+      "approvedAlternative": "Describe secondary market access as providing 'potential liquidity' and 'flexibility to trade subject to market demand'.",
+      "updatedAt": "2026-06-25T14:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day positioning and messaging dashboard with message block approval, guardrail compliance, and theme activation.",
+      "metrics": [
+        {
+          "id": "pos-90-message-blocks",
+          "name": "Approved Message Blocks",
+          "targetRange": "8",
+          "current": 5,
+          "target": 8,
+          "unit": "blocks",
+          "status": "at-risk",
+          "sourceSystem": "Positioning & Messaging System",
+          "owner": "Brand Team",
+          "refreshCadence": "Weekly",
+          "trend": [2, 2, 3, 3, 4, 4, 5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pos-90-guardrails",
+          "name": "Active Guardrails",
+          "targetRange": "5",
+          "current": 5,
+          "target": 5,
+          "unit": "guardrails",
+          "status": "on-track",
+          "sourceSystem": "Positioning & Messaging System",
+          "owner": "Brand Team",
+          "refreshCadence": "Monthly",
+          "trend": [2, 3, 3, 4, 4, 5, 5],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "pos-90-themes",
+          "name": "Active Positioning Themes",
+          "targetRange": "4",
+          "current": 4,
+          "target": 4,
+          "unit": "themes",
+          "status": "on-track",
+          "sourceSystem": "Positioning & Messaging System",
+          "owner": "Brand Team",
+          "refreshCadence": "Monthly",
+          "trend": [2, 2, 3, 3, 3, 4, 4],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic positioning dashboard with competitive intelligence coverage and differentiation completeness.",
+      "metrics": [
+        {
+          "id": "pos-12-diff-matrix",
+          "name": "Differentiation Entries",
+          "targetRange": "8",
+          "current": 6,
+          "target": 8,
+          "unit": "entries",
+          "status": "on-track",
+          "sourceSystem": "Competitive Intelligence",
+          "owner": "Brand Team",
+          "refreshCadence": "Monthly",
+          "trend": [3, 3, 4, 4, 5, 5, 6],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "pos-12-message-version",
+          "name": "Message Block Version Currency",
+          "targetRange": "100%",
+          "current": 0.80,
+          "target": 1.0,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Positioning & Messaging System",
+          "owner": "Brand Team",
+          "refreshCadence": "Monthly",
+          "trend": [0.60, 0.65, 0.70, 0.72, 0.75, 0.78, 0.80],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "jurisdictionRegistry": "Jurisdiction Registry",
+      "legalReview": "Legal Review System",
+      "marketIntelligence": "Market Intelligence"
+    }
+  },
+  "jurisdictions": [
+    {
+      "id": "jr1a2b3c4-1901-4000-8000-000000000001",
+      "name": "UAE",
+      "marketEntryStatus": "entered",
+      "regulatoryBody": "Securities and Commodities Authority (SCA) / VARA",
+      "primaryLanguage": "Arabic",
+      "priority": 1,
+      "notes": "Primary market. Fully operational with VARA regulatory coverage. Focus on continuous compliance and market expansion.",
+      "updatedAt": "2026-06-30T10:00:00Z"
+    },
+    {
+      "id": "jr1a2b3c4-1901-4000-8000-000000000002",
+      "name": "Saudi Arabia",
+      "marketEntryStatus": "in-assessment",
+      "regulatoryBody": "Capital Market Authority (CMA)",
+      "primaryLanguage": "Arabic",
+      "priority": 2,
+      "notes": "Assessment in progress. Regulatory framework for tokenized assets under development by CMA. Engaging with local legal counsel.",
+      "updatedAt": "2026-06-25T14:00:00Z"
+    },
+    {
+      "id": "jr1a2b3c4-1901-4000-8000-000000000003",
+      "name": "Kuwait",
+      "marketEntryStatus": "in-assessment",
+      "regulatoryBody": "Capital Markets Authority (CMA Kuwait)",
+      "primaryLanguage": "Arabic",
+      "priority": 3,
+      "notes": "Initial assessment underway. Small but wealthy market with high potential for tokenized real estate.",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "jr1a2b3c4-1901-4000-8000-000000000004",
+      "name": "Qatar",
+      "marketEntryStatus": "not-assessed",
+      "regulatoryBody": "Qatar Financial Markets Authority (QFMA)",
+      "primaryLanguage": "Arabic",
+      "priority": 4,
+      "notes": "Not yet assessed. Potential market for 2027 expansion.",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "jr1a2b3c4-1901-4000-8000-000000000005",
+      "name": "Bahrain",
+      "marketEntryStatus": "ready-to-enter",
+      "regulatoryBody": "Central Bank of Bahrain (CBB)",
+      "primaryLanguage": "Arabic",
+      "priority": 2,
+      "notes": "Ready to enter. CBB has progressive fintech regulations. Local partnership identified.",
+      "updatedAt": "2026-06-28T11:00:00Z"
+    },
+    {
+      "id": "jr1a2b3c4-1901-4000-8000-000000000006",
+      "name": "Oman",
+      "marketEntryStatus": "partner-led",
+      "regulatoryBody": "Capital Market Authority (CMA Oman)",
+      "primaryLanguage": "Arabic",
+      "priority": 5,
+      "notes": "Partner-led approach through existing relationships. Local partner identified for regulatory navigation.",
+      "updatedAt": "2026-06-22T10:00:00Z"
+    }
+  ],
+  "guardrails": {
+    "jr1a2b3c4-1901-4000-8000-000000000001": [
+      {
+        "id": "cg1a2b3c4-2001-4000-8000-000000000001",
+        "claim": "Fractional real estate ownership",
+        "status": "allowed",
+        "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+        "mandatoryDisclaimer": "Tokenized ownership represents proportional beneficial interest in the underlying asset. Legal structure is an SPV.",
+        "approvalOwner": "Legal Team - UAE",
+        "escalationPath": "Head of Legal",
+        "updatedAt": "2026-06-15T10:00:00Z"
+      },
+      {
+        "id": "cg1a2b3c4-2001-4000-8000-000000000002",
+        "claim": "Secondary market trading",
+        "status": "conditional",
+        "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+        "mandatoryDisclaimer": "Secondary market trading is subject to VARA regulations and platform terms. Liquidity is not guaranteed.",
+        "approvalOwner": "Legal Team - UAE",
+        "escalationPath": "Head of Legal",
+        "updatedAt": "2026-06-18T14:00:00Z"
+      },
+      {
+        "id": "cg1a2b3c4-2001-4000-8000-000000000003",
+        "claim": "Rental yield distributions",
+        "status": "allowed",
+        "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+        "mandatoryDisclaimer": "Distributions are based on actual rental income after expenses. Past distributions do not guarantee future payments.",
+        "approvalOwner": "Legal Team - UAE",
+        "escalationPath": "Head of Legal",
+        "updatedAt": "2026-06-20T09:00:00Z"
+      }
+    ],
+    "jr1a2b3c4-1901-4000-8000-000000000005": [
+      {
+        "id": "cg1a2b3c4-2001-4000-8000-000000000004",
+        "claim": "Fractional real estate ownership",
+        "status": "restricted",
+        "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+        "mandatoryDisclaimer": "Under CBB review for tokenized asset classification. Additional disclaimers may be required upon regulatory guidance.",
+        "approvalOwner": "Legal Team - Bahrain",
+        "escalationPath": "Regional Legal Director",
+        "updatedAt": "2026-06-28T11:00:00Z"
+      }
+    ]
+  },
+  "entryMemos": [
+    {
+      "id": "em1a2b3c4-2101-4000-8000-000000000001",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000002",
+      "title": "Saudi Arabia Market Entry Assessment",
+      "executiveSummary": "Saudi Arabia represents the largest GCC market outside UAE with strong demand for real estate investment. CMA is developing digital asset regulations. Market entry recommended in phased approach.",
+      "recommendation": "Phased entry beginning with institutional partnerships, followed by retail investor access once CMA framework matures.",
+      "evidenceHighlights": "Saudi real estate market valued at $500B+. CMA Fintech Lab enables sandbox testing. Strong government push for financial innovation under Vision 2030. High demand for Sharia-compliant investment products.",
+      "risksAndAssumptions": [
+        "CMA regulatory framework for tokenized assets not yet finalized",
+        "Local partner required for Sharia compliance certification",
+        "Arabic language localization essential",
+        "Cultural considerations for marketing financial products"
+      ],
+      "nextActions30_60_90": [
+        "Engage Saudi legal counsel for regulatory analysis (30 days)",
+        "Initiate CMA Fintech Lab sandbox application (60 days)",
+        "Identify and evaluate local partners (90 days)"
+      ],
+      "owner": "Regional Expansion Lead",
+      "status": "reviewed",
+      "createdAt": "2026-05-10T09:00:00Z"
+    },
+    {
+      "id": "em1a2b3c4-2101-4000-8000-000000000002",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000005",
+      "title": "Bahrain Market Entry Assessment",
+      "executiveSummary": "Bahrain has the most progressive fintech regulatory environment in the GCC after UAE. CBB's regulatory sandbox and crypto-asset module provide clear framework for tokenized assets.",
+      "recommendation": "Direct market entry via partnership with local fintech. No regulatory blockers identified.",
+      "evidenceHighlights": "CBB Crypto-Asset Module provides clear regulatory pathway. Bahrain Fintech Bay ecosystem. Strong English proficiency reducing localization costs.",
+      "risksAndAssumptions": [
+        "Smaller market size compared to UAE or Saudi",
+        "Competition from Bahrain-based crypto platforms",
+        "Regulatory alignment with VARA framework"
+      ],
+      "nextActions30_60_90": [
+        "Finalize partnership agreement with local fintech (30 days)",
+        "Submit regulatory notification to CBB (45 days)",
+        "Soft launch with selected properties (90 days)"
+      ],
+      "owner": "Regional Expansion Lead",
+      "status": "approved",
+      "createdAt": "2026-04-15T11:00:00Z"
+    },
+    {
+      "id": "em1a2b3c4-2101-4000-8000-000000000003",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000003",
+      "title": "Kuwait Market Entry Assessment",
+      "executiveSummary": "Kuwait market shows potential for tokenized real estate given high wealth concentration. However, CMA Kuwait regulatory framework for digital assets is still developing.",
+      "recommendation": "Monitor regulatory development and maintain preliminary partner discussions. Defer active entry until regulatory clarity improves.",
+      "evidenceHighlights": "High per-capita wealth in Kuwait. Strong demand for alternative investments. Limited exposure to real estate tokenization.",
+      "risksAndAssumptions": [
+        "CMA Kuwait has not yet published digital asset regulations",
+        "Political dynamics may impact market entry timing",
+        "Smaller expatriate investor base"
+      ],
+      "nextActions30_60_90": [
+        "Monitor CMA Kuwait regulatory developments (30 days)",
+        "Document potential local partners (60 days)",
+        "Prepare preliminary market entry plan (90 days)"
+      ],
+      "owner": "Regional Expansion Lead",
+      "status": "draft",
+      "createdAt": "2026-06-10T08:00:00Z"
+    }
+  ],
+  "claimReference": [
+    {
+      "id": "cr1a2b3c4-2201-4000-8000-000000000001",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+      "claim": "Sharia-compliant real estate investment",
+      "allowed": true,
+      "condition": "Requires Sharia board approval for each tokenized asset. Must include Sharia compliance certificate.",
+      "mandatoryDisclaimer": "Sharia compliance certification issued by [Sharia Board Name]. Investors should conduct their own due diligence.",
+      "citation": "UAE Federal Law No. 6 of 1985 (Civil Transactions Law) - Sharia compliance standards",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "cr1a2b3c4-2201-4000-8000-000000000002",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+      "claim": "Institutional-grade due diligence",
+      "allowed": true,
+      "condition": "Due diligence process must be documented and available for regulatory review upon request.",
+      "mandatoryDisclaimer": "Due diligence conducted by Blocks and its appointed third-party experts. Due diligence does not eliminate investment risk.",
+      "citation": "VARA Rulebook Section 4.2 - Disclosure requirements",
+      "updatedAt": "2026-06-18T14:00:00Z"
+    },
+    {
+      "id": "cr1a2b3c4-2201-4000-8000-000000000003",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000001",
+      "claim": "Freehold ownership for non-UAE nationals",
+      "allowed": true,
+      "condition": "Applicable only in designated freehold areas as defined by Dubai Land Department. Requires DLD registration.",
+      "mandatoryDisclaimer": "Freehold ownership rights are subject to Dubai Land Department regulations and designated freehold area designations.",
+      "citation": "Dubai Law No. 7 of 2006 (Real Property Registration) - Freehold areas",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "cr1a2b3c4-2201-4000-8000-000000000004",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000002",
+      "claim": "Real estate investment for non-Saudi nationals",
+      "allowed": false,
+      "condition": "Saudi Arabia restricts real estate ownership by non-GCC nationals in certain areas. Tokenization structure requires legal review.",
+      "mandatoryDisclaimer": null,
+      "citation": "Saudi Arabian Investment Law - Real estate ownership restrictions",
+      "updatedAt": "2026-06-25T11:00:00Z"
+    },
+    {
+      "id": "cr1a2b3c4-2201-4000-8000-000000000005",
+      "jurisdictionId": "jr1a2b3c4-1901-4000-8000-000000000005",
+      "claim": "CBB-regulated tokenization platform",
+      "allowed": true,
+      "condition": "Must operate under CBB Crypto-Asset Module regulations. Regular reporting and compliance audits required.",
+      "mandatoryDisclaimer": "Regulated by the Central Bank of Bahrain under the Crypto-Asset Module. Investors should review the relevant regulations.",
+      "citation": "CBB Rulebook Volume 6 - Crypto-Asset Module",
+      "updatedAt": "2026-06-28T11:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day regional expansion dashboard with jurisdiction assessment progress, guardrail coverage, and entry memo completion.",
+      "metrics": [
+        {
+          "id": "reg-90-jurisdictions-assessed",
+          "name": "Jurisdictions Assessed",
+          "targetRange": "4",
+          "current": 3,
+          "target": 4,
+          "unit": "jurisdictions",
+          "status": "at-risk",
+          "sourceSystem": "Jurisdiction Registry",
+          "owner": "Regional Expansion Lead",
+          "refreshCadence": "Weekly",
+          "trend": [1, 1, 2, 2, 2, 3, 3],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "reg-90-guardrails",
+          "name": "Claim Guardrails Documented",
+          "targetRange": "20",
+          "current": 15,
+          "target": 20,
+          "unit": "guardrails",
+          "status": "on-track",
+          "sourceSystem": "Jurisdiction Registry",
+          "owner": "Legal Team",
+          "refreshCadence": "Weekly",
+          "trend": [5, 6, 8, 9, 11, 13, 15],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "reg-90-entry-memos",
+          "name": "Market Entry Memos Approved",
+          "targetRange": "2",
+          "current": 1,
+          "target": 2,
+          "unit": "memos",
+          "status": "at-risk",
+          "sourceSystem": "Jurisdiction Registry",
+          "owner": "Regional Expansion Lead",
+          "refreshCadence": "Monthly",
+          "trend": [0, 0, 0, 0, 0, 1, 1],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic regional expansion dashboard with GCC market entry milestones.",
+      "metrics": [
+        {
+          "id": "reg-12-new-markets",
+          "name": "New Markets Entered",
+          "targetRange": "2",
+          "current": 0,
+          "target": 2,
+          "unit": "markets",
+          "status": "off-track",
+          "sourceSystem": "Jurisdiction Registry",
+          "owner": "Regional Expansion Lead",
+          "refreshCadence": "Quarterly",
+          "trend": [0, 0, 0, 0],
+          "trendLabels": ["Q1", "Q2", "Q3", "Q4"]
+        },
+        {
+          "id": "reg-12-claim-ref",
+          "name": "Claim Reference Entries",
+          "targetRange": "30",
+          "current": 5,
+          "target": 30,
+          "unit": "entries",
+          "status": "off-track",
+          "sourceSystem": "Jurisdiction Registry",
+          "owner": "Legal Team",
+          "refreshCadence": "Monthly",
+          "trend": [1, 2, 2, 3, 3, 4, 5],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

@@ -3,152 +3,57 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 
+import analyticsReportingRouter from './domains/analytics-reporting/index';
+import developerAcquisitionRouter from './domains/developer-acquisition/index';
+import investorAcquisitionRouter from './domains/investor-acquisition/index';
+import investorServicingRouter from './domains/investor-servicing/index';
+import contentSeoRouter from './domains/content-seo/index';
+import complianceTrustRouter from './domains/compliance-trust/index';
+import campaignsRouter from './domains/campaigns/index';
+import salesOpsCrmRouter from './domains/sales-ops-crm/index';
+import riskManagementRouter from './domains/risk-management/index';
+import regionalExpansionRouter from './domains/regional-expansion/index';
+import productPlatformRouter from './domains/product-platform/index';
+import productMarketingRouter from './domains/product-marketing/index';
+import prEventsRouter from './domains/pr-events/index';
+import positioningMessagingRouter from './domains/positioning-messaging/index';
+import partnershipsRouter from './domains/partnerships/index';
+import paidMediaRouter from './domains/paid-media/index';
+import operationsRouter from './domains/operations/index';
+import websitesConversionRouter from './domains/websites-conversion/index';
+
 const app = express();
 const PORT = process.env.PORT || 3001;
-const DATA_DIR = path.resolve(__dirname, '../../data');
 
 app.use(cors());
 app.use(express.json());
 
-function loadData<T>(filename: string): T | null {
-  const filePath = path.join(DATA_DIR, filename);
-  if (!fs.existsSync(filePath)) return null;
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-}
-
-// ─── Core KPI Data ───
-app.get('/api/kpis', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data);
+// Health check
+app.get('/api/health', (_req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// ─── Developer KPIs ───
-app.get('/api/kpis/developer', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.developerKPIs);
-});
+// Mount analytics-reporting and sales-ops-crm at root /api (they have unique paths)
+app.use('/api', analyticsReportingRouter);
+app.use('/api', salesOpsCrmRouter);
 
-// ─── Investor KPIs ───
-app.get('/api/kpis/investor', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.investorKPIs);
-});
-
-// ─── PR KPIs ───
-app.get('/api/kpis/pr', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.prKPIs);
-});
-
-// ─── SEO/Content KPIs ───
-app.get('/api/kpis/seo-content', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.seoContentKPIs);
-});
-
-// ─── Trust/Compliance KPIs ───
-app.get('/api/kpis/trust-compliance', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.trustComplianceKPIs);
-});
-
-// ─── Funnel Data ───
-app.get('/api/funnels', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json({
-    investor: data.investorFunnel,
-    developer: data.developerFunnel
-  });
-});
-
-app.get('/api/funnels/investor', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.investorFunnel);
-});
-
-app.get('/api/funnels/developer', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.developerFunnel);
-});
-
-// ─── Share of Voice ───
-app.get('/api/share-of-voice', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.shareOfVoice);
-});
-
-// ─── Document Tracking ───
-app.get('/api/document-tracking', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.documentTracking);
-});
-
-// ─── Subscription Tracking ───
-app.get('/api/subscription-tracking', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.subscriptionTracking);
-});
-
-// ─── KPI Dictionary ───
-app.get('/api/kpi-dictionary', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.kpiDictionary);
-});
-
-// ─── Weekly Review ───
-app.get('/api/weekly-review', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.weeklyReview);
-});
-
-// ─── Funnel Instrumentation Specs ───
-app.get('/api/funnel-instrumentation', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  res.json(data.funnelInstrumentation);
-});
-
-// ─── Dashboard Overview (aggregated for home) ───
-app.get('/api/overview', (_req, res) => {
-  const data = loadData<any>('kpis.json');
-  if (!data) return res.status(404).json({ error: 'No data found' });
-
-  const overview = {
-    meta: data.meta,
-    dev90Status: data.developerKPIs['90days'].metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    dev12Status: data.developerKPIs['12months'].metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    inv90Status: data.investorKPIs['90days'].metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    inv12Status: data.investorKPIs['12months'].metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    prStatus: data.prKPIs.metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    seoStatus: data.seoContentKPIs.metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    tcStatus: data.trustComplianceKPIs.metrics.map((m: any) => ({
-      name: m.name, status: m.status, current: m.current, target: m.target, unit: m.unit
-    })),
-    weeklyReview: {
-      status: data.weeklyReview.sections.map((s: any) => ({ name: s.name, status: s.status })),
-      openActions: data.weeklyReview.actionItems.filter((a: any) => a.status !== 'done').length
-    },
-    funnelTotals: {
-      investorConversionRate: data.investorFunnel.stages[data.investorFunnel.stages.length - 1].count / data.investorFunnel.stages[0].count,
-      developerConversionRate: data.developerFunnel.stages[data.developerFunnel.stages.length - 1].count / data.developerFunnel.stages[0].count,
-      investorStages: data.investorFunnel.stages,
-      developerStages: data.developerFunnel.stages
-    }
-  };
-
-  res.json(overview);
-});
+// Mount all other domain routers at /api/{domain-name} to avoid route conflicts
+app.use('/api/campaigns', campaignsRouter);
+app.use('/api/developer-acquisition', developerAcquisitionRouter);
+app.use('/api/investor-acquisition', investorAcquisitionRouter);
+app.use('/api/investor-servicing', investorServicingRouter);
+app.use('/api/content-seo', contentSeoRouter);
+app.use('/api/compliance-trust', complianceTrustRouter);
+app.use('/api/risk-management', riskManagementRouter);
+app.use('/api/regional-expansion', regionalExpansionRouter);
+app.use('/api/product-platform', productPlatformRouter);
+app.use('/api/product-marketing', productMarketingRouter);
+app.use('/api/pr-events', prEventsRouter);
+app.use('/api/positioning-messaging', positioningMessagingRouter);
+app.use('/api/partnerships', partnershipsRouter);
+app.use('/api/paid-media', paidMediaRouter);
+app.use('/api/operations', operationsRouter);
+app.use('/api/websites-conversion', websitesConversionRouter);
 
 // Serve static files from client build in production
 const clientDist = path.resolve(__dirname, '../../client/dist');

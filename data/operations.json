@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "vendorRegistry": "Vendor Registry System",
+      "onboardingSystem": "Onboarding Management System",
+      "budgetManagement": "Budget Management System",
+      "escalationSystem": "Escalation Management System"
+    }
+  },
+  "vendorRegistry": [
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000001",
+      "legalName": "Creative Digital Agency DMCC",
+      "vendorType": "agency",
+      "serviceScope": "Creative design services for paid media assets, landing pages, and brand collateral.",
+      "owner": "Fatima Al-Mansouri",
+      "contractStatus": "signed",
+      "ndaSigned": true,
+      "complianceAcknowledged": true,
+      "bankDetailsProvided": true,
+      "invoiceFormat": "Monthly retainer + project-based",
+      "status": "active",
+      "createdAt": "2026-02-01T10:00:00Z"
+    },
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000002",
+      "legalName": "DataStream Analytics LLC",
+      "vendorType": "saas-vendor",
+      "serviceScope": "Web analytics platform (GA4 premium), custom dashboard development, and data pipeline management.",
+      "owner": "Data Team",
+      "contractStatus": "signed",
+      "ndaSigned": true,
+      "complianceAcknowledged": true,
+      "bankDetailsProvided": true,
+      "invoiceFormat": "Annual subscription + usage-based",
+      "status": "active",
+      "createdAt": "2026-01-15T09:00:00Z"
+    },
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000003",
+      "legalName": "Al-Rashid Translation Services",
+      "vendorType": "freelancer",
+      "serviceScope": "Arabic translation and localization services for content assets, marketing materials, and platform UI.",
+      "owner": "Noura Al-Rashid",
+      "contractStatus": "signed",
+      "ndaSigned": true,
+      "complianceAcknowledged": true,
+      "bankDetailsProvided": false,
+      "invoiceFormat": "Per-word rate + project fees",
+      "status": "active",
+      "createdAt": "2026-03-01T11:00:00Z"
+    },
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000004",
+      "legalName": "SecureNet IT Services",
+      "vendorType": "service-provider",
+      "serviceScope": "Managed IT infrastructure, cloud hosting, cybersecurity monitoring, and incident response.",
+      "owner": "Engineering Team",
+      "contractStatus": "signed",
+      "ndaSigned": true,
+      "complianceAcknowledged": true,
+      "bankDetailsProvided": true,
+      "invoiceFormat": "Monthly managed services fee",
+      "status": "active",
+      "createdAt": "2025-12-01T10:00:00Z"
+    },
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000005",
+      "legalName": "Gulf Media Solutions",
+      "vendorType": "agency",
+      "serviceScope": "Media buying and campaign management for paid media across LinkedIn, Google, and Meta.",
+      "owner": "Fatima Al-Mansouri",
+      "contractStatus": "draft",
+      "ndaSigned": false,
+      "complianceAcknowledged": false,
+      "bankDetailsProvided": false,
+      "invoiceFormat": "Media spend + management fee (12%)",
+      "status": "pending",
+      "createdAt": "2026-06-10T09:00:00Z"
+    },
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000006",
+      "legalName": "Freelance UI Designer (Ahmed Hassan)",
+      "vendorType": "freelancer",
+      "serviceScope": "UI/UX design for platform features, landing pages, and email templates.",
+      "owner": "Product Team",
+      "contractStatus": "signed",
+      "ndaSigned": true,
+      "complianceAcknowledged": true,
+      "bankDetailsProvided": true,
+      "invoiceFormat": "Hourly rate - $85/hr",
+      "status": "active",
+      "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "ve1a2b3c4-4201-4000-8000-000000000007",
+      "legalName": "Compliance Tech Solutions",
+      "vendorType": "saas-vendor",
+      "serviceScope": "Regulatory compliance monitoring platform for tracking regulatory changes across GCC jurisdictions.",
+      "owner": "Legal Team",
+      "contractStatus": "expired",
+      "ndaSigned": true,
+      "complianceAcknowledged": true,
+      "bankDetailsProvided": true,
+      "invoiceFormat": "Annual subscription - $24,000/year",
+      "status": "pending",
+      "createdAt": "2025-06-01T09:00:00Z"
+    }
+  ],
+  "onboardingWorkflow": [
+    {
+      "id": "ow1a2b3c4-4301-4000-8000-000000000001",
+      "vendorId": "ve1a2b3c4-4201-4000-8000-000000000005",
+      "status": "contract-pending",
+      "checks": [
+        { "step": "NDA Execution", "completed": false, "completedAt": null },
+        { "step": "Service Scope Definition", "completed": true, "completedAt": "2026-06-15T10:00:00Z" },
+        { "step": "Pricing Agreement", "completed": true, "completedAt": "2026-06-18T14:00:00Z" },
+        { "step": "Contract Review", "completed": false, "completedAt": null },
+        { "step": "Compliance Acknowledgment", "completed": false, "completedAt": null },
+        { "step": "Bank Details Collection", "completed": false, "completedAt": null },
+        { "step": "System Access Setup", "completed": false, "completedAt": null }
+      ],
+      "owner": "Sara Al-Mutairi",
+      "createdAt": "2026-06-10T09:00:00Z"
+    },
+    {
+      "id": "ow1a2b3c4-4301-4000-8000-000000000002",
+      "vendorId": "ve1a2b3c4-4201-4000-8000-000000000003",
+      "status": "onboarded",
+      "checks": [
+        { "step": "NDA Execution", "completed": true, "completedAt": "2026-03-05T10:00:00Z" },
+        { "step": "Service Scope Definition", "completed": true, "completedAt": "2026-03-08T11:00:00Z" },
+        { "step": "Pricing Agreement", "completed": true, "completedAt": "2026-03-10T14:00:00Z" },
+        { "step": "Contract Review", "completed": true, "completedAt": "2026-03-12T16:00:00Z" },
+        { "step": "Compliance Acknowledgment", "completed": true, "completedAt": "2026-03-12T16:00:00Z" },
+        { "step": "Bank Details Collection", "completed": false, "completedAt": null },
+        { "step": "System Access Setup", "completed": true, "completedAt": "2026-03-15T09:00:00Z" }
+      ],
+      "owner": "Noura Al-Rashid",
+      "createdAt": "2026-03-01T11:00:00Z"
+    },
+    {
+      "id": "ow1a2b3c4-4301-4000-8000-000000000004",
+      "vendorId": "ve1a2b3c4-4201-4000-8000-000000000007",
+      "status": "not-started",
+      "checks": [
+        { "step": "NDA Execution", "completed": false, "completedAt": null },
+        { "step": "Service Scope Definition", "completed": false, "completedAt": null },
+        { "step": "Pricing Agreement", "completed": false, "completedAt": null },
+        { "step": "Contract Review", "completed": false, "completedAt": null },
+        { "step": "Compliance Acknowledgment", "completed": false, "completedAt": null },
+        { "step": "Bank Details Collection", "completed": false, "completedAt": null },
+        { "step": "System Access Setup", "completed": false, "completedAt": null }
+      ],
+      "owner": "Legal Team",
+      "createdAt": "2026-06-28T10:00:00Z"
+    }
+  ],
+  "onboardingChecklists": [
+    {
+      "id": "oc1a2b3c4-4401-4000-8000-000000000001",
+      "vendorId": "ve1a2b3c4-4201-4000-8000-000000000005",
+      "steps": [
+        { "stepName": "NDA Signing", "required": true, "completed": false },
+        { "stepName": "Contract Signing", "required": true, "completed": false },
+        { "stepName": "Compliance Training", "required": true, "completed": false },
+        { "stepName": "Bank Account Setup", "required": true, "completed": false },
+        { "stepName": "System Access Provisioning", "required": false, "completed": false },
+        { "stepName": "Brand Guidelines Handover", "required": true, "completed": true },
+        { "stepName": "Kickoff Meeting", "required": false, "completed": false }
+      ],
+      "allCompleted": false,
+      "owner": "Sara Al-Mutairi",
+      "createdAt": "2026-06-10T09:00:00Z"
+    }
+  ],
+  "escalationRules": [
+    {
+      "id": "er1a2b3c4-4501-4000-8000-000000000001",
+      "category": "budget",
+      "condition": "Budget overrun > 10% of approved spend",
+      "approvalThreshold": "Up to $25K: Team Lead. $25K-$100K: Director. >$100K: VP/CEO.",
+      "decisionOwner": "Finance Director",
+      "responseSla": "24 hours",
+      "escalationPath": "Team Lead -> Director -> VP Marketing -> CEO",
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "er1a2b3c4-4501-4000-8000-000000000002",
+      "category": "compliance",
+      "condition": "Compliance review flag on campaign messaging or creative asset",
+      "approvalThreshold": "All compliance flags must be resolved before campaign launch regardless of value.",
+      "decisionOwner": "Compliance Lead",
+      "responseSla": "4 hours",
+      "escalationPath": "Compliance Reviewer -> Compliance Lead -> Legal Director -> CEO",
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "er1a2b3c4-4501-4000-8000-000000000003",
+      "category": "timeline",
+      "condition": "Campaign launch delay > 5 business days from scheduled date",
+      "approvalThreshold": "Delay up to 5 days: Team Lead notification. >5 days: Director escalation required.",
+      "decisionOwner": "Campaign Director",
+      "responseSla": "8 hours",
+      "escalationPath": "Campaign Manager -> Team Lead -> Campaign Director -> VP Marketing",
+      "createdAt": "2026-02-01T11:00:00Z"
+    },
+    {
+      "id": "er1a2b3c4-4501-4000-8000-000000000004",
+      "category": "scope",
+      "condition": "Unplanned scope change affecting >2 teams or >40 hours of effort",
+      "approvalThreshold": "Scope changes assessed by Project Management Office. Director approval required for cross-team impact.",
+      "decisionOwner": "PMO Director",
+      "responseSla": "48 hours",
+      "escalationPath": "Project Manager -> PMO -> Director -> VP",
+      "createdAt": "2026-02-15T09:00:00Z"
+    },
+    {
+      "id": "er1a2b3c4-4501-4000-8000-000000000005",
+      "category": "payment",
+      "condition": "Vendor invoice > 30 days overdue or disputed amount > $10K",
+      "approvalThreshold": "Up to $10K: Accounts Payable. >$10K: Finance Director approval for dispute resolution.",
+      "decisionOwner": "Finance Director",
+      "responseSla": "5 business days",
+      "escalationPath": "AP Team -> Finance Manager -> Finance Director -> CFO",
+      "createdAt": "2026-03-01T10:00:00Z"
+    }
+  ],
+  "budgetModel": {
+    "totalBudget": 2450000,
+    "channelAllocation": {
+      "Paid Media (LinkedIn)": 450000,
+      "Paid Media (Google)": 300000,
+      "Paid Media (Meta)": 250000,
+      "Content Production": 350000,
+      "Events & Sponsorships": 200000,
+      "PR & Communications": 150000,
+      "Tools & Software": 180000,
+      "Agency & Freelancer": 320000,
+      "Contingency": 250000
+    },
+    "assumptions": [
+      "Q3-Q4 weighted spend for launch campaigns (60% of annual budget in H2)",
+      "LinkedIn primary channel for HNWI targeting at $50-80 CPM",
+      "Content production includes localization costs (20% of content budget)",
+      "Events budget covers 4 breakfast sessions, 2 conferences, 1 roundtable per quarter",
+      "Contingency at ~10% of total budget",
+      "Exchange rate USD/AED fixed at 3.67"
+    ],
+    "personnelCosts": 1200000,
+    "toolingCosts": 180000,
+    "spendToDate": 985000,
+    "updatedAt": "2026-07-01T10:00:00Z"
+  },
+  "kpis": {
+    "90days": {
+      "description": "90-day operations dashboard with vendor management, onboarding velocity, budget tracking, and escalation metrics.",
+      "metrics": [
+        {
+          "id": "ops-90-vendors",
+          "name": "Active Vendors",
+          "targetRange": "6",
+          "current": 5,
+          "target": 6,
+          "unit": "vendors",
+          "status": "on-track",
+          "sourceSystem": "Vendor Registry System",
+          "owner": "Operations Lead",
+          "refreshCadence": "Weekly",
+          "trend": [3, 3, 4, 4, 4, 5, 5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "ops-90-onboarding",
+          "name": "Vendors Fully Onboarded",
+          "targetRange": "5",
+          "current": 3,
+          "target": 5,
+          "unit": "vendors",
+          "status": "at-risk",
+          "sourceSystem": "Onboarding Management System",
+          "owner": "Operations Lead",
+          "refreshCadence": "Weekly",
+          "trend": [1, 1, 2, 2, 2, 3, 3],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "ops-90-budget-spend",
+          "name": "Budget Utilization Rate",
+          "targetRange": "40% by mid-year",
+          "current": 0.40,
+          "target": 0.40,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Budget Management System",
+          "owner": "Finance Team",
+          "refreshCadence": "Monthly",
+          "trend": [0.10, 0.15, 0.18, 0.22, 0.28, 0.35, 0.40],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic operations dashboard with annual budget execution, vendor ecosystem maturity, and operational readiness.",
+      "metrics": [
+        {
+          "id": "ops-12-escalation-rules",
+          "name": "Escalation Rules Documented",
+          "targetRange": "8",
+          "current": 5,
+          "target": 8,
+          "unit": "rules",
+          "status": "at-risk",
+          "sourceSystem": "Escalation Management System",
+          "owner": "Operations Lead",
+          "refreshCadence": "Monthly",
+          "trend": [2, 2, 3, 3, 4, 4, 5],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "ops-12-annual-spend",
+          "name": "Annual Budget Execution",
+          "targetRange": "85-95%",
+          "current": 0.40,
+          "target": 0.85,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Budget Management System",
+          "owner": "Finance Team",
+          "refreshCadence": "Monthly",
+          "trend": [0.10, 0.15, 0.18, 0.22, 0.28, 0.35, 0.40],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

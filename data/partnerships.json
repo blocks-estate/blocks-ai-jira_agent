@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "crm": "CRM / HubSpot",
+      "partnershipManagement": "Partnership Management System",
+      "dueDiligenceSystem": "Due Diligence System"
+    }
+  },
+  "pipeline": {
+    "items": [
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000001",
+        "partnerName": "Savills UAE",
+        "partnerType": "valuation",
+        "stage": "onboarded",
+        "contactName": "James Mitchell",
+        "serviceCoverage": "Full property valuation services for all Blocks tokenized assets across UAE. Preferred partner pricing agreed.",
+        "evaluationScore": 9,
+        "owner": "Sara Al-Mutairi",
+        "notes": "Active partner. Integration in beta phase. API-based valuation requests live.",
+        "createdAt": "2026-03-01T10:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000002",
+        "partnerName": "Al Tamimi & Company",
+        "partnerType": "legal",
+        "stage": "onboarded",
+        "contactName": "Layla Al-Sabih",
+        "serviceCoverage": "Legal services for SPV formation, regulatory compliance, contract review, and token issuance legal framework.",
+        "evaluationScore": 10,
+        "owner": "Sara Al-Mutairi",
+        "notes": "Preferred legal partner. Retained for all UAE legal matters. Quarterly retainer model.",
+        "createdAt": "2025-12-15T09:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000003",
+        "partnerName": "KPMG UAE",
+        "partnerType": "audit",
+        "stage": "negotiating",
+        "contactName": "Raj Patel",
+        "serviceCoverage": "Annual audit services for platform financials, SPV audit, and compliance attestation.",
+        "evaluationScore": 8,
+        "owner": "Sara Al-Mutairi",
+        "notes": "Fee structure under negotiation. Contract expected to close in July.",
+        "createdAt": "2026-04-10T11:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000004",
+        "partnerName": "Provider A (KYC)",
+        "partnerType": "kyc",
+        "stage": "onboarded",
+        "contactName": "Technical Account Manager",
+        "serviceCoverage": "KYC/AML identity verification, document verification, biometric matching, and ongoing monitoring.",
+        "evaluationScore": 7,
+        "owner": "Engineering Team",
+        "notes": "Live in production. Integration completed Q1 2026. Monthly performance reviews.",
+        "createdAt": "2026-01-20T10:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000005",
+        "partnerName": "First Abu Dhabi Bank (FAB)",
+        "partnerType": "custody",
+        "stage": "due-diligence",
+        "contactName": "Omar Al-Hashimi",
+        "serviceCoverage": "Digital asset custody services, fiat settlement accounts, and payment processing.",
+        "evaluationScore": 8,
+        "owner": "Finance Team",
+        "notes": "Due diligence ongoing. Regulatory comfort assessment in progress. Security architecture review scheduled.",
+        "createdAt": "2026-05-01T09:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000006",
+        "partnerName": "Checkout.com",
+        "partnerType": "payment",
+        "stage": "in-discussion",
+        "contactName": "Sales Director",
+        "serviceCoverage": "Payment processing for fiat-to-crypto on-ramp, subscription payments, and payout services.",
+        "evaluationScore": 7,
+        "owner": "Finance Team",
+        "notes": "Initial discussions positive. Technical requirements document being shared.",
+        "createdAt": "2026-06-10T10:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000007",
+        "partnerName": "Property Management Co. (Dubai)",
+        "partnerType": "property-management",
+        "stage": "identified",
+        "contactName": null,
+        "serviceCoverage": "Property management services for tokenized assets including tenant management, maintenance, and rent collection.",
+        "evaluationScore": 6,
+        "owner": "Operations Team",
+        "notes": "Potential partner identified. Preliminary research conducted. Outreach not yet initiated.",
+        "createdAt": "2026-06-20T08:00:00Z"
+      },
+      {
+        "id": "pp1a2b3c4-3601-4000-8000-000000000008",
+        "partnerName": "Deloitte Islamic Finance",
+        "partnerType": "servicing",
+        "stage": "not-proceeding",
+        "contactName": "Dr. Ahmed Al-Matroud",
+        "serviceCoverage": "Sharia compliance advisory and certification for tokenized real estate structures.",
+        "evaluationScore": 5,
+        "owner": "Legal Team",
+        "notes": "Discussions ended due to scope mismatch. Deloitte's Islamic finance practice focused on retail banking, not real estate tokenization.",
+        "createdAt": "2026-03-15T11:00:00Z"
+      }
+    ],
+    "totalItems": 8,
+    "totalPages": 1,
+    "currentPage": 1,
+    "pageSize": 20
+  },
+  "dueDiligenceRecords": [
+    {
+      "id": "dd1a2b3c4-3701-4000-8000-000000000001",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000001",
+      "corporateStatusVerified": true,
+      "credentialsVerified": true,
+      "regulatoryComfort": "Savills is a well-established international firm with strong UAE presence. No regulatory concerns identified.",
+      "capacityAssessment": "Adequate team size and expertise for Blocks' projected volume. Valuation capacity of 20 properties per month confirmed.",
+      "pricingReviewed": true,
+      "conflictsIdentified": "None. Savills does not have relationships with competing platforms that would create conflicts.",
+      "referencesContacted": true,
+      "overallAssessment": "Low risk. Strong partner with proven track record. Recommended for onboarding.",
+      "reviewer": "Sara Al-Mutairi",
+      "status": "cleared",
+      "completedAt": "2026-03-20T16:00:00Z"
+    },
+    {
+      "id": "dd1a2b3c4-3701-4000-8000-000000000002",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000004",
+      "corporateStatusVerified": true,
+      "credentialsVerified": true,
+      "regulatoryComfort": "Provider A holds relevant data protection certifications. GDPR and UAE PDPL compliance confirmed.",
+      "capacityAssessment": "Scalable infrastructure. Handled 50K+ verifications monthly for existing clients.",
+      "pricingReviewed": true,
+      "conflictsIdentified": "Provider A also serves Stake (competitor). Chinese wall procedures confirmed.",
+      "referencesContacted": true,
+      "overallAssessment": "Low risk. Established KYC provider with strong compliance framework.",
+      "reviewer": "Compliance Team",
+      "status": "cleared",
+      "completedAt": "2026-02-10T14:00:00Z"
+    },
+    {
+      "id": "dd1a2b3c4-3701-4000-8000-000000000003",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000005",
+      "corporateStatusVerified": true,
+      "credentialsVerified": false,
+      "regulatoryCompliance": "FAB is UAE Central Bank regulated. Digital asset custody framework under regulatory review.",
+      "regulatoryComfort": "Custody offering is new for FAB's digital asset division. Requiring additional assurance on security architecture.",
+      "capacityAssessment": "Partnership scope not yet finalized. Capacity assessment pending scope definition.",
+      "pricingReviewed": false,
+      "conflictsIdentified": "None identified at this stage.",
+      "referencesContacted": false,
+      "overallAssessment": "Medium risk. Requires further due diligence on digital asset custody capabilities and regulatory compliance.",
+      "reviewer": "Finance Team",
+      "status": "in-progress",
+      "completedAt": null
+    },
+    {
+      "id": "dd1a2b3c4-3701-4000-8000-000000000004",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000003",
+      "corporateStatusVerified": true,
+      "credentialsVerified": true,
+      "regulatoryComfort": "KPMG is a Big 4 audit firm with strong UAE regulatory compliance. No concerns.",
+      "capacityAssessment": "Full audit team allocated for Blocks engagement. Capacity confirmed.",
+      "pricingReviewed": false,
+      "conflictsIdentified": "KPMG also audits certain competitors. Chinese wall arrangements confirmed.",
+      "referencesContacted": false,
+      "overallAssessment": "Low risk. Big 4 credentials. Pending final pricing agreement.",
+      "reviewer": "Finance Team",
+      "status": "cleared",
+      "completedAt": "2026-05-15T12:00:00Z"
+    }
+  ],
+  "useCaseMapping": [
+    {
+      "id": "uc1a2b3c4-3801-4000-8000-000000000001",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000001",
+      "useCase": "Property Valuation",
+      "partnerOwned": true,
+      "blocksOwned": false,
+      "integrationRequired": true,
+      "slaExpectation": "48 hours for standard valuation, 24 hours for expedited",
+      "notes": "API integration in beta. Manual fallback process documented.",
+      "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "uc1a2b3c4-3801-4000-8000-000000000002",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000001",
+      "useCase": "Portfolio Revaluation",
+      "partnerOwned": true,
+      "blocksOwned": false,
+      "integrationRequired": true,
+      "slaExpectation": "Quarterly revaluation cycle, 5 business days per portfolio",
+      "notes": "Scheduled revaluation process being defined.",
+      "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "uc1a2b3c4-3801-4000-8000-000000000003",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000002",
+      "useCase": "SPV Formation",
+      "partnerOwned": true,
+      "blocksOwned": false,
+      "integrationRequired": false,
+      "slaExpectation": "10 business days per SPV",
+      "notes": "Standard process. Template documents available for common structures.",
+      "createdAt": "2026-01-15T09:00:00Z"
+    },
+    {
+      "id": "uc1a2b3c4-3801-4000-8000-000000000004",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000002",
+      "useCase": "Regulatory Compliance Advisory",
+      "partnerOwned": true,
+      "blocksOwned": false,
+      "integrationRequired": false,
+      "slaExpectation": "Ongoing retainer, 24-hour response for urgent matters",
+      "notes": "Monthly compliance review meetings scheduled.",
+      "createdAt": "2026-01-15T09:00:00Z"
+    },
+    {
+      "id": "uc1a2b3c4-3801-4000-8000-000000000005",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000004",
+      "useCase": "Investor KYC Verification",
+      "partnerOwned": true,
+      "blocksOwned": false,
+      "integrationRequired": true,
+      "slaExpectation": "<5 minutes per verification, 95th percentile",
+      "notes": "Live integration. 85th percentile SLA currently at 3.2 minutes.",
+      "createdAt": "2026-02-01T10:00:00Z"
+    },
+    {
+      "id": "uc1a2b3c4-3801-4000-8000-000000000006",
+      "partnerId": "pp1a2b3c4-3601-4000-8000-000000000004",
+      "useCase": "Ongoing AML Monitoring",
+      "partnerOwned": true,
+      "blocksOwned": false,
+      "integrationRequired": true,
+      "slaExpectation": "Real-time screening, daily batch updates",
+      "notes": "Webhook-based alert system configured.",
+      "createdAt": "2026-02-01T10:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day partnerships dashboard with pipeline velocity, due diligence progress, and use case coverage.",
+      "metrics": [
+        {
+          "id": "part-90-pipeline",
+          "name": "Active Pipeline Partners",
+          "targetRange": "8",
+          "current": 6,
+          "target": 8,
+          "unit": "partners",
+          "status": "at-risk",
+          "sourceSystem": "Partnership Management System",
+          "owner": "Partnerships Lead",
+          "refreshCadence": "Weekly",
+          "trend": [3, 3, 4, 4, 5, 5, 6],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "part-90-onboarded",
+          "name": "Onboarded Partners",
+          "targetRange": "5",
+          "current": 3,
+          "target": 5,
+          "unit": "partners",
+          "status": "at-risk",
+          "sourceSystem": "Partnership Management System",
+          "owner": "Partnerships Lead",
+          "refreshCadence": "Weekly",
+          "trend": [1, 1, 2, 2, 2, 3, 3],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "part-90-diligence",
+          "name": "Due Diligence Completion Rate",
+          "targetRange": "100%",
+          "current": 0.50,
+          "target": 1.0,
+          "unit": "%",
+          "status": "off-track",
+          "sourceSystem": "Due Diligence System",
+          "owner": "Partnerships Lead",
+          "refreshCadence": "Weekly",
+          "trend": [0.25, 0.25, 0.33, 0.33, 0.40, 0.40, 0.50],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic partnerships dashboard with full ecosystem coverage and integration milestones.",
+      "metrics": [
+        {
+          "id": "part-12-ecosystem",
+          "name": "Partner Ecosystem Coverage",
+          "targetRange": "8 types",
+          "current": 4,
+          "target": 8,
+          "unit": "partner types",
+          "status": "off-track",
+          "sourceSystem": "Partnership Management System",
+          "owner": "Partnerships Lead",
+          "refreshCadence": "Monthly",
+          "trend": [2, 2, 3, 3, 3, 4, 4],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "part-12-use-cases",
+          "name": "Use Case Mappings",
+          "targetRange": "15",
+          "current": 6,
+          "target": 15,
+          "unit": "mappings",
+          "status": "off-track",
+          "sourceSystem": "Partnership Management System",
+          "owner": "Partnerships Lead",
+          "refreshCadence": "Monthly",
+          "trend": [2, 2, 3, 3, 4, 5, 6],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "adPlatforms": "Ad Platforms (LinkedIn, Google, Meta)",
+      "creativeLibrary": "Creative Asset Library",
+      "complianceSystem": "Ad Compliance Review System"
+    }
+  },
+  "creativeLibrary": [
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000001",
+      "name": "Education-First Awareness - LinkedIn",
+      "format": "text-ad",
+      "platform": "linkedin",
+      "headline": "Real Estate Investment. Reimagined.",
+      "body": "Discover how tokenization is making Dubai prime property investment accessible. Curated opportunities, institutional-grade due diligence, starting from $100.",
+      "cta": "Learn More",
+      "variantName": "Awareness-A",
+      "riskLevel": "low",
+      "reviewStatus": "active",
+      "createdAt": "2026-05-15T10:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000002",
+      "name": "Fractional Ownership Explainer - Google Display",
+      "format": "display",
+      "platform": "google",
+      "headline": "Own Dubai Property from $100",
+      "body": "Fractional real estate investment through blockchain technology. Regulated, transparent, and accessible.",
+      "cta": "Explore Properties",
+      "variantName": "Display-A",
+      "riskLevel": "low",
+      "reviewStatus": "active",
+      "createdAt": "2026-05-20T11:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000003",
+      "name": "Investor Education - LinkedIn Carousel",
+      "format": "carousel",
+      "platform": "linkedin",
+      "headline": "4 Reasons to Consider Tokenized Real Estate",
+      "body": "Slide 1: Access to prime Dubai properties. Slide 2: Institutional-grade due diligence. Slide 3: Starting from $100. Slide 4: Secondary market flexibility.",
+      "cta": "Download Guide",
+      "variantName": "Carousel-A",
+      "riskLevel": "low",
+      "reviewStatus": "active",
+      "createdAt": "2026-06-01T09:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000004",
+      "name": "Developer Outreach - LinkedIn",
+      "format": "text-ad",
+      "platform": "linkedin",
+      "headline": "Unlock Capital from Your Real Estate Portfolio",
+      "body": "Tokenize your properties and access a global investor base. Blocks helps developers raise capital efficiently.",
+      "cta": "Talk to Us",
+      "variantName": "Dev-A",
+      "riskLevel": "medium",
+      "reviewStatus": "active",
+      "createdAt": "2026-06-10T10:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000005",
+      "name": "Brand Awareness - Meta (Facebook/Instagram)",
+      "format": "single-image",
+      "platform": "meta",
+      "headline": "Dubai Real Estate, Tokenized",
+      "body": "The future of property investment is here. Browse curated opportunities on Blocks.",
+      "cta": "Sign Up",
+      "variantName": "Meta-A",
+      "riskLevel": "medium",
+      "reviewStatus": "pending",
+      "createdAt": "2026-06-25T08:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000006",
+      "name": "Arabic Market - LinkedIn Native",
+      "format": "text-ad",
+      "platform": "linkedin",
+      "headline": "استثمر في العقارات في دبي من 100 دولار",
+      "body": "استثمر في عقارات دبي الفاخرة من خلال التوكين الرقمي. منصة منظمة وشفافة مع فرص استثمارية مدروسة.",
+      "cta": "اكتشف المزيد",
+      "variantName": "Ar-A",
+      "riskLevel": "low",
+      "reviewStatus": "active",
+      "createdAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000007",
+      "name": "Secondary Market Launch - Email to Holders",
+      "format": "text-ad",
+      "platform": "linkedin",
+      "headline": "Now You Can Trade Tokens on the Secondary Market",
+      "body": "Existing token holders can now list and sell their tokens. Trade with other verified investors on the Blocks platform.",
+      "cta": "Start Trading",
+      "variantName": "SM-A",
+      "riskLevel": "medium",
+      "reviewStatus": "pending",
+      "createdAt": "2026-07-01T09:00:00Z"
+    },
+    {
+      "id": "ca1a2b3c4-3901-4000-8000-000000000008",
+      "name": "Market Education - YouTube Pre-roll",
+      "format": "video",
+      "platform": "google",
+      "headline": "What Is Tokenized Real Estate?",
+      "body": "A 60-second explainer on how tokenized real estate works and why it's changing property investment.",
+      "cta": "Learn More on Blocks.io",
+      "variantName": "Video-A",
+      "riskLevel": "low",
+      "reviewStatus": "active",
+      "createdAt": "2026-06-05T11:00:00Z"
+    }
+  ],
+  "avoidList": [
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000001",
+      "phrase": "Instant liquidity",
+      "platform": "linkedin",
+      "riskRationale": "Implies immediate ability to sell tokens, which may not reflect actual secondary market conditions.",
+      "approvedAlternative": "Secondary market access with trading subject to demand",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000002",
+      "phrase": "Guaranteed returns",
+      "platform": "google",
+      "riskRationale": "Prohibited by Google Ads policy and UAE securities regulations. Misleading to investors.",
+      "approvedAlternative": "Target returns based on historical performance",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000003",
+      "phrase": "Get rich quick",
+      "platform": "meta",
+      "riskRationale": "Prohibited by Meta advertising policies. Creates unrealistic expectations.",
+      "approvedAlternative": "Build long-term wealth through real estate",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-05-05T11:00:00Z"
+    },
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000004",
+      "phrase": "Like crypto but for real estate",
+      "platform": "linkedin",
+      "riskRationale": "Creates inappropriate crypto association. Positioning guardrail violation.",
+      "approvedAlternative": "Blockchain-powered real estate investment platform",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-05-10T09:00:00Z"
+    },
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000005",
+      "phrase": "No risk investment",
+      "platform": "google",
+      "riskRationale": "False claim. All investments carry risk. Prohibited by Google Ads policies.",
+      "approvedAlternative": "Managed risk investment with diversified portfolio options",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-05-15T14:00:00Z"
+    },
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000006",
+      "phrase": "Trade tokens like stocks",
+      "platform": "linkedin",
+      "riskRationale": "Inappropriate comparison to securities trading. May create regulatory exposure.",
+      "approvedAlternative": "Trade tokens on the Blocks secondary market",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "pa1a2b3c4-4001-4000-8000-000000000007",
+      "phrase": "Free tokens",
+      "platform": "meta",
+      "riskRationale": "Prohibited by Meta. Could be flagged as misleading promotion.",
+      "approvedAlternative": "Start investing with $100",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-06-10T11:00:00Z"
+    }
+  ],
+  "reviewQueue": [
+    {
+      "id": "ar1a2b3c4-4101-4000-8000-000000000001",
+      "creativeId": "ca1a2b3c4-3901-4000-8000-000000000005",
+      "checks": [
+        { "item": "No prohibited investment promises", "passed": true, "notes": "" },
+        { "item": "No prohibited liquidity claims", "passed": true, "notes": "" },
+        { "item": "Complies with Meta ad policies", "passed": true, "notes": "Education-first approach accepted" },
+        { "item": "Crypto comparison language absent", "passed": true, "notes": "" },
+        { "item": "Risk disclosure included in landing page", "passed": false, "notes": "Landing page risk disclosure needs updating to match new language module" }
+      ],
+      "result": "conditional-pass",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-06-26T10:00:00Z"
+    },
+    {
+      "id": "ar1a2b3c4-4101-4000-8000-000000000002",
+      "creativeId": "ca1a2b3c4-3901-4000-8000-000000000007",
+      "checks": [
+        { "item": "No prohibited investment promises", "passed": true, "notes": "" },
+        { "item": "No prohibited liquidity claims", "passed": true, "notes": "" },
+        { "item": "Secondary market language approved", "passed": false, "notes": "Awaiting legal approval on 'Start Trading' CTA" },
+        { "item": "Compliance disclaimer included", "passed": true, "notes": "" }
+      ],
+      "result": "fail",
+      "reviewer": "Compliance Team",
+      "createdAt": "2026-07-01T14:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day paid media dashboard with creative performance, compliance pass rates, and channel effectiveness.",
+      "metrics": [
+        {
+          "id": "pm-90-active-creatives",
+          "name": "Active Creative Assets",
+          "targetRange": "6",
+          "current": 5,
+          "target": 6,
+          "unit": "assets",
+          "status": "on-track",
+          "sourceSystem": "Creative Asset Library",
+          "owner": "Paid Media Lead",
+          "refreshCadence": "Weekly",
+          "trend": [2, 3, 3, 4, 4, 5, 5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pm-90-compliance-rate",
+          "name": "Creative Compliance Pass Rate",
+          "targetRange": ">90%",
+          "current": 0.85,
+          "target": 0.90,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Ad Compliance Review System",
+          "owner": "Paid Media Lead",
+          "refreshCadence": "Weekly",
+          "trend": [0.95, 0.92, 0.90, 0.88, 0.87, 0.85, 0.85],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "pm-90-avoid-list",
+          "name": "Avoid List Coverage",
+          "targetRange": "10 entries",
+          "current": 7,
+          "target": 10,
+          "unit": "entries",
+          "status": "at-risk",
+          "sourceSystem": "Creative Asset Library",
+          "owner": "Compliance Team",
+          "refreshCadence": "Weekly",
+          "trend": [3, 4, 4, 5, 5, 6, 7],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic paid media dashboard with channel diversification and ad policy compliance maturity.",
+      "metrics": [
+        {
+          "id": "pm-12-channel-coverage",
+          "name": "Active Ad Channels",
+          "targetRange": "4",
+          "current": 2,
+          "target": 4,
+          "unit": "channels",
+          "status": "off-track",
+          "sourceSystem": "Ad Platforms",
+          "owner": "Paid Media Lead",
+          "refreshCadence": "Monthly",
+          "trend": [1, 1, 1, 1, 2, 2, 2],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "pm-12-ctr",
+          "name": "Average Click-Through Rate",
+          "targetRange": ">2.5%",
+          "current": 2.2,
+          "target": 2.5,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Ad Platforms",
+          "owner": "Paid Media Lead",
+          "refreshCadence": "Monthly",
+          "trend": [1.8, 1.9, 2.0, 2.0, 2.1, 2.2, 2.2],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

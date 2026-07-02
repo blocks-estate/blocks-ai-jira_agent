@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "campaignManagement": "Campaign Management System",
+      "crm": "CRM / HubSpot",
+      "analytics": "Web Analytics (GA4)",
+      "referralSystem": "Referral Tracking System"
+    }
+  },
+  "campaigns": {
+    "items": [
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000001",
+        "name": "Q3 Investor Acquisition - UAE HNWIs",
+        "description": "Multi-channel campaign targeting high-net-worth individuals in UAE with education-first content about tokenized real estate investment.",
+        "status": "live",
+        "audience": "UAE/GCC HNWIs",
+        "channels": ["LinkedIn", "Email", "Web"],
+        "startDate": "2026-07-01",
+        "endDate": "2026-09-30",
+        "owner": "Fatima Al-Mansouri",
+        "budget": 250000,
+        "spend": 42000,
+        "metrics": {
+          "impressions": 1240000,
+          "clicks": 28500,
+          "conversions": 1450,
+          "costPerConversion": 28.97
+        },
+        "createdAt": "2026-05-20T10:00:00Z"
+      },
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000002",
+        "name": "Developer Onboarding - API Launch",
+        "description": "Targeted outreach to real estate developers and property managers to onboard onto the Blocks platform.",
+        "status": "live",
+        "audience": "Real Estate Developers",
+        "channels": ["LinkedIn", "Email", "Events"],
+        "startDate": "2026-06-15",
+        "endDate": "2026-08-15",
+        "owner": "Ahmed Al-Rashid",
+        "budget": 180000,
+        "spend": 65000,
+        "metrics": {
+          "impressions": 480000,
+          "clicks": 12300,
+          "conversions": 345,
+          "costPerConversion": 188.41
+        },
+        "createdAt": "2026-04-10T09:00:00Z"
+      },
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000003",
+        "name": "Brand Awareness - Thought Leadership",
+        "description": "Content-driven awareness campaign featuring founder thought leadership, industry insights, and educational content across LinkedIn and trade publications.",
+        "status": "live",
+        "audience": "Fintech & Real Estate Professionals",
+        "channels": ["LinkedIn", "Trade Publications", "Podcasts"],
+        "startDate": "2026-05-01",
+        "endDate": null,
+        "owner": "Mona Al-Qahtani",
+        "budget": 120000,
+        "spend": 78000,
+        "metrics": {
+          "impressions": 2100000,
+          "clicks": 42000,
+          "conversions": 890,
+          "costPerConversion": 87.64
+        },
+        "createdAt": "2026-03-15T11:00:00Z"
+      },
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000004",
+        "name": "Secondary Market Launch",
+        "description": "Campaign promoting the launch of the secondary market feature to existing token holders and prospective investors.",
+        "status": "ready-for-launch",
+        "audience": "Existing Token Holders & Prospects",
+        "channels": ["Email", "Web", "Social"],
+        "startDate": "2026-07-15",
+        "endDate": "2026-08-30",
+        "owner": "Khalid Al-Faisal",
+        "budget": 95000,
+        "spend": 0,
+        "metrics": {
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "costPerConversion": 0
+        },
+        "createdAt": "2026-06-10T08:00:00Z"
+      },
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000005",
+        "name": "Arabic Market - UAE Nationals",
+        "description": "Arabic-language campaign targeting UAE nationals with localized content about fractional real estate investment.",
+        "status": "drafting",
+        "audience": "UAE Nationals",
+        "channels": ["LinkedIn", "Instagram", "Web"],
+        "startDate": "2026-08-01",
+        "endDate": "2026-10-31",
+        "owner": "Noura Al-Rashid",
+        "budget": 200000,
+        "spend": 0,
+        "metrics": {
+          "impressions": 0,
+          "clicks": 0,
+          "conversions": 0,
+          "costPerConversion": 0
+        },
+        "createdAt": "2026-07-01T09:00:00Z"
+      },
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000006",
+        "name": "Partner Co-Marketing - Valuation Partners",
+        "description": "Co-branded campaign with valuation partners targeting property owners interested in tokenization.",
+        "status": "paused",
+        "audience": "Property Owners",
+        "channels": ["Email", "Web", "Events"],
+        "startDate": "2026-04-01",
+        "endDate": null,
+        "owner": "Sara Al-Mutairi",
+        "budget": 75000,
+        "spend": 32000,
+        "metrics": {
+          "impressions": 340000,
+          "clicks": 8100,
+          "conversions": 210,
+          "costPerConversion": 152.38
+        },
+        "createdAt": "2026-02-20T10:00:00Z"
+      },
+      {
+        "id": "cp1a2b3c4-0901-4000-8000-000000000007",
+        "name": "Q2 Investor Acquisition",
+        "description": "Previous quarter's investor acquisition campaign. Completed with all final reporting submitted.",
+        "status": "completed",
+        "audience": "UAE/GCC Investors",
+        "channels": ["LinkedIn", "Email", "Web", "Events"],
+        "startDate": "2026-04-01",
+        "endDate": "2026-06-30",
+        "owner": "Fatima Al-Mansouri",
+        "budget": 220000,
+        "spend": 208000,
+        "metrics": {
+          "impressions": 3800000,
+          "clicks": 82000,
+          "conversions": 3100,
+          "costPerConversion": 67.10
+        },
+        "createdAt": "2026-02-01T10:00:00Z"
+      }
+    ],
+    "totalItems": 7,
+    "totalPages": 1,
+    "currentPage": 1,
+    "pageSize": 20
+  },
+  "referralTests": [
+    {
+      "id": "rt1a2b3c4-1001-4000-8000-000000000001",
+      "name": "Month 6 Referral Test",
+      "status": "active",
+      "participantRules": "Existing token holders with minimum 6-month holding period can refer up to 5 new investors. Referrer must complete KYC.",
+      "rewardLogic": "Referrer receives 0.5% of the referred investor's first token purchase value, capped at $2,000 per referral.",
+      "trackingUtm": "utm_source=referral&utm_medium=ambassador&utm_campaign=m6-test",
+      "crmFields": ["referrer_id", "referred_email", "referral_code", "reward_status"],
+      "resultsSummary": "85 referrals active, 34 conversions, average reward $380",
+      "createdAt": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": "rt1a2b3c4-1001-4000-8000-000000000002",
+      "name": "Ambassador Pilot - Developer Network",
+      "status": "designing",
+      "participantRules": "Selected real estate professionals refer developers to the platform. Tiered reward structure based on developer onboarding completion.",
+      "rewardLogic": "Tier 1: $500 per developer introduction. Tier 2: $1,000 per successful onboarding. Tier 3: $2,000 per first tokenization.",
+      "trackingUtm": "utm_source=ambassador&utm_medium=dev-network&utm_campaign=pilot",
+      "crmFields": ["ambassador_id", "developer_company", "stage", "commission_tier"],
+      "resultsSummary": null,
+      "createdAt": "2026-06-20T11:00:00Z"
+    },
+    {
+      "id": "rt1a2b3c4-1001-4000-8000-000000000003",
+      "name": "Month 3 Referral Test (Completed)",
+      "status": "completed",
+      "participantRules": "All platform users with completed KYC could refer new investors. Unlimited referrals per user.",
+      "rewardLogic": "$200 credit per successful referral applied to next token purchase.",
+      "trackingUtm": "utm_source=referral&utm_medium=platform&utm_campaign=m3-test",
+      "crmFields": ["referrer_id", "referred_email", "referral_code", "credit_amount"],
+      "resultsSummary": "210 referrals, 85 conversions, $17,000 in credits issued, 2.47x ROI on credits",
+      "createdAt": "2026-02-01T10:00:00Z"
+    }
+  ],
+  "launchQueue": [
+    {
+      "id": "lq1a2b3c4-1101-4000-8000-000000000001",
+      "campaignId": "cp1a2b3c4-0901-4000-8000-000000000004",
+      "status": "qa-passed",
+      "checklistCompleted": true,
+      "launchOwner": "Khalid Al-Faisal",
+      "scheduledDate": "2026-07-15T08:00:00Z"
+    },
+    {
+      "id": "lq1a2b3c4-1101-4000-8000-000000000002",
+      "campaignId": "cp1a2b3c4-0901-4000-8000-000000000005",
+      "status": "pending-qa",
+      "checklistCompleted": false,
+      "launchOwner": "Noura Al-Rashid",
+      "scheduledDate": "2026-08-01T08:00:00Z"
+    }
+  ],
+  "launchChecklists": [
+    {
+      "id": "lc1a2b3c4-1201-4000-8000-000000000001",
+      "campaignId": "cp1a2b3c4-0901-4000-8000-000000000004",
+      "checks": [
+        { "item": "All creative assets approved by compliance", "passed": true, "notes": "Approved on 07/01" },
+        { "item": "Landing page published and QA'd", "passed": true, "notes": "All variants tested" },
+        { "item": "Email sequences built and tested", "passed": true, "notes": "3-email sequence" },
+        { "item": "UTM parameters verified", "passed": true, "notes": "All links tagged" },
+        { "item": "Audience segments ready in CRM", "passed": true, "notes": "2 segments: existing holders, prospects" },
+        { "item": "Budget allocated in ad platforms", "passed": false, "notes": "Awaiting finance approval" }
+      ],
+      "allPassed": false,
+      "owner": "Khalid Al-Faisal",
+      "createdAt": "2026-07-01T10:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day campaign dashboard with delivery metrics, conversion efficiency, and launch velocity.",
+      "metrics": [
+        {
+          "id": "camp-90-active-campaigns",
+          "name": "Active Campaigns",
+          "targetRange": "5",
+          "current": 3,
+          "target": 5,
+          "unit": "campaigns",
+          "status": "at-risk",
+          "sourceSystem": "Campaign Management System",
+          "owner": "Campaign Lead",
+          "refreshCadence": "Weekly",
+          "trend": [2, 2, 3, 3, 3, 3, 3],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "camp-90-cpc",
+          "name": "Cost Per Conversion",
+          "targetRange": "<$80",
+          "current": 74.5,
+          "target": 80.0,
+          "unit": "USD",
+          "status": "on-track",
+          "sourceSystem": "Campaign Management System",
+          "owner": "Campaign Lead",
+          "refreshCadence": "Weekly",
+          "trend": [95, 88, 85, 82, 80, 77, 74.5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "camp-90-referral-rate",
+          "name": "Referral Conversion Rate",
+          "targetRange": "40%",
+          "current": 0.40,
+          "target": 0.40,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Referral Tracking System",
+          "owner": "Growth Team",
+          "refreshCadence": "Weekly",
+          "trend": [0.32, 0.35, 0.36, 0.38, 0.39, 0.40, 0.40],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic campaign dashboard with annual budget utilization and pipeline velocity targets.",
+      "metrics": [
+        {
+          "id": "camp-12-budget-use",
+          "name": "Budget Utilization",
+          "targetRange": "85-95%",
+          "current": 0.42,
+          "target": 0.85,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Campaign Management System",
+          "owner": "Finance",
+          "refreshCadence": "Monthly",
+          "trend": [0.12, 0.18, 0.22, 0.28, 0.32, 0.38, 0.42],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "camp-12-total-leads",
+          "name": "Total Campaign Leads",
+          "targetRange": "25,000",
+          "current": 14500,
+          "target": 25000,
+          "unit": "leads",
+          "status": "on-track",
+          "sourceSystem": "CRM / HubSpot",
+          "owner": "Campaign Lead",
+          "refreshCadence": "Monthly",
+          "trend": [1800, 2200, 2400, 2800, 3100, 2200, 14500],
+          "trendLabels": ["Total YTD"]
+        }
+      ]
+    }
+  }
+}

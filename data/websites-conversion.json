@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "analytics": "Web Analytics (GA4)",
+      "kycProvider": "KYC Provider A",
+      "crm": "CRM / HubSpot",
+      "eventTracking": "Event Tracking System"
+    }
+  },
+  "kycHandoff": {
+    "items": [
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000001",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000001",
+        "userType": "investor",
+        "provider": "provider-a",
+        "handoffStatus": "completed",
+        "failureReason": null,
+        "retryCount": 0,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-06-28T10:30:00Z",
+        "handoffCompletedAt": "2026-06-28T10:35:00Z"
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000002",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000002",
+        "userType": "investor",
+        "provider": "provider-a",
+        "handoffStatus": "in-progress",
+        "failureReason": null,
+        "retryCount": 0,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-07-01T14:00:00Z",
+        "handoffCompletedAt": null
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000003",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000003",
+        "userType": "investor",
+        "provider": "provider-a",
+        "handoffStatus": "pending",
+        "failureReason": null,
+        "retryCount": 0,
+        "consentProvided": false,
+        "handoffInitiatedAt": "2026-07-01T09:00:00Z",
+        "handoffCompletedAt": null
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000004",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000004",
+        "userType": "developer",
+        "provider": "provider-a",
+        "handoffStatus": "failed",
+        "failureReason": "Document verification failed - ID document expired",
+        "retryCount": 2,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-06-25T11:00:00Z",
+        "handoffCompletedAt": null
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000005",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000005",
+        "userType": "investor",
+        "provider": "provider-a",
+        "handoffStatus": "completed",
+        "failureReason": null,
+        "retryCount": 0,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-06-20T08:15:00Z",
+        "handoffCompletedAt": "2026-06-20T08:22:00Z"
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000006",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000006",
+        "userType": "investor",
+        "provider": "provider-a",
+        "handoffStatus": "expired",
+        "failureReason": "User did not complete KYC within 14-day window",
+        "retryCount": 0,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-06-10T15:00:00Z",
+        "handoffCompletedAt": null
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000007",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000007",
+        "userType": "developer",
+        "provider": "provider-a",
+        "handoffStatus": "completed",
+        "failureReason": null,
+        "retryCount": 1,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-06-15T16:00:00Z",
+        "handoffCompletedAt": "2026-06-16T10:30:00Z"
+      },
+      {
+        "id": "kh1a2b3c4-4601-4000-8000-000000000008",
+        "userId": "u1a2b3c4-5001-4000-8000-000000000008",
+        "userType": "investor",
+        "provider": "provider-a",
+        "handoffStatus": "completed",
+        "failureReason": null,
+        "retryCount": 0,
+        "consentProvided": true,
+        "handoffInitiatedAt": "2026-06-05T12:00:00Z",
+        "handoffCompletedAt": "2026-06-05T12:08:00Z"
+      }
+    ],
+    "totalItems": 8,
+    "totalPages": 1,
+    "currentPage": 1,
+    "pageSize": 20
+  },
+  "funnelMetrics": {
+    "description": "Investor conversion funnel metrics for the last 30 days. Tracks user progression from landing page visit through account activation.",
+    "totalVisitors": 45200,
+    "totalSignups": 3850,
+    "kycStarted": 2100,
+    "kycCompleted": 1480,
+    "accountsActivated": 1250,
+    "conversionRates": {
+      "visitorToSignup": 0.085,
+      "signupToKycStart": 0.545,
+      "kycStartToKycComplete": 0.705,
+      "kycCompleteToActivated": 0.845
+    },
+    "handoffFailureRate": 0.085,
+    "averageTimeToKycInitiationHours": 4.5,
+    "stageBreakdown": [
+      {
+        "id": "landing-page-visit",
+        "name": "Landing Page Visit",
+        "count": 45200,
+        "previousCount": 34500,
+        "source": "Web Analytics"
+      },
+      {
+        "id": "signup-started",
+        "name": "Signup Started",
+        "count": 5230,
+        "previousCount": 4100,
+        "source": "Web Analytics"
+      },
+      {
+        "id": "signup-completed",
+        "name": "Signup Completed",
+        "count": 3850,
+        "previousCount": 3100,
+        "source": "CRM"
+      },
+      {
+        "id": "kyc-handoff-initiated",
+        "name": "KYC Handoff Initiated",
+        "count": 2100,
+        "previousCount": 1680,
+        "source": "KYC Provider"
+      },
+      {
+        "id": "kyc-in-progress",
+        "name": "KYC In Progress",
+        "count": 420,
+        "previousCount": 350,
+        "source": "KYC Provider"
+      },
+      {
+        "id": "kyc-completed",
+        "name": "KYC Completed",
+        "count": 1480,
+        "previousCount": 1150,
+        "source": "KYC Provider"
+      },
+      {
+        "id": "account-activated",
+        "name": "Account Activated",
+        "count": 1250,
+        "previousCount": 980,
+        "source": "CRM"
+      },
+      {
+        "id": "first-subscription",
+        "name": "First Token Purchase",
+        "count": 480,
+        "previousCount": 380,
+        "source": "Platform"
+      }
+    ]
+  },
+  "funnelStageDetail": {
+    "kyc-handoff-initiated": {
+      "id": "kyc-handoff-initiated",
+      "name": "KYC Handoff Initiated",
+      "description": "Users who have been handed off to the KYC provider for identity verification.",
+      "totalUsers": 2100,
+      "completed": 1480,
+      "failed": 180,
+      "inProgress": 420,
+      "expired": 20,
+      "averageCompletionTimeMinutes": 7.5,
+      "failureReasons": [
+        { "reason": "Document verification failed", "count": 85 },
+        { "reason": "Face match failed", "count": 42 },
+        { "reason": "User abandoned process", "count": 35 },
+        { "reason": "Duplicate account detected", "count": 12 },
+        { "reason": "Technical error", "count": 6 }
+      ]
+    }
+  },
+  "kpis": {
+    "90days": {
+      "description": "90-day website conversion dashboard with funnel efficiency, KYC completion rates, and activation velocity.",
+      "metrics": [
+        {
+          "id": "conv-90-visitor-to-signup",
+          "name": "Visitor to Signup Rate",
+          "targetRange": ">10%",
+          "current": 8.5,
+          "target": 10.0,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "Web Analytics (GA4)",
+          "owner": "Conversion Team",
+          "refreshCadence": "Weekly",
+          "trend": [7.2, 7.5, 7.8, 8.0, 8.2, 8.4, 8.5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "conv-90-kyc-complete-rate",
+          "name": "KYC Completion Rate",
+          "targetRange": ">75%",
+          "current": 70.5,
+          "target": 75.0,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "KYC Provider",
+          "owner": "Conversion Team",
+          "refreshCadence": "Weekly",
+          "trend": [65.0, 66.5, 67.8, 68.5, 69.2, 70.0, 70.5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "conv-90-kyc-time",
+          "name": "Avg Time to KYC Initiation",
+          "targetRange": "<2 hours",
+          "current": 4.5,
+          "target": 2.0,
+          "unit": "hours",
+          "status": "off-track",
+          "sourceSystem": "KYC Provider",
+          "owner": "Conversion Team",
+          "refreshCadence": "Weekly",
+          "trend": [8.2, 7.5, 6.8, 6.0, 5.5, 5.0, 4.5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "conv-90-activation-rate",
+          "name": "Account Activation Rate",
+          "targetRange": ">85%",
+          "current": 84.5,
+          "target": 85.0,
+          "unit": "%",
+          "status": "at-risk",
+          "sourceSystem": "CRM / HubSpot",
+          "owner": "Conversion Team",
+          "refreshCadence": "Weekly",
+          "trend": [78.0, 79.5, 80.5, 81.5, 82.8, 83.5, 84.5],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic conversion dashboard with annual activation targets and funnel optimization milestones.",
+      "metrics": [
+        {
+          "id": "conv-12-accounts-activated",
+          "name": "Accounts Activated (YTD)",
+          "targetRange": "8,000",
+          "current": 3200,
+          "target": 8000,
+          "unit": "accounts",
+          "status": "at-risk",
+          "sourceSystem": "CRM / HubSpot",
+          "owner": "Conversion Team",
+          "refreshCadence": "Monthly",
+          "trend": [350, 420, 480, 520, 580, 620, 680],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "conv-12-first-purchase",
+          "name": "First Token Purchase Rate",
+          "targetRange": "40%",
+          "current": 0.38,
+          "target": 0.40,
+          "unit": "%",
+          "status": "on-track",
+          "sourceSystem": "Platform",
+          "owner": "Conversion Team",
+          "refreshCadence": "Monthly",
+          "trend": [0.30, 0.32, 0.33, 0.34, 0.35, 0.37, 0.38],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        }
+      ]
+    }
+  }
+}

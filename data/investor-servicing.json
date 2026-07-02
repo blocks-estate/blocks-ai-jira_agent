@@ -1,0 +1,181 @@
+{
+  "dashboard": {
+    "totalOpenTickets": 38,
+    "slaComplianceRate": 94.2,
+    "averageResponseTimeHours": 2.8,
+    "educationCompletionRate": 72.5,
+    "openEscalations": 3,
+    "volumeTrend": {
+      "label": "Support Tickets per Week",
+      "values": [22, 25, 28, 24, 30, 27, 32, 35, 31, 28],
+      "changePercentage": 0.08
+    }
+  },
+  "supportTickets": {
+    "items": [
+      {
+        "id": "st-001-aaaa-bbbb-cccc-dddddddddddd",
+        "investorId": "inv-001-aaaa-bbbb-cccc-dddddddddddd",
+        "category": "account",
+        "priority": "high",
+        "subject": "Unable to access investor dashboard after password reset",
+        "description": "Investor reset password but new credentials not working. Account appears locked.",
+        "status": "active",
+        "assignedTo": "Sarah Al Maktoum",
+        "responseTimeMinutes": 12,
+        "resolutionTimeMinutes": 145,
+        "createdAt": "2026-06-28T08:15:00Z",
+        "resolvedAt": null
+      },
+      {
+        "id": "st-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+        "investorId": "inv-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+        "category": "kyc",
+        "priority": "critical",
+        "subject": "KYC documents rejected without clear reason",
+        "description": "Passport and proof of address rejected. System shows no specific error message.",
+        "status": "active",
+        "assignedTo": "Compliance Officer",
+        "responseTimeMinutes": 5,
+        "resolutionTimeMinutes": null,
+        "createdAt": "2026-06-30T10:45:00Z",
+        "resolvedAt": null
+      },
+      {
+        "id": "st-003-cccc-dddd-eeee-ffffffffffff",
+        "investorId": "inv-003-cccc-dddd-eeee-ffffffffffff",
+        "category": "payment",
+        "priority": "medium",
+        "subject": "Deposit not reflecting after 48 hours",
+        "description": "Wire transfer initiated Jun 25 for AED 50,000. Not yet reflected in wallet.",
+        "status": "active",
+        "assignedTo": "Finance Team",
+        "responseTimeMinutes": 25,
+        "resolutionTimeMinutes": null,
+        "createdAt": "2026-06-27T16:30:00Z",
+        "resolvedAt": null
+      },
+      {
+        "id": "st-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+        "investorId": "inv-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+        "category": "education",
+        "priority": "low",
+        "subject": "Request for Arabic educational materials",
+        "description": "Investor prefers Arabic language learning modules on tokenization basics.",
+        "status": "completed",
+        "assignedTo": "Content Team",
+        "responseTimeMinutes": 45,
+        "resolutionTimeMinutes": 2880,
+        "createdAt": "2026-06-15T09:00:00Z",
+        "resolvedAt": "2026-06-17T09:00:00Z"
+      },
+      {
+        "id": "st-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+        "investorId": "inv-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+        "category": "technical",
+        "priority": "medium",
+        "subject": "Tokenization dashboard not loading property details",
+        "description": "Clicking on property tile shows loading spinner indefinitely. Browser console shows API 500 errors.",
+        "status": "active",
+        "assignedTo": "Engineering",
+        "responseTimeMinutes": 18,
+        "resolutionTimeMinutes": null,
+        "createdAt": "2026-06-29T14:20:00Z",
+        "resolvedAt": null
+      }
+    ],
+    "totalItems": 38,
+    "totalPages": 8,
+    "currentPage": 1,
+    "pageSize": 5
+  },
+  "educationCompletion": [
+    {
+      "id": "edu-001-aaaa-bbbb-cccc-dddddddddddd",
+      "investorId": "inv-001-aaaa-bbbb-cccc-dddddddddddd",
+      "moduleName": "Tokenization Basics",
+      "completedAt": "2026-05-10T11:30:00Z",
+      "score": 88,
+      "followUpRequired": false
+    },
+    {
+      "id": "edu-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "investorId": "inv-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "moduleName": "Platform Walkthrough",
+      "completedAt": "2026-05-22T15:00:00Z",
+      "score": 92,
+      "followUpRequired": false
+    },
+    {
+      "id": "edu-003-cccc-dddd-eeee-ffffffffffff",
+      "investorId": "inv-003-cccc-dddd-eeee-ffffffffffff",
+      "moduleName": "Risk & Compliance Fundamentals",
+      "completedAt": "2026-06-01T10:00:00Z",
+      "score": 75,
+      "followUpRequired": true
+    },
+    {
+      "id": "edu-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+      "investorId": "inv-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+      "moduleName": "Tokenization Basics",
+      "completedAt": "2026-06-10T14:45:00Z",
+      "score": 95,
+      "followUpRequired": false
+    },
+    {
+      "id": "edu-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+      "investorId": "inv-001-aaaa-bbbb-cccc-dddddddddddd",
+      "moduleName": "Secondary Market Overview",
+      "completedAt": "2026-06-15T09:30:00Z",
+      "score": 81,
+      "followUpRequired": false
+    }
+  ],
+  "sixMonthGate": {
+    "periodEnd": "2026-06-30",
+    "executiveSummary": "Investor servicing operations running at 94% SLA compliance. Education completion has reached 72.5% adoption. Three open escalations relate to KYC processing delays and payment reconciliation. Recommended: PROCEED with enhanced KYC communication and Arabic content rollout.",
+    "supportVolumeTrend": {
+      "label": "Monthly Support Tickets",
+      "values": [55, 62, 58, 72, 68, 85, 78, 82, 76, 92, 88, 95],
+      "changePercentage": 0.15
+    },
+    "topRisks": [
+      "KYC processing bottlenecks during peak signup periods",
+      "Payment reconciliation delays with international wire transfers",
+      "Education module completion rate below 80% target for Tier 1 investors"
+    ],
+    "mitigationOptions": [
+      "Implement automated KYC fallback to secondary provider",
+      "Integrate real-time payment status webhook with banking partners",
+      "Launch gamified education pathway with milestone incentives"
+    ],
+    "latestDecision": {
+      "id": "gate-001-aaaa-bbbb-cccc-dddddddddddd",
+      "decision": "proceed",
+      "rationale": "Metrics within acceptable thresholds. Open escalations are manageable and have clear resolution paths.",
+      "evidenceSummary": "SLA 94.2%, Education 72.5% (trending up), 3 escalations (all in resolution process)",
+      "decidedBy": "GTM Steering Committee",
+      "decidedAt": "2026-06-30T15:00:00Z"
+    }
+  },
+  "kpis": {
+    "90days": {
+      "description": "90-day investor servicing dashboard with SLA performance, education adoption, escalation management",
+      "metrics": [
+        { "id": "serv-90-sla", "name": "SLA Compliance Rate", "targetRange": "95%", "current": 94.2, "target": 95.0, "unit": "%", "status": "at-risk", "sourceSystem": "Support Platform", "owner": "Servicing Team", "refreshCadence": "Weekly", "trend": [93, 93.5, 93.8, 94.2, 94.5, 94.2], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9"] },
+        { "id": "serv-90-response", "name": "Avg Response Time", "targetRange": "<3 hrs", "current": 2.8, "target": 3.0, "unit": "hours", "status": "on-track", "sourceSystem": "Support Platform", "owner": "Servicing Team", "refreshCadence": "Weekly", "trend": [3.5, 3.2, 3.0, 2.9, 2.8, 2.8], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9"] },
+        { "id": "serv-90-education", "name": "Education Completion Rate", "targetRange": "80%", "current": 72.5, "target": 80.0, "unit": "%", "status": "at-risk", "sourceSystem": "Education Platform", "owner": "Content Team", "refreshCadence": "Weekly", "trend": [58, 62, 65, 68, 70, 72.5], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9"] },
+        { "id": "serv-90-escalations", "name": "Open Escalations", "targetRange": "<2", "current": 3, "target": 2, "unit": "escalations", "status": "off-track", "sourceSystem": "Escalation System", "owner": "GTM Lead", "refreshCadence": "Daily", "trend": [5, 4, 3, 3, 4, 3], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9"] },
+        { "id": "serv-90-tickets", "name": "Ticket Volume", "targetRange": "<30/wk", "current": 28, "target": 30, "unit": "tickets", "status": "on-track", "sourceSystem": "Support Platform", "owner": "Servicing Team", "refreshCadence": "Weekly", "trend": [35, 32, 30, 28, 31, 28], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9"] }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic investor servicing outlook",
+      "metrics": [
+        { "id": "serv-12m-sla", "name": "Annual SLA Compliance", "targetRange": "95%", "current": 93.8, "target": 95.0, "unit": "%", "status": "at-risk", "sourceSystem": "Support Platform", "owner": "Servicing Team", "refreshCadence": "Monthly", "trend": [92, 92.5, 93, 93.5, 93.8, 94], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"] },
+        { "id": "serv-12m-education", "name": "Education Completion (Annual)", "targetRange": "85%", "current": 68, "target": 85, "unit": "%", "status": "off-track", "sourceSystem": "Education Platform", "owner": "Content Team", "refreshCadence": "Monthly", "trend": [45, 50, 55, 58, 62, 68], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"] },
+        { "id": "serv-12m-retention", "name": "Investor Retention Rate", "targetRange": "90%", "current": 91.2, "target": 90.0, "unit": "%", "status": "on-track", "sourceSystem": "CRM", "owner": "Servicing Team", "refreshCadence": "Monthly", "trend": [88, 88.5, 89, 90, 90.5, 91.2], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"] }
+      ]
+    }
+  }
+}

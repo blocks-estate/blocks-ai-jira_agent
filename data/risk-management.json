@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "sourceSystems": {
+      "riskRegister": "Risk Register System",
+      "marketData": "Market Data Feed",
+      "complianceRegistry": "Compliance Registry"
+    }
+  },
+  "mitigationRegister": [
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000001",
+      "riskName": "Market Correction Impact on Investor Confidence",
+      "category": "market",
+      "severity": "high",
+      "likelihood": "likely",
+      "impact": "Significant reduction in new investor acquisition and potential token holder sell pressure if Dubai property prices decline >10%.",
+      "mitigationStrategy": "Develop market correction messaging playbook. Proactive investor communication strategy. Strengthen educational content on long-term value of real estate investment.",
+      "owner": "Risk Team",
+      "status": "active",
+      "reviewCadence": "Monthly",
+      "updatedAt": "2026-06-28T10:00:00Z"
+    },
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000002",
+      "riskName": "Regulatory Change in UAE/VARA Framework",
+      "category": "regulatory",
+      "severity": "critical",
+      "likelihood": "possible",
+      "impact": "Fundamental business model impact if VARA or SCA introduces restrictive regulations on tokenized real estate. Potential operational disruption and compliance costs.",
+      "mitigationStrategy": "Active regulatory engagement through industry bodies. Legal team monitors regulatory developments weekly. Scenario planning for regulatory changes.",
+      "owner": "Legal Team",
+      "status": "active",
+      "reviewCadence": "Bi-weekly",
+      "updatedAt": "2026-06-25T14:00:00Z"
+    },
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000003",
+      "riskName": "Technology Platform Outage",
+      "category": "operational",
+      "severity": "high",
+      "likelihood": "unlikely",
+      "impact": "Investor inability to trade or access platform. Reputational damage and potential regulatory scrutiny.",
+      "mitigationStrategy": "Multi-region deployment with automatic failover. 24/7 monitoring with SLO targets. Quarterly disaster recovery drills.",
+      "owner": "Engineering Team",
+      "status": "active",
+      "reviewCadence": "Monthly",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000004",
+      "riskName": "Developer/Counterparty Default",
+      "category": "counterparty",
+      "severity": "high",
+      "likelihood": "possible",
+      "impact": "If a developer fails to deliver on property commitments, token value could be impacted. Legal disputes and investor losses.",
+      "mitigationStrategy": "Thorough due diligence on all developer partners. Escrow arrangements for development milestones. Insurance requirements in partnership agreements.",
+      "owner": "Risk Team",
+      "status": "active",
+      "reviewCadence": "Monthly",
+      "updatedAt": "2026-06-22T11:00:00Z"
+    },
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000005",
+      "riskName": "Property Valuation Disputes",
+      "category": "valuation",
+      "severity": "medium",
+      "likelihood": "possible",
+      "impact": "Disagreements between investors and platform on property valuations. Potential legal challenges and reputational damage.",
+      "mitigationStrategy": "Independent third-party valuations from multiple providers. Transparent valuation methodology published. Regular valuation updates and investor notifications.",
+      "owner": "Operations Team",
+      "status": "active",
+      "reviewCadence": "Quarterly",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000006",
+      "riskName": "Secondary Market Illiquidity",
+      "category": "liquidity",
+      "severity": "high",
+      "likelihood": "likely",
+      "impact": "If secondary market lacks sufficient trading volume, investors cannot exit positions. This could deter new investors and trigger regulatory concerns.",
+      "mitigationStrategy": "Market maker agreements for initial liquidity. Tiered exit mechanisms. Regular liquidity reporting and investor education on realistic exit timelines.",
+      "owner": "Product Team",
+      "status": "active",
+      "reviewCadence": "Monthly",
+      "updatedAt": "2026-06-28T14:00:00Z"
+    },
+    {
+      "id": "rm1a2b3c4-1401-4000-8000-000000000007",
+      "riskName": "Negative Media Coverage",
+      "category": "reputational",
+      "severity": "medium",
+      "likelihood": "possible",
+      "impact": "Negative press about tokenized real estate or specific platform issues could damage brand reputation and slow investor acquisition.",
+      "mitigationStrategy": "Proactive PR strategy. Media monitoring and rapid response protocol. Strong relationships with tier-1 media outlets.",
+      "owner": "PR Team",
+      "status": "pending",
+      "reviewCadence": "Monthly",
+      "updatedAt": "2026-07-01T08:00:00Z"
+    }
+  ],
+  "marketOutlook": {
+    "summary": "Dubai real estate market shows continued momentum in H1 2026 with moderate price growth across prime segments. Transaction volumes remain healthy though deceleration from 2025 peaks is expected in H2. Key risk factors include potential interest rate adjustments and regional economic developments.",
+    "keyIndicators": [
+      {
+        "indicator": "Dubai Real Estate Price Index",
+        "currentValue": 185.4,
+        "trend": "rising",
+        "alertTriggered": false
+      },
+      {
+        "indicator": "Transaction Volume (Monthly)",
+        "currentValue": 12500,
+        "trend": "stable",
+        "alertTriggered": false
+      },
+      {
+        "indicator": "UAE Central Bank Interest Rate",
+        "currentValue": 4.75,
+        "trend": "stable",
+        "alertTriggered": false
+      },
+      {
+        "indicator": "New Project Launches (Quarterly)",
+        "currentValue": 3400,
+        "trend": "rising",
+        "alertTriggered": false
+      },
+      {
+        "indicator": "Vacancy Rate - Prime Residential",
+        "currentValue": 8.2,
+        "trend": "declining",
+        "alertTriggered": false
+      },
+      {
+        "indicator": "Rental Yield - Average",
+        "currentValue": 6.5,
+        "trend": "stable",
+        "alertTriggered": false
+      },
+      {
+        "indicator": "Inflation Rate UAE",
+        "currentValue": 2.8,
+        "trend": "rising",
+        "alertTriggered": true
+      }
+    ],
+    "activeTriggers": [
+      {
+        "id": "mt1a2b3c4-1501-4000-8000-000000000001",
+        "name": "Price Drop > 5% in Quarter",
+        "condition": "Dubai Real Estate Price Index declines by more than 5% within any calendar quarter",
+        "severity": "high",
+        "owner": "Risk Team",
+        "lastTriggered": null,
+        "createdAt": "2026-01-15T10:00:00Z"
+      },
+      {
+        "id": "mt1a2b3c4-1501-4000-8000-000000000002",
+        "name": "Transaction Volume Crash > 30%",
+        "condition": "Monthly transaction volume drops by more than 30% compared to same month previous year",
+        "severity": "critical",
+        "owner": "Risk Team",
+        "lastTriggered": null,
+        "createdAt": "2026-01-15T10:00:00Z"
+      },
+      {
+        "id": "mt1a2b3c4-1501-4000-8000-000000000003",
+        "name": "Interest Rate Hike > 100 bps",
+        "condition": "UAE Central Bank raises interest rates by more than 100 basis points in a single decision",
+        "severity": "medium",
+        "owner": "Risk Team",
+        "lastTriggered": null,
+        "createdAt": "2026-02-01T10:00:00Z"
+      },
+      {
+        "id": "mt1a2b3c4-1501-4000-8000-000000000004",
+        "name": "Regulatory Change Announcement",
+        "condition": "Any VARA or SCA announcement regarding new regulations for tokenized assets within UAE",
+        "severity": "high",
+        "owner": "Legal Team",
+        "lastTriggered": "2026-03-15T09:00:00Z",
+        "createdAt": "2026-01-15T10:00:00Z"
+      }
+    ]
+  },
+  "talkingPoints": [
+    {
+      "id": "tp1a2b3c4-1601-4000-8000-000000000001",
+      "topic": "Market Correction Impact",
+      "audience": "Sales Team",
+      "approvedLanguage": "Real estate markets naturally experience cycles. Our platform focuses on quality assets in prime Dubai locations with historically resilient values. Tokenization enables diversification across multiple properties rather than single-asset concentration.",
+      "prohibitedLanguage": "Do not say 'prices will never go down' or 'guaranteed appreciation'. Avoid dismissing investor concerns about market timing.",
+      "owner": "Risk Team",
+      "version": 2,
+      "updatedAt": "2026-06-20T11:00:00Z"
+    },
+    {
+      "id": "tp1a2b3c4-1601-4000-8000-000000000002",
+      "topic": "Platform Technology Reliability",
+      "audience": "Investor-Facing",
+      "approvedLanguage": "Blocks operates on enterprise-grade infrastructure with 99.9% uptime SLA. Our platform undergoes regular security audits and maintains comprehensive disaster recovery protocols.",
+      "prohibitedLanguage": "Do not claim '100% uptime' or 'impossible to hack'. Avoid technical jargon about blockchain consensus mechanisms.",
+      "owner": "Engineering Team",
+      "version": 1,
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "tp1a2b3c4-1601-4000-8000-000000000003",
+      "topic": "Regulatory Status",
+      "audience": "Investor-Facing",
+      "approvedLanguage": "Blocks operates under the regulatory framework established by Dubai's Virtual Assets Regulatory Authority (VARA). Our tokenization model has been reviewed by legal counsel specializing in UAE securities law.",
+      "prohibitedLanguage": "Do not say 'fully regulated by the government' or 'SEC approved'. Avoid making claims about specific regulatory approvals that have not been granted.",
+      "owner": "Legal Team",
+      "version": 2,
+      "updatedAt": "2026-06-22T14:00:00Z"
+    },
+    {
+      "id": "tp1a2b3c4-1601-4000-8000-000000000004",
+      "topic": "Competitive Positioning",
+      "audience": "Sales Team",
+      "approvedLanguage": "Blocks offers a managed marketplace with curated tokenization opportunities, combining institutional-grade due diligence with accessible investment minimums.",
+      "prohibitedLanguage": "Do not make direct negative comparisons with competitors. Avoid claiming 'best' or 'leading' without substantiation.",
+      "owner": "Marketing Team",
+      "version": 1,
+      "updatedAt": "2026-06-28T09:00:00Z"
+    }
+  ],
+  "escalationGuides": [
+    {
+      "id": "eg1a2b3c4-1701-4000-8000-000000000001",
+      "scenario": "Adverse Market Development",
+      "owner": "Risk Team",
+      "trigger": "Dubai property price index drops >5% in a single month OR transaction volume plummets >30%",
+      "responseSla": "2 hours",
+      "steps": [
+        "Notify Risk Committee via emergency channel",
+        "Assemble crisis response team (Risk, Legal, Comms, CEO)",
+        "Assess portfolio exposure and identify most impacted assets",
+        "Draft investor communication with approved language",
+        "Coordinate with PR team for media response if needed",
+        "Implement additional risk monitoring measures"
+      ],
+      "communicationTemplate": "We are closely monitoring recent market developments and their potential impact on tokenized assets. Our portfolio remains diversified across prime Dubai locations. We will provide updates as the situation evolves. For specific questions, please contact investor relations.",
+      "updatedAt": "2026-06-20T10:00:00Z"
+    },
+    {
+      "id": "eg1a2b3c4-1701-4000-8000-000000000002",
+      "scenario": "Security Incident / Data Breach",
+      "owner": "Engineering Team",
+      "trigger": "Confirmed unauthorized access to platform systems or user data",
+      "responseSla": "1 hour",
+      "steps": [
+        "Isolate affected systems immediately",
+        "Engage external security incident response team",
+        "Notify CEO and Legal within 1 hour",
+        "Assess scope and impact of breach",
+        "Notify affected users per regulatory requirements",
+        "Coordinate with PR for public statement if required",
+        "File regulatory notification if mandatory (VARA, data protection)"
+      ],
+      "communicationTemplate": "We have identified and contained a security incident affecting our platform. We are conducting a thorough investigation with external cybersecurity experts. Affected users will be contacted directly with specific guidance. We take data security seriously and apologize for any concern this may cause.",
+      "updatedAt": "2026-06-15T11:00:00Z"
+    },
+    {
+      "id": "eg1a2b3c4-1701-4000-8000-000000000003",
+      "scenario": "Regulatory Enforcement Action",
+      "owner": "Legal Team",
+      "trigger": "Receipt of regulatory notice, inquiry, or enforcement action from VARA, SCA, or other authority",
+      "responseSla": "4 hours",
+      "steps": [
+        "Acknowledge receipt of regulatory communication",
+        "Engage external legal counsel specializing in UAE financial regulation",
+        "Assess scope of inquiry and required response timeline",
+        "Prepare initial response within SLA",
+        "Coordinate communications strategy with CEO and Board",
+        "Implement any required operational changes immediately"
+      ],
+      "communicationTemplate": "Blocks is committed to operating within the regulatory framework established by UAE authorities. We are fully cooperating with the relevant regulator and will provide appropriate responses within required timelines. We will keep stakeholders informed as appropriate.",
+      "updatedAt": "2026-06-18T14:00:00Z"
+    }
+  ],
+  "faq": [
+    {
+      "id": "faq1a2b3c4-1801-4000-8000-000000000001",
+      "question": "What happens if the property value decreases?",
+      "answer": "Property values can fluctuate based on market conditions. The token value is directly linked to the underlying property's appraised value. Historical data shows prime Dubai real estate has demonstrated resilience through market cycles with long-term appreciation. Diversification across multiple properties can help mitigate single-asset risk.",
+      "category": "Market Risk",
+      "audience": "Investor-Facing",
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "faq1a2b3c4-1801-4000-8000-000000000002",
+      "question": "Can I sell my tokens at any time?",
+      "answer": "You can list your tokens for sale on the Blocks secondary market at any time. However, sale completion depends on buyer demand and market conditions. There is no guarantee of immediate liquidity. We recommend considering your investment timeline and liquidity needs before purchasing tokens.",
+      "category": "Liquidity",
+      "audience": "Investor-Facing",
+      "status": "approved",
+      "updatedAt": "2026-06-15T10:00:00Z"
+    },
+    {
+      "id": "faq1a2b3c4-1801-4000-8000-000000000003",
+      "question": "How is Blocks regulated?",
+      "answer": "Blocks operates in compliance with UAE regulations and works within the framework established by the Virtual Assets Regulatory Authority (VARA) in Dubai. Our platform undergoes regular compliance reviews. We maintain legal counsel specialized in UAE financial services regulation.",
+      "category": "Regulatory",
+      "audience": "Investor-Facing",
+      "status": "approved",
+      "updatedAt": "2026-06-18T11:00:00Z"
+    },
+    {
+      "id": "faq1a2b3c4-1801-4000-8000-000000000004",
+      "question": "What due diligence do you perform on properties?",
+      "answer": "Each property undergoes comprehensive due diligence including independent valuation, legal title verification, structural assessment, rental income analysis, and market comparables review. We engage third-party experts for valuation and legal verification.",
+      "category": "Operations",
+      "audience": "Investor-Facing",
+      "status": "approved",
+      "updatedAt": "2026-06-20T09:00:00Z"
+    },
+    {
+      "id": "faq1a2b3c4-1801-4000-8000-000000000005",
+      "question": "How are rental distributions handled?",
+      "answer": "Rental income from properties is distributed to token holders proportionally to their ownership stake. Distributions occur quarterly after deducting property management fees, maintenance costs, and insurance. Distribution history is available in your investor dashboard.",
+      "category": "Operations",
+      "audience": "Investor-Facing",
+      "status": "approved",
+      "updatedAt": "2026-06-22T10:00:00Z"
+    },
+    {
+      "id": "faq1a2b3c4-1801-4000-8000-000000000006",
+      "question": "What are the fees involved?",
+      "answer": "Blocks charges a platform fee on token purchases and a management fee on rental distributions. Detailed fee structures are available in the pricing section. There are no hidden fees and all costs are disclosed before any transaction.",
+      "category": "Pricing",
+      "audience": "Investor-Facing",
+      "status": "draft",
+      "updatedAt": "2026-07-01T08:00:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day risk management dashboard with mitigation coverage, trigger monitoring, and response readiness.",
+      "metrics": [
+        {
+          "id": "risk-90-active-mitigations",
+          "name": "Active Risk Mitigations",
+          "targetRange": "7",
+          "current": 6,
+          "target": 7,
+          "unit": "mitigations",
+          "status": "on-track",
+          "sourceSystem": "Risk Register System",
+          "owner": "Risk Team",
+          "refreshCadence": "Weekly",
+          "trend": [3, 4, 4, 5, 5, 6, 6],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "risk-90-alert-status",
+          "name": "Active Market Alerts",
+          "targetRange": "0 critical",
+          "current": 1,
+          "target": 0,
+          "unit": "alerts",
+          "status": "at-risk",
+          "sourceSystem": "Market Data Feed",
+          "owner": "Risk Team",
+          "refreshCadence": "Daily",
+          "trend": [0, 0, 0, 0, 0, 0, 1],
+          "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"]
+        },
+        {
+          "id": "risk-90-escalation-drill",
+          "name": "Escalation Drill Completion",
+          "targetRange": "1 per quarter",
+          "current": 0,
+          "target": 1,
+          "unit": "drills",
+          "status": "off-track",
+          "sourceSystem": "Risk Register System",
+          "owner": "Risk Team",
+          "refreshCadence": "Quarterly",
+          "trend": [0, 0, 0, 0],
+          "trendLabels": ["Q1", "Q2", "Q3", "Q4"]
+        }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic risk dashboard with annual risk review cadence and framework maturity.",
+      "metrics": [
+        {
+          "id": "risk-12-faq-coverage",
+          "name": "Approved FAQ Entries",
+          "targetRange": "15",
+          "current": 5,
+          "target": 15,
+          "unit": "entries",
+          "status": "off-track",
+          "sourceSystem": "Compliance Registry",
+          "owner": "Legal Team",
+          "refreshCadence": "Monthly",
+          "trend": [2, 2, 3, 3, 4, 4, 5],
+          "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
+        },
+        {
+          "id": "risk-12-annual-review",
+          "name": "Annual Risk Review",
+          "targetRange": "1",
+          "current": 0,
+          "target": 1,
+          "unit": "reviews",
+          "status": "at-risk",
+          "sourceSystem": "Risk Register System",
+          "owner": "Risk Team",
+          "refreshCadence": "Annual",
+          "trend": [0, 0],
+          "trendLabels": ["H1", "H2"]
+        }
+      ]
+    }
+  }
+}

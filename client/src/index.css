@@ -76,6 +76,7 @@ body {
 .sidebar-link.active { background: var(--primary); color: #fff; }
 .sidebar-link .icon { font-size: 1.1rem; }
 .sidebar-label { font-size: 0.7rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; margin: 16px 8px 6px; }
+.sidebar-label:first-of-type { margin-top: 0; }
 
 /* ─── Content ─── */
 .main { margin-left: 240px; flex: 1; padding: 28px 32px; max-width: 1440px; }

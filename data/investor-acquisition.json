@@ -1,0 +1,233 @@
+{
+  "waitlist": {
+    "items": [
+      {
+        "id": "wl-001-aaaa-bbbb-cccc-dddddddddddd",
+        "email": "ahmed.alsuwaidi@example.ae",
+        "segment": "UAE/GCC HNWI",
+        "sourceChannel": "LinkedIn Ad",
+        "declaredInterest": "Residential Investment",
+        "kycStatus": "active",
+        "convertedToInvestor": true,
+        "signedUpAt": "2026-04-10T09:15:00Z"
+      },
+      {
+        "id": "wl-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+        "email": "sarah.khalid@example.ae",
+        "segment": "UAE/GCC HNWI",
+        "sourceChannel": "Google Search",
+        "declaredInterest": "Commercial Investment",
+        "kycStatus": "pending",
+        "convertedToInvestor": false,
+        "signedUpAt": "2026-05-22T14:30:00Z"
+      },
+      {
+        "id": "wl-003-cccc-dddd-eeee-ffffffffffff",
+        "email": "james.mitchell@example.uk",
+        "segment": "International Investors",
+        "sourceChannel": "Referral",
+        "declaredInterest": "Fractional Real Estate",
+        "kycStatus": "active",
+        "convertedToInvestor": true,
+        "signedUpAt": "2026-04-28T11:00:00Z"
+      },
+      {
+        "id": "wl-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+        "email": "nora.almarri@example.ae",
+        "segment": "UAE/GCC Affluent",
+        "sourceChannel": "Organic Search",
+        "declaredInterest": "Residential Investment",
+        "kycStatus": "active",
+        "convertedToInvestor": true,
+        "signedUpAt": "2026-05-05T16:45:00Z"
+      },
+      {
+        "id": "wl-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+        "email": "robert.chen@example.sg",
+        "segment": "International Investors",
+        "sourceChannel": "PR Article",
+        "declaredInterest": "Tokenized Real Estate",
+        "kycStatus": "completed",
+        "convertedToInvestor": false,
+        "signedUpAt": "2026-06-01T08:20:00Z"
+      }
+    ],
+    "totalItems": 342,
+    "totalPages": 69,
+    "currentPage": 1,
+    "pageSize": 5
+  },
+  "segments": [
+    {
+      "id": "seg-001-aaaa-bbbb-cccc-dddddddddddd",
+      "name": "UAE/GCC HNWIs",
+      "description": "High-net-worth individuals from UAE and GCC countries with >$1M investable assets",
+      "inclusionRules": "country IN (AE, SA, QA, KW, BH, OM) AND estimated_assets > 1000000 AND risk_profile = aggressive",
+      "exclusionRules": "sector = government OR flagged_pep = true",
+      "messagingAngle": "Exclusive access to premium Dubai real estate through regulated tokenization",
+      "estimatedSize": 8500,
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "seg-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "name": "International Investors",
+      "description": "Sophisticated investors from UK, Europe, and Asia Pacific seeking alternative asset classes",
+      "inclusionRules": "country IN (GB, DE, FR, SG, HK, AU) AND investment_experience > 3 AND annual_income > 250000",
+      "exclusionRules": "sanctions_list = true OR jurisdiction IN (US, CN)",
+      "messagingAngle": "Diversify into Dubai's booming real estate market from anywhere in the world",
+      "estimatedSize": 15000,
+      "createdAt": "2026-01-20T11:30:00Z"
+    },
+    {
+      "id": "seg-003-cccc-dddd-eeee-ffffffffffff",
+      "name": "UAE/GCC Affluent",
+      "description": "Upper-middle-class individuals in GCC with growing investment appetite",
+      "inclusionRules": "country IN (AE, SA) AND estimated_assets BETWEEN 200000 AND 1000000 AND age BETWEEN 25 AND 45",
+      "exclusionRules": "occupation = student",
+      "messagingAngle": "Start your real estate investment journey with just AED 2,000",
+      "estimatedSize": 45000,
+      "createdAt": "2026-02-05T09:00:00Z"
+    },
+    {
+      "id": "seg-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+      "name": "Crypto-Affluent Investors",
+      "description": "Investors with significant crypto wealth looking to diversify into real estate",
+      "inclusionRules": "crypto_holdings > 50000 AND investment_horizon > 12months",
+      "exclusionRules": "jurisdiction_restricted = true",
+      "messagingAngle": "Turn your digital assets into tangible Dubai property",
+      "estimatedSize": 12000,
+      "createdAt": "2026-03-01T14:00:00Z"
+    },
+    {
+      "id": "seg-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+      "name": "Real Estate Professionals",
+      "description": "Brokers, agents, and property professionals seeking partnership opportunities",
+      "inclusionRules": "occupation IN (real_estate_agent, broker, property_manager) AND license_valid = true",
+      "exclusionRules": "competing_platform_affiliation = true",
+      "messagingAngle": "Partner with Blocks to offer your clients tokenized real estate",
+      "estimatedSize": 3200,
+      "createdAt": "2026-03-15T10:30:00Z"
+    }
+  ],
+  "positioningTests": [
+    {
+      "id": "pt-001-aaaa-bbbb-cccc-dddddddddddd",
+      "name": "AED 2k-5k Minimum Investment Test",
+      "status": "analysing",
+      "variants": ["From AED 2,000", "From AED 5,000", "From AED 10,000"],
+      "targetSegments": ["seg-001-aaaa-bbbb-cccc-dddddddddddd", "seg-002-bbbb-cccc-dddd-eeeeeeeeeeee"],
+      "successMetrics": {
+        "waitlistConversionRate": 0.042,
+        "qualifiedSignupRate": 0.018,
+        "ctr": 0.032,
+        "bounceRate": 0.58
+      },
+      "complianceStatus": "approved",
+      "createdAt": "2026-04-01T08:00:00Z"
+    },
+    {
+      "id": "pt-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "name": "Regulatory Trust Signal Test",
+      "status": "active",
+      "variants": ["Regulated by SCA", "Fully Compliant Platform", "Licensed & Regulated"],
+      "targetSegments": ["seg-001-aaaa-bbbb-cccc-dddddddddddd", "seg-003-cccc-dddd-eeee-ffffffffffff"],
+      "successMetrics": {
+        "waitlistConversionRate": 0.038,
+        "qualifiedSignupRate": 0.021,
+        "ctr": 0.045,
+        "bounceRate": 0.52
+      },
+      "complianceStatus": "approved",
+      "createdAt": "2026-05-10T09:00:00Z"
+    },
+    {
+      "id": "pt-003-cccc-dddd-eeee-ffffffffffff",
+      "name": "Yield vs. Capital Appreciation Test",
+      "status": "draft",
+      "variants": ["Target 6-8% Rental Yield", "Capital Growth Potential in Dubai", "Income + Growth Strategy"],
+      "targetSegments": ["seg-002-bbbb-cccc-dddd-eeeeeeeeeeee", "seg-004-dddd-eeee-ffff-aaaaaaaaaaaa"],
+      "successMetrics": {},
+      "complianceStatus": "pending-review",
+      "createdAt": "2026-06-20T11:00:00Z"
+    }
+  ],
+  "complianceMatrix": [
+    {
+      "id": "cm-001-aaaa-bbbb-cccc-dddddddddddd",
+      "claim": "Invest from AED 2,000",
+      "riskLevel": "medium",
+      "recommendedWording": "Target minimum investment from AED 2,000 (subject to eligibility)",
+      "approvalStatus": "approved",
+      "reviewerNotes": "Add disclaimer: 'Minimum investment subject to investor qualification and regulatory approval'",
+      "updatedAt": "2026-04-05T14:30:00Z"
+    },
+    {
+      "id": "cm-002-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "claim": "Guaranteed rental yield",
+      "riskLevel": "high",
+      "recommendedWording": "Target rental yield (subject to market conditions and property performance)",
+      "approvalStatus": "approved",
+      "reviewerNotes": "Must never use 'guaranteed' — replaced with 'target' and added forward-looking statement disclaimer",
+      "updatedAt": "2026-03-20T10:00:00Z"
+    },
+    {
+      "id": "cm-003-cccc-dddd-eeee-ffffffffffff",
+      "claim": "Instant liquidity",
+      "riskLevel": "prohibited",
+      "recommendedWording": "Explore secondary market opportunities where available",
+      "approvalStatus": "rejected",
+      "reviewerNotes": "Prohibited term — implies secondary market guarantee. Use 'potential for liquidity' at most.",
+      "updatedAt": "2026-02-15T16:00:00Z"
+    },
+    {
+      "id": "cm-004-dddd-eeee-ffff-aaaaaaaaaaaa",
+      "claim": "100% digital ownership",
+      "riskLevel": "medium",
+      "recommendedWording": "Digital ownership recorded on blockchain (subject to regulatory framework)",
+      "approvalStatus": "approved",
+      "reviewerNotes": "Approved with condition: include technical disclaimer about blockchain recording",
+      "updatedAt": "2026-05-01T09:15:00Z"
+    },
+    {
+      "id": "cm-005-eeee-ffff-aaaa-bbbbbbbbbbbb",
+      "claim": "Trade real estate like stocks",
+      "riskLevel": "high",
+      "recommendedWording": "Access real estate investment through a digital platform",
+      "approvalStatus": "pending",
+      "reviewerNotes": "Awaiting legal review — 'like stocks' implies equivalence to securities trading",
+      "updatedAt": "2026-06-10T11:30:00Z"
+    }
+  ],
+  "kpis": {
+    "90days": {
+      "description": "90-day investor acquisition dashboard with waitlist conversion, KYC progression, segment engagement",
+      "metrics": [
+        { "id": "inv-90-waitlist", "name": "Waitlist Signups", "targetRange": "400", "current": 342, "target": 400, "unit": "signups", "status": "at-risk", "sourceSystem": "Web Analytics / Waitlist System", "owner": "Growth Team", "refreshCadence": "Weekly", "trend": [45, 78, 105, 145, 185, 230, 265, 295, 320, 342], "trendLabels": ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9", "W10"] },
+        { "id": "inv-90-conversion", "name": "Waitlist → KYC Rate", "targetRange": "45%", "current": 38.5, "target": 45.0, "unit": "%", "status": "at-risk", "sourceSystem": "KYC Provider", "owner": "Growth Team", "refreshCadence": "Weekly", "trend": [32, 34, 35, 36, 37, 38, 38.5], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9", "W10"] },
+        { "id": "inv-90-qualified", "name": "Qualified Investor Rate", "targetRange": "25%", "current": 22.1, "target": 25.0, "unit": "%", "status": "at-risk", "sourceSystem": "KYC Provider", "owner": "Compliance Team", "refreshCadence": "Weekly", "trend": [18, 19, 20, 20.5, 21, 21.5, 22.1], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9", "W10"] },
+        { "id": "inv-90-ctr", "name": "Ad Click-Through Rate", "targetRange": "3.5%", "current": 3.2, "target": 3.5, "unit": "%", "status": "at-risk", "sourceSystem": "Ad Platforms", "owner": "Paid Media Team", "refreshCadence": "Daily", "trend": [2.8, 2.9, 3.0, 3.1, 3.1, 3.2, 3.2], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9", "W10"] },
+        { "id": "inv-90-bounce", "name": "Landing Page Bounce Rate", "targetRange": "<55%", "current": 58.2, "target": 55.0, "unit": "%", "status": "off-track", "sourceSystem": "Web Analytics", "owner": "Content Team", "refreshCadence": "Weekly", "trend": [62, 61, 60, 59.5, 59, 58.5, 58.2], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9", "W10"] },
+        { "id": "inv-90-compliance", "name": "Compliance Approval Rate", "targetRange": "90%", "current": 92, "target": 90, "unit": "%", "status": "on-track", "sourceSystem": "Compliance System", "owner": "Compliance Team", "refreshCadence": "Weekly", "trend": [85, 87, 88, 90, 91, 92, 92], "trendLabels": ["W4", "W5", "W6", "W7", "W8", "W9", "W10"] }
+      ]
+    },
+    "12months": {
+      "description": "12-month strategic investor acquisition outlook",
+      "metrics": [
+        { "id": "inv-12m-waitlist", "name": "Total Waitlist Signups", "targetRange": "5000", "current": 2840, "target": 5000, "unit": "signups", "status": "off-track", "sourceSystem": "Waitlist System", "owner": "Growth Team", "refreshCadence": "Monthly", "trend": [320, 580, 750, 980, 1250, 1480, 1720, 1980, 2240, 2500, 2700, 2840], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] },
+        { "id": "inv-12m-converted", "name": "Investors Converted", "targetRange": "1200", "current": 520, "target": 1200, "unit": "investors", "status": "off-track", "sourceSystem": "CRM", "owner": "Growth Team", "refreshCadence": "Monthly", "trend": [45, 80, 110, 155, 210, 260, 320, 370, 420, 460, 490, 520], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] },
+        { "id": "inv-12m-cac", "name": "Cost per Acquisition", "targetRange": "AED 2,500", "current": 2850, "target": 2500, "unit": "AED", "status": "off-track", "sourceSystem": "Finance / Ad Platforms", "owner": "Paid Media Team", "refreshCadence": "Monthly", "trend": [3200, 3100, 3000, 2900, 2850, 2800, 2850], "trendLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"] }
+      ]
+    }
+  },
+  "funnel": {
+    "description": "Investor acquisition funnel tracking from awareness through KYC qualification",
+    "stages": [
+      { "id": "awareness", "name": "Awareness", "count": 45200, "previousCount": 34500, "source": "Web Analytics" },
+      { "id": "landing-page-visit", "name": "Landing Page Visit", "count": 8200, "previousCount": 6100, "source": "Web Analytics" },
+      { "id": "waitlist-signup", "name": "Waitlist Signup", "count": 2840, "previousCount": 1980, "source": "Waitlist System" },
+      { "id": "kyc-started", "name": "KYC Started", "count": 1090, "previousCount": 720, "source": "KYC Provider" },
+      { "id": "kyc-completed", "name": "KYC Completed", "count": 630, "previousCount": 410, "source": "KYC Provider" },
+      { "id": "qualified-investor", "name": "Qualified Investor", "count": 520, "previousCount": 340, "source": "CRM" }
+    ]
+  }
+}

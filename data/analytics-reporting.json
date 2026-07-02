@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "appName": "GTM Analytics & Reporting Dashboard",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-02",
+    "competitors": ["PRYPCO", "Stake", "SmartCrowd", "Deed"],
+    "sourceSystems": {
+      "analytics": "Web Analytics (GA4)",
+      "crm": "CRM / HubSpot",
+      "kyc": "KYC Provider",
+      "searchConsole": "Google Search Console",
+      "rankTracker": "Rank Tracking Tool",
+      "backlinkTool": "Backlink Analysis Tool",
+      "mediaMonitoring": "Media Monitoring Tool",
+      "socialListening": "Social Listening Tool",
+      "paymentProcessor": "Payment Processor",
+      "supportSystem": "Support / Ticketing System",
+      "cms": "CMS / Document Repository",
+      "marketingAutomation": "Marketing Automation",
+      "webinarPlatform": "Webinar Platform",
+      "eventTracker": "Event / Invitation Tracker",
+      "complianceLogs": "Compliance Review Logs",
+      "partnerTracker": "Partner Due-Diligence Tracker"
+    }
+  },
+  "developerKPIs": {
+    "90days": {
+      "description": "90-day developer pipeline dashboard with account coverage, meeting conversion, assessment velocity, signed-developer progress, asset pipeline, approvals",
+      "metrics": [
+        { "id": "dev-90-accounts", "name": "Target Accounts", "targetRange": "150", "current": 128, "target": 150, "unit": "accounts", "status": "at-risk", "sourceSystem": "CRM / Target Account List", "owner": "GTM Team", "refreshCadence": "Weekly", "trend": [85, 92, 101, 110, 118, 122, 128], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "dev-90-meetings", "name": "Meetings with Target Accounts", "targetRange": "30-50", "current": 38, "target": 40, "unit": "meetings", "status": "on-track", "sourceSystem": "CRM / Meeting Logs", "owner": "BD Team", "refreshCadence": "Weekly", "trend": [5, 12, 18, 22, 28, 33, 38], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "dev-90-assessments", "name": "Technical Assessments Completed", "targetRange": "10-20", "current": 14, "target": 15, "unit": "assessments", "status": "on-track", "sourceSystem": "Assessment Tracker", "owner": "Developer Team", "refreshCadence": "Weekly", "trend": [1, 3, 5, 7, 9, 11, 14], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "dev-90-signed", "name": "Developers Signed", "targetRange": "1-3", "current": 2, "target": 2, "unit": "developers", "status": "on-track", "sourceSystem": "Developer Agreement Tracker", "owner": "Legal / BD", "refreshCadence": "Weekly", "trend": [0, 0, 0, 1, 1, 1, 2], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "dev-90-assets-submitted", "name": "Assets Submitted", "targetRange": "3-8", "current": 6, "target": 5, "unit": "assets", "status": "on-track", "sourceSystem": "Asset Pipeline Tracker", "owner": "Developer Team", "refreshCadence": "Weekly", "trend": [0, 1, 2, 2, 3, 4, 6], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "dev-90-assets-approved", "name": "Assets Approved", "targetRange": "1-3", "current": 3, "target": 2, "unit": "assets", "status": "on-track", "sourceSystem": "Approval Workflow", "owner": "Compliance / Product", "refreshCadence": "Weekly", "trend": [0, 0, 0, 1, 1, 2, 3], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] }
+      ]
+    },
+    "12months": {
+      "description": "12-month developer pipeline dashboard with 500 account coverage, meeting conversion, assessment velocity, signed-developer progress, asset pipeline, approvals, launch forecast",
+      "metrics": [
+        { "id": "dev-12-accounts", "name": "Target Accounts", "targetRange": "500", "current": 267, "target": 500, "unit": "accounts", "status": "at-risk", "sourceSystem": "CRM / Target Account List", "owner": "GTM Team", "refreshCadence": "Monthly", "trend": [85, 92, 101, 110, 118, 122, 128, 145, 167, 189, 223, 267], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "dev-12-meetings", "name": "Meetings with Target Accounts", "targetRange": "150-250", "current": 134, "target": 150, "unit": "meetings", "status": "at-risk", "sourceSystem": "CRM / Meeting Logs", "owner": "BD Team", "refreshCadence": "Monthly", "trend": [5, 12, 18, 22, 28, 33, 38, 55, 72, 88, 110, 134], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "dev-12-assessments", "name": "Technical Assessments Completed", "targetRange": "60-100", "current": 52, "target": 60, "unit": "assessments", "status": "at-risk", "sourceSystem": "Assessment Tracker", "owner": "Developer Team", "refreshCadence": "Monthly", "trend": [1, 3, 5, 7, 9, 11, 14, 20, 27, 35, 43, 52], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "dev-12-signed", "name": "Developers Signed", "targetRange": "10-20", "current": 9, "target": 10, "unit": "developers", "status": "at-risk", "sourceSystem": "Developer Agreement Tracker", "owner": "Legal / BD", "refreshCadence": "Monthly", "trend": [0, 0, 0, 1, 1, 1, 2, 3, 4, 6, 7, 9], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "dev-12-assets-submitted", "name": "Assets Submitted", "targetRange": "30-60", "current": 28, "target": 30, "unit": "assets", "status": "at-risk", "sourceSystem": "Asset Pipeline Tracker", "owner": "Developer Team", "refreshCadence": "Monthly", "trend": [0, 1, 2, 2, 3, 4, 6, 9, 13, 18, 23, 28], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "dev-12-assets-approved", "name": "Assets Approved", "targetRange": "10-25", "current": 11, "target": 10, "unit": "assets", "status": "on-track", "sourceSystem": "Approval Workflow", "owner": "Compliance / Product", "refreshCadence": "Monthly", "trend": [0, 0, 0, 1, 1, 2, 3, 4, 5, 7, 9, 11], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "dev-12-offerings-launched", "name": "Offerings Launched", "targetRange": "6-12", "current": 4, "target": 6, "unit": "offerings", "status": "at-risk", "sourceSystem": "Offering Launch Records", "owner": "Product / Operations", "refreshCadence": "Monthly", "trend": [0, 0, 0, 0, 1, 1, 1, 2, 2, 3, 3, 4], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] }
+      ]
+    }
+  },
+  "investorKPIs": {
+    "90days": {
+      "description": "90-day investor launch dashboard focused on early traffic, waitlist demand, KYC intent, KYC completion, weekly pacing, and launch-readiness gaps",
+      "metrics": [
+        { "id": "inv-90-visitors", "name": "Website Visitors", "targetRange": "20k-75k", "current": 45200, "target": 45000, "unit": "visitors", "status": "on-track", "sourceSystem": "Web Analytics (GA4)", "owner": "Marketing", "refreshCadence": "Weekly", "trend": [8500, 12300, 18900, 22400, 27800, 34500, 45200], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "inv-90-waitlist", "name": "Waitlist Signups", "targetRange": "2k-10k", "current": 6200, "target": 6000, "unit": "signups", "status": "on-track", "sourceSystem": "CRM / Waitlist", "owner": "Marketing", "refreshCadence": "Weekly", "trend": [450, 890, 1500, 2200, 3200, 4600, 6200], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "inv-90-kyc-start", "name": "KYC Start Rate", "targetRange": "10%-25%", "current": 18, "target": 18, "unit": "%", "status": "on-track", "sourceSystem": "KYC Provider", "owner": "Compliance", "refreshCadence": "Weekly", "trend": [8, 11, 13, 14, 15, 16, 18], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+        { "id": "inv-90-kyc-completion", "name": "KYC Completion Rate", "targetRange": "50%-75%", "current": 62, "target": 62, "unit": "%", "status": "on-track", "sourceSystem": "KYC Provider", "owner": "Compliance", "refreshCadence": "Weekly", "trend": [35, 42, 48, 52, 55, 58, 62], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] }
+      ]
+    },
+    "12months": {
+      "description": "12-month investor growth dashboard with KPI cards, target ranges, cumulative progress, forecast-to-target, gap analysis, and executive commentary",
+      "metrics": [
+        { "id": "inv-12-visitors", "name": "Website Visitors", "targetRange": "250k-750k", "current": 267000, "target": 250000, "unit": "visitors", "status": "on-track", "sourceSystem": "Web Analytics (GA4)", "owner": "Marketing", "refreshCadence": "Monthly", "trend": [8500, 12300, 18900, 22400, 27800, 34500, 45200, 58900, 72000, 95000, 123000, 267000], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "inv-12-waitlist", "name": "Waitlist Signups", "targetRange": "25k-100k", "current": 38200, "target": 25000, "unit": "signups", "status": "on-track", "sourceSystem": "CRM / Waitlist", "owner": "Marketing", "refreshCadence": "Monthly", "trend": [450, 890, 1500, 2200, 3200, 4600, 6200, 8900, 12500, 18500, 26200, 38200], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "inv-12-kyc-start-rate", "name": "KYC Start Rate", "targetRange": "20%-35%", "current": 24, "target": 20, "unit": "%", "status": "on-track", "sourceSystem": "KYC Provider", "owner": "Compliance", "refreshCadence": "Monthly", "trend": [8, 11, 13, 14, 15, 16, 18, 19, 20, 21, 22, 24], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "inv-12-kyc-completion-rate", "name": "KYC Completion Rate", "targetRange": "65%-85%", "current": 68, "target": 65, "unit": "%", "status": "on-track", "sourceSystem": "KYC Provider", "owner": "Compliance", "refreshCadence": "Monthly", "trend": [35, 42, 48, 52, 55, 58, 62, 63, 64, 65, 66, 68], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "inv-12-offering-pv", "name": "Offering Page Views", "targetRange": "20k-100k", "current": 28400, "target": 20000, "unit": "views", "status": "on-track", "sourceSystem": "Offering Page Analytics", "owner": "Marketing", "refreshCadence": "Monthly", "trend": [1200, 2400, 3800, 5200, 7100, 9500, 12300, 15600, 18200, 21400, 24800, 28400], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "inv-12-funded-subscriptions", "name": "Funded Subscriptions", "targetRange": "500-5k", "current": 380, "target": 500, "unit": "subscriptions", "status": "at-risk", "sourceSystem": "Subscription / Payment System", "owner": "Finance", "refreshCadence": "Monthly", "trend": [0, 0, 5, 12, 28, 45, 68, 98, 135, 185, 260, 380], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] },
+        { "id": "inv-12-repeat-rate", "name": "Repeat Investment Rate", "targetRange": "20%-35%", "current": 18, "target": 20, "unit": "%", "status": "at-risk", "sourceSystem": "Repeat Investment Records", "owner": "Product", "refreshCadence": "Monthly", "trend": [0, 0, 0, 5, 8, 10, 12, 14, 15, 16, 17, 18], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8", "Month 9", "Month 10", "Month 11", "Month 12"] }
+      ]
+    }
+  },
+  "prKPIs": {
+    "description": "PR dashboard with media coverage, authority-building, inbound-demand, and competitive visibility views",
+    "metrics": [
+      { "id": "pr-tier1-mentions", "name": "Tier-1 Media Mentions", "targetRange": "8-15/month", "current": 11, "target": 10, "unit": "mentions", "status": "on-track", "sourceSystem": "Media Monitoring Tool", "owner": "PR Team", "refreshCadence": "Weekly", "trend": [3, 5, 4, 6, 7, 9, 11], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "pr-backlinks", "name": "Backlinks from Coverage", "targetRange": "15-30/month", "current": 22, "target": 20, "unit": "backlinks", "status": "on-track", "sourceSystem": "Backlink Analysis Tool", "owner": "SEO / PR", "refreshCadence": "Weekly", "trend": [4, 7, 9, 12, 15, 18, 22], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "pr-founder-interviews", "name": "Founder Interviews", "targetRange": "2-4/month", "current": 3, "target": 3, "unit": "interviews", "status": "on-track", "sourceSystem": "Media Monitoring / Calendar", "owner": "PR Team", "refreshCadence": "Weekly", "trend": [0, 1, 1, 1, 2, 2, 3], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "pr-event-invitations", "name": "Event Speaking Invitations", "targetRange": "1-3/month", "current": 2, "target": 2, "unit": "invitations", "status": "on-track", "sourceSystem": "Event / Invitation Tracker", "owner": "PR Team", "refreshCadence": "Weekly", "trend": [0, 0, 1, 1, 1, 1, 2], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "pr-sov", "name": "Share of Voice (vs Competitors)", "targetRange": "25%-40%", "current": 32, "target": 30, "unit": "%", "status": "on-track", "sourceSystem": "Media Monitoring / Social Listening", "owner": "PR Team", "refreshCadence": "Monthly", "trend": [18, 21, 23, 25, 27, 29, 32], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7"] },
+      { "id": "pr-partner-inquiries", "name": "Partner / Channel Inquiries", "targetRange": "5-15/month", "current": 9, "target": 8, "unit": "inquiries", "status": "on-track", "sourceSystem": "CRM", "owner": "BD Team", "refreshCadence": "Weekly", "trend": [1, 2, 3, 4, 5, 7, 9], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "pr-dev-inbound-leads", "name": "Developer Inbound Leads", "targetRange": "10-25/month", "current": 17, "target": 15, "unit": "leads", "status": "on-track", "sourceSystem": "CRM / Website", "owner": "Marketing / Developer Relations", "refreshCadence": "Weekly", "trend": [2, 4, 6, 8, 10, 13, 17], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] }
+    ]
+  },
+  "seoContentKPIs": {
+    "description": "SEO/content dashboard connecting content inventory, traffic, engagement, assisted conversion, and funnel contribution",
+    "metrics": [
+      { "id": "seo-organic-traffic", "name": "Organic Traffic", "targetRange": "50k-150k/month", "current": 89200, "target": 75000, "unit": "visitors", "status": "on-track", "sourceSystem": "Google Search Console / GA4", "owner": "SEO Team", "refreshCadence": "Weekly", "trend": [12000, 18500, 22300, 29800, 36500, 45200, 58900, 72400, 89200], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-keyword-rankings", "name": "Keyword Rankings (Top 10)", "targetRange": "75-150", "current": 112, "target": 100, "unit": "keywords", "status": "on-track", "sourceSystem": "Rank Tracking Tool", "owner": "SEO Team", "refreshCadence": "Weekly", "trend": [42, 51, 58, 67, 78, 85, 94, 103, 112], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-backlinks", "name": "New Backlinks", "targetRange": "30-80/month", "current": 56, "target": 50, "unit": "backlinks", "status": "on-track", "sourceSystem": "Backlink Analysis Tool", "owner": "SEO / Content", "refreshCadence": "Weekly", "trend": [5, 8, 12, 18, 25, 32, 40, 48, 56], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-guide-downloads", "name": "Guide / Resource Downloads", "targetRange": "200-800/month", "current": 520, "target": 500, "unit": "downloads", "status": "on-track", "sourceSystem": "CMS / Marketing Automation", "owner": "Content Team", "refreshCadence": "Weekly", "trend": [35, 68, 95, 145, 210, 285, 370, 450, 520], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-webinar-regs", "name": "Webinar Registrations", "targetRange": "50-200/month", "current": 138, "target": 120, "unit": "registrations", "status": "on-track", "sourceSystem": "Webinar Platform", "owner": "Content / Marketing", "refreshCadence": "Weekly", "trend": [12, 25, 38, 52, 68, 85, 105, 120, 138], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-content-dev-leads", "name": "Content-Assisted Developer Leads", "targetRange": "15-50/month", "current": 32, "target": 30, "unit": "leads", "status": "on-track", "sourceSystem": "CRM / Marketing Automation", "owner": "Content / Developer Relations", "refreshCadence": "Weekly", "trend": [2, 5, 8, 11, 15, 19, 23, 27, 32], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-content-kyc-starts", "name": "Content-Assisted KYC Starts", "targetRange": "10-40/month", "current": 24, "target": 20, "unit": "starts", "status": "on-track", "sourceSystem": "CRM / KYC Provider", "owner": "Content / Compliance", "refreshCadence": "Weekly", "trend": [1, 3, 5, 7, 10, 13, 16, 20, 24], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-time-edu-pages", "name": "Time on Education Pages", "targetRange": "3-8 min", "current": 5.2, "target": 5, "unit": "minutes", "status": "on-track", "sourceSystem": "Web Analytics", "owner": "Content Team", "refreshCadence": "Weekly", "trend": [2.1, 2.8, 3.2, 3.5, 3.9, 4.2, 4.6, 4.9, 5.2], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] },
+      { "id": "seo-risk-page-completion", "name": "Risk Page Completion Rate", "targetRange": "60%-85%", "current": 74, "target": 70, "unit": "%", "status": "on-track", "sourceSystem": "Web Analytics", "owner": "Product / Content", "refreshCadence": "Weekly", "trend": [35, 42, 48, 52, 58, 62, 66, 70, 74], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9"] }
+    ]
+  },
+  "trustComplianceKPIs": {
+    "description": "Trust/compliance dashboard with threshold-based alerts, exception logging, owner assignment, and audit-friendly calculation notes",
+    "metrics": [
+      { "id": "tc-compliance-review", "name": "Compliance Review Turnaround", "targetRange": "<48 hours", "current": 32, "target": 48, "unit": "hours", "status": "on-track", "sourceSystem": "Compliance Review Logs", "owner": "Compliance Team", "refreshCadence": "Daily", "trend": [52, 48, 45, 42, 38, 35, 32], "trendLabels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] },
+      { "id": "tc-rejected-kyc", "name": "Rejected KYC Rate", "targetRange": "<5%", "current": 3.2, "target": 5, "unit": "%", "status": "on-track", "sourceSystem": "KYC Provider Reports", "owner": "Compliance Team", "refreshCadence": "Weekly", "trend": [7.5, 6.8, 5.9, 5.1, 4.3, 3.8, 3.2], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-risk-ack", "name": "Risk Acknowledgement Completion", "targetRange": ">95%", "current": 97, "target": 95, "unit": "%", "status": "on-track", "sourceSystem": "Risk Acknowledgement Events", "owner": "Operations", "refreshCadence": "Weekly", "trend": [82, 85, 88, 90, 93, 95, 97], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-complaints", "name": "Complaints Received", "targetRange": "<5/month", "current": 3, "target": 5, "unit": "complaints", "status": "on-track", "sourceSystem": "Support / Ticketing System", "owner": "Support Team", "refreshCadence": "Weekly", "trend": [1, 2, 3, 2, 1, 2, 3], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-support-response", "name": "Support Response Time", "targetRange": "<4 hours", "current": 2.5, "target": 4, "unit": "hours", "status": "on-track", "sourceSystem": "Support / Ticketing System", "owner": "Support Team", "refreshCadence": "Daily", "trend": [4.8, 4.2, 3.8, 3.2, 2.9, 2.5, 2.5], "trendLabels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] },
+      { "id": "tc-disclosure-completion", "name": "Disclosure Completion Rate", "targetRange": ">98%", "current": 99.2, "target": 98, "unit": "%", "status": "on-track", "sourceSystem": "Disclosure Acknowledgement Events", "owner": "Legal / Compliance", "refreshCadence": "Weekly", "trend": [95, 96, 97, 97.5, 98, 98.5, 99.2], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-failed-payments", "name": "Failed Payment Rate", "targetRange": "<3%", "current": 1.8, "target": 3, "unit": "%", "status": "on-track", "sourceSystem": "Payment Processor", "owner": "Finance", "refreshCadence": "Weekly", "trend": [4.2, 3.8, 3.1, 2.5, 2.1, 1.9, 1.8], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-partner-diligence", "name": "Partner Due Diligence (Overdue)", "targetRange": "<3", "current": 5, "target": 3, "unit": "overdue", "status": "off-track", "sourceSystem": "Partner Due-Diligence Tracker", "owner": "Legal / Compliance", "refreshCadence": "Weekly", "trend": [8, 7, 7, 6, 6, 5, 5], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-claims-approval", "name": "Claims Approval Turnaround", "targetRange": "<72 hours", "current": 48, "target": 72, "unit": "hours", "status": "on-track", "sourceSystem": "Claims Process", "owner": "Operations", "refreshCadence": "Weekly", "trend": [92, 78, 65, 58, 52, 48, 48], "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7"] },
+      { "id": "tc-regulatory-cadence", "name": "Regulatory Status Verification", "targetRange": "Monthly", "current": 10, "target": 12, "unit": "checks completed", "status": "at-risk", "sourceSystem": "Regulatory-Status Register", "owner": "Legal / Compliance", "refreshCadence": "Monthly", "trend": [8, 8, 9, 9, 10, 10, 10], "trendLabels": ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7"] }
+    ]
+  },
+  "investorFunnel": {
+    "description": "Full investor conversion funnel tracking from awareness to repeat investment",
+    "stages": [
+      { "id": "awareness", "name": "Awareness", "count": 45200, "previousCount": 34500, "source": "Web Analytics" },
+      { "id": "waitlist", "name": "Waitlist Signup", "count": 6200, "previousCount": 4600, "source": "CRM / Waitlist" },
+      { "id": "kyc-start", "name": "KYC Started", "count": 1116, "previousCount": 736, "source": "KYC Provider" },
+      { "id": "kyc-complete", "name": "KYC Completed", "count": 692, "previousCount": 427, "source": "KYC Provider" },
+      { "id": "offering-engagement", "name": "Offering Page Engaged", "count": 415, "previousCount": 256, "source": "Offering Page Analytics" },
+      { "id": "subscription-start", "name": "Subscription Started", "count": 249, "previousCount": 154, "source": "Product Events" },
+      { "id": "subscription-complete", "name": "Subscription Completed", "count": 175, "previousCount": 108, "source": "Subscription System" },
+      { "id": "funding-initiated", "name": "Funding Initiated", "count": 140, "previousCount": 86, "source": "Payment Processor" },
+      { "id": "funding-complete", "name": "Funding Completed", "count": 112, "previousCount": 69, "source": "Funding Ledger" },
+      { "id": "activated", "name": "Activated (First Investment)", "count": 98, "previousCount": 60, "source": "Investor Profile DB" },
+      { "id": "repeat-investment", "name": "Repeat Investment", "count": 18, "previousCount": 10, "source": "Repeat Investment Records" }
+    ]
+  },
+  "developerFunnel": {
+    "description": "Full developer conversion funnel tracking from target-account engagement through repeat offering",
+    "stages": [
+      { "id": "target-accounts", "name": "Target Accounts Identified", "count": 128, "previousCount": 122, "source": "Target Account List" },
+      { "id": "engaged", "name": "Engaged (Awareness)", "count": 85, "previousCount": 78, "source": "CRM / Outreach Data" },
+      { "id": "meeting", "name": "Meeting Completed (Consideration)", "count": 38, "previousCount": 33, "source": "CRM / Meeting Logs" },
+      { "id": "assessment", "name": "Assessment Passed (Evaluation)", "count": 14, "previousCount": 11, "source": "Assessment Records" },
+      { "id": "signed", "name": "Developer Signed (Activation)", "count": 2, "previousCount": 1, "source": "Developer Agreement Tracker" },
+      { "id": "asset-submitted", "name": "Asset Submitted (Retention)", "count": 6, "previousCount": 4, "source": "Asset Pipeline Tracker" },
+      { "id": "asset-approved", "name": "Asset Approved (Repeat Offering)", "count": 3, "previousCount": 2, "source": "Approval Workflow" }
+    ]
+  },
+  "shareOfVoice": {
+    "description": "Competitive visibility tracker with controlled channel/scenario taxonomy, competitor list, share-of-voice formula, and recurring insight summary",
+    "competitors": [
+      { "name": "Blocks", "color": "#6366f1", "channels": { "pr": 32, "search": 28, "social": 24, "content": 16, "paid": 0 }, "overall": 28 },
+      { "name": "PRYPCO", "color": "#ef4444", "channels": { "pr": 25, "search": 22, "social": 28, "content": 20, "paid": 5 }, "overall": 24 },
+      { "name": "Stake", "color": "#f59e0b", "channels": { "pr": 18, "search": 20, "social": 22, "content": 25, "paid": 15 }, "overall": 20 },
+      { "name": "SmartCrowd", "color": "#22c55e", "channels": { "pr": 15, "search": 18, "social": 16, "content": 22, "paid": 10 }, "overall": 16 },
+      { "name": "Deed", "color": "#3b82f6", "channels": { "pr": 10, "search": 12, "social": 10, "content": 17, "paid": 70 }, "overall": 12 }
+    ],
+    "channelTaxonomy": {
+      "PR": { "description": "Media coverage, press releases, earned media", "sources": ["Media Monitoring", "Press Coverage Tracker"] },
+      "Search": { "description": "Organic search visibility, SERP presence", "sources": ["Google Search Console", "Rank Tracker"] },
+      "Social": { "description": "Social media mentions, engagement, brand conversations", "sources": ["Social Listening Tool"] },
+      "Content": { "description": "Thought leadership, blogs, guides, educational content", "sources": ["CMS", "Content Analytics"] },
+      "Paid/Earned": { "description": "Paid advertising, sponsored content, partnerships", "sources": ["Ad Platforms", "Partner Tracker"] }
+    }
+  },
+  "documentTracking": {
+    "description": "Document engagement tracking with classified offering and education documents, reporting investor consideration activity by category and segment",
+    "categories": [
+      {
+        "name": "Offering Documents",
+        "documents": [
+          { "name": "Q1 2026 Offering Memorandum", "views": 245, "downloads": 89, "lastWeekViews": 210, "lastWeekDownloads": 72 },
+          { "name": "Property Portfolio Overview", "views": 312, "downloads": 134, "lastWeekViews": 280, "lastWeekDownloads": 110 },
+          { "name": "Investment Terms & Conditions", "views": 198, "downloads": 76, "lastWeekViews": 175, "lastWeekDownloads": 65 },
+          { "name": "Risk Disclosure Statement", "views": 287, "downloads": 112, "lastWeekViews": 260, "lastWeekDownloads": 98 }
+        ]
+      },
+      {
+        "name": "Educational Content",
+        "documents": [
+          { "name": "Real Estate Investing Guide", "views": 456, "downloads": 201, "lastWeekViews": 400, "lastWeekDownloads": 178 },
+          { "name": "Understanding KYC Process", "views": 178, "downloads": 67, "lastWeekViews": 150, "lastWeekDownloads": 55 },
+          { "name": "Tax Implications for Investors", "views": 234, "downloads": 98, "lastWeekViews": 200, "lastWeekDownloads": 82 },
+          { "name": "Platform Technical FAQ", "views": 145, "downloads": 45, "lastWeekViews": 130, "lastWeekDownloads": 38 }
+        ],
+        "totals": { "views": 1013, "downloads": 411, "lastWeekViews": 880, "lastWeekDownloads": 353 }
+      }
+    ]
+  },
+  "subscriptionTracking": {
+    "description": "Funded-subscription fact tracking that reconciles subscription starts to completed funding and failed-payment outcomes",
+    "summary": {
+      "totalSubscriptionsStarted": 249, "totalSubscriptionsCompleted": 175, "totalFundingInitiated": 140, "totalFundingCompleted": 112, "failedPayments": 28, "failedPaymentRate": 0.16, "conversionRateOfferToSub": 0.17, "conversionRateSubToFunded": 0.64
+    },
+    "trends": {
+      "subscriptionStarts": [12, 18, 22, 28, 35, 42, 49, 58, 67, 78, 89, 105, 120, 138, 155, 175, 198, 220, 249],
+      "fundingCompleted": [5, 8, 12, 15, 20, 25, 28, 32, 38, 42, 48, 52, 58, 65, 72, 80, 88, 98, 112],
+      "failedPayments": [2, 3, 4, 4, 5, 6, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 22, 28]
+    },
+    "trendLabels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14", "Week 15", "Week 16", "Week 17", "Week 18", "Week 19"]
+  },
+  "weeklyReview": {
+    "description": "Standardized weekly review template with KPI sections, RAG status, variance notes, blockers, decisions, and action-owner tracking",
+    "currentWeek": "2026-W27",
+    "sections": [
+      { "name": "Developer KPIs - 90 Day", "status": "amber", "highlights": ["Pipeline ahead on meetings and assessments", "Signed developers pacing at 2/2 — on track for 3 by end of 90 days", "Asset submissions at 6 vs target of 5 — above target"], "blockers": ["Target account outreach slowing — need refreshed list", "Approval workflow bottleneck identified"], "decisions": ["Approve 2 new target account segments for outreach", "Escalate approval workflow capacity to Operations Lead"] },
+      { "name": "Developer KPIs - 12 Month", "status": "red", "highlights": ["Accounts at 267/500 (53%) — pacing behind", "All metrics except assets-approved tracking below linear pace"], "blockers": ["Account coverage rate insufficient for annual target", "Developer sign conversion rate needs improvement"], "decisions": ["Double monthly outreach capacity", "Revisit developer value proposition messaging"] },
+      { "name": "Investor KPIs - 90 Day", "status": "green", "highlights": ["Visitors at 45k vs 45k target — on track", "Waitlist signups at 6.2k vs 6k target — exceeding", "KYC start rate (18%) and completion rate (62%) both on track"], "blockers": [], "decisions": ["Maintain current campaign spend", "Shift 20% of awareness budget to conversion campaigns"] },
+      { "name": "Investor KPIs - 12 Month", "status": "amber", "highlights": ["Visitors and waitlist exceeding linear pace", "Funded subscriptions at 380 vs 500 target — behind but accelerating", "Repeat rate at 18% vs 20% target — slightly behind"], "blockers": ["Payment conversion funnel needs optimization", "Repeat investment incentive program not yet launched"], "decisions": ["Launch repeat investment incentive program in W28", "A/B test payment flow simplification"] },
+      { "name": "PR KPIs", "status": "green", "highlights": ["All tier-1 media, backlinks, interviews, SOV metrics exceeding targets", "Share of voice at 32% vs 30% target — gaining ground on competitors"], "blockers": ["Event invitation pipeline light for Q3 — need more speaking proposals"], "decisions": ["Submit 5 conference speaking proposals by end of W28", "Increase PR agency retainer by 15%"] },
+      { "name": "SEO / Content KPIs", "status": "green", "highlights": ["Organic traffic at 89k — exceeding 75k target", "Keyword rankings at 112 top-10 vs 100 target", "All content engagement metrics green"], "blockers": [], "decisions": ["Publish 3 new educational guides next month", "Increase content syndication partnerships"] },
+      { "name": "Trust / Compliance KPIs", "status": "amber", "highlights": ["Most compliance metrics green — turnaround, KYC rejections, support response", "Partner due diligence overdue items at 5 vs 3 target — red"], "blockers": ["Partner due diligence backlog — resource constraint", "Regulatory checks behind schedule"], "decisions": ["Assign dedicated resource to clear partner due diligence backlog", "Regulatory checks: extend deadline by 2 weeks"] }
+    ],
+    "actionItems": [
+      { "id": "AI-001", "description": "Approve 2 new target account segments", "owner": "GTM Lead", "dueDate": "W28 Wed", "status": "open" },
+      { "id": "AI-002", "description": "Escalate approval workflow capacity", "owner": "Operations Lead", "dueDate": "W28 Wed", "status": "open" },
+      { "id": "AI-003", "description": "Double monthly outreach capacity for developer accounts", "owner": "BD Team", "dueDate": "W29 Fri", "status": "open" },
+      { "id": "AI-004", "description": "Launch repeat investment incentive program", "owner": "Product", "dueDate": "W30 Mon", "status": "in-progress" },
+      { "id": "AI-005", "description": "A/B test payment flow simplification", "owner": "Product", "dueDate": "W29 Fri", "status": "open" },
+      { "id": "AI-006", "description": "Submit 5 conference speaking proposals", "owner": "PR Team", "dueDate": "W28 Fri", "status": "open" },
+      { "id": "AI-007", "description": "Increase PR agency retainer by 15%", "owner": "Head of Marketing", "dueDate": "W29 Mon", "status": "pending-approval" },
+      { "id": "AI-008", "description": "Clear partner due diligence backlog", "owner": "Legal / Compliance", "dueDate": "W30 Fri", "status": "open" },
+      { "id": "AI-009", "description": "Publish 3 new educational guides", "owner": "Content Team", "dueDate": "W32 Fri", "status": "open" },
+      { "id": "AI-010", "description": "Increase content syndication partnerships", "owner": "SEO / Content", "dueDate": "W31 Fri", "status": "open" }
+    ]
+  },
+  "kpiDictionary": {
+    "description": "Operational KPI dictionary documenting business question, formula, numerator, denominator, grain, event trigger, source of truth, owner, refresh cadence, target range, threshold status, exclusions, and reporting caveats for every metric",
+    "categories": [
+      {
+        "name": "Developer KPIs",
+        "entries": [
+          { "metric": "Target Accounts", "formula": "COUNT(DISTINCT account_id) WHERE account_segment = 'target'", "grain": "Account", "eventTrigger": "Account added to target list", "owner": "GTM Team", "source": "CRM", "cadence": "Weekly", "notes": "Only accounts in approved target segments" },
+          { "metric": "Meetings", "formula": "COUNT(meeting_id) WHERE meeting_type IN ('discovery','demo','technical')", "grain": "Meeting", "eventTrigger": "Meeting logged in CRM", "owner": "BD Team", "source": "CRM", "cadence": "Weekly", "notes": "Excludes internal meetings" },
+          { "metric": "Assessments", "formula": "COUNT(assessment_id) WHERE result = 'pass'", "grain": "Assessment", "eventTrigger": "Assessment completed", "owner": "Developer Team", "source": "Assessment Tracker", "cadence": "Weekly", "notes": "" },
+          { "metric": "Developers Signed", "formula": "COUNT(developer_id) WHERE agreement_status = 'signed'", "grain": "Developer", "eventTrigger": "Agreement signed", "owner": "Legal / BD", "source": "Developer Agreement Tracker", "cadence": "Weekly", "notes": "" },
+          { "metric": "Assets Submitted", "formula": "COUNT(asset_id)", "grain": "Asset", "eventTrigger": "Asset uploaded", "owner": "Developer Team", "source": "Asset Pipeline", "cadence": "Weekly", "notes": "" },
+          { "metric": "Assets Approved", "formula": "COUNT(asset_id) WHERE approval_status = 'approved'", "grain": "Asset", "eventTrigger": "Approval workflow completed", "owner": "Compliance", "source": "Approval Workflow", "cadence": "Weekly", "notes": "" },
+          { "metric": "Offerings Launched", "formula": "COUNT(offering_id) WHERE launch_status = 'live'", "grain": "Offering", "eventTrigger": "Offering goes live", "owner": "Product", "source": "Launch Records", "cadence": "Monthly", "notes": "" }
+        ]
+      },
+      {
+        "name": "Investor KPIs",
+        "entries": [
+          { "metric": "Website Visitors", "formula": "COUNT(DISTINCT visitor_id)", "grain": "Visitor", "eventTrigger": "Page view", "owner": "Marketing", "source": "GA4", "cadence": "Daily", "notes": "Excludes bots and internal traffic" },
+          { "metric": "Waitlist Signups", "formula": "COUNT(signup_id)", "grain": "Signup", "eventTrigger": "Form submission", "owner": "Marketing", "source": "CRM / Waitlist", "cadence": "Daily", "notes": "" },
+          { "metric": "KYC Start Rate", "formula": "COUNT(kyc_started) / COUNT(waitlist_signed)", "grain": "Rate", "eventTrigger": "KYC flow initiated", "owner": "Compliance", "source": "KYC Provider", "cadence": "Weekly", "notes": "Numerator: unique investors who start KYC" },
+          { "metric": "KYC Completion Rate", "formula": "COUNT(kyc_completed) / COUNT(kyc_started)", "grain": "Rate", "eventTrigger": "KYC status = approved", "owner": "Compliance", "source": "KYC Provider", "cadence": "Weekly", "notes": "Excludes manual review cases" },
+          { "metric": "Offering Page Views", "formula": "COUNT(page_view) WHERE page_type = 'offering'", "grain": "Page View", "eventTrigger": "Page load", "owner": "Marketing", "source": "Offering Page Analytics", "cadence": "Daily", "notes": "" },
+          { "metric": "Funded Subscriptions", "formula": "COUNT(subscription_id) WHERE funding_status = 'completed'", "grain": "Subscription", "eventTrigger": "Funding completed", "owner": "Finance", "source": "Payment System", "cadence": "Weekly", "notes": "" },
+          { "metric": "Repeat Rate", "formula": "COUNT(investors_with_2plus) / COUNT(investors_with_1plus)", "grain": "Rate", "eventTrigger": "Second investment completed", "owner": "Product", "source": "Repeat Investment Records", "cadence": "Monthly", "notes": "" }
+        ]
+      },
+      {
+        "name": "PR KPIs",
+        "entries": [
+          { "metric": "Tier-1 Media Mentions", "formula": "COUNT(mention_id) WHERE tier = 'tier-1'", "grain": "Mention", "eventTrigger": "Media coverage published", "owner": "PR Team", "source": "Media Monitoring", "cadence": "Weekly", "notes": "Tier-1 defined in media tier taxonomy" },
+          { "metric": "Backlinks (PR)", "formula": "COUNT(backlink_id) WHERE source = 'pr_coverage'", "grain": "Backlink", "eventTrigger": "Backlink discovered", "owner": "SEO / PR", "source": "Backlink Tool", "cadence": "Weekly", "notes": "Only from PR-generated coverage" },
+          { "metric": "Founder Interviews", "formula": "COUNT(interview_id)", "grain": "Interview", "eventTrigger": "Interview published", "owner": "PR Team", "source": "Media Monitoring", "cadence": "Weekly", "notes": "" },
+          { "metric": "Share of Voice", "formula": "Blocks_mentions / SUM(competitor_mentions)", "grain": "Percentage", "eventTrigger": "Monthly calculation", "owner": "PR Team", "source": "Social + Media Monitoring", "cadence": "Monthly", "notes": "Competitor set includes PRYPCO, Stake, SmartCrowd, Deed" },
+          { "metric": "Partner Inquiries", "formula": "COUNT(lead_id) WHERE lead_source = 'partner_referral'", "grain": "Lead", "eventTrigger": "Lead created", "owner": "BD Team", "source": "CRM", "cadence": "Weekly", "notes": "" }
+        ]
+      },
+      {
+        "name": "SEO / Content KPIs",
+        "entries": [
+          { "metric": "Organic Traffic", "formula": "COUNT(DISTINCT visitor_id) WHERE channel = 'organic'", "grain": "Visitor", "eventTrigger": "Organic page view", "owner": "SEO Team", "source": "GA4 + Search Console", "cadence": "Daily", "notes": "" },
+          { "metric": "Keyword Rankings (Top 10)", "formula": "COUNT(keyword_id) WHERE avg_position <= 10", "grain": "Keyword", "eventTrigger": "Ranking update", "owner": "SEO Team", "source": "Rank Tracker", "cadence": "Weekly", "notes": "" },
+          { "metric": "Content-Assisted Developer Leads", "formula": "COUNT(lead_id) WHERE last_touch_source = 'content' AND lead_type = 'developer'", "grain": "Lead", "eventTrigger": "Lead created", "owner": "Content Team", "source": "CRM", "cadence": "Weekly", "notes": "Last-touch attribution model" },
+          { "metric": "Time on Education Pages", "formula": "AVG(session_duration) WHERE page_category = 'education'", "grain": "Minutes", "eventTrigger": "Session ends", "owner": "Content Team", "source": "Web Analytics", "cadence": "Weekly", "notes": "" }
+        ]
+      },
+      {
+        "name": "Trust / Compliance KPIs",
+        "entries": [
+          { "metric": "Compliance Review Turnaround", "formula": "AVG(hours_from_submission_to_review_complete)", "grain": "Hours", "eventTrigger": "Review completed", "owner": "Compliance Team", "source": "Compliance Logs", "cadence": "Daily", "notes": "Business hours only" },
+          { "metric": "Rejected KYC Rate", "formula": "COUNT(kyc_rejected) / COUNT(kyc_submitted)", "grain": "Percentage", "eventTrigger": "KYC decision made", "owner": "Compliance Team", "source": "KYC Provider", "cadence": "Weekly", "notes": "" },
+          { "metric": "Failed Payment Rate", "formula": "COUNT(payment_failed) / COUNT(payment_attempts)", "grain": "Percentage", "eventTrigger": "Payment attempt completes", "owner": "Finance", "source": "Payment Processor", "cadence": "Weekly", "notes": "" },
+          { "metric": "Partner Due Diligence", "formula": "COUNT(item) WHERE status = 'overdue'", "grain": "Item", "eventTrigger": "Due date passes", "owner": "Legal", "source": "Partner Tracker", "cadence": "Weekly", "notes": "" }
+        ]
+      }
+    ]
+  },
+  "funnelInstrumentation": {
+    "investor": {
+      "description": "Investor funnel KPI instrumentation with event specifications, trigger rules, required properties, and validation steps",
+      "events": [
+        { "eventName": "page_viewed", "trigger": "Page load fires event", "requiredProperties": ["page_url", "page_type", "visitor_id", "timestamp", "utm_source", "utm_medium", "utm_campaign"], "validation": "All UTM fields required; page_type must match taxonomy" },
+        { "eventName": "waitlist_signed", "trigger": "Form submission successful", "requiredProperties": ["investor_id", "email", "signup_source", "timestamp", "utm_params"], "validation": "Email validated; dedup by investor_id" },
+        { "eventName": "kyc_started", "trigger": "User enters KYC flow", "requiredProperties": ["investor_id", "kyc_session_id", "timestamp", "entry_point"], "validation": "Must have prior waitlist_signup for same investor_id" },
+        { "eventName": "kyc_completed", "trigger": "KYC status = approved", "requiredProperties": ["investor_id", "kyc_session_id", "outcome", "timestamp"], "validation": "Must have kyc_started for same session_id" },
+        { "eventName": "offering_page_viewed", "trigger": "Offering page type loaded", "requiredProperties": ["investor_id", "offering_id", "timestamp", "source_page"], "validation": "offering_id must exist in offerings dimension" },
+        { "eventName": "cta_clicked", "trigger": "CTA button clicked on offering page", "requiredProperties": ["investor_id", "offering_id", "cta_type", "timestamp"], "validation": "cta_type in ['subscribe', 'learn_more', 'contact']" },
+        { "eventName": "subscription_started", "trigger": "User begins subscription flow", "requiredProperties": ["investor_id", "offering_id", "subscription_id", "timestamp", "attribution_source"], "validation": "Must have offering_page_viewed for same offering_id" },
+        { "eventName": "subscription_completed", "trigger": "Subscription confirmed", "requiredProperties": ["investor_id", "subscription_id", "amount", "timestamp"], "validation": "Must have subscription_started for same subscription_id" },
+        { "eventName": "funding_initiated", "trigger": "Payment transaction created", "requiredProperties": ["investor_id", "subscription_id", "transaction_id", "amount", "payment_method", "timestamp"], "validation": "Must have subscription_completed for same subscription_id" },
+        { "eventName": "funding_completed", "trigger": "Payment confirmed by processor", "requiredProperties": ["investor_id", "transaction_id", "amount", "status", "timestamp"], "validation": "Must have funding_initiated for same transaction_id" },
+        { "eventName": "repeat_investment", "trigger": "Investor completes second+ investment", "requiredProperties": ["investor_id", "new_subscription_id", "previous_subscription_id", "timestamp"], "validation": "Investor must have at least 1 prior funded subscription" }
+      ]
+    },
+    "developer": {
+      "description": "Developer funnel KPI instrumentation with event specifications for target-account engagement through repeat offering",
+      "events": [
+        { "eventName": "account_targeted", "trigger": "Account added to target list", "requiredProperties": ["account_id", "account_name", "segment", "owner", "timestamp"], "validation": "Segment must be approved value" },
+        { "eventName": "account_engaged", "trigger": "First meaningful interaction", "requiredProperties": ["account_id", "channel", "engagement_type", "timestamp"], "validation": "engagement_type in ['content_download', 'event_attendance', 'outbound_reply']" },
+        { "eventName": "meeting_completed", "trigger": "Meeting logged as complete", "requiredProperties": ["account_id", "meeting_id", "meeting_type", "outcome", "timestamp"], "validation": "meeting_type in ['discovery', 'demo', 'technical']" },
+        { "eventName": "assessment_passed", "trigger": "Technical assessment passed", "requiredProperties": ["account_id", "developer_id", "assessment_id", "score", "timestamp"], "validation": "Score >= passing threshold" },
+        { "eventName": "developer_signed", "trigger": "Agreement signed", "requiredProperties": ["developer_id", "account_id", "agreement_version", "timestamp"], "validation": "Must have assessment_passed for same developer_id" },
+        { "eventName": "asset_submitted", "trigger": "Developer uploads asset", "requiredProperties": ["developer_id", "asset_id", "asset_type", "timestamp"], "validation": "asset_type in taxonomy" },
+        { "eventName": "asset_approved", "trigger": "Approval workflow completes", "requiredProperties": ["asset_id", "reviewer_id", "decision", "timestamp"], "validation": "Must have asset_submitted for same asset_id" },
+        { "eventName": "offering_launched", "trigger": "Offering goes live", "requiredProperties": ["offering_id", "developer_id", "launch_date", "timestamp"], "validation": "Must have asset_approved for at least 1 asset" }
+      ]
+    }
+  }
+}
